@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589597305595.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4284619827",
+    "id" : "9F5D01E7",
+    "lastKnownWriteTime" : 1589643435,
+    "last_content_update" : 1589643435121,
+    "path" : "~/Documents/GitHub/alphonse.github.io/devel/chem370/lecture-bookdown/analysts-toolbox.Rmd",
+    "project_path" : "analysts-toolbox.Rmd",
+    "properties" : {
+        "cursorPosition" : "50,0",
+        "scrollLine" : "46"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

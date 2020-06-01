@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to Analytical Chemistry</title>
+    <link rel="stylesheet" type="text/css" href="remark.css">
+    <link rel="stylesheet" type="text/css" href="mermaid.css">
+    <div w3-include-html="slide-types.html"></div>
+    <div w3-include-html="common-text.html"></div>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: img-right
+![a-chem-2-img](https://upload.wikimedia.org/wikipedia/commons/0/07/10mL_Messkolben_mit_Schliff_A.jpg)
+
+<h1 style = "font-size: 80px;">
+Analtical Chemistry
+</h1>
+
+## Chem 370  
+## Instrumental Analysis
+
+**Dr. Al Fischer**  
+Western Carolina University
+
+.image-credit[Ichwarsnur via [Wikimedia](https://upload.wikimedia.org/wikipedia/commons/0/07/10mL_Messkolben_mit_Schliff_A.jpg) / [CC BY-SA](https://creativecommons.org/licenses/by-sa/4.0)]
+---
+layout: true
+.footer[
+- <a href="https://alphonse.github.io/devel/chem370"><i class="fas fa-home"></i></a>  
+- <a href="https://alphonse.github.io/devel/chem370/lectures-remark"><i class="fas fa-chalkboard-teacher"></i></a>  
+- <a href="https://alphonse.github.io/devel/chem370/lectures-remark#help"><i class="fas fa-question"></i></a>  
+- [<i class="fas fa-list"></i>](#contents)
+]
+
+---
+name: contents
+
+# Analtyical Chemistry: Measurements
+
+## Reading
+
+1. [Harvey](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29) Chs 1 + 2
+
+## Table of Contents
+1. [What is Analytical Chemistry?](#analtyical-chemistry)
+1. [Analytical Chemistry vs. Analysis](#vs-analysis)
+1. [Analytical Chemistry Defined](#definition)
+1. [The Analytical Perspective](#analytical-perspective)
+
+---
+
+name: analtyical-chemistry
+
+# What is Analytical Chemistry?  
+
+
+<div class="mermaid">
+graph TD
+   A[Chemistry] --> B[Analytical]
+   A[Chemistry] --> C[Physical]
+   A[Chemistry] --> D[Bio]
+   A[Chemistry] --> E[Organic]
+   A[Chemistry] --> F[Inorganic]
+</div>
+
+---
+
+# What is Analytical Chemistry?  
+
+> "Analytical chemistry is what analytical chemists do."  
+>  
+> *C.N. Reilly*
+
+???
+
+- Analytical chemistry thrawts definition: It is chemistry, physics, engineering, and computer science all rolled together!
+
+--
+
+**An oft-encountered definition:** Field concerned with *qualitatively* and *quantitatively* characterizing matter.
+
+But is this misleading?
+
+???
+
+- Most chemists characterize matter, but most chemists are not "analytical chemists".  
+- Analytical chemistry is often a "catch all" field, though this probably should be so.
+- This ignores the unique perspective an analytical chemist brings to a study.
+
+---
+name: vs-analysis
+class: img-full
+
+# Analytical Chemistry vs. Analysis
+
+![Fresenius’ analytical scheme for the gravimetric analysis of Ni in ores, CC-BY-SA from Analytical Chemistry 2.1](https://chem.libretexts.org/@api/deki/files/159815/Figure1_1.png)
+
+
+.image-credit[Fresenius’ analytical scheme for the gravimetric analysis of Ni in ores, CC-BY-SA from [Analytical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/01%3A_Introduction_to_Analytical_Chemistry/1.01%3A_What_is_Analytical_Chemistry)]
+
+
+???
+
+- We may draw a distinction between **analytical chemistry** and **chemical analysis**.
+- **Analytical chemistry** is concerned with ***developing methods***.
+- **Chemical analysis** is concernted with ***utilizing methods***.
+- This class aims to prepare you to be an analytical chemist, but we will start with/focus on chemical analysis.
+- Instrumental II is focused much more on analytical chemistry aspects of IA.
+
+---
+
+class: img-full
+
+# Analytical Chemistry vs. Analysis
+
+![Gravimetric analysis for Ni in ores by precipitation, CC-BY-SA from Analytical Chemistry 2.1](https://chem.libretexts.org/@api/deki/files/159828/Figure-1_2.jpg)
+
+
+.image-credit[Gravimetric analysis for Ni in ores by precipitation, CC-BY-SA from [Analytical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/01%3A_Introduction_to_Analytical_Chemistry/1.01%3A_What_is_Analytical_Chemistry)]
+
+
+???
+
+- We may draw a distinction between **analytical chemistry** and **chemical analysis**.
+- **Analytical chemistry** is concerned with ***developing methods***.
+- **Chemical analysis** is concernted with ***utilizing methods***.
+- This class aims to prepare you to be an analytical chemist, but we will start with/focus on chemical analysis.
+- Instrumental II is focused much more on analytical chemistry aspects of IA.
+
+---
+name: definition
+
+# A Definition
+
+Analtyical chemistry is the field concerned with ***creating and improving analytical processes***.
+
+--
+
+<div class="mermaid">
+graph TD
+   A[Chemistry] --> F{Analytical Chemistry}
+   B[Physics] --> F{Analytical Chemistry}
+   C[Engineering] --> F{Analytical Chemistry}
+   D[Computer Science] --> F{Analytical Chemistry}
+   E[Statistics] --> F{Analytical Chemistry}
+</div>
+
+???
+
+- Analytical chemistry thrawts definition: It is chemistry, physics, engineering, stats and CS all rolled together!
+- We work at the **extremes of analysis**.
+- What are your **design requirements**?
+    - Portable
+    - Small
+    - Better DLs/Sensititivity
+    - etc.
+
+---
+
+# A Definition
+
+Analtyical chemistry is the field concerned with ***creating and improving analytical processes***.
+
+<div class="mermaid">
+graph TD
+   A[Chemistry] --> F{Analytical Chemistry}
+   B[Physics] --> F{Analytical Chemistry}
+   C[Engineering] --> F{Analytical Chemistry}
+   D[Computer Science] --> F{Analytical Chemistry}
+   E[Statistics] --> F{Analytical Chemistry}
+   F{Analytical Chemistry} --> G[Physical]
+   F{Analytical Chemistry} --> H[Bio]
+   F{Analytical Chemistry} --> I[Organic]
+   F{Analytical Chemistry} --> J[Inorganic]
+</div>
+
+???
+
+- Collaboration is the work of an analytical chemist.
+
+
+---
+
+# A Definition
+
+> "To an analytical chemist, the process of making a useful measurement is critical; if the measurement is not of central importance to the work, then it is not analytical chemistry.
+>
+> "[We] will come across numerous examples of analytical methods...most of which are routine examples of chemical analysis. It is important to remember, however, that nonroutine problems prompted analytical chemists to develop these methods."  
+> 
+> [*Harvey 2.1*](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/01%3A_Introduction_to_Analytical_Chemistry/1.01%3A_What_is_Analytical_Chemistry)
+
+---
+name: analytical-perspective
+
+# The Analytical Perspective 
+
+An analytical method may be broken up into 7 stages [[1](https://link.springer.com/article/10.1007/BF00470406), [2](https://pubs.acs.org/doi/10.1021/ed077p577)]:
+
+1. Conception
+2. Demonstration (Validation)
+3. Establishment of capabilities
+4. Widespread acceptance
+5. Continued development (e.g. commercialization)
+6. Cycling through steps 3-5
+7. Replacement/Death
+
+???
+
+- e.g TEM
+
+---
+class: img-full
+
+# The Analytical Perspective
+
+<img src="https://chem.libretexts.org/@api/deki/files/159831/Figure_1_3.png?revision=1", sytle="width: auto; height: 70%; border-radius: 200px;">
+.image-credit[Flow diagram showing one view of the analytical approach to solving problems, CC-BY-SA [Analytical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/01%3A_Introduction_to_Analytical_Chemistry/1.02%3A_The_Analytical_Perspective)]
+
+???
+
+- Analytical chemistry begins with a problem
+
+---
+
+# Common Analytical Problems
+
+- Can be *qualitative* or *quantitative*.
+
+---
+
+# Modern Analytical Chemistry
+
+- Modern methods often rely on *instrumental tecnhiques*
+- [Instruments at WCU](https://www.wcu.edu/learn/departments-schools-colleges/cas/science-and-math/chemphys/instrumentation/index.aspx)
+
+???
+
+e.g. Ni in ore...flame AA
+
+---
+
+# Why Should we Do IA?
+
+---
+class: title
+
+# Making Good Measurements
+
+---
+
+# Units of Measure
+
+- Units are important! (Mars example)
+- Chemists often work in molarity; it makes dilutions easy.
+- Rest of the world does not work in molarity
+- Units we usually use in IA:
+   - ppm and ppb - specify w/w, w/v, etc,
+      - Be familiar with
+      - But [do not use](https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values)! (ISO, NIST, SI)
+   - mg/l (less ambiguous than ppm)
+   - absorbance units (unitless)
+   - wavenumber 
+   - V
+   - "counts" and "abundance"  
+   
+???
+
+- ppm/ppb/ppt are ambiguous at best; they are also language-dependent, and can always be expressed in terms of SI units.
+
+---
+
+# Dimensional Analysis
+
+- WHat is dimensional analysis?
+
+---
+
+# Numbers
+
+According to [IUPAC](http://reports.iupac.org/guidelines-for-drafting-reports/11-numbers.html): 
+
+> - If the magnitude of the number is less than one, the decimal sign ***shall be preceded by a zero.***  
+> - For numbers with many digits, the digits may be separated in groups of three, counting from the decimal sign toward the left and the right. The groups ***should be separated by a thin space (half space), and never by a comma or a point***, or by any other means.  (This space is best produced as a non-breaking space of constant width, which also prevents splitting of numbers on line breaks. In MS Word for Windows, type ctrl-shift-space; in Mac OS, use command-space.)  
+> - Numbers shall be printed in roman (upright) and lightface fonts [ref. 46, ISO 31]. Hence, numerical values of physical quantities (and the symbols for their units) shall be printed in roman, lightface fonts, irrespective of the type used in the rest of the text.  
+
+---
+class: scrollable
+
+# Significant Figures
+
+- Recall 0.0**990** has 3 significant digits. (Don't omit trailing zeroes!)
+- How many should you report for each type of glassware? Instrument?
+- **Balances:** Usually, your significant digits will be limited by the balance. The exact number may depend on which balance you use (usually ±1 mg).  Be sure to record all digits on the balance when mass is important, even if they are zeroes; if the last digit fluctuates do the best you can to estimate it.f
+- **Graduated cylinders:** Typiclly have an error of ±1 %.
+- **Volumetric Pipettes:** Should be labeled with the volume *delivered* and associated uncertainty (often on the order of 0.01 ml or 0.1 % -- an order of magnitude better than a grad cylinder!)
+- **(Digital) Micropipettes:** Should be calibrated before use -- go by what the balance says, not what the pipette says.
+- **Volumetric Flasks:** Should be labeled with the volume *contained* and associated uncertainty -- typically about 0.2 %.
+- **Beakers/Erlenmeyer Flasks:** These should not be used to measure volumes in instrumental analysis..
+
+
+- Recall 0.0**990** has 3 significant digits. (Don't omit trailing zeroes!)
+- How many should you report for each type of glassware? Instrument?
+- **Balances:** Usually, your significant digits will be limited by the balance. The exact number may depend on which balance you use (usually ±1 mg).  Be sure to record all digits on the balance when mass is important, even if they are zeroes; if the last digit fluctuates do the best you can to estimate it.f
+- **Graduated cylinders:** Typiclly have an error of ±1 %.
+- **Volumetric Pipettes:** Should be labeled with the volume *delivered* and associated uncertainty (often on the order of 0.01 ml or 0.1 % -- an order of magnitude better than a grad cylinder!)
+- **(Digital) Micropipettes:** Should be calibrated before use -- go by what the balance says, not what the pipette says.
+- **Volumetric Flasks:** Should be labeled with the volume *contained* and associated uncertainty -- typically about 0.2 %.
+- **Beakers/Erlenmeyer Flasks:** These should not be used to measure volumes in instrumental analysis..
+
+???
+
+- Pipettes & flasks must be clean
+- Solids must be dry (dry in oven and then store in dessicator)
+- Everything must be room temp (even solids you are measuring).
+
+---
+
+# Stoichiometry
+
+---
+
+# Definitions
+
+- Mixture
+- Analyte
+- Solvent
+- Standard
+- Stock Solution
+
+---
+
+# Preparing Solutions
+
+- **Stock solution:** Made from pure solid or pure liquid, diluted to desired concentration.  Typically add to vol flask and bring to volume.
+   - Stock is usually pretty concentrated.  Why?
+- Dilute stock to get desired concentration(s).
+- If range is < 2 orders of magnitude, make by unique dilutions; if range is >2 orders of magnitude use serial dilution.
+   - Can also use to minimize waste, or for very low concentrations
+- Recall:
+
+$$ C_1V_1 = C_2V_2$$
+
+???
+
+- Stock is typically made fairly concentrated to minimize percent errors (e.g. 1 mg error on 50 mg = 2 %, on 500 mg = 0.2 %).
+- C1V1 = C2V2 does not work when C is not expressed in terms of volume and wt. percent if density of solution is 1.00 g/mL.
+
+---
+class: img-full
+
+# Accuracy vs. Precision
+
+![accuracy vs. precision](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Accuracy_and_Precision.svg/900px-Accuracy_and_Precision.svg.png)
+
+.image-credit[Image (c) Arbeck via [Wikimedia](https://commons.wikimedia.org/wiki/File:Accuracy_and_Precision.svg) / [CC-BY](https://creativecommons.org/licenses/by/4.0/deed.en)]
+
+???
+
+- **Accuracy** describes how close average is to "true" value / the **bias** / the **systematic error**
+- **Precision** describes how wide the spread (e.g. standard deviation) / the **random error**
+
+---
+
+class: img-full
+
+# Accuracy vs. Precision
+
+![accuracy-v-precision](plots/accurate-v-precise_1.png)
+
+---
+
+class: img-full
+
+# Accuracy vs. Precision
+
+![accuracy-v-precision](plots/accurate-v-precise_2.png)
+
+---
+
+class: img-full
+
+# Accuracy vs. Precision
+
+![accuracy-v-precision](plots/accurate-v-precise_3.png)
+
+---
+
+class: img-full
+
+# Accuracy vs. Precision
+
+![accuracy-v-precision](plots/accurate-v-precise_4.png)
+
+---
+
+class: img-full
+
+# Accuracy vs. Precision
+
+![accuracy-v-precision](plots/accurate-v-precise_5.png)
+
+---
+
+# Communicating Accuracy and Precision
+
+1. **Don't Lie:**  The significant digits you write implies your precision!
+   - 1.30047629 mg/L
+   - 1.3 mg/l
+   - Base your observations on the instrument/glassware tolerances.
+
+---
+
+# Replicate Measurements
+
+1. Estimate from error propagation and specified uncertainties (may be overly optimistic)
+2. Measure directly (may be more realistic to *your* lab, may be necessary if you've built your own instrument)
+
+---
+
+# Specifying Errors
+
+- Some use 1 standard deviation (σ), some use 2 standard deviations (σ), some use standard error, etc
+- 1σ is common
+- It doesn't really matter which you use as long as you *clearly specify* what you used.
+- 1σ = 68%
+- 2σ = 95%
+- written as μ ± σ, must make sig figs match in error!
+- Std goes as 1/sqrt(n)
+
+σ vs s, μ vs x-bar  
+
+
+---
+
+# Confidence Limits
+
+> How certain is your uncertainty?
+
+1. Start with standard deviation (doesn't contain \\(n\\))
+2. Multiply by factor (from \\(t\\)-table) that reflects confidence (and \\(n\\))
+
+$$ \text{Final Value} = \bar{x} \pm (\text{factor} \times s) $$
+
+$$\text{factor} = \bar{x} \pm \frac{t \times s}{\sqrt{n}} $$
+
+Get \\(t\\) from \\(t\\)-table.
+
+---
+
+# CI Example
+
+Calculate CI for ....
+
+---
+
+# Percent Error
+
+$$ E \text{(%)} = \frac{\text{measured - expected}}{\text{expected}} \times 100\% $$
+
+---
+class: img-full
+
+# Precision
+
+![precision](https://files.mtstatic.com/site_4334/159878/0?Expires=1590808680&Signature=fMmCRACS2ThzpM9~qpkpqTAK88Z62r1tr-lbOP01B9bCs~fiuBVO~Dz8gDc58qJIWGUNv9XsYPqSwuf~I7QSJHL75l0GGo~P3tgbMrt2d9GhkQxgRO65QxitzAJ48s6vnHtLjDFuEPokQrYaw9BmQAzoz1lpx~p1C7maS5Yo5tY_&Key-Pair-Id=APKAJ5Y6AV4GI7A555NA)
+
+.image-credit[Image (c) [Analtyical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/03%3A__The_Vocabulary_of_Analytical_Chemistry/3.04%3A_Selecting_an_Analytical_Method), [CC-BY-NS-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)]
+
+<!-- =============================================================================== -->
+
+
+    </textarea>
+    <script src="remark.js" type="text/javascript"></script>
+    <!-- <script src="mermaid.min.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/efbc54fa3b.js"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create(
+        {
+          navigation: {scroll: false,},
+          slideNumberFormat: '%current%',
+          highlightLanguage: 'r',
+          highlightStyle: 'atom-one-light',
+        });
+        MathJax.Hub.Config({
+             tex2jax: {
+             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+             }
+         });
+         MathJax.Hub.Configured();
+         mermaid.initialize({
+            startOnLoad: false,
+            cloneCssStyles: false,
+            theme: null
+          });
+          
+        function initMermaid(s) {
+          var diagrams = document.querySelectorAll('.mermaid');
+          var i;
+          for(i=0;i<diagrams.length;i++){
+            if(diagrams[i].offsetWidth>0){
+              mermaid.init(undefined, diagrams[i]);
+            }
+          }
+        }
+        slideshow.on('afterShowSlide', initMermaid);
+        initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()])
+    </script>
+    </body>
+</html>

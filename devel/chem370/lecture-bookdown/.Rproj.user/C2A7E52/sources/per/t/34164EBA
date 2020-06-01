@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589598150839.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2573352303",
+    "id" : "34164EBA",
+    "lastKnownWriteTime" : 1589685488,
+    "last_content_update" : 1589685488687,
+    "path" : "~/Documents/GitHub/alphonse.github.io/devel/chem370/lecture-bookdown/analytical-chemistry.Rmd",
+    "project_path" : "analytical-chemistry.Rmd",
+    "properties" : {
+        "cursorPosition" : "40,17",
+        "scrollLine" : "38"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

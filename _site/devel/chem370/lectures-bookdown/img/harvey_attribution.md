@@ -1,0 +1,1 @@
+*Image credit: David Harvey. *[Analytical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey))*, via Chemistry LibreTexts (CC-BY-NC-SA 4.0)*

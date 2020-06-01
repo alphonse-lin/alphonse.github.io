@@ -1,0 +1,13 @@
+# (PART) Separations {-}
+
+# Separations {#separations}
+
+<!-- ### Vocabulary -->
+
+# Liquid Chromatography
+
+- Read Granger Ch 15
+
+# Gas Chromatography
+
+- Read Granger Ch 16

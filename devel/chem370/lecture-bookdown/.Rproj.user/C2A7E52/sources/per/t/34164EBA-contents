@@ -1,0 +1,64 @@
+# Analytical Tools {#analytical-tools}
+
+### Student Learning Outcomes {-}
+- A
+- B
+- C
+
+### Prepare {-}
+
+- **Read:** [Harvey Chapter 2: Basic Tools of Analytical Chemistry]( https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)/01%3A_Introduction_to_Analytical_Chemistry)
+
+- **Read:** [Harvey Chapter 3: The Vocabulary of Analytical Chemistry](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)/03%3A__The_Vocabulary_of_Analytical_Chemistry)
+
+## How is Analytical Chemistry taught?
+
+  - Quant + Instrumental
+  - Instrumental (incl. Quant)
+
+```{r, echo=FALSE, fig.cap = paste("The scientific process.  ", read.table("img/harvey_attribution.md", sep = '+')$V1[1]) }
+knitr::include_graphics('./img/analytical-chemistry/scientific-method.png') 
+```
+
+# Signals and Noise {#signals-and-noise}
+
+### Student Learning Outcomes {-}
+- A
+- B
+- C
+
+### Prepare {-}
+
+- **Read:** [Harvey Chapter 4: Evaluating Analytical Data](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)/04%3A_Evaluating_Analytical_Data)
+
+- **Read:** Granger Chapter 22: Statistical Data Analysis
+
+
+# Reproducible & Open Reserch {#reproducible-research}
+
+We will focus on reproducible data analysis.
+
+What does this mean?
+
+- [https://ropensci.github.io/reproducibility-guide/sections/introduction/](https://ropensci.github.io/reproducibility-guide/sections/introduction/)
+- [https://towardsdatascience.com/scientific-data-analysis-pipelines-and-reproducibility-75ff9df5b4c5](https://towardsdatascience.com/scientific-data-analysis-pipelines-and-reproducibility-75ff9df5b4c5)
+- [https://towardsdatascience.com/scientific-data-analysis-pipelines-and-reproducibility-75ff9df5b4c5](https://book.fosteropenscience.eu/en/02OpenScienceBasics/)
+-[http://faculty.nps.edu/rdfricke/OA3101/Lab%201.pdf](http://faculty.nps.edu/rdfricke/OA3101/Lab%201.pdf)
+
+
+# Calibration and Quality Assurance {#calibration}
+
+### Student Learning Outcomes {-}
+- A
+- B
+- C
+
+### Prepare {-}
+
+- **Read:** [Harvey Chapter 5: Standardizing Analytical Methods](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_(Harvey)/05%3A_Standardizing_Analytical_Methods)
+
+# Instrument Survey {#surveys}
+
+- FAAS
+- GCMS
+- HPLC

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework - Beginning Programming with Tinkercad – Al Fischer – Instrumentation Specialist</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Instrumentation Specialist">
+    <meta property="og:description" content="Instrumentation Specialist" />
+    
+    <meta name="author" content="Al Fischer" />
+
+    
+    <meta property="og:title" content="Homework - Beginning Programming with Tinkercad" />
+    <meta property="twitter:title" content="Homework - Beginning Programming with Tinkercad" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Burger</title>
+    <link rel="alternate" type="application/rss+xml" title="Al Fischer - Instrumentation Specialist" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <!-- Navigation -->
+<div class="b-nav">
+  <li><a class="b-link" href="/#">home</a></li>
+  <li><a class="b-link" href="/about">about</a></li>
+  <li><a class="b-link" href="/contact">contact</a></li>
+  <li><a class="b-link" href="/curriculum-vitae">CV</a></li>
+  <li><a class="b-link" href="/projects">projects</a></li>
+  <!-- <li><a class="b-link" href="/chem191">CHEM 191</a></li> -->
+  <li><a class="b-link" href="/devel/chem370">CHEM 370</a></li>
+</div>
+
+<!-- Burger-Icon -->
+<div class="b-container">
+  <div class="b-menu">
+    <div class="b-bun b-bun--top"></div>
+    <div class="b-bun b-bun--mid"></div>
+    <div class="b-bun b-bun--bottom"></div>
+  </div>
+
+  <!-- Burger-Brand -->
+  <a href="#" class="b-brand"></a>
+</div>
+
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <head>
+  <link rel="stylesheet" type="text/css" href="/assets/css/chem370.css" />
+</head>  
+
+<article class="page">
+
+  <h1>Homework - Beginning Programming with Tinkercad</h1>
+  
+  <div class="entry">
+    <p><a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/archive/chem191-f2019/pdf/tinkercad-volts.pdf" target="_blank"> Download Assignment as PDF </a></p>
+
+<hr />
+
+<p><strong>Objective:</strong> Program an Arduino on Tinkercad using the language Scratch.<br />
+<strong>To turn in:</strong> I will view your Arduino/Scratch code through the Tinkercad website.<br />
+<strong>Grading:</strong> This assignments counts for 10 points of extra credit toward your homework grade.<br />
+<strong>Filename Example:</strong> <code class="highlighter-rouge">fischerAl_tinkercadVolts.png</code></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>In the previous exercises on Tinkercad and in class, you learned to program an Arduino to <em>output</em>  a signal to turn a light on and off.  Arduinos can also receive <em>inputs</em> – that is, read data from other devices.  These inputs can be either <em>analog</em> or <em>digital</em>, but this exercise will focus on analog signals.  Unsurprisingly, reading an analog signal involves connecting the device to an analog input on the Arduino/Teensy, which are usually labeled A0, A1, A2, and so on.  Once the device is connected, the voltage (electrical signal) it outputs can be read by the Arduino using the command <code class="highlighter-rouge">AnalogRead(pin);</code>.</p>
+
+<p>Reading a signal can be useful if you want to use the Arduino in a feedback loop to (for example) maintain the temperature of a room at a specific set point or log data to a file.  However, it’s often more interesting if the data the Arduino reads is also displayed on the computer screen.  This is done using a feature of the IDE called the Serial Monitor.  When using the Serial Monitor, the Arduino is programmed in such a way as to write data to the computer’s serial port (through the USB port).  The Serial Monitor then reads the data from the computer’s serial port and displays it as text on the screen.  The Serial Monitor is useful for displaying data on the screen, but is also one of the best tools for debugging code (finding errors) as it provides a visible indicator of what the program is done and what might be going wrong.</p>
+
+<p>In this exercise, you’ll use Tinkercad to develop a sketch to read the voltage from a potentiometer and print the value to the serial monitor.  You will also use a <em>variable</em> to store a value.  This code will be very similar to the code you use to read the temperature in lab.</p>
+
+<h2 id="getting-started-on-tinkercad-skip-this-if-youve-completed-it-previously">Getting Started on Tinkercad (skip this if you’ve completed it previously)</h2>
+
+<ol>
+  <li>Go to <a href="https://www.tinkercad.com/">tinkercad.com</a> and click the green <strong>Join your class</strong> button.</li>
+  <li>Enter the class code (KNRMQXCFCCSU) when prompted.</li>
+  <li>Enter your first name in the Nickname field.  Once you log in, anything you create will be visible to your instructor for grading purposes.</li>
+</ol>
+
+<h2 id="copy-a-default-circuit">Copy a Default Circuit</h2>
+
+<ol>
+  <li>
+    <p>After logging into the class, go to <a href="https://www.tinkercad.com/things/bUvkxh7RYr8">https://www.tinkercad.com/things/bUvkxh7RYr8</a> and click the <strong>Copy and Tinker</strong> button.  The circuit used for this assignment will automatically be copied to your personal dashboard and your code will be visible to your instructor.</p>
+
+    <blockquote>
+      <p><em>The notes on the circuit can be expanded and will explain what each part is.</em></p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="program-the-arduino">Program the Arduino</h2>
+
+<ol>
+  <li>
+    <p>Click the <strong>Code</strong> button at the top right of the Tinkercad window.  The code pane will slide out. (See Figure 1, below.)</p>
+
+    <p><img src="img/tinkercad_default.png" alt="&lt;small&gt;*The default Tinkercad view. The code pane can be accessed by clicking the Code button in the red box; the Start Simulation button runs the code.*&lt;/small&gt;" /></p>
+  </li>
+  <li>
+    <p>In the pane that slides out, click the <strong>Blocks</strong> dropdown and select <strong>Blocks + Text</strong>.  This will allow you to see both the Scratch code and the Arduino code (which is generated by the Scratch code automatically).  See Figure 2 for more clarification.</p>
+
+    <p><img src="img/tinkercad_codeView.png" alt="&lt;small&gt;*The coding pane of Tinkercad. Code is modified by dragging blocks from &quot;Scratch Functions&quot; to &quot;Scratch Code&quot;; the Arduino Code is generated automatically. *&lt;/small&gt;" /></p>
+  </li>
+  <li>
+    <p>Click the fuchsia <strong>Variables</strong> option in the top left of the code pane and then click <em>*Create variable…</em>.  Name your new variable sensorValue.</p>
+
+    <blockquote>
+      <p><em>A variable is a place to store data and will be used as a placeholder in the code for the actual data.</em></p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Find the module that says <code class="highlighter-rouge">set [sensorValue] to [0]</code> and drag that block into the <em>Scratch Code</em> area.  Place it right under the first comment block.</p>
+  </li>
+  <li>
+    <p>Now, link the variable to the input read on pin 0.  Go to <strong>Input</strong> (purple) and choose <code class="highlighter-rouge">read analog pin [A0]</code>.  Drag this to where the <code class="highlighter-rouge">0</code> is in the <code class="highlighter-rouge">set</code> block. (Note the shape is the same.)</p>
+  </li>
+  <li>
+    <p>Connect the second comment block to the bottom of the <code class="highlighter-rouge">set</code> block.</p>
+  </li>
+  <li>
+    <p>Go to <strong>Output</strong> (blue) and drag <code class="highlighter-rouge">print to serial monitor [hello world] [with] newline</code> into your code.</p>
+  </li>
+  <li>
+    <p>Find the variable <code class="highlighter-rouge">sensorValue</code> under <strong>Variables</strong> and drag it into the oval in <code class="highlighter-rouge">print to serial monitor</code>.</p>
+  </li>
+</ol>
+
+<h2 id="run-the-program">Run the Program</h2>
+
+<ol>
+  <li>
+    <p>Press <strong>Start Simulation</strong> and then click on the <strong>Serial Monitor</strong> button in the bottom left of the code window. You should see number streaming across the Serial Monitor window that opens. (Remember, once the code ends the Arduino loops back to the beginning and repeats it indefinitely!)</p>
+  </li>
+  <li>
+    <p>Move the dial around with the mouse while the program runs.  Notice what happens to the value in the Serial Monitor.</p>
+  </li>
+</ol>
+
+<h2 id="to-turn-in">To Turn In:</h2>
+
+<p>I will consider two items when grading this: (1) a screenshot of your code submitted to Dropbox (should look like Figure 2, above but with different code) and (2) your circuit on Tinkercad.</p>
+
+<ul>
+  <li><strong>To turn in your screenshot:</strong>
+    <ol>
+      <li>Use your computer’s screenshot utility to take a screenshot.  On Windows you can go to the start menu and search for screenshot.  On Mac you can press <strong>command + shift + 4</strong> all at once; the screenshot will be automatically saved to your Desktop.</li>
+      <li>Right click on your screenshot file, click <strong>Rename</strong>, and name your file according to: <strong><em>firstnameLastname_tinkercadVolts.png</em></strong>.</li>
+      <li>Go to <strong><a href="https://alphonse.github.io/archive/chem191-f2019/">alphonse.github.io/archive/chem191-f2019</a></strong> and click on <strong>Assignment Submission Links</strong>.</li>
+      <li>Find the URL for the ‘Extra Credit - Tinkercad - Volts’ assignment and copy/paste it into your browser.</li>
+      <li>Click <strong>Choose Files</strong> and select the screenshot you wish to upload.</li>
+      <li>Enter your first (preferred) and last names and your email address, and then press <strong>Upload</strong>.</li>
+      <li>That’s it!  You should receive a confirmation email that your assignment was submitted.</li>
+    </ol>
+  </li>
+</ul>
+
+<p>There is nothing else you need to do to turn in your circuit.  As long as you submitted your completed your circuit within the class area on Tinkercad I will be able to view it.</p>
+
+  </div>
+</article>
+
+    </div>
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-74190135-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/archive/chem191-f2019/assignments/tinkercad-volts',
+		  'title': 'Homework - Beginning Programming with Tinkercad'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        <a   href="mailto:" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope-square"></i></a>
+
+
+
+<a   href="http://instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+
+
+
+
+<a   href="http://www.flickr.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-flickr"></i></a>
+<a  href="https://www.wcu.edu/learn/departments-schools-colleges/cas/science-and-math/chemphys/faculty-and-staff/al-fischer.aspx" target="_blank" rel="noopener noreferrer"><i class="fa fa-university"></i></a>
+<a href="/feed.xml"><i class="fa fa-rss"></i></a>
+<div>
+<a href="https://creativecommons.org/licenses/by-nc/4.0/">&#169; 2017-2020 </a> | Al Fischer | 
+<a href="https://github.com/alphonse/alphonse.github.io/blob/master/README.md"> Site Info </a>
+</div>
+      </footer>
+    </div>
+  </div>
+  <!-- JS -->
+<!-- <script src="/assets/js/jquery-1.12.0.min.js"></script>
+<script src="/assets/js/jquery.dlmenu.min.js"></script>
+<script src="/assets/js/jquery.goup.min.js"></script>
+<script src="/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/jquery.fitvid.min.js"></script>
+<script src="/assets/js/scripts.js"></script> -->
+<script src="/assets/js/burger.min.js"></script>
+ <script src="https://kit.fontawesome.com/efbc54fa3b.js"></script>
+</html>
