@@ -354,6 +354,9 @@ footer {
 
 .b-menu {
   background-color: $white;
+	@media only screen and (max-width: 1000px) {
+		position: relative;
+	}
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
