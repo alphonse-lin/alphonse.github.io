@@ -1,32 +1,4 @@
----
-layout: chem370
-title: Chem 370 Fall 2020 Lectures
-permalink: /devel/chem370/lectures/
----
 
-[View Lecture Transcripts]({{ site.baseurl }}/devel/chem370/lectures/transcripts/)
-
-<div>
-<ul>
-{% for file in site.static_files %}
-  {% if file.path contains "devel/chem370/lectures" and file.extname == ".html" %}
-   <li> <a href = "{{ site.baseurl }}{{ file.path }}">{{ file.path | replace:'.html','' | replace: '/devel/chem370/lectures/', '' | replace: '-', ' ' }}</a> </li>
-  {% endif %}
-{% endfor %}
-</ul>
-</div>
-
-<!-- {% assign sorted_pages = site.html_pages | sort:"lesson" %}
-
-<div class="post-list">
-    {% for page in sorted_pages %}
-        {% if page.category == "c370_lecture" %}
-            <li><a href="{{ site.baseurl }}{{ page.url }}"> {{ page.title }} </a></li>
-        {% endif %}
-    {% endfor %}
-</div> -->
-
--------
 
 *The lectures here are available for re-use under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). You may re-use this material under the conditions that you (1) attribute the author, (2) do not use it for commercial or for-profit purposes, and (3) share it under an equally-permissive license.  Please [contact](mailto:difscher@wcu.edu) the author for inquiries about other usage.  Take note that some of the materials referenced in this book might be under different copyright protection — if so, this will be indicated in the text.*
 

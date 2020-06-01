@@ -1,30 +1,19 @@
 ---
 layout: chem370
-title: Chem 370 Fall 2020 Lectures
-permalink: /devel/chem370/lectures/
+title: Chem 370 Fall 2020 Lectures (Transcripts)
+permalink: /devel/chem370/lectures/transcripts/
 ---
-
-[View Lecture Transcripts]({{ site.baseurl }}/devel/chem370/lectures/transcripts/)
 
 <div>
 <ul>
-{% for file in site.static_files %}
-  {% if file.path contains "devel/chem370/lectures" and file.extname == ".html" %}
-   <li> <a href = "{{ site.baseurl }}{{ file.path }}">{{ file.path | replace:'.html','' | replace: '/devel/chem370/lectures/', '' | replace: '-', ' ' }}</a> </li>
-  {% endif %}
+{% for page in site.pages %}
+   {% if page.layout contains "transcript" %}
+      <li> <a href="{{ page.permalink }}"> {{ page.lecno }} {{ page.title }} </a></li>
+   {% endif %}
 {% endfor %}
 </ul>
 </div>
 
-<!-- {% assign sorted_pages = site.html_pages | sort:"lesson" %}
-
-<div class="post-list">
-    {% for page in sorted_pages %}
-        {% if page.category == "c370_lecture" %}
-            <li><a href="{{ site.baseurl }}{{ page.url }}"> {{ page.title }} </a></li>
-        {% endif %}
-    {% endfor %}
-</div> -->
 
 -------
 
