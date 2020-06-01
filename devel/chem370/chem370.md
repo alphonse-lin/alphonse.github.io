@@ -36,7 +36,7 @@ lecture syllabus
  <i class="fa fa-calendar-alt fa-lg"></i>
  lecture schedule
 </a> -->
-<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/lectures-remark">
+<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/lectures">
   <i class="fa fa-chalkboard-teacher fa-lg"></i>
   lectures
 </a>

@@ -1,7 +1,0 @@
-# (PART) Spectrometry {-}
-
-# Mass Spectrometry {#spectrometry}
-
-- Read Granger Ch 13
-
-**Spectrum** (singlular) vs. **Spectra** (plural) vs. **Spectrometer** (an instrument) vs. **Spectrometrist** (a person)
