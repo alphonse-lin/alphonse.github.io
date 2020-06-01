@@ -543,6 +543,11 @@ footer {
 .b-menu {
   background-color: #fff;
 }
+@media only screen and (max-width: 1000px) {
+  .b-menu {
+    position: relative;
+  }
+}
 
 .highlight {
   background-color: #efefef;
