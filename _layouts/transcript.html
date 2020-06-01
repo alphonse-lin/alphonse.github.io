@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/transcript.css"/>
+</head>  
+
+<article class="page">
+  
+  <div w3-include-html="{{ site.baseurl }}/devel/chem370/lectures/slide-types.html"></div>
+  <div w3-include-html="{{ site.baseurl }}/devel/chem370/lectures/common-text.html"></div>
+  
+  <h1>{{ page.title }} </h1>
+  
+
+  <div style="font-weight: bold;">{{ page.author }}</div>
+  <div>{{ page.description }}</div>
+  
+  <div class="entry">
+    {{ content }}
+  </div>
+  
+</article>
