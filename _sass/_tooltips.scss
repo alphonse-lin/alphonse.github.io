@@ -45,8 +45,7 @@ kbd {
 
 .tooltip-checkbox span {
   visibility: hidden;
-  width: auto;
-  white-space: nowrap;
+  width: 800px;
   background-color: $white;
   border: 1px solid $brown;
   color: black;
@@ -96,12 +95,14 @@ kbd {
   border-radius: 6px;
   padding-left: 8px;
   padding-right: 8px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   position: absolute;
   bottom: 1em;
   left: -2px;
   opacity: 0;
   transition: opacity 1s;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .tooltip-understand:hover {

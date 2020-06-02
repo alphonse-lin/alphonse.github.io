@@ -56,8 +56,7 @@ kbd {
 
 .tooltip-checkbox span {
   visibility: hidden;
-  width: auto;
-  white-space: nowrap;
+  width: 800px;
   background-color: #fff;
   border: 1px solid #433024;
   color: black;
@@ -109,12 +108,14 @@ kbd {
   border-radius: 6px;
   padding-left: 8px;
   padding-right: 8px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   position: absolute;
   bottom: 1em;
   left: -2px;
   opacity: 0;
   transition: opacity 1s;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .tooltip-understand:hover {
@@ -899,12 +900,12 @@ img {
 
 ::-moz-selection {
   color: #000;
-  background: #F2F2F2;
+  background: #C1A875;
 }
 
 ::selection {
   color: #000;
-  background: #F2F2F2;
+  background: #C1A875;
 }
 
 .clearfix:before,

@@ -19,8 +19,9 @@
 html {
   font-size: 100%;
 	background-color: $tan;
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 1000px) {
 		background-color: $white;
+		width: 100%;
 	}
 }
 
@@ -35,22 +36,12 @@ body {
 	margin-right: 15%;
 	@media only screen and (max-width: 1000px) {
 		background-color: $white;
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: 8px;
+		margin-right: 8px;
 		.b-menu {
 			background-color: $white;
 			position: relative;
 		}
-		margin-top: 25px;
-		margin-left: 0px !important;
-		margin-right: 0 !important;
-		text-align: left !important;
-		padding-left: 15px;
-		padding-right: 15px;
-		box-shadow: none !important;
-		box-shadow: none !important;
-		border: none;
-
 	}
 }
 
@@ -85,7 +76,7 @@ body {
 .post h1 {
 	border-bottom: none;
 	color: $purple;
-	margin-left: 0px;
+	margin-left: 2px;
 }
 
 .page {
@@ -115,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
   line-height: 1.7;
   // margin: 1em 0 15px;
-  margin-left: -20px;
+  margin-left: -10px;
 	
   @include mobile {
     line-height: 1.4;
@@ -212,11 +203,11 @@ img {
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $wcuLightGray;
+  background: $gold;
 }
 ::selection {
   color: $black;
-  background: $wcuLightGray;
+  background: $gold;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -242,7 +233,7 @@ img {
 .wrapper-masthead {
   margin-bottom: 50px;
 	padding-top: 1px;
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 1000px) {
 		padding-top: 20px !important;
 	}
 }
@@ -427,19 +418,18 @@ blockquote {
 	border-left:6px solid $gold;
 	background-color: $tan;
 	padding-left:20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	padding-right: 15px;
 	margin-left: 50px;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	font-style: italic;
-	width: 75%;
-	@media only screen and (max-width: 600px) {
+	width: 85%;
+	@media only screen and (max-width: 1000px) {
 		width: 100% !important;
-		padding-left:5px !important;
-		padding-right: 5px !important;
-		margin-left: 10px !important;
+		margin-left:5px !important;
+		margin-right: 5px !important;
 	}
 }
 
@@ -496,6 +486,31 @@ blockquote {
   width: 90%;
   border: none;
   box-shadow: none;
+}
+
+.check-understanding {
+	font-family: $chem370text;
+	border: 1px solid $gold;
+	border-radius: 5px;
+	border-top: 30px solid $gold;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 40px;
+	padding-right: 15px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 90%;
+	line-height: 16px;
+}
+
+.check-understanding:before {
+	content: "CHECK YOUR UNDERSTANDING";
+	color: $white;
+	position: absolute;
+	top: -25px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
