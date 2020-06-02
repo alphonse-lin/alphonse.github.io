@@ -14,7 +14,6 @@
   display: inline-block;
 }
 
-/* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   background-color: #F2F2F2;
@@ -31,6 +30,12 @@
   margin-left: -15px;
   /* Use half of the width (120/2 = 60), to center the tooltip */
   position: absolute;
+}
+@media only screen and (max-width: 1000px) {
+  .tooltip .tooltiptext {
+    white-space: normal !important;
+    width: auto !important;
+  }
 }
 
 .tooltip:hover .tooltiptext {
@@ -68,6 +73,12 @@ kbd {
   transition: opacity 1s;
   font-size: 14px;
 }
+@media only screen and (max-width: 1000px) {
+  .tooltip-checkbox span {
+    white-space: normal !important;
+    width: auto !important;
+  }
+}
 
 .tooltip-checkbox:hover {
   cursor: help;
@@ -78,6 +89,44 @@ kbd {
 }
 
 .tooltip-checkbox input:checked + span {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-understand {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+}
+
+.tooltip-understand span {
+  visibility: hidden;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #4A7729;
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: absolute;
+  bottom: 1em;
+  left: -2px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 14px;
+}
+
+.tooltip-understand:hover {
+  cursor: pointer;
+  color: #C1A875;
+}
+
+.tooltip-understand input {
+  display: none;
+}
+
+.tooltip-understand input:checked + span {
   visibility: visible;
   opacity: 1;
 }
@@ -654,9 +703,10 @@ html {
   font-size: 100%;
   background-color: #F5F4F1;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   html {
     background-color: #fff;
+    width: 100%;
   }
 }
 
@@ -673,17 +723,8 @@ body {
 @media only screen and (max-width: 1000px) {
   body {
     background-color: #fff;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 25px;
-    margin-left: 0px !important;
-    margin-right: 0 !important;
-    text-align: left !important;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-shadow: none !important;
-    box-shadow: none !important;
-    border: none;
+    margin-left: 8px;
+    margin-right: 8px;
   }
   body .b-menu {
     background-color: #fff;
@@ -726,7 +767,7 @@ body {
 .post h1 {
   border-bottom: none;
   color: #592C88;
-  margin-left: 0px;
+  margin-left: 2px;
 }
 
 .page {
@@ -757,7 +798,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #433024;
   font-weight: 200;
   line-height: 1.7;
-  margin-left: -20px;
+  margin-left: -10px;
 }
 @media screen and (max-width: 640px) {
   h1, h2, h3, h4, h5, h6 {
@@ -883,7 +924,7 @@ img {
   margin-bottom: 50px;
   padding-top: 1px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .wrapper-masthead {
     padding-top: 20px !important;
   }
@@ -1071,21 +1112,20 @@ blockquote {
   border-left: 6px solid #C1A875;
   background-color: #F5F4F1;
   padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   padding-right: 15px;
   margin-left: 50px;
   margin-top: 25px;
   margin-bottom: 25px;
   font-style: italic;
-  width: 75%;
+  width: 85%;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   blockquote {
     width: 100% !important;
-    padding-left: 5px !important;
-    padding-right: 5px !important;
-    margin-left: 10px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
   }
 }
 
@@ -1142,6 +1182,31 @@ blockquote {
   width: 90%;
   border: none;
   box-shadow: none;
+}
+
+.check-understanding {
+  font-family: "Barlow", sans-serif;
+  border: 1px solid #C1A875;
+  border-radius: 5px;
+  border-top: 30px solid #C1A875;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 40px;
+  padding-right: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 90%;
+  line-height: 16px;
+}
+
+.check-understanding:before {
+  content: "CHECK YOUR UNDERSTANDING";
+  color: #fff;
+  position: absolute;
+  top: -25px;
 }
 
 .highlight {
