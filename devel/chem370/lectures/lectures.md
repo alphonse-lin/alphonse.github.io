@@ -4,7 +4,7 @@ title: Chem 370 Fall 2020 Lectures
 permalink: /devel/chem370/lectures/
 ---
 
-[View Lecture Transcripts]({{ site.baseurl }}/devel/chem370/lectures/transcripts/)
+<!-- [View Lecture Transcripts]({{ site.baseurl }}/devel/chem370/lectures/transcripts/) -->
 
 <div>
 <ul>
