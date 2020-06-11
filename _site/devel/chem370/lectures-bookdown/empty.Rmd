@@ -1,7 +1,0 @@
-# (PART) PART I: Foundations {-}
-
-# Introduction to Instrumental Analysis {#intro-to-ia}
-
-<p style="font-size: 2em; font-weight: bold;">
-What is Instrumental Analysis?
-</p>

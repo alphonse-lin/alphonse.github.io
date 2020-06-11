@@ -1,0 +1,86 @@
+I"�<!-- # Scientific Writing Tips
+*Dr. Al Fischer*  
+Western Carolina University -->
+
+<p><a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/CHEM241/guides/fluorenone-template.docx" target="_blank">Download Template as docx</a></p>
+
+<h3 id="writing-guidelines-based-on-common-mistakes">Writing guidelines (based on common mistakes):</h3>
+
+<ul>
+  <li>
+    <p>Make your report thorough yet concise.</p>
+  </li>
+  <li>
+    <p>Be specific.</p>
+
+    <ul>
+      <li><em>Bad:</em> Samples were <del>heated</del> in an oven overnight.</li>
+      <li><em>Good:</em> Samples were placed in an <strong>80°C oven for 8 hours</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Avoid unnecessary words and phrases.</p>
+
+    <ul>
+      <li><em>Bad:</em> <del>It has been reported that</del> air pollution 7 million deaths per year.</li>
+      <li><em>Good:</em> Air pollution causes 7 million deaths per year [Ref 1].</li>
+    </ul>
+  </li>
+  <li>
+    <p>Avoid too many/uncommon abbreviations, and define abbreviations the first time used (with a few exceptions, below); abbreviations should be appropriate for your audience.</p>
+
+    <ul>
+      <li><em>Abbreviations that do not need to be defined:</em> Element names (Cu) and well-known units (m, ml, °C, K, etc.)</li>
+      <li><em>Good abbreviations, when defined:</em> Instrumental techniques, certain chemicals that are more commonly/easily known by their abbreviation (e.g. 4-MP).</li>
+      <li><em>Bad abbreviations:</em> Tylenol (T-ol), acetaminophen (AM)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Use passive voice.</p>
+
+    <ul>
+      <li><em>Bad:</em> <del>We analyzed</del> the scent of garlic using GC-MS.  <del>We chopped</del> 1 g of garlic and placed it in a sample vial for analysis.</li>
+      <li><em>Good:</em> The scent of garlic was analyzed using GC-MS.  1.0 g garlic was finely chopped and placed in a sample vial.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Use past tense for observations and methods.</p>
+
+    <ul>
+      <li><em>Bad:</em> Tylenol-brand tablets <del>contain</del> 5% less acetaminophen than advertised.</li>
+      <li><em>Good:</em> Tylenol-brand tablets <strong>contained</strong> 5% less acetaminophen than advertised.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Use present tense for accepted facts.</p>
+
+    <ul>
+      <li><em>Bad:</em> Tylenol <del>helped</del> relieve headaches.</li>
+      <li><em>Good:</em> Tylenol <strong>helps</strong> relieve headaches.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Avoid faulty or incomplete comparisons.</p>
+
+    <ul>
+      <li><em>Bad:</em> These <del>results</del> are similar to <del>previous studies</del>.</li>
+      <li><em>Good:</em> These <strong>results</strong> are similar to the <strong>results of</strong> previous studies</li>
+      <li><em>Bad:</em> <del>Fractional distillation worked better.</del></li>
+      <li><em>Good:</em> <strong>Fractional distillation</strong> worked better <strong>than simple distillation</strong>.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Use correct spelling, grammar, and punctuation.  See <em>Elements of Styles</em> (<a href="http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger">Strunk and White</a>) for more detail.</p>
+  </li>
+  <li>
+    <p>Writing resources at Western:</p>
+    <ul>
+      <li><a href="https://www.wcu.edu/learn/academic-success/tutoring-services/index.aspx">Writing and Learning Commons</a></li>
+      <li><a href="https://www.wcu.edu/learn/academic-success/tutoring-services/services-resources/writing-support/index.aspx">WCU Writing Support</a></li>
+      <li>Peer review: Have a friend or roommate provide feedback on your report before you turn it in.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Examples adapted from: <em>Writing Papers in the Biological Sciences</em> by Angelika H. Hofmann.  Oxford University Press 2016 (2nd ed.)</p>
+:ET

@@ -9,8 +9,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="Instrumentation Specialist">
-    <meta property="og:description" content="Instrumentation Specialist" />
+    <meta name="description" content=" Download Assignment as PDF 
+" />
+    <meta property="og:description" content=" Download Assignment as PDF 
+" />
     
     <meta name="author" content="Al Fischer" />
 
@@ -75,11 +77,11 @@
 <p><strong>Objective:</strong> Program an Arduino on Tinkercad using the language Scratch.<br />
 <strong>To turn in:</strong> I will view your Arduino/Scratch code through the Tinkercad website.<br />
 <strong>Grading:</strong> This assignments counts for 10 points of extra credit toward your homework grade.<br />
-<strong>Filename Example:</strong> <code class="highlighter-rouge">fischerAl_tinkercadVolts.png</code></p>
+<strong>Filename Example:</strong> <code class="language-plaintext highlighter-rouge">fischerAl_tinkercadVolts.png</code></p>
 
 <h2 id="introduction">Introduction</h2>
 
-<p>In the previous exercises on Tinkercad and in class, you learned to program an Arduino to <em>output</em>  a signal to turn a light on and off.  Arduinos can also receive <em>inputs</em> – that is, read data from other devices.  These inputs can be either <em>analog</em> or <em>digital</em>, but this exercise will focus on analog signals.  Unsurprisingly, reading an analog signal involves connecting the device to an analog input on the Arduino/Teensy, which are usually labeled A0, A1, A2, and so on.  Once the device is connected, the voltage (electrical signal) it outputs can be read by the Arduino using the command <code class="highlighter-rouge">AnalogRead(pin);</code>.</p>
+<p>In the previous exercises on Tinkercad and in class, you learned to program an Arduino to <em>output</em>  a signal to turn a light on and off.  Arduinos can also receive <em>inputs</em> – that is, read data from other devices.  These inputs can be either <em>analog</em> or <em>digital</em>, but this exercise will focus on analog signals.  Unsurprisingly, reading an analog signal involves connecting the device to an analog input on the Arduino/Teensy, which are usually labeled A0, A1, A2, and so on.  Once the device is connected, the voltage (electrical signal) it outputs can be read by the Arduino using the command <code class="language-plaintext highlighter-rouge">AnalogRead(pin);</code>.</p>
 
 <p>Reading a signal can be useful if you want to use the Arduino in a feedback loop to (for example) maintain the temperature of a room at a specific set point or log data to a file.  However, it’s often more interesting if the data the Arduino reads is also displayed on the computer screen.  This is done using a feature of the IDE called the Serial Monitor.  When using the Serial Monitor, the Arduino is programmed in such a way as to write data to the computer’s serial port (through the USB port).  The Serial Monitor then reads the data from the computer’s serial port and displays it as text on the screen.  The Serial Monitor is useful for displaying data on the screen, but is also one of the best tools for debugging code (finding errors) as it provides a visible indicator of what the program is done and what might be going wrong.</p>
 
@@ -126,19 +128,19 @@
     </blockquote>
   </li>
   <li>
-    <p>Find the module that says <code class="highlighter-rouge">set [sensorValue] to [0]</code> and drag that block into the <em>Scratch Code</em> area.  Place it right under the first comment block.</p>
+    <p>Find the module that says <code class="language-plaintext highlighter-rouge">set [sensorValue] to [0]</code> and drag that block into the <em>Scratch Code</em> area.  Place it right under the first comment block.</p>
   </li>
   <li>
-    <p>Now, link the variable to the input read on pin 0.  Go to <strong>Input</strong> (purple) and choose <code class="highlighter-rouge">read analog pin [A0]</code>.  Drag this to where the <code class="highlighter-rouge">0</code> is in the <code class="highlighter-rouge">set</code> block. (Note the shape is the same.)</p>
+    <p>Now, link the variable to the input read on pin 0.  Go to <strong>Input</strong> (purple) and choose <code class="language-plaintext highlighter-rouge">read analog pin [A0]</code>.  Drag this to where the <code class="language-plaintext highlighter-rouge">0</code> is in the <code class="language-plaintext highlighter-rouge">set</code> block. (Note the shape is the same.)</p>
   </li>
   <li>
-    <p>Connect the second comment block to the bottom of the <code class="highlighter-rouge">set</code> block.</p>
+    <p>Connect the second comment block to the bottom of the <code class="language-plaintext highlighter-rouge">set</code> block.</p>
   </li>
   <li>
-    <p>Go to <strong>Output</strong> (blue) and drag <code class="highlighter-rouge">print to serial monitor [hello world] [with] newline</code> into your code.</p>
+    <p>Go to <strong>Output</strong> (blue) and drag <code class="language-plaintext highlighter-rouge">print to serial monitor [hello world] [with] newline</code> into your code.</p>
   </li>
   <li>
-    <p>Find the variable <code class="highlighter-rouge">sensorValue</code> under <strong>Variables</strong> and drag it into the oval in <code class="highlighter-rouge">print to serial monitor</code>.</p>
+    <p>Find the variable <code class="language-plaintext highlighter-rouge">sensorValue</code> under <strong>Variables</strong> and drag it into the oval in <code class="language-plaintext highlighter-rouge">print to serial monitor</code>.</p>
   </li>
 </ol>
 

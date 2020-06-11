@@ -1,0 +1,55 @@
+I"m<p><em>UPDATE: Include only the techniques you completed prior to break in your methods section.  For the other two, just state that your samples were run by Dr. Al Fischer at Western Carolina University.  This is similar to what you would do if you had your sample analyzed by a third-party lab.</em></p>
+
+<p>The methods section provides the reader of your manuscript a <em>detailed</em> account of how you completed your study.  It should contain enough information that the reader could complete your study with no other resources.  However, it should <em>not</em> contain extraneous details or irrelevant minutia.  More information about what constitutes appropriate detail is provided in Mack (2018). [1]</p>
+
+<blockquote>
+  <p>There are really two interrelated goals at work: the reader should be given the ability to reproduce the results and the ability to judge the results. [1]</p>
+</blockquote>
+
+<p>For this assignment, you should turn in a methods section to your final paper that details your sensor construction and deployment.</p>
+
+<p><strong>Style tips:</strong></p>
+
+<ul>
+  <li>Write in <em>past tense</em>.</li>
+  <li>Use active voice (first-person is OK, too).</li>
+  <li>All tables must have a title <em>above</em> the table and be numbered sequentially.</li>
+  <li>All figures (images or graphs) must have a caption (that includes a title and brief description of the figure) <em>below</em> the figure and be numbered sequentially.</li>
+</ul>
+
+<p><strong>Example table formatting:</strong></p>
+
+<p><em>Table 1: A table with a lot of useful information</em></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a bit of info</td>
+      <td>some more info</td>
+    </tr>
+    <tr>
+      <td>a bit of info</td>
+      <td>some more info</td>
+    </tr>
+    <tr>
+      <td>a bit of info</td>
+      <td>some more info</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Example figure formatting:</strong></p>
+
+<p><img src="http://localhost:4000/archive/chem370-s2020/assets/img/hplc-apparatus.png" alt="*Figure 1:* A block diagram of the HPLC used for this study.  (1) Solvent reservoirs, (2) Solvent degasser, (3) Gradient valve, (4) Mixing vessel for delivery of the mobile phase, (5) High-pressure pump, (6) Switching valve in &quot;inject position&quot;, (6') Switching valve in &quot;load position&quot;, (7) Sample injection loop, (8) Pre-column (guard column), (9) Analytical column, (10) Detector (i.e., IR, UV), (11) Data acquisition, (12) Waste or fraction collector.  By [WYassineMrabetTal CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=5722928)" />.<br />
+<em>Figure 1:</em> A block diagram of the HPLC used for this study. (1) Solvent reservoirs, (2) Solvent degasser, (3) Gradient valve, (4) Mixing vessel for delivery of the mobile phase, (5) High-pressure pump, (6) Switching valve in “inject position”, (6’) Switching valve in “load position”, (7) Sample injection loop, (8) Pre-column (guard column), (9) Analytical column, (10) UV Detector, (11) Data acquisition, (12) Waste or fraction collector.  By <a href="https://commons.wikimedia.org/w/index.php?curid=5722928">WYassineMrabetTal CC BY-SA 3.0</a></p>
+
+<h1 id="further-reading">Further Reading</h1>
+
+<p>[1] Mack, Chris A., <em>How to Write a Scientific Paper</em>. SPIE, 2018. doi: <a href="https://doi.org/10.1117/3.2317707">10.1117/3.2317707</a></p>
+:ET
