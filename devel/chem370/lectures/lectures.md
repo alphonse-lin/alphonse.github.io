@@ -6,6 +6,51 @@ permalink: /devel/chem370/lectures/
 
 <!-- [View Lecture Transcripts]({{ site.baseurl }}/devel/chem370/lectures/transcripts/) -->
 
+## Tentative Course Outline
+
+1. **Foundations**  
+
+    1. Introduction to Analytical Chemistry (Week 1)  
+      *Lab: Introduction to Electronic Lab Notebooks*
+    2. Statistics, Signals, and Noise (Week 2)  
+      *Lab: Signals and Noise in Gas Chromatography*
+    3. Reproducible Research (Week 3)  
+       *Lab: Signals and Noise in Gas Chromatography*
+    4. Standardization and Quality Assurance (Week 3 & 4)  
+        *Lab: Quantitative Analysis of Quinine*
+    5. Survey of Chemical Instrumentation (Week 5 & 6)  
+        *Lab: Quantitative Analysis of Quinine*
+
+2. **Spectroscopy**  (Weeks 6-10)  
+
+    1. Introduction / Principles
+    2. Optics
+    3. UV-visible Spectroscopy (Absorption & Luminescence)  
+    4. Atomic Spectroscopy (Absorption & Emission)  
+    5. Infrared Spectroscopy  
+    
+    *Lab: Flame atomic absorption spectroscopy*
+
+3. **Mass Spectrometry**  (Weeks 10-11)  
+
+    *Lab: Gas chromatography-mass spectrometry*
+
+4. **Separation Science** (Weeks 11-12)  
+
+    1. Liquid Chromatography
+    2. Gas Chromatography  
+    
+    *Lab: High performance liquid chromatography*
+  
+5. *Advanced Topic in Instrumental Analysis (Week 13 & 15, topic(s) TBD, time permitting)*
+
+6. Review and Last Exam (Week 14)  
+
+
+## Lecture List
+
+*Lectures are numbered by topic and broken up by day. (e.g. topic.subtopic.day)*
+
 <div>
 <ul>
 {% for file in site.static_files %}
@@ -27,6 +72,8 @@ permalink: /devel/chem370/lectures/
 </div> -->
 
 -------
+
+***Copyright Statement***
 
 *The lectures here are available for re-use under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). You may re-use this material under the conditions that you (1) attribute the author, (2) do not use it for commercial or for-profit purposes, and (3) share it under an equally-permissive license.  Please [contact](mailto:difscher@wcu.edu) the author for inquiries about other usage.  Take note that some of the materials referenced in this book might be under different copyright protection — if so, this will be indicated in the text.*
 
