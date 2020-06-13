@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>An Analytical Perspective</title>
+    <title>Stats, Signals, and Noise</title>
     <link rel="stylesheet" type="text/css" href="remark.css">
     <link rel="stylesheet" type="text/css" href="mermaid.css">
     <div w3-include-html="slide-types.html"></div>
@@ -12,7 +12,7 @@
 class: img-center
 ![accuracy-v-precision](plots/accurate-v-precise_5.png)
 
-# Good Measurements
+# Statistics, Signals, and Noise
 
 **Dr. Al Fischer** / Western Carolina University  /  
 Chem 370 / Instrumental Analysis  /  
@@ -30,11 +30,12 @@ layout: true
 ---
 name: contents
 
-# Analtyical Chemistry: Measurements
+# Analytical Chemistry: Measurements
 
 ## Reading
 
 1. [Harvey](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29) Ch. 4
+2. Granger Ch 22
 
 ## Table of Contents
 1. [What is Analytical Chemistry?](#analtyical-chemistry)
@@ -43,10 +44,14 @@ name: contents
 1. [The Analytical Perspective](#analytical-perspective)
 
 ---
+class: img-full
 
 # Signals and Noise
 
 All instruments output some sort of *signal*, usually a *voltage* or electric *current*.
+
+![signal and noise](https://chem.libretexts.org/@api/deki/files/159954/Figure4.5.png?revision=1&size=bestfit&width=415&height=293)
+.image-credit[Image (c) [Analytical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29) / [CC-BY-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)]
 
 ???
 
@@ -58,9 +63,182 @@ A signal cannot be acquired without noise!
 
 # Signals and Noise
 
-There are different types of noise.
+- **Noise** is random
+- **Interference** is not.
 
 ---
+
+# Signals and Noise
+
+There are different types of noise.
+
+- Gross error: Analyst mistakes, must avoid
+- Systematic error: Deviation from true is constant, must find and eliminate
+- Random error: Unpredictable, inescapable, quantifiable with statistics
+
+---
+
+# Measures of Central Tendency
+
+Example: measuring theoretical yield
+
+| Trial |  Mass  |
+|:-----:|:------:|
+|   1   | 1.2377 |
+|   2   | 1.2219 |
+|   3   | 1.2744 |
+|   4   | 1.2416 |
+|   5   | 1.2513 |
+
+--
+
+There are two ways to measure the **central tendency** of these data:
+
+1. **Mean**
+2. **Median**
+
+---
+
+# Normal Distributions
+
+Normal probability function (Gaussian distribution):
+
+$$
+f(x) = \frac{1}{\sigma \sqrt{2\pi} \times e^{-\frac{(x-\mu)^2}{2\sigma^2}}}
+$$
+
+???
+
+In other words, the probability of obtaining a particular value of *x* is a function of the true value and the error of the technique.
+
+--
+
+Data are discrete, not continuous in a modern instrument.
+
+
+---
+
+# Measures of Central Tendency: Median
+
+$$
+\tilde{x} 
+$$
+
+---
+
+# Measures of Central Tendency: Mean
+
+The **population mean** is defined as:
+
+$$
+\mu = \frac{\sum_{i=1}^{i=N} \mu_i}{N}
+$$ 
+
+--
+
+The **sample mean** is defined as:
+
+$$
+\bar{x} = \frac{\sum_{i=1}^{i=N} x_i}{N}
+$$
+
+---
+
+# Measures of Spread
+
+The **population standard deviation** is:
+
+$$
+\sigma = \sqrt{ \frac{\sum_{i=1}^{i=N}(x_i-\mu)^2}{N} }
+$$
+
+???
+spread = random error
+
+--
+
+The **sample standard deviation** is:
+
+$$
+s = \sqrt{ \frac{\sum_{i=1}^{i=N}(x_i-\bar{x})^2}{N-1} }
+$$
+
+---
+
+# Signals and Noise
+
+The **standard error** conveys *certainty*:
+
+$$
+\text{S.E.} = \frac{s}{\sqrt{N}}
+$$
+
+???
+
+It is *always* less than standard deviation.
+
+---
+
+# Normal Distributions
+
+- 1 SD = 68.2%
+- 2 SD = 95.4%
+- 3 SD = 99.7%
+
+---
+
+# Confidence Intervals
+
+Assume to be 95% unless otherwise stated ( $ \mu \pm 2\sigma $ ): 
+
+$$
+\text{95% CL} = \pm 2\sigma
+$$
+
+--
+
+We *actually* report:
+
+$$
+\text{CL} = \pm t \frac{s}{\sqrt{N}}
+$$
+
+as in:
+
+$$
+\bar{x} \pm t \frac{s}{\sqrt{N}}
+$$
+
+???
+
+- We do not know population SD or mean
+
+---
+
+# *t*-values
+
+t-table
+
+---
+
+# Propagation of Error
+
+See Granger Table 22.2 (p 793)
+
+# Identifying Outliers
+
+- *Q*-test: Don't use!
+- Grubb's test: Use sparingly, with caution!
+- Don't use on standards.  You are defining your standards as "true"; if you suspect a problem you need to redo them!
+
+$$
+G_{exp} = \frac{ | x_q - \bar{x} | }{s}
+$$
+
+- G-table here
+
+---
+
 class: img-full
 
 # Accuracy vs. Precision
@@ -182,6 +360,21 @@ class: img-full
 .image-credit[Image (c) [Analtyical Chemistry 2.1](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/03%3A__The_Vocabulary_of_Analytical_Chemistry/3.04%3A_Selecting_an_Analytical_Method), [CC-BY-NS-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/)]
 
 ---
+
+# Limits of Detection
+
+$$
+\text{LOD} = \bar{x} + ks
+$$
+
+???
+
+x = mean blank value
+k = multiplicative factor (3 for 95%)
+s = std blank
+
+
+---
 exclude: true
 
 # Copyright Statement & Credits
@@ -210,7 +403,8 @@ This presentation uses [remark](https://remarkjs.com/) by [Ole Petter Bang](http
            });
         MathJax.Hub.Config({
              tex2jax: {
-             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ]
              }
          });
          MathJax.Hub.Configured();
