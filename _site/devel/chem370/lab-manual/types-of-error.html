@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Types of Error | CHEM 370 Lab Manual</title>
   <meta name="description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
-  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Types of Error | CHEM 370 Lab Manual" />
   <meta property="og:type" content="book" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="appendix-3-statistical-data-analysis.html">
-<link rel="next" href="replicate-measurements.html">
+<link rel="prev" href="appendix-3-statistical-data-analysis.html"/>
+<link rel="next" href="replicate-measurements.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -39,6 +39,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -129,6 +132,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="http://alphonse.github.io/chem370">CHEM 370 Main Page</a></li>
 <li class="divider"></li>
 <li><a href="index.html#section"></a></li>
+<li class="part"><span><b>I Introduction</b></span></li>
+<li class="chapter" data-level="1" data-path="getting-started-in-r.html"><a href="getting-started-in-r.html"><i class="fa fa-check"></i><b>1</b> Getting Started in R</a><ul>
+<li class="chapter" data-level="" data-path="r-intro.html"><a href="r-intro.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="" data-path="learning-markdown.html"><a href="learning-markdown.html"><i class="fa fa-check"></i>Learning Markdown</a></li>
+<li class="chapter" data-level="" data-path="install-r.html"><a href="install-r.html"><i class="fa fa-check"></i>Installing R + RStudio</a><ul>
+<li class="chapter" data-level="" data-path="install-r.html"><a href="install-r.html#install-r-must-be-done-first"><i class="fa fa-check"></i>Install R (Must be done first)</a></li>
+<li class="chapter" data-level="" data-path="install-r.html"><a href="install-r.html#install-rstudio"><i class="fa fa-check"></i>Install RStudio</a></li>
+<li class="chapter" data-level="" data-path="install-r.html"><a href="install-r.html#installing-c370-package"><i class="fa fa-check"></i>Installing the CHEM 370 Package</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="create-lab-notebook.html"><a href="create-lab-notebook.html"><i class="fa fa-check"></i>Creating a Lab Notebook Project</a><ul>
+<li class="chapter" data-level="" data-path="create-lab-notebook.html"><a href="create-lab-notebook.html#create-a-project"><i class="fa fa-check"></i>Create a Project</a></li>
+<li class="chapter" data-level="" data-path="create-lab-notebook.html"><a href="create-lab-notebook.html#create-a-notebook-file"><i class="fa fa-check"></i>Create a Notebook File</a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i>Overview</a><ul>
 <li class="chapter" data-level="" data-path="lab-activities.html"><a href="lab-activities.html"><i class="fa fa-check"></i>Lab Activities</a></li>
 <li class="chapter" data-level="" data-path="lab-notebooks.html"><a href="lab-notebooks.html"><i class="fa fa-check"></i>Lab Notebooks</a></li>
@@ -148,116 +165,104 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#student-resources"><i class="fa fa-check"></i>Student Resources</a></li>
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#syllabus-updates"><i class="fa fa-check"></i>Syllabus Updates</a></li>
 </ul></li>
-<li class="part"><span><b>I Introduction to Instrumentation</b></span></li>
-<li class="chapter" data-level="1" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>1</b> UV-visible Spectroscopy</a><ul>
+<li class="part"><span><b>II Introduction to Instrumentation</b></span></li>
+<li class="chapter" data-level="2" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>2</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#safety"><i class="fa fa-check"></i>Safety</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-materials"><i class="fa fa-check"></i>Required Materials</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-solutions"><i class="fa fa-check"></i>Required Solutions</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#reference"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
-<li class="chapter" data-level="1.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>1.1</b> Lab Procedure</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-standards"><i class="fa fa-check"></i><b>1.1.1</b> Prepare Your Standards</a></li>
-<li class="chapter" data-level="1.1.2" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-samples"><i class="fa fa-check"></i><b>1.1.2</b> Prepare Your Samples</a></li>
-<li class="chapter" data-level="1.1.3" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#acquire-data"><i class="fa fa-check"></i><b>1.1.3</b> Acquire Data</a></li>
-<li class="chapter" data-level="1.1.4" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#waste-disposal-and-cleanup"><i class="fa fa-check"></i><b>1.1.4</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="2.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>2.1</b> Lab Procedure</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-standards"><i class="fa fa-check"></i><b>2.1.1</b> Prepare Your Standards</a></li>
+<li class="chapter" data-level="2.1.2" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-samples"><i class="fa fa-check"></i><b>2.1.2</b> Prepare Your Samples</a></li>
+<li class="chapter" data-level="2.1.3" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#acquire-data"><i class="fa fa-check"></i><b>2.1.3</b> Acquire Data</a></li>
+<li class="chapter" data-level="2.1.4" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#waste-disposal-and-cleanup"><i class="fa fa-check"></i><b>2.1.4</b> Waste Disposal and Cleanup</a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>1.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><a href="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><i class="fa fa-check"></i><b>2</b> Gas Chromatography with Thermal Conductivity Detection (GC-TCD)</a><ul>
+<li class="chapter" data-level="3" data-path="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><a href="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><i class="fa fa-check"></i><b>3</b> Gas Chromatography with Thermal Conductivity Detection (GC-TCD)</a><ul>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="2.1" data-path="lab-procedure.html"><a href="lab-procedure.html"><i class="fa fa-check"></i><b>2.1</b> Lab Procedure</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="lab-procedure.html"><a href="lab-procedure.html#prepare-samples"><i class="fa fa-check"></i><b>2.1.1</b> Prepare Samples</a></li>
-<li class="chapter" data-level="2.1.2" data-path="lab-procedure.html"><a href="lab-procedure.html#setup-the-instrument"><i class="fa fa-check"></i><b>2.1.2</b> Setup the Instrument</a></li>
-<li class="chapter" data-level="2.1.3" data-path="lab-procedure.html"><a href="lab-procedure.html#load-the-syringe"><i class="fa fa-check"></i><b>2.1.3</b> Load the Syringe</a></li>
-<li class="chapter" data-level="2.1.4" data-path="lab-procedure.html"><a href="lab-procedure.html#inject-the-sample"><i class="fa fa-check"></i><b>2.1.4</b> Inject the Sample</a></li>
-<li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
+<li class="chapter" data-level="3.1" data-path="lab-procedure.html"><a href="lab-procedure.html"><i class="fa fa-check"></i><b>3.1</b> Lab Procedure</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="lab-procedure.html"><a href="lab-procedure.html#prepare-samples"><i class="fa fa-check"></i><b>3.1.1</b> Prepare Samples</a></li>
+<li class="chapter" data-level="3.1.2" data-path="lab-procedure.html"><a href="lab-procedure.html#setup-the-instrument"><i class="fa fa-check"></i><b>3.1.2</b> Setup the Instrument</a></li>
+<li class="chapter" data-level="3.1.3" data-path="lab-procedure.html"><a href="lab-procedure.html#load-the-syringe"><i class="fa fa-check"></i><b>3.1.3</b> Load the Syringe</a></li>
+<li class="chapter" data-level="3.1.4" data-path="lab-procedure.html"><a href="lab-procedure.html#inject-the-sample"><i class="fa fa-check"></i><b>3.1.4</b> Inject the Sample</a></li>
+<li class="chapter" data-level="3.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>3.1.5</b> Save the Data</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="3.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
 </ul></li>
-<li class="part"><span><b>II Rotations</b></span></li>
-<li class="chapter" data-level="3" data-path="rotation-a-e-cigarette-liquid.html"><a href="rotation-a-e-cigarette-liquid.html"><i class="fa fa-check"></i><b>3</b> Rotation A: e-Cigarette Liquid</a><ul>
+<li class="part"><span><b>III Rotations</b></span></li>
+<li class="chapter" data-level="4" data-path="rotation-a-e-cigarette-liquid.html"><a href="rotation-a-e-cigarette-liquid.html"><i class="fa fa-check"></i><b>4</b> Rotation A: e-Cigarette Liquid</a><ul>
 <li class="chapter" data-level="" data-path="memorandum.html"><a href="memorandum.html"><i class="fa fa-check"></i>Memorandum</a><ul>
 <li class="chapter" data-level="" data-path="memorandum.html"><a href="memorandum.html#western-analysts"><i class="fa fa-check"></i>Western Analysts:</a></li>
 <li class="chapter" data-level="" data-path="memorandum.html"><a href="memorandum.html#references"><i class="fa fa-check"></i>References</a></li>
 </ul></li>
-<li class="chapter" data-level="3.1" data-path="gc-ms.html"><a href="gc-ms.html"><i class="fa fa-check"></i><b>3.1</b> GC-MS</a><ul>
+<li class="chapter" data-level="4.1" data-path="gc-ms.html"><a href="gc-ms.html"><i class="fa fa-check"></i><b>4.1</b> GC-MS</a><ul>
 <li class="chapter" data-level="" data-path="gc-ms.html"><a href="gc-ms.html#safety-1"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="3.1.1" data-path="gc-ms.html"><a href="gc-ms.html#instrumentation"><i class="fa fa-check"></i><b>3.1.1</b> Instrumentation</a></li>
-<li class="chapter" data-level="3.1.2" data-path="gc-ms.html"><a href="gc-ms.html#sample-preparation"><i class="fa fa-check"></i><b>3.1.2</b> Sample Preparation</a></li>
-<li class="chapter" data-level="3.1.3" data-path="gc-ms.html"><a href="gc-ms.html#data-processing-1"><i class="fa fa-check"></i><b>3.1.3</b> Data Processing</a></li>
+<li class="chapter" data-level="4.1.1" data-path="gc-ms.html"><a href="gc-ms.html#instrumentation"><i class="fa fa-check"></i><b>4.1.1</b> Instrumentation</a></li>
+<li class="chapter" data-level="4.1.2" data-path="gc-ms.html"><a href="gc-ms.html#sample-preparation"><i class="fa fa-check"></i><b>4.1.2</b> Sample Preparation</a></li>
+<li class="chapter" data-level="4.1.3" data-path="gc-ms.html"><a href="gc-ms.html#data-processing-1"><i class="fa fa-check"></i><b>4.1.3</b> Data Processing</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="flame-aa.html"><a href="flame-aa.html"><i class="fa fa-check"></i><b>3.2</b> Flame AA</a><ul>
+<li class="chapter" data-level="4.2" data-path="flame-aa.html"><a href="flame-aa.html"><i class="fa fa-check"></i><b>4.2</b> Flame AA</a><ul>
 <li class="chapter" data-level="" data-path="flame-aa.html"><a href="flame-aa.html#safety-2"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="3.2.1" data-path="flame-aa.html"><a href="flame-aa.html#standard-preparation"><i class="fa fa-check"></i><b>3.2.1</b> Standard Preparation</a></li>
-<li class="chapter" data-level="3.2.2" data-path="flame-aa.html"><a href="flame-aa.html#vaping-and-sample-preparation"><i class="fa fa-check"></i><b>3.2.2</b> Vaping and Sample Preparation</a></li>
-<li class="chapter" data-level="3.2.3" data-path="flame-aa.html"><a href="flame-aa.html#running-samples"><i class="fa fa-check"></i><b>3.2.3</b> Running Samples</a></li>
-<li class="chapter" data-level="3.2.4" data-path="flame-aa.html"><a href="flame-aa.html#waste-disposal-and-cleanup-1"><i class="fa fa-check"></i><b>3.2.4</b> Waste Disposal and Cleanup</a></li>
-<li class="chapter" data-level="3.2.5" data-path="flame-aa.html"><a href="flame-aa.html#data-processing-2"><i class="fa fa-check"></i><b>3.2.5</b> Data Processing</a></li>
+<li class="chapter" data-level="4.2.1" data-path="flame-aa.html"><a href="flame-aa.html#standard-preparation"><i class="fa fa-check"></i><b>4.2.1</b> Standard Preparation</a></li>
+<li class="chapter" data-level="4.2.2" data-path="flame-aa.html"><a href="flame-aa.html#vaping-and-sample-preparation"><i class="fa fa-check"></i><b>4.2.2</b> Vaping and Sample Preparation</a></li>
+<li class="chapter" data-level="4.2.3" data-path="flame-aa.html"><a href="flame-aa.html#running-samples"><i class="fa fa-check"></i><b>4.2.3</b> Running Samples</a></li>
+<li class="chapter" data-level="4.2.4" data-path="flame-aa.html"><a href="flame-aa.html#waste-disposal-and-cleanup-1"><i class="fa fa-check"></i><b>4.2.4</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="4.2.5" data-path="flame-aa.html"><a href="flame-aa.html#data-processing-2"><i class="fa fa-check"></i><b>4.2.5</b> Data Processing</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="ft-ir.html"><a href="ft-ir.html"><i class="fa fa-check"></i><b>3.3</b> FT-IR</a><ul>
+<li class="chapter" data-level="4.3" data-path="ft-ir.html"><a href="ft-ir.html"><i class="fa fa-check"></i><b>4.3</b> FT-IR</a><ul>
 <li class="chapter" data-level="" data-path="ft-ir.html"><a href="ft-ir.html#safety-3"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="3.3.1" data-path="ft-ir.html"><a href="ft-ir.html#instrumentation-1"><i class="fa fa-check"></i><b>3.3.1</b> Instrumentation</a></li>
-<li class="chapter" data-level="3.3.2" data-path="ft-ir.html"><a href="ft-ir.html#waste-disposal-and-cleanup-2"><i class="fa fa-check"></i><b>3.3.2</b> Waste Disposal and Cleanup</a></li>
-<li class="chapter" data-level="3.3.3" data-path="ft-ir.html"><a href="ft-ir.html#data-processing-3"><i class="fa fa-check"></i><b>3.3.3</b> Data Processing</a></li>
+<li class="chapter" data-level="4.3.1" data-path="ft-ir.html"><a href="ft-ir.html#instrumentation-1"><i class="fa fa-check"></i><b>4.3.1</b> Instrumentation</a></li>
+<li class="chapter" data-level="4.3.2" data-path="ft-ir.html"><a href="ft-ir.html#waste-disposal-and-cleanup-2"><i class="fa fa-check"></i><b>4.3.2</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="4.3.3" data-path="ft-ir.html"><a href="ft-ir.html#data-processing-3"><i class="fa fa-check"></i><b>4.3.3</b> Data Processing</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="hplc.html"><a href="hplc.html"><i class="fa fa-check"></i><b>3.4</b> HPLC</a><ul>
+<li class="chapter" data-level="4.4" data-path="hplc.html"><a href="hplc.html"><i class="fa fa-check"></i><b>4.4</b> HPLC</a><ul>
 <li class="chapter" data-level="" data-path="hplc.html"><a href="hplc.html#safety-4"><i class="fa fa-check"></i>Safety</a></li>
 <li class="chapter" data-level="" data-path="hplc.html"><a href="hplc.html#reference-1"><i class="fa fa-check"></i>Reference</a></li>
-<li class="chapter" data-level="3.4.1" data-path="hplc.html"><a href="hplc.html#standard-preparation-1"><i class="fa fa-check"></i><b>3.4.1</b> Standard Preparation</a></li>
-<li class="chapter" data-level="3.4.2" data-path="hplc.html"><a href="hplc.html#running-standards"><i class="fa fa-check"></i><b>3.4.2</b> Running Standards</a></li>
-<li class="chapter" data-level="3.4.3" data-path="hplc.html"><a href="hplc.html#sample-preparation-1"><i class="fa fa-check"></i><b>3.4.3</b> Sample Preparation</a></li>
-<li class="chapter" data-level="3.4.4" data-path="hplc.html"><a href="hplc.html#running-samples-1"><i class="fa fa-check"></i><b>3.4.4</b> Running Samples</a></li>
-<li class="chapter" data-level="3.4.5" data-path="hplc.html"><a href="hplc.html#waste-disposal-and-cleanup-3"><i class="fa fa-check"></i><b>3.4.5</b> Waste Disposal and Cleanup</a></li>
-<li class="chapter" data-level="3.4.6" data-path="hplc.html"><a href="hplc.html#data-processing-4"><i class="fa fa-check"></i><b>3.4.6</b> Data Processing</a></li>
+<li class="chapter" data-level="4.4.1" data-path="hplc.html"><a href="hplc.html#standard-preparation-1"><i class="fa fa-check"></i><b>4.4.1</b> Standard Preparation</a></li>
+<li class="chapter" data-level="4.4.2" data-path="hplc.html"><a href="hplc.html#running-standards"><i class="fa fa-check"></i><b>4.4.2</b> Running Standards</a></li>
+<li class="chapter" data-level="4.4.3" data-path="hplc.html"><a href="hplc.html#sample-preparation-1"><i class="fa fa-check"></i><b>4.4.3</b> Sample Preparation</a></li>
+<li class="chapter" data-level="4.4.4" data-path="hplc.html"><a href="hplc.html#running-samples-1"><i class="fa fa-check"></i><b>4.4.4</b> Running Samples</a></li>
+<li class="chapter" data-level="4.4.5" data-path="hplc.html"><a href="hplc.html#waste-disposal-and-cleanup-3"><i class="fa fa-check"></i><b>4.4.5</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="4.4.6" data-path="hplc.html"><a href="hplc.html#data-processing-4"><i class="fa fa-check"></i><b>4.4.6</b> Data Processing</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="rotation-b-acetaminophen.html"><a href="rotation-b-acetaminophen.html"><i class="fa fa-check"></i><b>4</b> Rotation B: Acetaminophen</a><ul>
+<li class="chapter" data-level="5" data-path="rotation-b-acetaminophen.html"><a href="rotation-b-acetaminophen.html"><i class="fa fa-check"></i><b>5</b> Rotation B: Acetaminophen</a><ul>
 <li class="chapter" data-level="" data-path="memorandum-1.html"><a href="memorandum-1.html"><i class="fa fa-check"></i>Memorandum</a><ul>
 <li class="chapter" data-level="" data-path="memorandum-1.html"><a href="memorandum-1.html#western-analysts-1"><i class="fa fa-check"></i>Western Analysts:</a></li>
 </ul></li>
-<li class="chapter" data-level="4.1" data-path="hplc-1.html"><a href="hplc-1.html"><i class="fa fa-check"></i><b>4.1</b> HPLC</a><ul>
+<li class="chapter" data-level="5.1" data-path="hplc-1.html"><a href="hplc-1.html"><i class="fa fa-check"></i><b>5.1</b> HPLC</a><ul>
 <li class="chapter" data-level="" data-path="hplc-1.html"><a href="hplc-1.html#safety-5"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="4.1.1" data-path="hplc-1.html"><a href="hplc-1.html#standard-preparation-2"><i class="fa fa-check"></i><b>4.1.1</b> Standard Preparation</a></li>
-<li class="chapter" data-level="4.1.2" data-path="hplc-1.html"><a href="hplc-1.html#running-standards-1"><i class="fa fa-check"></i><b>4.1.2</b> Running Standards</a></li>
-<li class="chapter" data-level="4.1.3" data-path="hplc-1.html"><a href="hplc-1.html#sample-preparation-2"><i class="fa fa-check"></i><b>4.1.3</b> Sample Preparation</a></li>
-<li class="chapter" data-level="4.1.4" data-path="hplc-1.html"><a href="hplc-1.html#running-samples-2"><i class="fa fa-check"></i><b>4.1.4</b> Running Samples</a></li>
-<li class="chapter" data-level="4.1.5" data-path="hplc-1.html"><a href="hplc-1.html#waste-disposal-and-cleanup-4"><i class="fa fa-check"></i><b>4.1.5</b> Waste Disposal and Cleanup</a></li>
-<li class="chapter" data-level="4.1.6" data-path="hplc-1.html"><a href="hplc-1.html#data-processing-5"><i class="fa fa-check"></i><b>4.1.6</b> Data Processing</a></li>
+<li class="chapter" data-level="5.1.1" data-path="hplc-1.html"><a href="hplc-1.html#standard-preparation-2"><i class="fa fa-check"></i><b>5.1.1</b> Standard Preparation</a></li>
+<li class="chapter" data-level="5.1.2" data-path="hplc-1.html"><a href="hplc-1.html#running-standards-1"><i class="fa fa-check"></i><b>5.1.2</b> Running Standards</a></li>
+<li class="chapter" data-level="5.1.3" data-path="hplc-1.html"><a href="hplc-1.html#sample-preparation-2"><i class="fa fa-check"></i><b>5.1.3</b> Sample Preparation</a></li>
+<li class="chapter" data-level="5.1.4" data-path="hplc-1.html"><a href="hplc-1.html#running-samples-2"><i class="fa fa-check"></i><b>5.1.4</b> Running Samples</a></li>
+<li class="chapter" data-level="5.1.5" data-path="hplc-1.html"><a href="hplc-1.html#waste-disposal-and-cleanup-4"><i class="fa fa-check"></i><b>5.1.5</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="5.1.6" data-path="hplc-1.html"><a href="hplc-1.html#data-processing-5"><i class="fa fa-check"></i><b>5.1.6</b> Data Processing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="ft-ir-1.html"><a href="ft-ir-1.html"><i class="fa fa-check"></i><b>4.2</b> FT-IR</a><ul>
+<li class="chapter" data-level="5.2" data-path="ft-ir-1.html"><a href="ft-ir-1.html"><i class="fa fa-check"></i><b>5.2</b> FT-IR</a><ul>
 <li class="chapter" data-level="" data-path="ft-ir-1.html"><a href="ft-ir-1.html#safety-6"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="4.2.1" data-path="ft-ir-1.html"><a href="ft-ir-1.html#sample-preparation-3"><i class="fa fa-check"></i><b>4.2.1</b> Sample Preparation</a></li>
-<li class="chapter" data-level="4.2.2" data-path="ft-ir-1.html"><a href="ft-ir-1.html#instrumentation-2"><i class="fa fa-check"></i><b>4.2.2</b> Instrumentation</a></li>
-<li class="chapter" data-level="4.2.3" data-path="ft-ir-1.html"><a href="ft-ir-1.html#waste-disposal-and-cleanup-5"><i class="fa fa-check"></i><b>4.2.3</b> Waste Disposal and Cleanup</a></li>
-<li class="chapter" data-level="4.2.4" data-path="ft-ir-1.html"><a href="ft-ir-1.html#data-processing-6"><i class="fa fa-check"></i><b>4.2.4</b> Data Processing</a></li>
+<li class="chapter" data-level="5.2.1" data-path="ft-ir-1.html"><a href="ft-ir-1.html#sample-preparation-3"><i class="fa fa-check"></i><b>5.2.1</b> Sample Preparation</a></li>
+<li class="chapter" data-level="5.2.2" data-path="ft-ir-1.html"><a href="ft-ir-1.html#instrumentation-2"><i class="fa fa-check"></i><b>5.2.2</b> Instrumentation</a></li>
+<li class="chapter" data-level="5.2.3" data-path="ft-ir-1.html"><a href="ft-ir-1.html#waste-disposal-and-cleanup-5"><i class="fa fa-check"></i><b>5.2.3</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="5.2.4" data-path="ft-ir-1.html"><a href="ft-ir-1.html#data-processing-6"><i class="fa fa-check"></i><b>5.2.4</b> Data Processing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="gc-ms-1.html"><a href="gc-ms-1.html"><i class="fa fa-check"></i><b>4.3</b> GC-MS</a><ul>
+<li class="chapter" data-level="5.3" data-path="gc-ms-1.html"><a href="gc-ms-1.html"><i class="fa fa-check"></i><b>5.3</b> GC-MS</a><ul>
 <li class="chapter" data-level="" data-path="gc-ms-1.html"><a href="gc-ms-1.html#safety-7"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="4.3.1" data-path="gc-ms-1.html"><a href="gc-ms-1.html#instrumentation-3"><i class="fa fa-check"></i><b>4.3.1</b> Instrumentation</a></li>
-<li class="chapter" data-level="4.3.2" data-path="gc-ms-1.html"><a href="gc-ms-1.html#sample-preparation-4"><i class="fa fa-check"></i><b>4.3.2</b> Sample Preparation</a></li>
-<li class="chapter" data-level="4.3.3" data-path="gc-ms-1.html"><a href="gc-ms-1.html#data-processing-7"><i class="fa fa-check"></i><b>4.3.3</b> Data Processing</a></li>
+<li class="chapter" data-level="5.3.1" data-path="gc-ms-1.html"><a href="gc-ms-1.html#instrumentation-3"><i class="fa fa-check"></i><b>5.3.1</b> Instrumentation</a></li>
+<li class="chapter" data-level="5.3.2" data-path="gc-ms-1.html"><a href="gc-ms-1.html#sample-preparation-4"><i class="fa fa-check"></i><b>5.3.2</b> Sample Preparation</a></li>
+<li class="chapter" data-level="5.3.3" data-path="gc-ms-1.html"><a href="gc-ms-1.html#data-processing-7"><i class="fa fa-check"></i><b>5.3.3</b> Data Processing</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="flame-aa-1.html"><a href="flame-aa-1.html"><i class="fa fa-check"></i><b>4.4</b> Flame AA</a><ul>
+<li class="chapter" data-level="5.4" data-path="flame-aa-1.html"><a href="flame-aa-1.html"><i class="fa fa-check"></i><b>5.4</b> Flame AA</a><ul>
 <li class="chapter" data-level="" data-path="flame-aa-1.html"><a href="flame-aa-1.html#safety-8"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="4.4.1" data-path="flame-aa-1.html"><a href="flame-aa-1.html#standard-preparation-3"><i class="fa fa-check"></i><b>4.4.1</b> Standard Preparation</a></li>
-<li class="chapter" data-level="4.4.2" data-path="flame-aa-1.html"><a href="flame-aa-1.html#sample-preparation-5"><i class="fa fa-check"></i><b>4.4.2</b> Sample Preparation</a></li>
-<li class="chapter" data-level="4.4.3" data-path="flame-aa-1.html"><a href="flame-aa-1.html#running-samples-3"><i class="fa fa-check"></i><b>4.4.3</b> Running Samples</a></li>
-<li class="chapter" data-level="4.4.4" data-path="flame-aa-1.html"><a href="flame-aa-1.html#waste-disposal-and-cleanup-6"><i class="fa fa-check"></i><b>4.4.4</b> Waste Disposal and Cleanup</a></li>
-<li class="chapter" data-level="4.4.5" data-path="flame-aa-1.html"><a href="flame-aa-1.html#data-processing-8"><i class="fa fa-check"></i><b>4.4.5</b> Data Processing</a></li>
-<li class="chapter" data-level="4.4.6" data-path="flame-aa-1.html"><a href="flame-aa-1.html#reference-2"><i class="fa fa-check"></i><b>4.4.6</b> Reference</a></li>
-</ul></li>
-</ul></li>
-<li class="appendix"><span><b>Additional Resources</b></span></li>
-<li class="chapter" data-level="" data-path="appendix-1-getting-started-in-octave-and-jupyter-lab.html"><a href="appendix-1-getting-started-in-octave-and-jupyter-lab.html"><i class="fa fa-check"></i>Appendix 1: Getting Started in Octave and Jupyter Lab</a><ul>
-<li class="chapter" data-level="" data-path="installing-the-software.html"><a href="installing-the-software.html"><i class="fa fa-check"></i>Installing the Software</a><ul>
-<li class="chapter" data-level="" data-path="installing-the-software.html"><a href="installing-the-software.html#install-jupyter"><i class="fa fa-check"></i>Install Jupyter</a></li>
-<li class="chapter" data-level="" data-path="installing-the-software.html"><a href="installing-the-software.html#install-octave"><i class="fa fa-check"></i>Install Octave</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="test-the-software-starting-jupyter-lab.html"><a href="test-the-software-starting-jupyter-lab.html"><i class="fa fa-check"></i>Test the Software (Starting Jupyter Lab)</a><ul>
-<li class="chapter" data-level="" data-path="test-the-software-starting-jupyter-lab.html"><a href="test-the-software-starting-jupyter-lab.html#option-1-windows"><i class="fa fa-check"></i>Option 1: Windows</a></li>
-<li class="chapter" data-level="" data-path="test-the-software-starting-jupyter-lab.html"><a href="test-the-software-starting-jupyter-lab.html#option-2-mac-osx-linux"><i class="fa fa-check"></i>Option 2: Mac OSX / Linux</a></li>
-<li class="chapter" data-level="" data-path="test-the-software-starting-jupyter-lab.html"><a href="test-the-software-starting-jupyter-lab.html#option-3-using-vcat"><i class="fa fa-check"></i>Option 3: Using VCAT</a></li>
+<li class="chapter" data-level="5.4.1" data-path="flame-aa-1.html"><a href="flame-aa-1.html#standard-preparation-3"><i class="fa fa-check"></i><b>5.4.1</b> Standard Preparation</a></li>
+<li class="chapter" data-level="5.4.2" data-path="flame-aa-1.html"><a href="flame-aa-1.html#sample-preparation-5"><i class="fa fa-check"></i><b>5.4.2</b> Sample Preparation</a></li>
+<li class="chapter" data-level="5.4.3" data-path="flame-aa-1.html"><a href="flame-aa-1.html#running-samples-3"><i class="fa fa-check"></i><b>5.4.3</b> Running Samples</a></li>
+<li class="chapter" data-level="5.4.4" data-path="flame-aa-1.html"><a href="flame-aa-1.html#waste-disposal-and-cleanup-6"><i class="fa fa-check"></i><b>5.4.4</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="5.4.5" data-path="flame-aa-1.html"><a href="flame-aa-1.html#data-processing-8"><i class="fa fa-check"></i><b>5.4.5</b> Data Processing</a></li>
+<li class="chapter" data-level="5.4.6" data-path="flame-aa-1.html"><a href="flame-aa-1.html#reference-2"><i class="fa fa-check"></i><b>5.4.6</b> Reference</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="appendix-2-octave-matlab-cookbook.html"><a href="appendix-2-octave-matlab-cookbook.html"><i class="fa fa-check"></i>Appendix 2: Octave (MATLAB) Cookbook</a><ul>
@@ -337,11 +342,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -349,12 +356,11 @@ gitbook.start({
 "github": false,
 "facebook": true,
 "twitter": true,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -366,6 +372,10 @@ gitbook.start({
 "text": null
 },
 "history": {
+"link": null,
+"text": null
+},
+"view": {
 "link": null,
 "text": null
 },
@@ -386,8 +396,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
