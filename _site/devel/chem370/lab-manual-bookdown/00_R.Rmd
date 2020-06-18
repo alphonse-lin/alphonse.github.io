@@ -4,15 +4,19 @@
 
 ##### **Objective** | Become familiar with Markdown and install R + RStudio on your computer {-}
 
-##### **To Turn In** | You should turn a ZIP folder containing:  {-}
+##### **To Turn In**  {-}
 
-This Lab will be completed on the honor system.  You must complete all activities before Week 2 or you will not be able to partcipate in lab.
+This Lab will be completed on the honor system.  You must complete the following activities before Week 2 or you will not be able to participate in lab.
+
+- [Markdown Tutorial](https://www.markdowntutorial.com/)
+- Install R + RStudio + `chem370learnR` package
+- Create a Lab Notebook Template for Lab 1
 
 ##### **Student Learning Outcomes** | *By the end of this lab, students will:*   {-}
 
-  - Complete the Markdown tutorial.  
-  - Install R + RStudio on their computer.
-  - Create a lab notebook template to use during Week 2 & 3.
+  - Familiarize themselves with Markdown syntax.
+  - Create a working installation of R + RStudio on their computer.
+  - Understand how to create a lab notebook template in RStudio.
 
 ## Introduction {#r-intro -}
 

@@ -142,11 +142,21 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 \paragraph{\texorpdfstring{\textbf{Objective} \textbar{} Become familiar with Markdown and install R + RStudio on your computer}{Objective \textbar{} Become familiar with Markdown and install R + RStudio on your computer}}\label{objective-become-familiar-with-markdown-and-install-r-rstudio-on-your-computer}}
 \addcontentsline{toc}{paragraph}{\textbf{Objective} \textbar{} Become familiar with Markdown and install R + RStudio on your computer}
 
-\hypertarget{to-turn-in-you-should-turn-a-zip-folder-containing}{%
-\paragraph{\texorpdfstring{\textbf{To Turn In} \textbar{} You should turn a ZIP folder containing:}{To Turn In \textbar{} You should turn a ZIP folder containing:}}\label{to-turn-in-you-should-turn-a-zip-folder-containing}}
-\addcontentsline{toc}{paragraph}{\textbf{To Turn In} \textbar{} You should turn a ZIP folder containing:}
+\hypertarget{to-turn-in}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in}}
+\addcontentsline{toc}{paragraph}{\textbf{To Turn In}}
 
-This Lab will be completed on the honor system. You must complete all activities before Week 2 or you will not be able to partcipate in lab.
+This Lab will be completed on the honor system. You must complete the following activities before Week 2 or you will not be able to participate in lab.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.markdowntutorial.com/}{Markdown Tutorial}
+\item
+  Install R + RStudio + \texttt{chem370learnR} package
+\item
+  Create a Lab Notebook Template for Lab 1
+\end{itemize}
 
 \hypertarget{student-learning-outcomes-by-the-end-of-this-lab-students-will}{%
 \paragraph{\texorpdfstring{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}{Student Learning Outcomes \textbar{} By the end of this lab, students will:}}\label{student-learning-outcomes-by-the-end-of-this-lab-students-will}}
@@ -155,11 +165,11 @@ This Lab will be completed on the honor system. You must complete all activities
 \begin{itemize}
 \tightlist
 \item
-  Complete the Markdown tutorial.\\
+  Familiarize themselves with Markdown syntax.
 \item
-  Install R + RStudio on their computer.
+  Create a working installation of R + RStudio on their computer.
 \item
-  Create a lab notebook template to use during Week 2 \& 3.
+  Understand how to create a lab notebook template in RStudio.
 \end{itemize}
 
 \hypertarget{r-intro}{%
@@ -230,16 +240,19 @@ One of the great things about R is that anyone can develop add-ons (called ``pac
   Once you've installed R and RStudio, you open up RStudio (opening RStudio also opens an R session automatically).\\
 \item
   Install the \texttt{devtools} package, which will make it easier to install the Chem 370 package.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    In RStduio, navigate to the \textbf{Packages} tab in the lower right pane and click \textbf{Install}.
+  \item
+    In the dialog that opens, type in \texttt{devtools} on the \emph{Packages} line.
+  \item
+    Click \textbf{Install}.
+  \end{enumerate}
 \item
-  In RStduio, navigate to the \textbf{Packages} tab in the lower right pane and click \textbf{Install}.
-\item
-  In the dialog that opens, type in \texttt{devtools} on the \emph{Packages} line.
-\item
-  Click \textbf{Install}.
-\item
-  Install the \texttt{chem370learnR} package.
-\item
-  In Rstudio, find the \textbf{Console} tab in the lower left pane. Copy and paste the following lines \emph{exactly}:
+  \emph{Install the \texttt{chem370learnR} package}: In Rstudio, find the \textbf{Console} tab in the lower left pane. Copy and paste the following lines \emph{exactly}:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -254,6 +267,53 @@ The \texttt{chem370learnR} package should now be installed on your system.
 \hypertarget{create-lab-notebook}{%
 \section*{Creating a Lab Notebook Project}\label{create-lab-notebook}}
 \addcontentsline{toc}{section}{Creating a Lab Notebook Project}
+
+\hypertarget{create-a-project}{%
+\subsection*{Create a Project}\label{create-a-project}}
+\addcontentsline{toc}{subsection}{Create a Project}
+
+In this step, you'll create an R ``project'' for lab 1. The project will help keep all your files for lab 1 organized. You should create a separate project for each lab.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  In RStudio, click the \textbf{Project: (none)} button in the top corner and then click **New Project\ldots*
+\item
+  Choose \textbf{New Directory} and \textbf{New Project}.
+\item
+  Type in \textbf{Lab 1: UV-vis} in the \emph{Directory name} line. In the \emph{Create project as subdirectory of:} box choose \textbf{Browse}. Then:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Navigate to your \texttt{Documents} folder (or another directory if you prefer to save your notebooks somewhere else).
+  \item
+    Create a \textbf{New Directory}/\textbf{New Folder} and call in \textbf{\texttt{lab-notebooks}}.
+  \item
+    Click OK to exit the dialog. The path should be set to something like \texttt{\textasciitilde{}/Documents/lab-notebooks} (may vary slightly depending on your OS).
+  \end{enumerate}
+\item
+  Click \textbf{Create Project}. You'll see that project icon in the top right corner now read \textbf{Project: Lab 1: UV-vis}.
+\end{enumerate}
+
+\hypertarget{create-a-notebook-file}{%
+\subsection*{Create a Notebook File}\label{create-a-notebook-file}}
+\addcontentsline{toc}{subsection}{Create a Notebook File}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Load the Chem 370 learnR package: Go to the \textbf{Packages} tab in the bottom right pane and check \texttt{chem370learnR} on. You should load this package everytime you start R.
+\item
+  In the top left corner, click the \textbf{New File} icon and choose \textbf{R Markdown}.
+\item
+  In the new window that opens, choose \textbf{From Template} (left side) and then \textbf{Chem 370 Lab Notebook}. Enter \textbf{\emph{lab1\_uv-vis}} for the title (i.e.~filename) and your name for the author. Make sure the output is set to HTML and click \textbf{OK}. Use this format for all your lab notebooks this semester.
+\item
+  The notebook document is populated with a bare bones template for use in lab. Fill in a title and your name, and write and introduction before lab next week.
+\end{enumerate}
 
 \hypertarget{overview}{%
 \chapter*{Overview}\label{overview}}
@@ -608,8 +668,8 @@ This syllabus and the course schedule are subject to revision as needed. Student
 \paragraph{\texorpdfstring{\textbf{Objective} \textbar{} Determine the concentration of quinine in tonic water using spectroscopic methods.}{Objective \textbar{} Determine the concentration of quinine in tonic water using spectroscopic methods.}}\label{objective-determine-the-concentration-of-quinine-in-tonic-water-using-spectroscopic-methods.}}
 \addcontentsline{toc}{paragraph}{\textbf{Objective} \textbar{} Determine the concentration of quinine in tonic water using spectroscopic methods.}
 
-\hypertarget{to-turn-in-you-should-turn-a-zip-folder-containing-1}{%
-\paragraph{\texorpdfstring{\textbf{To Turn In} \textbar{} You should turn a ZIP folder containing:}{To Turn In \textbar{} You should turn a ZIP folder containing:}}\label{to-turn-in-you-should-turn-a-zip-folder-containing-1}}
+\hypertarget{to-turn-in-you-should-turn-a-zip-folder-containing}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In} \textbar{} You should turn a ZIP folder containing:}{To Turn In \textbar{} You should turn a ZIP folder containing:}}\label{to-turn-in-you-should-turn-a-zip-folder-containing}}
 \addcontentsline{toc}{paragraph}{\textbf{To Turn In} \textbar{} You should turn a ZIP folder containing:}
 
 \begin{enumerate}
@@ -933,8 +993,8 @@ After the spectrometer calibration step you should run:
 \paragraph{\texorpdfstring{\textbf{Objective} \textbar{} Determine the number of components of an unknown mixture and the percent composition of each.}{Objective \textbar{} Determine the number of components of an unknown mixture and the percent composition of each.}}\label{objective-determine-the-number-of-components-of-an-unknown-mixture-and-the-percent-composition-of-each.}}
 \addcontentsline{toc}{paragraph}{\textbf{Objective} \textbar{} Determine the number of components of an unknown mixture and the percent composition of each.}
 
-\hypertarget{to-turn-in-you-should-turn-a-zip-folder-containing-2}{%
-\paragraph{\texorpdfstring{\textbf{To Turn In} \textbar{} \emph{You should turn a ZIP folder containing:}}{To Turn In \textbar{} You should turn a ZIP folder containing:}}\label{to-turn-in-you-should-turn-a-zip-folder-containing-2}}
+\hypertarget{to-turn-in-you-should-turn-a-zip-folder-containing-1}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In} \textbar{} \emph{You should turn a ZIP folder containing:}}{To Turn In \textbar{} You should turn a ZIP folder containing:}}\label{to-turn-in-you-should-turn-a-zip-folder-containing-1}}
 \addcontentsline{toc}{paragraph}{\textbf{To Turn In} \textbar{} \emph{You should turn a ZIP folder containing:}}
 
 \begin{enumerate}
@@ -1220,8 +1280,8 @@ Your runlist for this experiment is:
 
 Read the Memorandum on the following page to understand the scenario for this lab and determine your objectives.
 
-\hypertarget{to-turn-in}{%
-\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in}}
+\hypertarget{to-turn-in-1}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in-1}}
 \addcontentsline{toc}{paragraph}{\textbf{To Turn In}}
 
 \begin{itemize}
@@ -2033,8 +2093,8 @@ Include these in your lab notebook and in a single figure in your final report.
 
 Read the Memorandum on the following page to understand the scenario for this lab and determine your objectives.
 
-\hypertarget{to-turn-in-1}{%
-\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in-1}}
+\hypertarget{to-turn-in-2}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in-2}}
 \addcontentsline{toc}{paragraph}{\textbf{To Turn In}}
 
 \begin{itemize}
