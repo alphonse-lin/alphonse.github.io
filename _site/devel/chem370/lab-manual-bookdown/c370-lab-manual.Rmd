@@ -87,6 +87,8 @@ The `chem370learnR` package should now be installed on your system.
 
 ## Creating a Lab Notebook Project {#create-lab-notebook -}
 
+***VIDEO TUTORIAL***
+
 ### Create a Project {-}
 
 In this step, you'll create an R "project" for lab 1.  The project will help keep all your files for lab 1 organized.  You should create a separate project for each lab.
