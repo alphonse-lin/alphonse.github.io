@@ -3,12 +3,13 @@ layout: chem370
 title:  CHEM 370 Lecture Syllabus
 permalink: /devel/chem370/syllabus
 ---
+
 <a class="quicklink" href="#SLOs">Student Learning Outcomes</a>
 <a class="quicklink" href="#materials">Required Materials & Technology Use</a>
 <a class="quicklink" href="#grading">Grading</a>
 <a class="quicklink" href="#policies-course">Course Policies</a>
 <a class="quicklink" href="#policies-institution">WCU Policies</a>  
-<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/devel/chem370/pdf/syllabus.pdf" target="_blank">Download Syllabus as  PDF</a>
+<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/devel/chem370/pdf/syllabus.pdf" target="blank">Download Syllabus as  PDF</a>
 
 **Instructor:** Al Fischer, PhD   
 **Office Hours:** By appointment at [calendly.com/drfischer](http://www.calendly.com/drfischer) (NS 209)  
@@ -46,6 +47,29 @@ To achieve a satisfactory grade, students will:
 **Lab Manual:** Fischer, D.A. (2020) *[Chem 370 Lab Manual]({{site.baseurl}}/devel/chem370/lab-manual)* (free online)
 
 **Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
+
+# COVID19 Policies
+
+The lecture portion of Instrumental Analysis will use a *Hybrid Web* format, meaning that students can expect >50% of course activities to occur electronically.  Students will be given lecture-type activities and readings to work through asynchronously each week.  In addition, each student will be assigned to a "cohort" (a group of 5-6 students) that meets once per week for in-person activities.  During all in-person meetings, students *must*:
+
+  - Wear a face mask at all times (see "Masking for a Friend" statement below).
+  - Practice social distancing (maintain a distance of 2 meters from other individuals as much as possible).
+  - Practice good hygiene practices and follow [CDC guidelines](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html) to minimize spread of COVID19.
+  - Avoid coming to class if you experience and cold, flu, or [COVID19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html), have been diagnosed with COVID19, or have been in contact with someone who's tested positive for COVID19 within the last 14 days.
+  
+Note that these policies are subject to changes as the COVID19 pandemic grows or shrinks and recommended best-practices continue to develop.
+  
+## Masking for a Friend
+
+As the WCU Community Creed articulates, members of the WCU community are expected to live by high standards of academic and personal integrity and embrace their responsibility as a member of the Catamount community. In recognition of this responsibility, and in response to the best available science and current guidance from the Centers for Disease Control and Prevention, every student must wear a mask or other cloth face-covering that covers their nose and mouth while in this classroom. Students who do not have a mask will be asked to leave the classroom and only return when they follow this basic public health recommendation. Following this simple, science-based guideline will help ensure the safety of the entire Catamount community.
+
+Note that masks do little to protect the person wearing the mask; rather, they minimize the chances that someone who is already sick will spread the disease to others.  When you come to class in your mask, you're not only protecting your friends, peers, and instructors in the room with you, but also their friends, family, and loved ones, especially those in high-risk populations.  Students who miss class because they are not wearing a maks will not be able to make up the work missed.  Students who do not have masks can obtain them at the locations below:
+
+  - University Center - Main Information Desk (2nd floor)
+  - Hunter Library - Circulation Desk
+  - Belk Building – CET Dean’s Office (Room 161)
+  - Health and Human Sciences Building – CHHS Dean’s Office (Room 201)
+  - Biltmore Park Instructional Site – 3rd floor Information Desk
 
 <a id="grading"/>
 
@@ -145,11 +169,12 @@ Some items may be graded by computer software.  Any answers not in the specified
 <a id="policies-institution"/>
 
 ## Institutional Policies
+
 **Course Recording and Broadcasting:** Students may make visual or audio recordings (Recording) of any class related content, using any approved recording device (e.g., smart phone, computer, digital recorder, etc.) upon the **prior permission of the instructor** and subject to the following restriction(s). The Recording, along with the video capture of visible course materials (e.g., visible PowerPoint slides and/or visible lecture notes), shall be limited to the student’s personal, course related, educational use and shall be subject to all applicable copyright laws and institutional policies. The student may not transfer, transmit, or otherwise disseminate the Recording to any third party, including classmates, without the permission of the instructor. Any violation of these restrictions, or any other restriction verbally communicated by the instructor, may subject the student to the provisions of the WCU Academic Integrity Policy, the WCU Code of Student Conduct or both.
 
-**Accommodations for Students with Disabilities:** Western Carolina University is committed to providing equal educational opportunities for students with documented disabilities and/or medical conditions. Students who require accommodations must identify themselves as having a disability and/or medical condition and provide current diagnostic documentation to the Office of Accessibility Resources. Please contact the Office of Accessibility Resources, 135 Killian Annex, (828) 227-3886, by [email](mailto:accessibility@wcu.edu), or at [accessibility.wcu.edu/](https://www.wcu.edu/learn/academic-services/disability-services/index.aspx).
+**Accommodations for Students with Disabilities:** Western Carolina University is committed to providing equal educational opportunities for students with documented disabilities and/or medical conditions. Students who require accommodations must identify themselves as having a disability and/or medical condition and provide current diagnostic documentation to the Office of Accessibility Resources. Please contact the Office of Accessibility Resources, 135 Killian Annex, (828) 227-3886, by [email](mailto:accessibility@wcu.edu), or at [accessibility.wcu.edu/](https://www.wcu.edu/learn/academic-services/disability-services/index.aspx).  If you experience accessibility issues with any online material please inform you instructor so that the problem can be resolved.
 
-**Academic Integrity Policy and Reporting Process:** This policy addresses academic integrity violations of undergraduate and graduate students. Students, faculty, staff, and administrators of Western Carolina University strive to achieve the highest standards of scholarship and integrity. Any violation of the Academic Integrity Policy is a serious offense because it threatens the quality of scholarship and undermines the integrity of the community. While academic in scope, any violation of this policy is by nature, a violation of the Code of Student Conduct and will follow the same conduct process (see ArticleVII.B.1.a.). If the charge occurs close to the end of an academic semester or term or in the event of the reasonable need of either party for additional time to gather information timelines may be extended at the discretion of the Department of Student Community Ethics (DSCE).
+**Academic Integrity Policy and Reporting Process:** This policy addresses academic integrity violations of undergraduate and graduate students. Students, faculty, staff, and administrators of Western Carolina University strive to achieve the highest standards of scholarship and integrity. Any violation of the Academic Integrity Policy is a serious offense because it threatens the quality of scholarship and undermines the integrity of the community. While academic in scope, any violation of this policy is by nature, a violation of the Code of Student Conduct and will follow the same conduct process (see Article VII.B.1.a.). If the charge occurs close to the end of an academic semester or term or in the event of the reasonable need of either party for additional time to gather information timelines may be extended at the discretion of the Department of Student Community Ethics (DSCE).
 
 Instructors have the right to determine the appropriate academic sanctions for violations of the Academic Integrity Policy within their courses, up to and including a final grade of “F” in the course in which the violation occurs.
 
@@ -169,7 +194,8 @@ Undergraduate and Graduate Academic Integrity Process: Additional information is
 
 **Academic Calendar:** The University academic calendar can be found at [here](http://www.wcu.edu/learn/academic-calendar.aspx). It includes dates for all breaks, University closures, final exams, etc. 
 
-**Final Exam:** The University final exam schedule can be found on the [Registrar's webpage](http://www.wcu.edu/learn/academic-services/registrars-office/).  Note there is no final exam for the lab portion of Chem 370 (but there may be for the lecture portion).
+**Final Exam:** The University final exam schedule can be found on the [Registrar's webpage](http://www.wcu.edu/learn/academic-services/registrars-office/).
 
 ## Syllabus Updates
+
 This syllabus and the course schedule are subject to revision as needed. Students will be notified of changes and are responsible for adhering to the modifications.
