@@ -6,6 +6,7 @@ permalink: /devel/chem370/syllabus
 
 <a class="quicklink" href="#SLOs">Student Learning Outcomes</a>
 <a class="quicklink" href="#materials">Required Materials & Technology Use</a>
+<a class="quicklink" href="#covid">COVID19</a>
 <a class="quicklink" href="#grading">Grading</a>
 <a class="quicklink" href="#policies-course">Course Policies</a>
 <a class="quicklink" href="#policies-institution">WCU Policies</a>  
@@ -47,6 +48,8 @@ To achieve a satisfactory grade, students will:
 **Lab Manual:** Fischer, D.A. (2020) *[Chem 370 Lab Manual]({{site.baseurl}}/devel/chem370/lab-manual)* (free online)
 
 **Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
+
+<a id="covid"/>
 
 # COVID19 Policies
 
