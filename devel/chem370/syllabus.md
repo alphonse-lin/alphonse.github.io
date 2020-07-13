@@ -2,6 +2,7 @@
 layout: chem370
 title:  CHEM 370 Lecture Syllabus
 permalink: /devel/chem370/syllabus
+icon: fa-scroll
 ---
 
 <a class="quicklink" href="#SLOs">Student Learning Outcomes</a>
@@ -14,7 +15,7 @@ permalink: /devel/chem370/syllabus
 
 **Instructor:** Al Fischer, PhD   
 **Office Hours:** By appointment at [calendly.com/drfischer](http://www.calendly.com/drfischer) (NS 209)  
-**Availability:** See my calendar at [alphonse.github.io/contact]({{site.baseurl}}/contact)  
+**Availability:** See my [calendar]({{site.baseurl}}/contact)  
 **Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 
 <a id="SLOs"/>

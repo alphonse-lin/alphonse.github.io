@@ -2,6 +2,7 @@
 layout: chem370
 title: Chem 370 Fall 2020 Lectures
 permalink: /devel/chem370/lectures/
+icon: fa-chalkboard-teacher
 ---
 
 <!-- [View Lecture Transcripts]({{ site.baseurl }}/devel/chem370/lectures/transcripts/) -->

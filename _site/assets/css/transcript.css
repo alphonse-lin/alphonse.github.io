@@ -253,6 +253,10 @@ body.open:after {
   z-index: 12;
 }
 
+button {
+  border: none;
+}
+
 .b-bun {
   background: #433024;
   position: relative;

@@ -1,22 +1,71 @@
 <!-- Navigation -->
-<div class="b-nav">
-  <li><a class="b-link" href="{{site.baseurl}}/#">home</a></li>
-  <li><a class="b-link" href="{{site.baseurl}}/about">about</a></li>
-  <li><a class="b-link" href="{{site.baseurl}}/contact">contact</a></li>
-  <li><a class="b-link" href="{{site.baseurl}}/curriculum-vitae">CV</a></li>
-  <li><a class="b-link" href="{{site.baseurl}}/projects">projects</a></li>
+
+
+<!-- <nav class="b-nav" id="navigation">
+  <li><a class="b-link" alt="home page" href="{{site.baseurl}}/#">home</a></li>
+  <li><a class="b-link" alt="about page" href="{{site.baseurl}}/about">about</a></li>
+  <li><a class="b-link" alt="contact page" href="{{site.baseurl}}/contact">contact</a></li>
+  <li><a class="b-link" alt="curriculum vitae" href="{{site.baseurl}}/curriculum-vitae">CV</a></li>
+  <li><a class="b-link" alt="project page" href="{{site.baseurl}}/projects">projects</a></li> -->
   <!-- <li><a class="b-link" href="{{site.baseurl}}/chem191">CHEM 191</a></li> -->
-  <li><a class="b-link" href="{{site.baseurl}}/devel/chem370">CHEM 370</a></li>
-</div>
+  <!-- <li><a class="b-link" alt="chem 370 page" href="{{site.baseurl}}/devel/chem370">CHEM 370</a></li>
+</nav> -->
 
 <!-- Burger-Icon -->
-<div class="b-container">
-  <div class="b-menu">
+
+<!-- <div class="b-container" id="navigation" aria-label="Menu" role="button" aria-controls="navigation" aria-expanded="true/false">
+  <button class="b-menu" id="navigation">
     <div class="b-bun b-bun--top"></div>
     <div class="b-bun b-bun--mid"></div>
     <div class="b-bun b-bun--bottom"></div>
-  </div>
+  </button>
+</div>  -->
 
-  <!-- Burger-Brand -->
-  <a href="#" class="b-brand"></a>
-</div>
+{% if page.url contains 'chem370' %}
+<nav id="navigation" class = "nav-370">
+      {% for item in site.navigation-370 %}
+          {% assign class = 'nav-370' %}
+          {% if page.url contains item.url %}
+              {% assign class = 'active-370' %}
+          {% else %}
+          <a href="{{ item.url }}" class="{{ class }}" alt="{{item.title}}">
+                <i class="fa {{ item.icon }}"></i>
+                {{ item.title }}
+          </a>
+          {% endif %}
+      {% endfor %}
+      {% for item in site.navigation-370 %}
+        {% if page.url contains item.url %}
+        {% else %}
+          <a href="{{ item.url }}" class="active-370" alt="{{item.title}}">
+                <i class="fa {{ page.icon }}"></i>
+                {{ page.title | split: " " | last }}
+          </a>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    
+</nav>
+{% else %}
+<nav id="navigation-bar">
+      {% for item in site.navigation %}
+          {% assign class = nil %}
+          {% if page.url contains item.url %}
+              {% assign class = 'active' %}
+          {% endif %}
+          <a href="{{ item.url }}" class="{{ class }}">
+              {{ item.title }}
+          </a>
+      {% endfor %}
+</nav>
+{% endif %}
+
+<!-- <nav class = "navbar" id="navigation">
+  <a class="b-link" alt="home page" href="{{site.baseurl}}/#">home</a>
+  <a class="b-link" alt="about page" href="{{site.baseurl}}/about">about</a>
+  <a class="b-link" alt="contact page" href="{{site.baseurl}}/contact">contact</a>
+  <a class="b-link" alt="curriculum vitae" href="{{site.baseurl}}/curriculum-vitae">CV</a>
+  <a class="b-link" alt="project page" href="{{site.baseurl}}/projects">projects</a>
+  <!-- <a class="b-link" href="{{site.baseurl}}/chem191">CHEM 191</a> -->
+  <!-- <a class="b-link" alt="chem 370 page" href="{{site.baseurl}}/devel/chem370">CHEM 370</a> -->
+<!-- </nav> -->

@@ -3,6 +3,7 @@ title: Instrumental Analysis I
 description: WCU Chem 370
 layout: home
 permalink: /devel/chem370/
+icon: fa-digital-tachograph
 ---
 
 <div class="card">

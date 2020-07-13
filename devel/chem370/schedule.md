@@ -2,7 +2,6 @@
 layout: chem370
 title:  CHEM 370 Lab Schedule
 permalink: /devel/chem370/schedule
-
 ---
 
 *This schedule is subject to change as needed.*

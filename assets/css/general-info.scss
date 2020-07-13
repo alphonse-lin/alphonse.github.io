@@ -7,7 +7,8 @@
 
 @import "reset";
 @import "variables";
-@import "burger";
+@import "navbar";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -26,7 +27,7 @@ body {
 	height: 100%;
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-top: 50px;
+	margin-top: 60px;
 	text-align: justify;
 	@media only screen and (max-width: 1000px) {
 		margin-left: 0px !important;

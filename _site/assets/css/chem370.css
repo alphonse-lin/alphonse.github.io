@@ -179,6 +179,10 @@ body.open:after {
   z-index: 12;
 }
 
+button {
+  border: none;
+}
+
 .b-bun {
   background: #433024;
   position: relative;
@@ -251,6 +255,100 @@ body.open:after {
 
 .b-container.open .b-brand {
   color: #F5F4F1;
+}
+
+#navigation-bar {
+  overflow: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 10px solid #fff;
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* Navbar links */
+#navigation-bar a {
+  color: #433024;
+  padding: 10px;
+  background-color: #fff;
+  font-weight: normal;
+}
+
+#navigation-bar a:hover {
+  color: #C1A875;
+  background-color: white;
+  border-bottom: 1px solid #433024;
+}
+
+#navigation-bar a.active {
+  background-color: white  !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid #433024;
+}
+
+@media only screen and (max-width: 600px) {
+  #navigation {
+    font-size: 0;
+    border-top: 5px solid #fff;
+  }
+  .fa {
+    font-size: initial;
+  }
+}
+
+#navigation {
+  overflow: hidden;
+  border-bottom: none;
+  background-color: #F5F4F1 !important;
+  position: fixed;
+  top: 0;
+  width: 110%;
+  margin-left: -10px;
+  margin-right: auto;
+  border-top: 10px solid #F5F4F1;
+  padding: 10px;
+  max-width: 900px;
+}
+
+/* Navbar links */
+#navigation a {
+  color: #433024;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  border: 1px solid #F2F2F2;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#navigation a:hover {
+  color: #C1A875;
+  background-color: white;
+  font-weight: bold;
+}
+
+a.active-370 {
+  background-color: white  !important;
+  color: #592C88 !important;
+  border: 1px solid #592C88;
+  font-weight: bold !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #navigation {
+    font-size: 0;
+    border-top: 5px solid #F5F4F1;
+  }
+  .fa {
+    font-size: initial;
+  }
 }
 
 /**************/

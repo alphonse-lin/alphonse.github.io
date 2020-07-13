@@ -60,197 +60,98 @@ table {
   box-sizing: border-box;
 }
 
-@keyframes slideInLeft {
-  0% {
-    transform: translate3d(-250px, 0, 0);
-    visibility: visible;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideOutLeft {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-250px, 0, 0);
-    visibility: hidden;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body:after {
-  background: #F5F4F1;
-  content: '';
-  height: 100%;
-  left: 0;
-  opacity: 0;
+#navigation-bar {
   overflow: hidden;
-  padding: 0;
+  background-color: #fff;
   position: fixed;
   top: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
-  width: 200px;
+  width: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 10px solid #fff;
+  padding: 20px;
+  max-width: 900px;
 }
 
-body.open {
-  overflow: hidden;
-}
-
-body.open:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.b-nav {
-  position: fixed;
-  z-index: 11;
-  left: 0;
-}
-
-.b-nav:not(.open) {
-  visibility: hidden;
-}
-
-.b-nav li {
+/* Navbar links */
+#navigation-bar a {
   color: #433024;
-  list-style-type: none;
   padding: 10px;
-  text-align: left;
-  transform: translateX(-250px);
+  background-color: #fff;
+  font-weight: normal;
 }
 
-.b-nav li:not(.open) {
-  animation-duration: 0.4s;
-  animation-fill-mode: both;
-  animation-name: slideOutLeft;
-}
-
-.b-nav li:first-child {
-  padding-top: 100px;
-}
-
-.b-nav.open {
-  visibility: visible;
-}
-
-.b-nav.open li {
-  animation-duration: 0.4s;
-  animation-fill-mode: both;
-  animation-name: slideInLeft;
-}
-
-.b-link {
-  background: transparent;
-  color: #433024;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  margin-left: 30px;
-  text-decoration: none;
-  transition: all 0.4s ease;
-  width: auto;
-}
-
-.b-link:hover, .b-link--active {
-  border-left: #C1A875 solid 2px;
-  padding-left: 30px;
+#navigation-bar a:hover {
   color: #C1A875;
+  background-color: white;
+  border-bottom: 1px solid #433024;
 }
 
-.b-menu {
-  background: #F5F4F1;
-  border-radius: 15%;
-  cursor: pointer;
-  display: inline-block;
-  height: 40px;
-  padding-left: 5.5px;
-  padding-top: 7.5px;
+#navigation-bar a.active {
+  background-color: white  !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid #433024;
+}
+
+@media only screen and (max-width: 600px) {
+  #navigation {
+    font-size: 0;
+    border-top: 5px solid #fff;
+  }
+  .fa {
+    font-size: initial;
+  }
+}
+
+#navigation {
+  overflow: hidden;
+  border-bottom: none;
+  background-color: #F5F4F1 !important;
   position: fixed;
-  transition: all 0.4s ease;
-  user-select: none;
-  width: 40px;
-  z-index: 12;
-}
-
-.b-bun {
-  background: #433024;
-  position: relative;
-  transition: all 0.4s ease;
-}
-
-.b-bun--top {
-  height: 2px;
   top: 0;
-  width: 25px;
+  width: 110%;
+  margin-left: -10px;
+  margin-right: auto;
+  border-top: 10px solid #F5F4F1;
+  padding: 10px;
+  max-width: 900px;
 }
 
-.b-bun--mid {
-  height: 2px;
-  top: 8px;
-  width: 25px;
+/* Navbar links */
+#navigation a {
+  color: #433024;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  border: 1px solid #F2F2F2;
+  background-color: #FAFAFA;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.b-bun--bottom {
-  height: 2px;
-  top: 16px;
-  width: 25px;
+#navigation a:hover {
+  color: #C1A875;
+  background-color: white;
+  font-weight: bold;
 }
 
-.b-brand {
-  color: #F5F4F1;
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  margin-left: 30px;
-  position: relative;
-  text-decoration: none;
-  top: -11.4285714286px;
-  transition: all 0.4s ease;
-  z-index: 13;
+a.active-370 {
+  background-color: white  !important;
+  color: #592C88 !important;
+  border: 1px solid #592C88;
+  font-weight: bold !important;
 }
 
-.b-container {
-  height: 40px;
-  left: 30px;
-  position: absolute;
-  top: 30px;
-}
-
-.b-container:hover:not(.open) .bun-top,
-.b-container:hover:not(.open) .bun-mid,
-.b-container:hover:not(.open) .bun-bottom {
-  background: #433024;
-}
-
-.b-container.open .b-main {
-  border: #433024 solid 2px;
-}
-
-.b-container.open .b-bun--top {
-  background: #433024;
-  top: 9px;
-  transform: rotate(45deg);
-}
-
-.b-container.open .b-bun--mid {
-  opacity: 0;
-}
-
-.b-container.open .b-bun--bottom {
-  background: #433024;
-  top: 5px;
-  transform: rotate(-45deg);
-}
-
-.b-container.open .b-brand {
-  color: #F5F4F1;
+@media only screen and (max-width: 600px) {
+  #navigation {
+    font-size: 0;
+    border-top: 5px solid #F5F4F1;
+  }
+  .fa {
+    font-size: initial;
+  }
 }
 
 /**************/
@@ -268,7 +169,7 @@ body {
   height: 100%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 50px;
+  margin-top: 60px;
   text-align: justify;
 }
 
