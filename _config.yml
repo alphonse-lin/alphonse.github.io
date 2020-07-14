@@ -93,18 +93,30 @@ navigation:
   - title: projects
     url: /projects
 navigation-370:
-  - title: Home
+  - title:  
     url: /#
-    icon: fa-home
-  - title: Chem 370 Main Page
+    icon: fa-user-circle
+  - title: 370 Main Page
     url: /chem370/#
-    icon: fa-digital-tachograph
+    icon: fa-home
   - title: Syllabus
     url: /chem370/syllabus
     icon: fa-scroll
-  - title: Lab Manual
+  - title: Schedule
+    url: /chem370/schedule
+    icon: fa-calendar-alt  
+  - title: Lab
     url: /chem370/lab-manual
-    icon: fa-vial
-  - title: Submit Your Work
+    icon: fa-vial  
+  - title: Lectures
+    url: /chem370/lectures
+    icon: fa-chalkboard-teacher
+  - title: R
+    url: /chem370/data-processing
+    icon: fa-chart-line 
+  - title: Writing
+    url: /chem370/writing
+    icon: fa-edit  
+  - title: Submissions
     url: /chem370/assignment-submissions
-    icon: fa-paper-plane
+    icon: fa-paper-plane    

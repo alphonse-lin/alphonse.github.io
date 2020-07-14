@@ -21,30 +21,31 @@
   </button>
 </div>  -->
 
-{% if page.url contains 'chem370' %}
+{% if page.url contains 'devel' %}
 <nav id="navigation" class = "nav-370">
       {% for item in site.navigation-370 %}
           {% assign class = 'nav-370' %}
           {% if page.url contains item.url %}
               {% assign class = 'active-370' %}
-          {% else %}
+          {% endif %}
+          <a href="/devel{{ item.url }}" class="{{ class }}" alt="{{item.title}}">
+                <i class="fa {{ item.icon }}"></i>
+                {{ item.title }}
+          </a>
+      {% endfor %}
+</nav>
+{% else if page.url contains 'chem370' %}
+<nav id="navigation" class = "nav-370">
+      {% for item in site.navigation-370 %}
+          {% assign class = 'nav-370' %}
+          {% if page.url contains item.url %}
+              {% assign class = 'active-370' %}
+          {% endif %}
           <a href="{{ item.url }}" class="{{ class }}" alt="{{item.title}}">
                 <i class="fa {{ item.icon }}"></i>
                 {{ item.title }}
           </a>
-          {% endif %}
       {% endfor %}
-      {% for item in site.navigation-370 %}
-        {% if page.url contains item.url %}
-        {% else %}
-          <a href="{{ item.url }}" class="active-370" alt="{{item.title}}">
-                <i class="fa {{ page.icon }}"></i>
-                {{ page.title | split: " " | last }}
-          </a>
-          {% break %}
-        {% endif %}
-      {% endfor %}
-    
 </nav>
 {% else %}
 <nav id="navigation-bar">

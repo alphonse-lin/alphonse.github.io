@@ -110,11 +110,12 @@ table {
   position: fixed;
   top: 0;
   width: 110%;
-  margin-left: -10px;
+  margin-left: 0;
   margin-right: auto;
-  border-top: 10px solid #F5F4F1;
-  padding: 10px;
+  border-top: 35px solid #F5F4F1;
+  padding: 1px;
   max-width: 900px;
+  font-size: 14px;
 }
 
 /* Navbar links */
@@ -125,7 +126,7 @@ table {
   padding-left: 10px;
   padding-right: 10px;
   margin: auto;
-  border: 1px solid #F2F2F2;
+  border: 2px solid #F2F2F2;
   background-color: #FAFAFA;
   border-radius: 10px;
   text-align: center;
@@ -134,7 +135,7 @@ table {
 #navigation a:hover {
   color: #C1A875;
   background-color: white;
-  font-weight: bold;
+  border: 2px solid #C1A875 !important;
 }
 
 a.active-370 {
@@ -144,10 +145,11 @@ a.active-370 {
   font-weight: bold !important;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   #navigation {
     font-size: 0;
     border-top: 5px solid #F5F4F1;
+    margin-left: -10px;
   }
   .fa {
     font-size: initial;

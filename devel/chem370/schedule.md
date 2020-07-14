@@ -1,83 +1,42 @@
 ---
 layout: chem370
-title:  CHEM 370 Lab Schedule
+title:  CHEM 370 Schedule
 permalink: /devel/chem370/schedule
 ---
 
-*This schedule is subject to change as needed.*
+All work is due at 23:59:59 on the Sunday preceded by the week listed here.
 
-<!-- Click each week for full details of the week. -->
-<!--
-| Dates<sup>1</sup> | Lab Activity                                        | Due                                                   |
-| ----------------- | --------------------------------------------------- | ----------------------------------------------------- |
-| 1M13, 1M15, 1T16  | Safety Lecture, Lab Notebooks                       | [Markdown Tutorial](https://www.markdowntutorial.com) |
-|                   | *No Monday lab January 20 (MLK Day)*                |                                                       |
-| 1W22, 1T23, 1M27  | UV-vis (Fluorescence): Quantify quinine             | Lab Notebook 1                                        |
-| 1W29, 1T230, 2M3  | GC (Gow-Mac): Percent composition                   | Lab Notebook 2 (NB 1 Peer review)                     |
-| 2W5, 2T6, 2M10    | Build a Laser Fluorescence Spectrometer (Tentative) | Worksheet (NB 2 Peer review)                          |
-| 2W12, 2T13, 2M17  | Writing Workshop + Planning Meetings                | Instrument Tests Passed                               |
-| 2W19, 2T20, 2M24  | Rotations                                           |                                                       |
-| 2W26, 2T27, 3M2   | Rotations                                           | Data Analysis 1, 2 + notebook                         |
-| 3W4, 3T5, 3M9     | Rotations                                           |                                                       |
-| 3W11, 3T12, 3M16  | No Labs (Spring Break)                              | Intro + Methods                                       |
-| 3W18, 3T19, 3M23  | Rotations                                           |                                                       |
-| 3W25, 3T26, 3M30  | Rotations                                           | Data Analysis 3, 4 + notebook                         |
-| 4W1, 4T2, 4M5     | Rotations                                           |                                                       |
-|                   | *No Wednesday/Thursday labs 04/08-04/09 (Easter)*   |                                                       |
-| 4M13, 4W15, 4T16  | Rotations                                           | Intro + Methods + Results                             |
-| 4M20, 4W22, 4T23  | Rotations                                           | Full Draft, Full Lab Notebook                         |
-| 4M27, 4W29, 4T30  | Lab & Instrument Clean Up                           | Final Report                                          |
+For "In Class" work, cohort 1 meets on Mondays, cohort 2 meets on Wednesdays, and cohort 3 meets on Fridays.  Please ask your instructor if you're unsure which cohort you're in.  Unless otherwise specified, exams will be administered face-to-face.
 
-<small>
-<sup>1</sup>*Date codes are month number, day of week, and day of month.  For example 1M13 = Monday (M), January (1) 13th (13).*
-</small> -->
+Please see the [lab schedule]({{ site.url }}/devel/chem370/lab-manual/appendix-5-schedule-of-labs.html) for details on weekly labs and lab due dates.
 
-<!-- | Week Beginning |              Lab Activity               |                                                          Due                                                           |
-| -------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 2020-01-13     | Safety Lecture, Lab Notebooks           | [Install Octave + Jupyter]({{site.baseurl}}/devel/chem370/lab-manual/appendix-1-getting-started-in-octave-and-jupyter-lab.html)  |
-| 2020-01-20     | *No labs (MLK Day)*                     | [MATLAB/Octave/Markdown Tutorial]({{site.baseurl}}/devel/chem370/assignments/matlab-tutorial)                                    |
-| 2020-01-27     | UV-vis (Fluorescence): Quantify quinine |                                                                                                                        |
-| 2020-02-03     | Octave & Data Analysis                  | [Lab ZIP Folder 1]({{site.baseurl}}/devel/chem370/lab-manual/uv-visible-spectroscopy.html)                                       |
-| 2020-02-10     | GC (Gow-Mac): Percent composition       | [Lab ZIP Folder 2]({{site.baseurl}}/devel/chem370/lab-manual/gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html) |
-|                | *Instrument Test 1*                     |                                                                                                                        |
-| 2020-02-17     | Rotations                               |                                                                                                                        |
-|                | *Group Kickoff Meeting*                 |                                                                                                                        |
-| 2020-02-24     | Rotations                               |                                                                                                                        |
-|                | *Writing Workshop*                      |                                                                                                                        |
-| 2020-03-02     | Rotations                               | Notebook 1 + 2                                                                                                         |
-| 2020-03-09     | *No Labs (Spring Break)*                |                                                                                                                        |
-| 2020-03-16     | ~~Rotations~~                           |                                                                                                                        |
-|                | *No Labs (Spring Break Extended)*       |                                                                                                                        |
-| 2020-03-23     | ~~Rotations~~ COVID-19 Alternate        | Intro + Methods                                                                                                        |
-| 2020-03-30     | ~~Rotations~~ COVID-19 Alternate        | ~~Notebooks 3 + 4~~                                                                                                    |
-| 2020-04-06     | *No Labs (Easter)*                      |                                                                                                                        |
-| 2020-04-13     | Rotations                               | ~~Intro + Methods + Results~~ All 4 Notebooks, All 4 Analysis Worksheets                                               |
-| 2020-04-20     | Rotations                               | Full Draft                                                                                                             |
-| 2020-04-27     | Lab & Instrument Clean Up               | Final Report                                                                                                           |
-| 2020-05-04     | *No Labs (Final Exams)*                 |                                                                                                                        | -->
+# Overview Schedule
 
-| Week Beginning |              Lab Activity               |                                                          Due                                                           |
-| -------------- | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| 2020-01-13     | Safety Lecture, Lab Notebooks           | [Install Octave + Jupyter]({{site.baseurl}}/devel/chem370/lab-manual/appendix-1-getting-started-in-octave-and-jupyter-lab.html)  |
-| 2020-01-20     | *No labs (MLK Day)*                     | [MATLAB/Octave/Markdown Tutorial]({{site.baseurl}}/devel/chem370/assignments/matlab-tutorial)                                    |
-| 2020-01-27     | UV-vis (Fluorescence): Quantify quinine |                                                                                                                        |
-| 2020-02-03     | Octave & Data Analysis                  | [Lab ZIP Folder 1]({{site.baseurl}}/devel/chem370/lab-manual/uv-visible-spectroscopy.html)                                       |
-| 2020-02-10     | GC (Gow-Mac): Percent composition       | [Lab ZIP Folder 2]({{site.baseurl}}/devel/chem370/lab-manual/gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html) |
-|                | *Instrument Test 1*                     |                                                                                                                        |
-| 2020-02-17     | Rotations                               |                                                                                                                        |
-|                | *Group Kickoff Meeting*                 |                                                                                                                        |
-| 2020-02-24     | Rotations                               |                                                                                                                        |
-|                | *Writing Workshop*                      |                                                                                                                        |
-| 2020-03-02     | Rotations                               | Notebook 1 + 2                                                                                                         |
-| 2020-03-09     | *No Labs (Spring Break)*                |                                                                                                                        |
-| 2020-03-16     | ~~Rotations~~                           |                                                                                                                        |
-|                | *No Labs (Spring Break Extended)*       |                                                                                                                        |
-| 2020-03-23     | ~~Rotations~~ Flame AA / FTIR           | Intro + Methods                                                                                                        |
-| 2020-03-30     | ~~Rotations~~ HPLC / GCMS               |                                                                                                                        |
-| 2020-04-06     | *No Labs (Easter)*                      |                                                                                                                        |
-| 2020-04-13     | ~~Rotations~~                           | All 4 Notebooks, All 4 Analysis Worksheets                                                                             |
-| 2020-04-20     | ~~Rotations~~                           | Full Draft                                                                                                             |
-| 2020-04-27     | ~~Lab & Instrument Clean Up~~           | Peer Review, Final Report                                                                                              |
-| 2020-05-04     | *No Labs (Final Exams)*                 |                                                                                                                        |
+|  Week  | Begins | Theme                  | In Class           | Lecture 1              | Lecture 2             | Lab                | HW                          |
+|:------:|:------:| ---------------------- | ------------------ | ---------------------- | --------------------- | ------------------ | --------------------------- |
+|   1    |  8/17  | Intro                  | No Meeting         | Analytical Perspective | Analyst's Toolbox     | Intro + Safety     | Chemistry Review + MD Intro |
+|   2    |  8/24  | Signals and Noise      | Distributions in R | Distributions          | Errors and CIs        | GC Lab 1           | Errors & CIs                |
+|   3    |  8/31  | Data Analysis          |                    | Reproducible Research  | QA/QC + Standards     | GC Data @ Home     | -                           |
+|   4    |  9/7   | Quantitative Analysis  | No Meeting         | Standardization        | Blanks                | UV-vis (Labster)   | Making Solutions            |
+|   5    |  9/14  | Instrumentation Survey | ***Exam 1***       | Survey 1 + 2           | Survey 3 + 4          | UV-vis Data @ Home |                             |
+|   6    |  9/21  | Spectroscopy           |                    | Spectroscopy           | Optics                | Rotation           | ***Instrument Quizzes***    |
+|   7    |  9/28  | Spectroscopy           |                    | UV-vis: Theory         | UV-vis: Instruments   | Rotation           |                             |
+|   8    |  10/5  | Spectroscopy           |                    | Luminescence: Theory   | Atomic: Theory        | Rotation           |                             |
+|   9    | 10/12  | Spectroscopy           |                    | Atomic: Instruments    | FT-IR                 | Rotation           |                             |
+|   10   | 10/19  | Spectrometry           | ***Exam 2***       | MS                     | Structural Det.       | Rotation           |                             |
+|   11   | 10/26  | Spectrometry           |                    | Structural Det.        | Structural Det.       | Rotation           |                             |
+|   12   |  11/2  | Separations            | Structural Det.    | Chromatography         | LC                    | Rotation           |                             |
+|   13   |  11/9  | Separations            |                    | GC                     | TBA                   | Rotation           |                             |
+|   14   | 11/16  | Review                 | ***Exam 3***       | TBA                    | TBA                   | Rotation + Cleanup |                             |
+|   15   | 11/23  | Thanksgiving           | *Remote*           | -                      | -                     | -                  | ***Exam 4***                |
+| FINALS | 11/30  | Project                | *Remote*           | Presentations  (Final) | Presentations (Final) | Final Paper        |                             |
 
-Students will be required to attend instrumentation workshops outside of class to learn how to use each instrument.  They will take a multiple-choice test to get a certification for that instrument.  Each student must be certified before using an instrument.  This certification contributes to your grade through SLO #1 on the syllabus.
+# Lab Schedule
+
+<!-- 
+
+# Topics
+
+- Accuracy & Precision WS 
+
+-->

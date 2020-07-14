@@ -45,11 +45,12 @@
   position: fixed;
   top: 0;
   width: 110%;
-  margin-left: -10px;
+  margin-left: 0;
   margin-right: auto;
-  border-top: 10px solid $tan;
-  padding: 10px;
+  border-top: 35px solid $tan;
+  padding: 1px;
   max-width: 900px;
+  font-size: 14px;
 }
 
 /* Navbar links */
@@ -60,14 +61,14 @@
   padding-left: 10px;
   padding-right: 10px;
 	margin: auto;
-	border: 1px solid $wcuLightGray;
+	border: 2px solid $wcuLightGray;
 	background-color: $veryLightGray;
 	border-radius: 10px;
 	text-align: center;
 	&:hover {
 		color: $gold;
     background-color: white;
-    font-weight: bold;
+    border: 2px solid $gold !important;
 	}
 }
 a.active-370
@@ -77,10 +78,11 @@ a.active-370
   border: 1px solid $purple;
   font-weight: bold !important;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   #navigation { 
     font-size: 0;
     border-top: 5px solid $tan;
+    margin-left: -10px;
   }
   .fa { font-size: initial; }
 }
