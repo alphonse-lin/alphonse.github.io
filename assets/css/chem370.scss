@@ -121,7 +121,6 @@ a {
     color: $gold;
   }
 }
-
 a.quicklink {
 	display: inline-block;
 	font-family: $chem370display;
@@ -147,6 +146,15 @@ a.quicklink {
 		color: $gold;;
 		border-color: $gold;
   }
+}
+
+blockquote {
+	margin: 1.8em;
+	border-left: 8px solid $purple;
+	padding: 1em;
+	font-size: 14px;
+	background-color: $wcuLightGray;
+	font-style: italic;
 }
 
 ul, ol {
