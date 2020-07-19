@@ -181,13 +181,45 @@
 Analytical Chemistry 2.1</p>
 </blockquote>
 
-<p>We’ve studied how flame atmoic absorption spectroscopy came to be and observed how it supplanted gravimetric methods of metal analysis. Flame AA is an example of an instrumental analysis – using electronic instruments in analytical chemistry. If you take a look around a modern chemistry lab you’ll like find chemical instrumentation, and it won’t take long to realize that instrumental analysis has come to be a dominate area of modern analytical chemistry.</p>
+<p>We’ve studied how flame atomic absorption spectroscopy came to be and observed how it’s largely supplanted gravimetric methods of metal analysis. Flame AA is an example of an instrumental analysis – using electronic instruments in analytical chemistry. If you take a look around any modern chemistry lab you’ll almost certainly find chemical instrumentation.</p>
 
-<p>But what is an <em>instrument</em>?  Simply, an instrument is an electronic and/or optical assembly used to study the chemical properties of a sample.  Most instruments today are controlled by a computer, but there’s nothing stating an instrument <em>must</em> be computer controlled.</p>
+<p>But what is an <em>instrument</em>?  Simply, an instrument is an electronic and/or optical assembly used to study the chemical properties of a sample.  Most instruments today are controlled by a computer, but there’s nothing stating an instrument <em>must</em> be computer controlled.  More specifically, an instrument for chemical analysis converts chemical or physical information into numerical information a chemist can directly interpret.  You might think of it as a translator between the chemical system under study and the investigator.</p>
 
 <blockquote>
   <p><strong>Chemical instrumentation</strong> refers to electronic and/or optical devices used to study the chemical properties of a sample.</p>
 </blockquote>
+
+<h1 id="chemical-instrumentation">Chemical Instrumentation</h1>
+
+<p>As a general rule, all chemical instrumentation works by probing the system with an energy source and observing the result with a detector.  For example, a UV-visible spectrometer uses probes the sample with UV-visible light and detects how much of that light is transmitted through the sample.</p>
+
+<div class="mermaid">
+  graph LR
+     A(Stimulus/Probe) --&gt; B[Sample]
+     B[Sample] --&gt; C(Response/Detector)
+</div>
+
+<div class="image-caption-center">The generalized layout of most chemical instrumentation, consisting of a stimulus, the sample, and a device for measuring the response.</div>
+
+<p>This generalized layout can applied to measure many characteristic properties of a sample.</p>
+
+<!-- ![Chemical and Physical Properties Employed in Instrumental Methods.](http://localhost:4000/devel/chem370/lectures/img/instrumental-methods.jpg) -->
+
+<div class="image-caption"> 
+Chemical and Physical Properties Employed in Instrumental Methods. (c) *Principles of Instrumental Analysis* by Skoog et al, reproduced as Fair Use.
+</div>
+
+<p><img src="http://localhost:4000/devel/chem370/lectures/img/data-flow.png" alt="A block diagram of a fluorometer showing (a) a general diagram of the instrument, (c) a diagrammatic representation of the flow of information through various data domains in the instrument, and (c) the rules governing the data domain transformations during the measurement process." /></p>
+
+<div class="image-caption"> 
+A block diagram showing how chemical instrumentation converts between various data domains.
+</div>
+
+<p><img src="http://localhost:4000/devel/chem370/lectures/img/skoog_1-3.png" alt="A block diagram of a fluorometer showing (a) a general diagram of the instrument, (c) a diagrammatic representation of the flow of information through various data domains in the instrument, and (c) the rules governing the data domain transformations during the measurement process." /></p>
+
+<div class="image-caption"> 
+A block diagram of a fluorometer showing (a) a general diagram of the instrument, (c) a diagrammatic representation of the flow of information through various data domains in the instrument, and (c) the rules governing the data domain transformations during the measurement process. (c) Principles of Instrumental Analysis by Skoog et al, reproduced as Fair Use.
+</div>
 
 <p>In this class, we’ll focus on three broad categories of instrumentation, and most instruments you encounter in a chemistry lab will fall into one of these categories: (1) chromatography, which is used to separate mixtures, (2) spectroscopy, which utilizes light to probe a sample, and (3) mass spectrometry, which is used to identify chemicals based on mass.  The last of these (mass spec) is sometimes grouped under spectroscopy because both techniques produce a “spectrum”; however, the two techniques are quite different (as we shall see).</p>
 
@@ -200,7 +232,7 @@ Analytical Chemistry 2.1</p>
      click C callback "Mass spectrometry is used for structural determination"
 </div>
 
-<div class="image-caption-center">The categories of instruments we'll cover in this class.</div>
+<div class="image-caption-center">The categories of instruments we'll cover in this class: chromatography, spectroscopy, and mass spectrometry.</div>
 
 <p>You’ve surely encountered some of these techniques before, even if without realizing it.  You’ve used thin-layer chromatography and column chromatography in the organic chemistry lab, which rely on the same principles as the chromatographs we’ll use in instrumental analysis and you’ve done spectroscopy in the form of FT-IR (Fourier-transform infrared spectroscopy) and NMR (nulcear magnetic resonance) spectroscopy.  Even for the techniques that are new to you you’ll find they all rely on the same chemical principles you’ve learned in previous classes.</p>
 
@@ -210,6 +242,8 @@ Analytical Chemistry 2.1</p>
   <p>-Granger et al. <br />
 Instrumental Analysis</p>
 </blockquote>
+
+<hr />
 
 <p>You’ve likely seen instruments on shows such as CSI before.  While these shows rightly depict that the fields of forensic science and medicine rely heavily on chemical instrumentation, they tend to oversimplify the process of making a measurement.  In these shows, the sample is usually popped into an instrument and results are displayed within seconds on the screen.  But what has to be done before the sample goes into the instrument?  And how to the technicians using the instruments know they’re right?  And herein lies a hurdle for those learning to use instruments: An instrument with always give you a result, but the result is not always the correct answer.  If you put garbage in, you’ll get garbage out.  It is up to the analyst to use proper sample preparation, quality control, and data validation techniques to ensure the instrument is producing <em>accurate</em> results!</p>
 

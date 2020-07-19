@@ -40,16 +40,16 @@
 
 #navigation {
   overflow: hidden;
-  border-bottom: none;
   background-color: $tan !important;
   position: fixed;
   top: 0;
   width: 110%;
-  margin-left: 0;
+  margin-left: 0px;
   margin-right: auto;
   border-top: 35px solid $tan;
   padding: 1px;
-  max-width: 900px;
+  padding-left: 10px;
+  max-width: 1200px;
   font-size: 14px;
 }
 
@@ -63,7 +63,7 @@
 	margin: auto;
 	border: 2px solid $wcuLightGray;
 	background-color: $veryLightGray;
-	border-radius: 10px;
+	border-radius: 8px;
 	text-align: center;
 	&:hover {
 		color: $gold;
@@ -76,7 +76,9 @@ a.active-370
   background-color: white  !important;
   color: $purple !important;
   border: 1px solid $purple;
+	border-radius: 8px;
   font-weight: bold !important;
+  border-bottom: 10px solid $purple;
 }
 @media only screen and (max-width: 900px) {
   #navigation { 

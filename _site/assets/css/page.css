@@ -80,6 +80,7 @@ table {
   background-color: #fff;
   font-weight: normal;
 }
+
 #navigation-bar a:hover {
   color: #C1A875;
   background-color: white;
@@ -97,23 +98,23 @@ table {
     font-size: 0;
     border-top: 5px solid #fff;
   }
-
   .fa {
     font-size: initial;
   }
 }
+
 #navigation {
   overflow: hidden;
-  border-bottom: none;
   background-color: #F5F4F1 !important;
   position: fixed;
   top: 0;
   width: 110%;
-  margin-left: 0;
+  margin-left: 0px;
   margin-right: auto;
   border-top: 35px solid #F5F4F1;
   padding: 1px;
-  max-width: 900px;
+  padding-left: 10px;
+  max-width: 1200px;
   font-size: 14px;
 }
 
@@ -127,9 +128,10 @@ table {
   margin: auto;
   border: 2px solid #F2F2F2;
   background-color: #FAFAFA;
-  border-radius: 10px;
+  border-radius: 8px;
   text-align: center;
 }
+
 #navigation a:hover {
   color: #C1A875;
   background-color: white;
@@ -140,7 +142,9 @@ a.active-370 {
   background-color: white  !important;
   color: #592C88 !important;
   border: 1px solid #592C88;
+  border-radius: 8px;
   font-weight: bold !important;
+  border-bottom: 10px solid #592C88;
 }
 
 @media only screen and (max-width: 900px) {
@@ -149,11 +153,11 @@ a.active-370 {
     border-top: 5px solid #F5F4F1;
     margin-left: -10px;
   }
-
   .fa {
     font-size: initial;
   }
 }
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -161,6 +165,7 @@ html {
   font-size: 100%;
   background-color: #F5F4F1;
 }
+
 @media only screen and (max-width: 600px) {
   html {
     background-color: #fff;
@@ -176,6 +181,7 @@ body {
   margin-left: 15%;
   margin-right: 15%;
 }
+
 @media only screen and (max-width: 1000px) {
   body {
     background-color: #fff;
@@ -194,6 +200,7 @@ body {
   max-width: 900px;
   padding: 0 10px;
 }
+
 @media only screen and (max-width: 1000px) {
   .container {
     margin-top: 75px;
@@ -210,6 +217,7 @@ body {
   margin-top: 25px;
   padding-bottom: 25px;
 }
+
 @media only screen and (max-width: 1000px) {
   .post {
     margin-left: 0px !important;
@@ -241,6 +249,7 @@ body {
   padding-top: 5px;
   padding-bottom: 25px;
 }
+
 @media only screen and (max-width: 1000px) {
   .page {
     margin-left: 0px !important;
@@ -262,6 +271,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 15px;
   margin-left: -20px;
 }
+
 @media screen and (max-width: 640px) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
@@ -272,6 +282,7 @@ h1 {
   font-size: 30px;
   border-bottom: 2px solid #F2F2F2;
 }
+
 h1 a {
   color: inherit;
 }
@@ -298,6 +309,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
 a:hover, a:active {
   color: #C1A875;
 }
@@ -371,6 +383,7 @@ img {
   margin-bottom: 50px;
   padding-top: 1px;
 }
+
 @media only screen and (max-width: 600px) {
   .wrapper-masthead {
     padding-top: 20px !important;
@@ -380,6 +393,7 @@ img {
 .masthead {
   padding: 20px 0;
 }
+
 @media screen and (max-width: 640px) {
   .masthead {
     text-align: center;
@@ -392,6 +406,7 @@ img {
   height: 70px;
   margin-right: 15px;
 }
+
 @media screen and (max-width: 640px) {
   .site-avatar {
     float: none;
@@ -399,6 +414,7 @@ img {
     margin: 0 auto;
   }
 }
+
 .site-avatar img {
   border-radius: 5px;
 }
@@ -406,6 +422,7 @@ img {
 .site-info {
   float: left;
 }
+
 @media screen and (max-width: 640px) {
   .site-info {
     float: none;
@@ -429,6 +446,7 @@ img {
   color: #666;
   font-size: 16px;
 }
+
 @media screen and (max-width: 640px) {
   .site-description {
     margin: 3px 0;
@@ -453,9 +471,11 @@ img {
   font-size: 22px;
   font-style: italic;
 }
+
 .post .comments {
   margin-top: 10px;
 }
+
 .post .read-more {
   text-transform: uppercase;
   font-size: 15px;
@@ -468,6 +488,7 @@ img {
   -moz-box-shadow: none;
   box-shadow: none !important;
 }
+
 @media only screen and (max-width: 1000px) {
   .wrapper-footer {
     background-color: #fff;
@@ -501,6 +522,7 @@ footer {
   display: block;
   text-align: center;
 }
+
 .homepage-button:hover {
   color: #C1A875;
   border: 1px solid #C1A875;
@@ -905,3 +927,5 @@ code {
 }
 
 /* Literal.Number.Integer.Long */
+
+/*# sourceMappingURL=page.css.map */
