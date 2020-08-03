@@ -4,7 +4,7 @@ title:  CHEM 370 Schedule
 permalink: /devel/chem370/schedule
 ---
 
-All work is due at 23:59:59 on the Sunday preceded by the week listed here.
+This schedule is subject to change as needed.
 
 For "In Class" work, cohort 1 meets on Mondays, cohort 2 meets on Wednesdays, and cohort 3 meets on Fridays.  Please ask your instructor if you're unsure which cohort you're in.  Unless otherwise specified, exams will be administered face-to-face.
 
@@ -15,9 +15,9 @@ Please see the [lab schedule]({{ site.url }}/devel/chem370/lab-manual/appendix-5
 |  Week  | Begins | Theme                  | In Class           | Lecture 1              | Lecture 2             | Lab                 | HW                          |
 |:------:|:------:| ---------------------- | ------------------ | ---------------------- | --------------------- | ------------------- | --------------------------- |
 |   1    |  8/17  | Intro                  | No Meeting         | Analytical Perspective | Analyst's Toolbox     | Intro + Safety      | Chemistry Review + MD Intro |
-|   2    |  8/24  | Signals and Noise      | Distributions in R | Distributions          | Errors and CIs        | GC Lab 1            | Errors & CIs                |
-|   3    |  8/31  | Data Analysis          |                    | Reproducible Research  | QA/QC + Standards     | GC Data @ Home      | -                           |
-|   4    |  9/7   | Quantitative Analysis  | No Meeting         | Standardization        | Blanks                | UV-vis (Labster)    | Making Solutions            |
+|   2    |  8/24  | Signals and Noise      | Choosing a Method  | Distributions          | Errors and CIs        | GC Lab 1            | Errors & CIs                |
+|   3    |  8/31  | Data Analysis          | Distributions in R | Reproducible Research  | QA/QC + Standards     | GC Data @ Home      | Making Solutions            | 
+|   4    |  9/7   | Quantitative Analysis  | No Meeting         | Standardization        | Blanks                | UV-vis (Labster)    |                             |
 |   5    |  9/14  | Instrumentation Survey | ***Exam 1***       | Survey 1 + 2           | Survey 3 + 4          | UV-vis Data @ Home  |                             |
 |   6    |  9/21  | Spectroscopy           |                    | Spectroscopy           | Optics                | Rotations           | ***Instrument Quizzes***    |
 |   7    |  9/28  | Spectroscopy           |                    | UV-vis: Theory         | UV-vis: Instruments   | Rotations           |                             |
