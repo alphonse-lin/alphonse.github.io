@@ -15,6 +15,7 @@ Video tutorials for R, RStudio, and data processing methods.
 # How to Get Help
 
 - **R help:** Type `?function_name()` into the R prompt to learn about a function. For example, `?plot()` will bring up the help for the `plot()` function.
+- **MS Teams Discussion:** Post your question to the general discussion channel in MS Teams.  This will be visible by the whole class.  If you know the answer to someone else's question, please answer it!  If no one knows the answer I'll weigh in.  By posting your question on MS Teams you allow the whole class to benefit and help keep me from answering the same question many times over.
 - **Stack Overflow:** The [Stack Overflow](https://stackoverflow.com/questions/tagged/r) discussion board.  Often you can find Stack Overflow discussions that answer your question by using you favorite search engine (e.g. Google).
 - **Each Other:** Please help each other!  I encourage collaboration.  Note that collaboratively helping each other does NOT mean sharing code verbatim.  Help others understand concepts and methods rather than providing an answer.
 - **Email Me:** I can often help solve the problem via [email](mailto:dfischer@wcu.edu).  To the best extent possible, please take the following steps so that I can answer your question in an effective and timely manner:

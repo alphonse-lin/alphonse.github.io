@@ -10,13 +10,13 @@ icon: fa-digital-tachograph
   {% for post in site.posts limit:1 %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}/chem370/announcements">Announcements</a></h1>
+      <h1><a href="{{ site.baseurl }}/chem370/announcements">This Week</a></h1>
 
       <div class="entry">
         {{ post.content }}
       </div>
 
-      <a href="{{ site.baseurl }}/chem370/announcements" class="read-more">Read More</a>
+      <a href="{{ site.baseurl }}/chem370/announcements" class="read-more">View All</a>
     </article>
   {% endfor %}
 </div>
@@ -33,6 +33,10 @@ icon: fa-digital-tachograph
 <i class="fa fa-scroll fa-lg"></i>
 lecture syllabus
 </a>
+<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/schedule">
+  <i class="fa fa-calendar-alt fa-lg"></i>
+  schedule
+</a>
 <!-- <a class="homepage-button" href="{{site.baseurl}}/devel/chem370/schedule">
  <i class="fa fa-calendar-alt fa-lg"></i>
  lecture schedule
@@ -41,14 +45,11 @@ lecture syllabus
   <i class="fa fa-chalkboard-teacher fa-lg"></i>
   lectures
 </a>
-<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/instrument-tutorials">
+<!-- <a class="homepage-button" href="{{site.baseurl}}/devel/chem370/instrument-tutorials">
   <i class="fa fa-digital-tachograph fa-lg"></i>
   instrument tutorials
-</a>
-<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/chemistry">
-  <i class="fa fa-atom fa-lg"></i>
-  chemistry
-</a>
+</a> -->
+
 </div>
 <!-- <hr class="hr-line"> -->
 <div class="column">
@@ -60,12 +61,12 @@ lecture syllabus
     <i class="fa fa-chart-line fa-lg"></i>
     data processing
 </a>
-<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/writing">
+<!-- <a class="homepage-button" href="{{site.baseurl}}/devel/chem370/writing">
    <i class="fa fa-edit fa-lg"></i>
    writing
-</a>
-<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/notebooks">
-  <i class="fa fa-book-open fa-lg"></i>
-  notebooks (move)
+</a> -->
+<a class="homepage-button" href="{{site.baseurl}}/devel/chem370/chemistry">
+  <i class="fa fa-atom fa-lg"></i>
+  chemistry
 </a>
 </div>

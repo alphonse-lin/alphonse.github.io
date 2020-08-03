@@ -23,7 +23,7 @@ Read the Memorandum on the following page to understand the scenario for this la
 
 \newpage
 
-## Memorandum {-}
+## Memorandum {- #am-memo}
 
 \noindent
 ***Western Analytics, Inc.***
@@ -69,7 +69,7 @@ Please visit my office or email me with any questions.
 
 \newpage
 
-## HPLC
+## HPLC {#am-hplc}
 
 This lab will use the Agilent 1220 HPLC (high performance liquid chromatograph) to determine the concentration of acetaminophen in Tylenol tablets.
 
@@ -180,7 +180,7 @@ You should turn a ZIP folder containing:
 
 \newpage
 
-## FT-IR
+## FT-IR {#am-ftir}
 
 FT-IR spectroscopy is used to deduce the bonds present in liquids, solids, and gases.  It is widely used in industry, research, and teaching for qualitative analysis, but can also provide very accurate quantitative information.  All molecules have a unique infrared spectrum, comparable to a person's fingerprint.  However, it is usually very difficult to interpret infrared spectra of mixtures.  Chemometrics and linear algebra can circumvent this issue by picking out minute differences between spectra using statistical methods.  During this lab, FT-IR will be used to match a sample of acetaminophen to a reference spectrum using a metric called the hit quality index (HQI).  This methods provides a measure of how well two spectra match, and a HQI of 0.99 or better is required to indicate a contaminant-free sample.
 
@@ -236,7 +236,7 @@ You should turn a ZIP folder containing:
 
 \newpage
 
-## GC-MS
+## GC-MS {#am-gcms}
 
 Gas chromatography is a technique used to separate mixtures of gases.  The gases are injected into a column, which (in our case) is a long, hollow tube with a non-polar liquid coating on the inside.  They are pushed through the column with a carrier gas, He in our instrument.  The column is initially held at low temperature (a little above room temperature) and ramped at a defined rate up to 250 degrees C.  The combination of the temperature ramp and the non-polar column allows compounds to be separated based on boiling point and polarity.  GC can be paired with many different techniques, and is often used with electron-ionization mass spectrometry.  This type of mass spectrometer breaks molecules apart into fragments, sorts the fragments by mass, and counts the number of fragments of each mass.  The specific spectrum (or distribution of fragments) is unique for every chemical compound and is based on the stability of each bond in the molecule.  In this way, the identity of a compound can usually be deduced from a mass spectrum alone, although techniques such as nuclear magnetic resonance spectroscopy and Fourier-transform infrared spectroscopy can greatly aid in identification.
 
@@ -306,7 +306,7 @@ You should turn a ZIP folder containing:
 
 \newpage
 
-## Flame AA
+## Flame AA {#am-faas}
 
 Flame atomic absorption spectroscopy is a common method of determining the concentration of specific metals (cations) in a sample.  A solution is nebulized (aerosolized) into an acetylene flame where it is atomized (broken apart into its constituent atoms).  The atoms in the flame absorb characteristic wavelengths of light, unique to each element.  A light source specific to the analyte of interest (specifically, a hollow cathode lamp) shines through the flame, where the light gets absorbed by the sample.  The amount of absorption absorbed is linearly proportional to the concentration of the analyte in solution.  Although the instrument is relatively robust and inexpensive, it is limited to probing for a single analyte at a time.
 

@@ -22,5 +22,4 @@ rmd_files: [
             "07_statistical-data-analysis.Rmd",
             "08_lab-notebooks.Rmd",
             "00B_schedule.Rmd"
-
             ]

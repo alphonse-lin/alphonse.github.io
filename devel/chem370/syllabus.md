@@ -14,7 +14,7 @@ icon: fa-scroll
 <a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/devel/chem370/pdf/syllabus.pdf" target="blank">Download Syllabus as  PDF</a>
 
 **Instructor:** Al Fischer, PhD   
-**Office Hours:** By appointment at [calendly.com/drfischer](http://www.calendly.com/drfischer) (NS 209)  
+**Office Hours:** By appointment at [calendly.com/drfischer](http://www.calendly.com/drfischer) (Meet on MS Teams)  
 **Availability:** See my [calendar]({{site.baseurl}}/contact)  
 **Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 
@@ -48,7 +48,11 @@ To achieve a satisfactory grade, students will:
 
 **Lab Manual:** Fischer, D.A. (2020) *[Chem 370 Lab Manual]({{site.baseurl}}/devel/chem370/lab-manual)* (free online)
 
-**Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
+**Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.  
+
+Students are strongly encouraged to install [R](https://cran.r-project.org/) + [RStudio](https://rstudio.com/) on their computers to complete coursework.  These software are free for students and run on Windows, Mac OSX, and Linux.  Students may alternatively use the software on STEM VCAT, although this may add some additional complexity to assignments.
+
+Much of the course content will be delivered via Microsoft Teams and/or the course website.  It is recommended that students install the Microsoft Teams desktop and/or mobile app(s) on their device(s).  MS Teams is available for installation through the WCU Office365 web portal.
 
 <a id="covid"/>
 
@@ -87,7 +91,7 @@ Your final grade for the semester will be weighted thusly:
 - Discretionary: 5%  
 - Laboratory: 25%  
 
-Your **lecture grade** will be calculated as the total points you earned divided by the total points available (x 100%).  For exams, quizzes, and classwork, each question or assignment will specify the number of points available.  For homework, all questions will be graded on the point system of: 0 (did not attempt), 1 (attempted but entirely incorrect), 2 (incorrect, but close), or 3 (perfect), unless otherwise specified.
+Your **lecture grade** will be calculated as the total points you earned divided by the total points available (x 100%).  For exams, quizzes, and classwork, each question or assignment will specify the number of points available.  For homework, all questions will be graded on the point system of: 0 (did not attempt), 1 (attempted but entirely incorrect), 2 (incorrect, but close), or 3 (perfect), unless otherwise specified.  Lecture "attendance" will be determined by successful completion of the quizzes embedded in video lectures via Microsoft Forms. These video quizzes are worth 10 points each. Students will be awarded: 5 points for getting 1-33% of the questions correct; 7 points for 33-66% correct; 9 points for 66-99% correct; and 10 points for 100% correct.
 
 **Discretionary** points are determined at the end of the semester based on participation, effort, attendance, and overall respect for your peers/classmates, your instructor, and their time, both inside and outside the classroom.
 
@@ -162,13 +166,15 @@ Some items may be graded by computer software.  Any answers not in the specified
 
 **Classroom Expectations:** The shared learning space of the college classroom is built on respect for each other and each other’s learning. Learning together means our actions can intentionally and unintentionally distract others from their learning goals. As responsible learners who respect the rights of others and vow to minimize avoidable distractions such as: non-academic technology use, coming in late, sleeping, off-topic discussions, doing other homework, eating, etc.
 
-**Attendance:** Attendance to all lecture periods is ***strongly encouraged***.   There are no make-ups for in-class assignments, quizzes, exams, etc.  You should arrange *excused absences* with your instructor ahead of time.  An excused absence is any official University-sanctioned event, a contagious sickness, or medical issue that presents a severe limitation to your ability to attend class.  You are responsible for learning the topics covered during your absence.
+**Attendance:** You 'attendance' to lecture will be judged by your successful completion of the quizzes contained in the course videos (see "Grading" for additional information).  Attendance to all face-to-face sessions is strongly encouraged as much as possible given the current public health crisis.  ***If you experience any symptoms of COVID-19, cold, flu, or other contagious sickness please do NOT come to class!  Likewise, do not attend if you have been in contact with someone who has tested positive for COVID-19 or is suspected to have COVID-19.  Please maintain diligent communication with your instructor during these situations and appropriate accomodations will be made.***
 
-**Inclement Weather & Other Emergencies (including COVID19):** Please check the University website for campus closings during times of bad weather, local, state, or national emergencies, and/or pandemics.  Your health and safety is a priority when traveling. Use common sense when attempting to get to campus and notify your instructor if you are unable to safely make it.  Announcements will be made via e-mail if class must be cancelled when the University has not officially closed and/or if we are otherwise unable to meet in person.
+<!-- Attendance to all lecture periods is ***strongly encouraged***.   There are no make-ups for in-class assignments, quizzes, exams, etc.   -->
+
+You should arrange *excused absences* with your instructor ***ahead of time***.  An excused absence is any official University-sanctioned event, a contagious sickness, or medical issue that either presents a severe limitation to your ability to attend class or puts the health/safety of others in the class at risk.  You are responsible for learning the topics covered during your absence.  
+
+**Inclement Weather & Other Emergencies (including COVID19):** Please check the University website for campus closings during times of bad weather, local, state, or national emergencies, and/or pandemics.  Your health and safety is a priority when traveling. Use common sense when attempting to get to campus and notify your instructor if you are unable to safely make it.  Announcements will be made via e-mail and/or Microsoft Teams if class must be canceled when the University has not officially closed and/or if we are otherwise unable to meet in person.
 
 **Composition-Condition Marks:** Proper mastery of the English language will be considered when assessing written work. A student whose written work fails to meet acceptable standards will be assigned a composition-condition (CC) mark by the instructor on the final grade report. All undergraduates who receive two CC grades prior to the semester in which they complete 110 hours at WCU are so notified by the registrar and are required to pass English 300 or English 401 before they will be eligible for graduation. This course must be taken within two semesters of receiving the second CC and must be passed with a grade of C (2.0) or better. Students needing assistance with writing are encouraged to get help from WaLC. All written work submitted for this class may be checked with SafeAssign.
-
-**Civil Discourse at Western Carolina:** Consistent with WCU’s core values and our campus creed, the WCU community accepts the freedoms and responsibilities of our shared community. WCU encourages all to clearly express their own views while at the same time seeking to understand the varieties of style, identity, and opinion that are held in any diverse community. In order for us to sustain a learning environment that promotes and values freedom of expression, we have a shared charge to accept personal responsibility for our actions, reactions, and speech, while seeking to learn from the actions, reactions, and speech of others.
 
 <a id="policies-institution"/>
 
@@ -176,11 +182,9 @@ Some items may be graded by computer software.  Any answers not in the specified
 
 **Course Recording and Broadcasting:** Students may make visual or audio recordings (Recording) of any class related content, using any approved recording device (e.g., smart phone, computer, digital recorder, etc.) upon the **prior permission of the instructor** and subject to the following restriction(s). The Recording, along with the video capture of visible course materials (e.g., visible PowerPoint slides and/or visible lecture notes), shall be limited to the student’s personal, course related, educational use and shall be subject to all applicable copyright laws and institutional policies. The student may not transfer, transmit, or otherwise disseminate the Recording to any third party, including classmates, without the permission of the instructor. Any violation of these restrictions, or any other restriction verbally communicated by the instructor, may subject the student to the provisions of the WCU Academic Integrity Policy, the WCU Code of Student Conduct or both.
 
-**Accommodations for Students with Disabilities:** Western Carolina University is committed to providing equal educational opportunities for students with documented disabilities and/or medical conditions. Students who require accommodations must identify themselves as having a disability and/or medical condition and provide current diagnostic documentation to the Office of Accessibility Resources. Please contact the Office of Accessibility Resources, 135 Killian Annex, (828) 227-3886, by [email](mailto:accessibility@wcu.edu), or at [accessibility.wcu.edu/](https://www.wcu.edu/learn/academic-services/disability-services/index.aspx).  If you experience accessibility issues with any online material please inform you instructor so that the problem can be resolved.
+**Accommodations for Students with Disabilities:** Western Carolina University is committed to providing equal educational opportunities for students with disabilities. The Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights for persons with disabilities. Among other things, this legislation requires that students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. If you believe you have a disability requiring an accommodation, please contact the Office of Accessibility Resources located in Killian Annex or call 828-227-2716. For additional information, visit [go.wcu.edu/oar](https://.go.wcu.edu/oar).
 
-**Academic Integrity Policy and Reporting Process:** This policy addresses academic integrity violations of undergraduate and graduate students. Students, faculty, staff, and administrators of Western Carolina University strive to achieve the highest standards of scholarship and integrity. Any violation of the Academic Integrity Policy is a serious offense because it threatens the quality of scholarship and undermines the integrity of the community. While academic in scope, any violation of this policy is by nature, a violation of the Code of Student Conduct and will follow the same conduct process (see Article VII.B.1.a.). If the charge occurs close to the end of an academic semester or term or in the event of the reasonable need of either party for additional time to gather information timelines may be extended at the discretion of the Department of Student Community Ethics (DSCE).
-
-Instructors have the right to determine the appropriate academic sanctions for violations of the Academic Integrity Policy within their courses, up to and including a final grade of “F” in the course in which the violation occurs.
+**Academic Integrity Policy and Reporting Process:** This policy addresses academic integrity violations of undergraduate and graduate students. Graduate students should read inside the parenthesis below to identify the appropriate entities in charge of that step of the process. Students, faculty, staff, and administrators of Western Carolina University (WCU) strive to achieve the highest standards of scholarship and integrity. Any violation of the Academic Integrity Policy is a serious offense because it threatens the quality of scholarship and undermines the integrity of the community. While academic in scope, any violation of this policy is by nature, a violation of the Code of Student Conduct (Code) and will be addressed as outlined in that document. If the charge occurs close to the end of an academic semester or term or in the event of the reasonable need of either party for additional time to gather information timelines may be extended at the discretion of the appropriate academic Dean.  Instructors have the right to determine the appropriate academic sanctions for violations of the Academic Integrity Policy within their courses, up to and including a final grade of “F” in the course in which the violation occurs.
 
 Definitions:
 
@@ -189,7 +193,9 @@ Definitions:
 - *Plagiarism*: Representing the words or ideas of someone else as one’s own in any academic exercise.
 - *Facilitation*: Helping or attempting to help someone to commit a violation of the Academic Integrity Policy in any academic exercise (e.g. allowing another person to copy information during an examination).
 
-Undergraduate and Graduate Academic Integrity Process: Additional information is available on the Student Success website under Student Community Ethics: [http://www.wcu.edu/experience/dean-of-students/academic-integrity.aspx](http://www.wcu.edu/experience/dean-of-students/academic-integrity.aspx).
+Additional information is available on the Student Success website under Student Community Ethics: [http://www.wcu.edu/experience/dean-of-students/academic-integrity.aspx](http://www.wcu.edu/experience/dean-of-students/academic-integrity.aspx).
+
+**Community Vision for Inclusive Excellence Statement:** The diverse perspectives encountered at WCU are an important part of the preparation of students for roles as regional, national, and global leaders who contribute to the improvement of society. It is expected that members of the WCU community will not only coexist with those who are different from themselves, but also nurture respect and appreciation of those differences. We encourage civil discourse as a part of the learning enterprise, and as a campus we do not tolerate harassing or discriminating behavior that seeks to marginalize or demean members of our community.  WCU encourages all to clearly express their own views while at the same time seeking to understand the varieties of style, identity, and opinion that are held in any diverse community. In order for us to sustain a learning environment that promotes and values freedom of expression, we have a shared charge to accept personal responsibility for our actions, reactions, and speech, while seeking to learn from the actions, reactions, and speech of others.
 
 ## Student Resources
 <!-- **Writing and Learning Commons (WaLC):** The Writing and Learning Commons (WaLC), located in Belk 207, writing tutoring and online writing and learning resources for all students. To view schedules and make appointments for any of these services, visit [tutoring.wcu.edu](http://tutoring.wcu.edu) or call 828-227-2274. -->
@@ -202,9 +208,9 @@ In addition to services provided by the WaLC and MTC, students also will have ac
 
 <!-- The Mathematics Tutoring Center (MTC) in Stillwell 455 provides drop-in tutoring for math courses and math-related content across the curriculum. Tutoring is available on a drop-in basis, MTWR 9:00am-9:00pm and Friday 9:00am-5:00pm. For more information, please visit [mtc.wcu.edu](http://mtc.wcu.edu/) or call 828–227–3830. -->
 
-**Academic Calendar:** The University academic calendar can be found at [here](http://www.wcu.edu/learn/academic-calendar.aspx). It includes dates for all breaks, University closures, final exams, etc. 
+**Academic Calendar:** The University academic calendar can be found at [wcu.edu/learn/academic-calendar.aspx](http://www.wcu.edu/learn/academic-calendar.aspx). It includes dates for all breaks, University closures, final exams, etc. 
 
-**Final Exam:** The University final exam schedule can be found on the [Registrar's webpage](http://www.wcu.edu/learn/academic-services/registrars-office/).
+**Final Exam:** The University final exam schedule can be found on the [wcu.edu/learn/academic-services/registrars-office/](http://www.wcu.edu/learn/academic-services/registrars-office/).
 
 ## Syllabus Updates
 
