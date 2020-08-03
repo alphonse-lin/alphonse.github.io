@@ -212,4 +212,4 @@ After the spectrometer calibration step you should run:
 
 6. Include a conclusion dicussing the measured concentration of your sample (and how it compares to other studies), the validity of your results, and your limits of detection/quantitation (i.e. are your results meaningful?).
 7. Before turning in your notebook, go to **Kernel > Restart Kernel** and then **Run > Run All**.  Fix any errors before turning in your notebook.
-8. Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for [Monday](https://alphonse.github.io/devel/chem370/assignments/submissions-monday.html) or [Wednesday](https://alphonse.github.io/devel/chem370/assignments/submissions-wednesday.html)).
+8. Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for [Monday](https://alphonse.github.io/devel/chem370/assignments/submissions.html) or [Wednesday](https://alphonse.github.io/devel/chem370/assignments/submissions-wednesday.html)).

@@ -118,5 +118,5 @@ navigation-370:
     url: /chem370/writing
     icon: fa-edit  
   - title: Submissions
-    url: /chem370/assignment-submissions
+    url: /chem370/submissions
     icon: fa-paper-plane    
