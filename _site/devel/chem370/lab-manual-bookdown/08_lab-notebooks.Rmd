@@ -6,6 +6,12 @@ Instrumental analysis presents unique challenges when it comes to keeping lab no
 
 In an effort to conduct reproducible data analysis, you will use open-source tools for programmatic data analysis.  Your notebook will be kept using **RMarkdown** and your data will be analyzed directly in your notebook using **R**.
 
+### Example Lab Notebooks {-}
+
+- [Good Example](../notebooks/good-example/) *Note: data processing in this example was done in the language Julia, not R.*   
+- [Bad Example](../notebooks/bad-example/)  *Note: data processing in this example was done in the language Julia, not R.*   
+- [Bad Example 2](../notebooks/bad-example-2/)  *Note: data processing in this example was done in the language Julia, not R.*   
+
 ### Keeping an Archival Record {-}
 
 To maintain an archival record, the lab notebook should:  
