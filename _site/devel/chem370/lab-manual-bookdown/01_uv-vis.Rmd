@@ -1,5 +1,3 @@
-# (PART) Introduction to Instrumentation {-}
-
 # UV-visible Spectroscopy
 
 ##### **Objective** | Determine the concentration of quinine in tonic water using spectroscopic methods. {-}
@@ -16,8 +14,8 @@
   - Describe the difference between absorption spectroscopy and luminescence spectroscopy.
   - Calculate the limits of detection and limits of quantitation from a blank sample.
   - Employ a quality control sample to check the accuracy of their results.
-  - Utilize Jupyter as an electronic lab notebook.
-  - Utilize Octave/MATLAB functions to analyze spectroscopic data.
+  - Utilize RMarkdown as an electronic lab notebook.
+  - Utilize R functions to analyze spectroscopic data.
 
 ## Introduction {#uv-vis-intro -}
 

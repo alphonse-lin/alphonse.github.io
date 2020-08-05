@@ -1,12 +1,10 @@
 # Appendix 4: Lab Notebook Guidelines {-}
 
-***Requires update!!***
-
 Your lab notebook is the single ***exact, permanent, legally defensible, archival record*** of what you did in lab.  In an academic setting, notebooks are often used by the person who wrote the notebook or a lab colleague when trying to repeat an experiment, process data, or publish results.  In a professional setting, they may be used to communicate work to new employees, defend against patent lawsuits, or support forensic or toxicological conclusions in a court of law.  A good test of your lab notebook is to imagine handing it to a peer who has never completed the lab.  Then, try to determine if there would enough information for them to (1) complete the lab with no other resources, (2) ***exactly*** repeat your data analysis and calculations and arrive at the ***exact*** same answer (including all significant digits), and (3) understand your conclusions and how you arrived at those conclusions.  When in doubt, it's better to include too much than too little!
 
 Instrumental analysis presents unique challenges when it comes to keeping lab notebooks.  Often, the final data collected is a spectrum or chromatogram with thousands of data points.  Instruments save this directly in an electronic format, and archiving it in a paper lab notebook is often unfeasible.  To deal with that, this lab uses electronic lab notebooks.  You should use your electronic lab notebook exactly as you've used paper notebooks in the past -- record ***exactly*** what you did in lab *as you do it* (not afterwards!).  Include direct observations as necessary.  In addition, you will be required to link all data files to your notebook so that your analysis can be exactly repeated and checked for accuracy.
 
-In an effort to conduct reproducible data analysis, you will use open-source tools for programmatic data analysis.  Your notebook will be kept using **Jupyter** and your data will be analyzed directly in your notebook using **GNU Octave** (similar to MATLAB).
+In an effort to conduct reproducible data analysis, you will use open-source tools for programmatic data analysis.  Your notebook will be kept using **RMarkdown** and your data will be analyzed directly in your notebook using **R**.
 
 ### Keeping an Archival Record {-}
 
@@ -43,9 +41,9 @@ To maintain an archival record, the lab notebook should:
 - **Graduated cylinders:** For small volumes, these typically have 3 significant digits.  You should interpolate to at least the nearest 0.5 mL when using a graduated cylinder.  Again, there is a large difference between recording 10 ml and 10.5 ml in your notebook in regards to significant figures (1 vs 3)!  Most work in instrumental analysis should use volumetric glassware and not graduated cylinders.
 - **Beakers/Erlenmeyer Flasks:** These should not be used to measure volumes in instrumental analysis..
 
-### Plots {-}
+<!-- ### Plots {-}
 
-Plots should be completed to a high degree of quality, as defined in the [Publication-quality Figures Guide]({{site.baseurl}}/devel/chem370/writing/figures)
+Plots should be completed to a high degree of quality, as defined in the [Publication-quality Figures Guide]({{site.baseurl}}/devel/chem370/writing/figures) -->
 
 ### Creating Instrument Tables {-}
 
@@ -97,8 +95,6 @@ You are expected to provide a table of all relevant instrument information in yo
 | Scan Range       | 30 - 400 m/z        |
 | Scan Speed       | Normal              |
 | Source Temp      | 250°C               |
-
-<a id="block-diagram"/>
 
 ### The Block Diagram {-}
 

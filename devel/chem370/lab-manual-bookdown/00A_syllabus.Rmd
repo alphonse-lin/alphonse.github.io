@@ -31,7 +31,7 @@ To achieve a satisfactory grade, students will:
 
 **Lab Manual:** Fischer, D.A. (2020) *[Chem 370 Lab Manual]({{site.baseurl}}/devel/chem370/lab-manual)* (free online)
 
-**Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).   Students will be required to install [Juno + Julia](https://junolab.org/) on their computer.  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
+**Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).   Students will be required to install [R](https://cran.r-project.org/) + [RStudio](https://rstudio.com/) on their computer, both of which are freely available for non-commercial use.  Alternatively, student may use R + RStudio via VCAT, although this may add complexity to assignments.  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
 
 **Additional Required Course Materials:**  
 
@@ -45,7 +45,7 @@ Most materials are available from the WCU bookstore; goggles are also available 
 
 ### Lab Notebooks and Data Analysis {-}
 
-Lab notebooks will be completed electronically either using Jupyter and Octave or using MATLAB Live Notebooks.  Students will be required to submit their data files along with their lab notebooks so that they can be checked for accuracy.  A lab notebook that does not compile will not be graded.
+Lab notebooks will be completed electronically either using R and RStudio.  Students will be required to submit their data files along with their lab notebooks so that they can be checked for accuracy.  A lab notebook that does not compile will not be graded.
 
 <!-- Lab notebooks will be completed electronically in Lab Archives and data analysis will be done in Microsoft Excel.  Alternatively, students may choose to learn a programming language (Python) and complete their lab notebooks in Jupyter for extra credit.  If a student chooses programming, a total of 100 points extra credit will be added to SLO 2, above.  Students must complete *all* lab work in Jupyter for extra credit -- no partial extra credit will be awarded.  However, students will have a 2-week grace period to choose. -->
 
@@ -118,6 +118,17 @@ Late work is not accepted in this course.  Due dates are automatically enforced 
 
 Some items may be graded by computer software.  Any answers not in the specified format will not be graded.  Written work may be checked for plagiarism using computer software.  Plagiarism will NOT be tolerated (see policies in *Fine Print*, below).  Due dates/times are computer-enforced.
 
+### COVID19 Policies {-}
+
+The lab portion of Instrumental Analysis will use a *Hybrid Web* format.  Lab work and instrumental analyses will be completed in lab, but data processing and writing will be completed outside the laboratory.  Students will work in groups of 2-3 in lab, and each group will be assigned a specific time of day to attend lab.  If you do not attend during this time you will not be able to complete the lab.  This is necessary to help maintain the room capacity requirements introduced to slow the spread of SARS-CoV-2.  During all in-person meetings, students *must*:
+
+  - Wear a face mask at all times (see "Masking for a Friend" statement below).
+  - Practice social distancing (maintain a distance of 2 meters from other individuals as much as possible).
+  - Practice good hygiene practices and follow [CDC guidelines](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html) to minimize spread of COVID19.
+  - Avoid coming to class if you experience and cold, flu, or [COVID19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html), have been diagnosed with COVID19, or have been in contact with someone who's tested positive for COVID19 within the last 14 days.
+  
+Note that these policies are subject to changes as the COVID19 pandemic grows or shrinks and recommended best-practices continue to develop.
+
 ### Course Policies {-}
 
 **Classroom Expectations:** The shared learning space of the college classroom is built on respect for each other and each other’s learning. Learning together means our actions can intentionally and unintentionally distract others from their learning goals. As responsible learners who respect the rights of others and vow to minimize avoidable distractions such as: non-academic technology use, coming in late, sleeping, off-topic discussions, doing other homework, eating, etc.
@@ -128,7 +139,19 @@ Some items may be graded by computer software.  Any answers not in the specified
 - Wear closed-toed shoes that fully cover your feet up to the ankle at all times.  
 - Wear long pants that extend over the top of your shoes at all times.  
 - Wear a hair tie for long hair.  
-- Never wear tank tops, sleeveless shirts, shorts, or sandals.  
+- Never wear tank tops, sleeveless shirts, shorts, or sandals.
+
+***Masking for a Friend:*** As the WCU Community Creed articulates, members of the WCU community are expected to live by high standards of academic and personal integrity and embrace their responsibility as a member of the Catamount community. In recognition of this responsibility, and in response to the best available science and current guidance from the Centers for Disease Control and Prevention, every student must wear a mask or other cloth face-covering that covers their nose and mouth while in this classroom. Students who do not have a mask will be asked to leave the classroom and only return when they follow this basic public health recommendation. Following this simple, science-based guideline will help ensure the safety of the entire Catamount community.
+
+Note that masks do little to protect the person wearing the mask; rather, they minimize the chances that someone who is already sick will spread the disease to others.  When you come to class in your mask, you're not only protecting your friends, peers, and instructors in the room with you, but also their friends, family, and loved ones, especially those in high-risk populations.  Students who miss class because they are not wearing a maks will not be able to make up the work missed.  Students who do not have masks can obtain them at the locations below:
+
+  - University Center - Main Information Desk (2nd floor)
+  - Hunter Library - Circulation Desk
+  - Belk Building – CET Dean’s Office (Room 161)
+  - Health and Human Sciences Building – CHHS Dean’s Office (Room 201)
+  - Biltmore Park Instructional Site – 3rd floor Information Desk
+  
+*Special note for laboratory work:* In the event of a chemical spill, splash, or other event than causes your mask to become contaminated, you should remove the mask and follow appropriate rinsing protocols to remove the contaminants from your skin, just as you would with any contaminated clothing.
 
 ***Laboratory Behavior:*** Never bring food or drink into the laboratory.  This includes sealed bottles and items inside backpacks – leave them outside the lab!  Do not chew gum, use tobacco products, or apply cosmetics in the lab.  Do not place personal items inside fume hoods or where they may come into contact with chemicals.  Keep walkways clear of chairs, bookbags, etc.  Wash your hands before leaving lab, and never wear gloves or lab coats outside the lab!
 
@@ -139,6 +162,8 @@ In an effort to maintain a productive work environment for all students, please 
 ***Pregnancy:*** Certain chemicals can have severe harmful effects on unborn children.  Any student who is pregnant or might have become pregnant and wished to avoid these hazards should notify her TA or instructor before conducting any laboratory work so that proper safety precautions can be taken.
 
 **Attendance:** Please email your instructor *ahead of time* if you encounter circumstances that absolutely prevent you from making it to lab on time.  Attendance to all class periods is mandatory. Absences from group work sessions may incur a loss of points up to a zero for the assignment and deductions in the student's participation grade.  
+
+***If you experience any symptoms of COVID-19, cold, flu, or other contagious sickness please do NOT come to class!  Likewise, do not attend if you have been in contact with someone who has tested positive for COVID-19 or is suspected to have COVID-19.  Please maintain diligent communication with your instructor during these situations and appropriate accommodations will be made.***
 
 **Inclement Weather:** Please check the University website for campus closings during times of bad weather.  Your safety is a priority when traveling. Use common sense when attempting to get to campus and notify your instructor if you are unable to safely make it.  Announcements will be made via e-mail if class must be cancelled when the University has not officially closed.
 

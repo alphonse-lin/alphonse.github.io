@@ -47,22 +47,22 @@ Most unknown samples should be analyzed in triplicate.  You should measure the s
 
 In Octave, the mean is:
 
-```{octave eval = FALSE}
-x = [1 2 3];
-avg = mean(x);
+```{r eval = FALSE}
+x <- c(1 2 3)
+avg <- mean(x)
 ```
 
 The standard deviation is:
 
-```{octave eval = FALSE}
-x = [1 2 3];
-sd = std([1 2 3]);
+```{r eval = FALSE}
+x <- c(1, 2, 3)
+sd <- std(x)
 ```
 
 The relative standard deviation (RSD, in percent) is:
 
-```{octave eval = FALSE}
-rsd = sd/avg * 100;
+```{r eval = FALSE}
+rsd = sd/avg * 100
 ```
 
 ## Limits of Detection and Quantitation {-}
@@ -95,17 +95,15 @@ $$
 
 ## Comparing Means {-}
 
-If you are comparing two means or comparing a mean to an expected value (e.g. comparing the concentration of a compound to the concentration listed on the manufacturer's label), you should use a *t*-test to draw you conclusions.  A *t*-test can be performed in Octave using the `ttest()` function from the `statistics` package.
+If you are comparing two means or comparing a mean to an expected value (e.g. comparing the concentration of a compound to the concentration listed on the manufacturer's label), you should use a *t*-test to draw you conclusions.  A *t*-test can be performed in R using the `t.test()` function.
 
-```{octave eval = FALSE}
-# pkg install -forge statistics ## you only need to run this command once to install
-pkg load statistics # load the package every time you restart the kernel.
-measurements = rand(1, 10); # this is your sample vector
-expected_value = 0.5
-[h, p, CI, stats] = ttest(measurements, expected_value);
+```{r eval = FALSE}
+measurements <- rnorm(1:10) # this is your sample vector
+expected_value <- 0.5
+t.test(measurements, expected_value);
 ```
 
-If the output is 0, the sample mean is not significantly different from the provided mean at the 95% confidence interval.  If the output is 1, the means are significantly different at the 95% confidence interval.  Run `?ttest()` in Octave for more information.
+If the output is 0, the sample mean is not significantly different from the provided mean at the 95% confidence interval.  If the output is 1, the means are significantly different at the 95% confidence interval.  Run `?t.test()` in R for more information.
 
 ## Outlier Detection {-}
 
