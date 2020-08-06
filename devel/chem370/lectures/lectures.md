@@ -50,7 +50,7 @@ icon: fa-chalkboard-teacher
 
 ## Lecture List
 
-*Lectures are numbered by topic and broken up by day. (e.g. topic.subtopic.day)*
+<!-- *Lectures are numbered by topic and broken up by day. (e.g. topic.subtopic.day)* -->
 
 <div>
 <ul>
