@@ -1,37 +1,37 @@
-# Appendix 2: Octave (MATLAB) Cookbook {-}
+# Appendix 2: R Cookbook {-}
 
-This appendix contains snippets of code you can use to accomplish specific tasks in Octave.  For the most part, you can copy and past this code and change the variable names to perform the tasks listed.  Most of the programming tasks you'll need to accomplish in Chem 370 can be found here.
+This appendix contains snippets of code you can use to accomplish specific tasks in R.  For the most part, you can copy and past this code and change the variable names to perform the tasks listed.  Most of the programming tasks you'll need to accomplish in Chem 370 can be found here.
 
-Some of the code is in the form of *functions*.  The code for each function should be run once in your notebook, after which point you can use that function just like any built-in Octave function.
+Some of the code is in the form of *functions*.  The code for each function should be run once in your notebook, after which point you can use that function just like any built-in R function.
 
-Any code preceded by a `#` or `%` is a comment and is not interpreted by Octave.
+Any code preceded by a `#` is a comment and is not interpreted by R.
 
 ## Chromatogram & Mass Spectrum Plotting {-}
 
-Chromatograms and mass spectra are often normalized to the maximum value in the chromatogram to give a $y$-axis in *Relative Abundance*, either as a fraction (0-1) or percentage (0-100%).  The following example assumes a data matrix with *Time* as column 1 and *Detector Signal* as column 2.
+Chromatograms and mass spectra are often normalized to the maximum value in the chromatogram to give a $y$-axis in *Relative Abundance*, either as a fraction (0-1) or percentage (0-100%).  The following example assumes a data frame with *Time* as column 1 and *Detector Signal* as column 2.
 
-```{octave, eval = FALSE}
+```{r, eval = FALSE}
 ### add a new column (3) that is the detector signal divided by the maximum detector signal.
-chromatogram(:, 3) = chromatogram(:, 2) ./ max(chromatogram(:, 2)) * 100;
+chromatogram[:, 3] = chromatogram[:, 2] / max(chromatogram[:, 2]) * 100;
 ```
 
 For chromatograms, it may sometimes be desirable to baseline correct the data first, as in:  
 
-```{octave, eval = FALSE}
+```{r, eval = FALSE}
 ### add a new column (3) that is baseline corrected
-chromatogram(:, 3) = chromatogram(:, 2) .- min(chromatogram(:, 2));
+chromatogram[:, 3] = chromatogram[:, 2] - min(chromatogram[:, 2])
 ### normalize the baseline-corrected data and convert to percentage
-chromatogram(:, 3) = chromatogram(:, 3) ./ max(chromatogram(:, 3)) * 100;
+chromatogram[:, 3] = chromatogram[:, 3] / max(chromatogram[:, 3]) * 100
 ```
 
 For mass spectra, data are mostly commonly plotted as bar plots instead of line plots.  This is because the the ions effectively have discrete, integer masses.  The example below assumes you have a data matrix called `massSpectrum` with $m/z$ in column 1 and detector signal in column 2.
 
-```{octave, eval = FALSE}
+```{r, eval = FALSE}
 ### convert to relative abundance
-massSpectrum = massSpectrum(:, 3) ./ max(massSpectrum(:, 3)) * 100;
+massSpectrum = massSpectrum[:, 3] / max(massSpectrum[:, 3]) * 100
 
 ### plot as bar plot
-bar(massSpectrum(:, 1), massSpectrum(:, 3));
+bar(massSpectrum[:, 1], massSpectrum[:, 3])
 ```
 ![Example of a chromatogram that has been properly normalized for comparison to other data.](./images/chromatogram.png)
 
@@ -44,8 +44,8 @@ Reads data from CSV file.  Must be comma delimited.
 
 **Example:**  
 
-```{octave, eval=FALSE}
-X = csvread('filename.csv')
+```{r, eval=FALSE}
+X <- csv.read('filename.csv')
 ```
 
 ## Find Peak Area {-}
@@ -81,7 +81,7 @@ function a = peakArea(C, x1, x2, p = true)
     y = C((C(:,1) > x1 & C(:,1) < x2), 2);
     a = trapz(x, y);
     if p == true
-        plot(C(:, 1), C(:, 2));
+        plot(C[:, 1], C[:, 2]);
         hold on
         area(x,y);
         xlabel("Time");
@@ -96,49 +96,13 @@ end
 
 ## Fit Linear Model (Calibration) {-}
 
-Returns slope, intercept, R2, and line of best fit data of best fit line given *column vectors* of $x$ and $y$ data.
+Returns slope, intercept, $R^2$, and line of best fit data of best fit line given a data frame containing $x$ (usually concentration) and $y$ (signal) data.
 
-**Form:**
-
-`fitlm(x, y)`
-
-**Example:**  
-
-`[fit_params, r2, fitline] = fitlm(concentrations, standards');`
-
-
-finds the area of chromatogram from 1.7 to 2.05 time units and plots the result.
-
-**Arguments:**  
-
-- `x`: a column vector containing the x data.
-
-- `y`: a column vector containing the y data.
-
-**Values:**
-
-- `fit_params`: a 2 row vector containing the intercept (1) and slope (2).
-
-- `r2`: The coefficient of determination for data vs. model
-
-- ` fitline`: a matrix containing the original $x$ data and predicted $y$ data.
-
-**Code:**
-```{octave, eval=FALSE}
-#####   fitlm   ##################################################
-
-function [fit_params, r2, fitline] = fitlm(x, y)
-    X = [ones(length(x), 1) x];
-    fit_params = (pinv(X'*X))*X'*y;
-    # watch this video to understand this code: https://www.youtube.com/watch?v=w2FKXOa0HGA
-    ss_tot = sum((y - mean(y)).^2);
-    ss_reg = sum(((X*fit_params) - mean(y)).^2);
-    r2 = ss_reg/ss_tot;
-    fitline = [x, X*fit_params];
-end
-#####################################################################
+```{r eval=FALSE}
+calcurve = lm(
+  y ~ x
+  )
 ```
-
 ## IR Spectrum Processing {-}
 
 IR spectra will be collected as *Absorbance* vs. *Frequency (in wavenumbers)*.   You will use this to calculate the hit-quality index (HQI) of each spectrum compared to a reference sample.  Read [Rodriguez et al 2011](https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments) for more information on HQI.
@@ -153,26 +117,26 @@ You should show your normalized data when comparing spectra in your lab notebook
 
 **Baseline the data:**
 
-```{octave, eval=FALSE}
-X(:, 3) = X(:, 2) .- min(X(:, 2));  # subtract minimum abs. from all abs. values a new column
+```{r, eval=FALSE}
+X[:, 3] <- X[:, 2] - min(X[:, 2])  # subtract minimum abs. from all abs. values a new column
 ### Do this for all 3 of your spectra
 ```
 
 **Normalize the data to 1:**
 
-```{octave, eval=FALSE}
-X(:, 3) = X(:, 3) ./ max(X(:, 3));  # divide all baselined abs. values by max abs. value
+```{r, eval=FALSE}
+X[:, 3] <- X[:, 3] / max(X[:, 3])  # divide all baselined abs. values by max abs. value
 ### Do this for all 3 of your spectra
 ```
 
 **Take the mean of 3 spectra:**
 
-```{octave, eval=FALSE}
+```{r, eval=FALSE}
 ### Put your three spectra in a 3-column matrix
-sample_A = [X(:, 2) X_2(:,2) X_3(:, 2)];
+sample_A <- data.frame(X[:, 2], X_2(:,2), X_3[:, 2])
 
 ### Then, take the mean across rows
-sample_A = mean(sample_A, [, 2]) # you could use [, 1] to take mean of columns
+sample_A <- rowMeans(sample_A) 
 
 ### Do this for both samples and the reference
 ```
@@ -187,8 +151,8 @@ $$
 
 Note that the dot is the *dot product*, NOT multiplication!  The dot product is easily calculated in Octave with the `dot()` function.  The example below assumes you have created a matrix with the normalize absorbance in column 3 as per the examples above.
 
-```{octave, eval=FALSE}
-dot(Ref(:, 3), X(:, 3))^2 / (dot(Ref(:, 3), Ref(:, 3)) * dot(X(:, 3), X(:, 3)))
+```{r, eval=FALSE}
+dot(Ref[:, 3], X[:, 3])^2 / (dot(Ref[:, 3], Ref[:, 3]) * dot(X[:, 3], X[:, 3]))
 ### do this for both samples
 ```
 
@@ -200,16 +164,14 @@ You should always plot your normalized data when comparing spectra in your lab n
 
 Note that (according to IUPAC convention) spectra are always plotted with higher energy on the left and lower energy on the right side of the $x$-axis.  For IR spectra displayed with frequency as $x$, this means you have to reverse the axis to be in reverse order, such that it go from higher frequency (higher energy, smaller wavelength) to lower frequency (lower energy, longer wavelength).
 
-```{octave, eval=FALSE}
-plot(X(:, 1), sample_A);
-set ( gca, 'xdir', 'reverse' ); #### This reverses the axis
-xlim([600 4000]); ylim([0 1]);  # This sets the axis limits
-xlabel("Frequency (cm^{-1})")   # Note that you can add superscripts and subscripts to labels!
-ylabel("Normalized Absorbance")
-hold on
-plot(X_2(:, 1), sample_B);
-plot(Ref(:, 1), Ref(:, 3));
-hold off
+```{r, eval=FALSE}
+plot(
+  X[:, 1], sample_A, 
+  xlim = c(4000, 600), ylim = c(0, 1)
+  xlab = "Frequency (cm^-1)", ylab = "Normalized Absorbance"
+)
+lines(X_2[:, 1], sample_B)
+lines(Ref[:, 1], Ref[:, 3])
 
 ### Make sure you include a legend too!
 ```

@@ -33,5 +33,5 @@ Instructions for submitting your certificate:
 1. Click the **View/Share Certificate** link to the right of *MATLAB Onramp* and then click **View/Print Certificate**.
 1. Click the **Get PDF** link at the top of the page.
 1. Download the PDF and submit it to Dropbox.
-    - Monday Section: [Dropbox Submission for **MONDAY**]({{site.url}}/chem370/assignments/submissions-monday)
-    - Wednesday Section: [Dropbox Submission for **WEDNESDAY**]({{site.url}}/chem370/assignments/submissions-wednesday)
+    - Monday Section: [Dropbox Submission for **MONDAY**]({{site.baseurl}}/chem370/assignments/submissions)
+    - Wednesday Section: [Dropbox Submission for **WEDNESDAY**]({{site.baseurl}}/chem370/assignments/submissions-wednesday)

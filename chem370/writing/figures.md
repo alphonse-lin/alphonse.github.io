@@ -50,14 +50,14 @@ All figures in lab reports and lab notebooks should follow these guidelines.  Ca
 
 The **following** figure is an example of a publication-quality infrared spectrum. The data series are clearly distinguishable with contrasting colors, the lines are clearly visible, and axes are clearly and intuitively labeled (with units), and there is an appropriate caption.  Moreover, the figure is clear, undistorted, and unpixellated. Note that the caption for this image includes a summary of the key message of the figure.
 
-![good-color-plot]({{site.url}}/chem370/assets/img/good.png)
+![good-color-plot]({{site.baseurl}}/chem370/assets/img/good.png)
 **Figure 1:** Example normalized ATR FT-IR spectra of *Usnea* lichens.    The two species have clearly distinguishable spectra.  Notably, *U. strigosa* has a less intense -OH stretch peak but more intense bands in the fingerprint region.
 
 ## A Publication-quality infrared spectrum (for black and white prints)
 
 Sometimes it's not possible to print in color, and some journals require figures be legible in black and white.  If your figure must be printed in black and white, you should use easily distinguishable shades of grey for data series (colors that look different in color may turn into the same shade of grey in black and white).  You should also distinguish data with different line types or marker shapes.  The following figure shows this.  In this case, the caption only provides a title; this practice is acceptable.
 
-![good-bw-plot]({{site.url}}/chem370/assets/img/goodBW.png)
+![good-bw-plot]({{site.baseurl}}/chem370/assets/img/goodBW.png)
 **Figure 1:** Example normalized ATR FT-IR spectra of *Usnea* lichens.
 
 ## What Not to Do
@@ -71,5 +71,5 @@ The ***following*** figure is an example of what ***not to do***!  Key problems:
 - The chart is pixellated and distorted.
 - The caption is terse and unnumbered.
 
-![bad-plot]({{site.url}}/chem370/assets/img/bad.png)
+![bad-plot]({{site.baseurl}}/chem370/assets/img/bad.png)
 Spectra of Sample

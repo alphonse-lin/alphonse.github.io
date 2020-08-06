@@ -14,10 +14,10 @@
   - Describe the difference between absorption spectroscopy and luminescence spectroscopy.
   - Calculate the limits of detection and limits of quantitation from a blank sample.
   - Employ a quality control sample to check the accuracy of their results.
-  - Utilize Jupyter as an electronic lab notebook.
-  - Utilize Octave/MATLAB functions to analyze spectroscopic data.
+  - Utilize RMarkdown as an electronic lab notebook.
+  - Utilize R functions to analyze spectroscopic data.
 
-## Introduction {-}
+## Introduction {#uv-vis-intro -}
 
 <!-- https://www.youtube.com/watch?v=wxrAELeXlek -->
 
@@ -57,7 +57,7 @@ in Tonic Water Using Fluorescence Spectroscopy,” (Application Note: Fluorescen
 
 \newpage
 
-## Lab Procedure
+## Lab Procedure {#uv-vis-procedure}
 
 ### Prepare Your Standards
 
@@ -133,7 +133,7 @@ After the spectrometer calibration step you should run:
 1. Shake out the glassware and put it back where you found it (with the caps on).  A little residual DI water in the glassware is OK.  
 
 
-## Data Processing
+## Data Processing {#uv-vis-data}
 
 1. Download the lab notebook [template](../notebooks/) for this lab.  
 1. Calculate the concentration of each standard and the QC in your lab notebook. (Use the [`serialDilution()`](serial-dilution.html) function and example code in the template.)   
@@ -210,4 +210,4 @@ After the spectrometer calibration step you should run:
 
 6. Include a conclusion dicussing the measured concentration of your sample (and how it compares to other studies), the validity of your results, and your limits of detection/quantitation (i.e. are your results meaningful?).
 7. Before turning in your notebook, go to **Kernel > Restart Kernel** and then **Run > Run All**.  Fix any errors before turning in your notebook.
-8. Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for [Monday](https://alphonse.github.io/chem370/assignments/submissions-monday.html) or [Wednesday](https://alphonse.github.io/chem370/assignments/submissions-wednesday.html)).
+8. Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for [Monday](https://alphonse.github.io/chem370/assignments/submissions.html) or [Wednesday](https://alphonse.github.io/chem370/assignments/submissions-wednesday.html)).

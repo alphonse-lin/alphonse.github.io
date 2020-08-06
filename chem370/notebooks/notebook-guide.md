@@ -47,7 +47,7 @@ To maintain an archival record, the lab notebook should:
 
 # Plots
 
-Plots should be completed to a high degree of quality, as defined in the [Publication-quality Figures Guide]({{site.url}}/chem370/writing/figures)
+Plots should be completed to a high degree of quality, as defined in the [Publication-quality Figures Guide]({{site.baseurl}}/chem370/writing/figures)
 
 # Creating Instrument Tables
 

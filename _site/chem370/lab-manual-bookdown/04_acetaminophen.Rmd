@@ -17,13 +17,13 @@ Read the Memorandum on the following page to understand the scenario for this la
 - Utilize chemical instrumentation for qualitative analysis of complex samples (e.g. GC-MS, Flame AA to ID sample contents).  
 - Apply instrument calibration techniques to conduct quantitative analysis on complex samples (e.g. FT-IR, HPLC, and Flame AA).   
 - Assess data validity using quality control and blank samples (GCs).  
-- Utilize Octave and Jupyter to perform data analysis in an electronic lab notebook (including chemometric analysis).  
+- Utilize R and RStudio to perform data analysis in an electronic lab notebook (including chemometric analysis).  
 - Participate effectively in group lab work and writing activities.  
 - Compile results from multiple analyses into a unified report that clearly conveys conclusion(s) to the question(s) posed at project start.  
 
 \newpage
 
-## Memorandum {-}
+## Memorandum {- #am-memo}
 
 \noindent
 ***Western Analytics, Inc.***
@@ -69,7 +69,7 @@ Please visit my office or email me with any questions.
 
 \newpage
 
-## HPLC
+## HPLC {#am-hplc}
 
 This lab will use the Agilent 1220 HPLC (high performance liquid chromatograph) to determine the concentration of acetaminophen in Tylenol tablets.
 
@@ -170,17 +170,17 @@ You should turn a ZIP folder containing:
   ```{marginfigure}
   Don't disregard the peaks that aren't acetaminophen.  They contain valuable information that you should discuss.
   ```
-1. Use the HPLC software (or Octave if you prefer) to integrate the acetaminophen peak for each sample.
+1. Use the HPLC software (or R if you prefer) to integrate the acetaminophen peak for each sample.
 1. Manually record the integration results in your lab notebook
 1. Calculate a standard curve using a linear model with a floating intercept.   Use units of ppm for your standard curve.
 1. Calculate the concentration (in ppm) of the QCs using your standard curve.
 1. Calculate the concentration (in ppm) of the samples using your standard curve.
 1. Use a *t*-test to determine if the mass of acetaminophen is *significantly* different from the expected mass. (See Appendix 3, "Comparing Means")
-1. Plot *representative chromatograms*:  You do not need to export every single chromatogram (your standards should all be very similar, just different in magnitude).  Instead, export and plot the chromatogram for your medium standard and the chromatogram for each sample.  Include these in your lab notebook and in a single figure in your final report. (See Appendix 2 for Octave examples).
+1. Plot *representative chromatograms*:  You do not need to export every single chromatogram (your standards should all be very similar, just different in magnitude).  Instead, export and plot the chromatogram for your medium standard and the chromatogram for each sample.  Include these in your lab notebook and in a single figure in your final report. (See Appendix 2 for R examples).
 
 \newpage
 
-## FT-IR
+## FT-IR {#am-ftir}
 
 FT-IR spectroscopy is used to deduce the bonds present in liquids, solids, and gases.  It is widely used in industry, research, and teaching for qualitative analysis, but can also provide very accurate quantitative information.  All molecules have a unique infrared spectrum, comparable to a person's fingerprint.  However, it is usually very difficult to interpret infrared spectra of mixtures.  Chemometrics and linear algebra can circumvent this issue by picking out minute differences between spectra using statistical methods.  During this lab, FT-IR will be used to match a sample of acetaminophen to a reference spectrum using a metric called the hit quality index (HQI).  This methods provides a measure of how well two spectra match, and a HQI of 0.99 or better is required to indicate a contaminant-free sample.
 
@@ -230,13 +230,13 @@ You should turn a ZIP folder containing:
 ```
 
 - You will need to export you data as a CSV file.  The Spectrum One does this automatically.  Just copy the exported data from the "Spectrum One Data Folder" (there is a shortcut on the desktop) to your folder on NEON.
-- Baseline correct your spectra by subtracting the minimum value from each data point.  This should make the minimum value on your plot 0. (See Appendix 2 for Octave examples)
-- Normalize your spectra by converting from absorbance units to relative absorbance.  Your final plot should range from 0 to 1. (See Appendix 2 for Octave examples)
-- Calculate the Hit Quality Index according to Eq. 2 in [Rodriguez et al (2011)](https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments).  Be mindful of the difference between "x" (multiplication) and "·" (dot product). (See Appendix 2 for Octave examples)
+- Baseline correct your spectra by subtracting the minimum value from each data point.  This should make the minimum value on your plot 0. (See Appendix 2 for R examples)
+- Normalize your spectra by converting from absorbance units to relative absorbance.  Your final plot should range from 0 to 1. (See Appendix 2 for R examples)
+- Calculate the Hit Quality Index according to Eq. 2 in [Rodriguez et al (2011)](https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments).  Be mindful of the difference between "x" (multiplication) and "·" (dot product). (See Appendix 2 for R examples)
 
 \newpage
 
-## GC-MS
+## GC-MS {#am-gcms}
 
 Gas chromatography is a technique used to separate mixtures of gases.  The gases are injected into a column, which (in our case) is a long, hollow tube with a non-polar liquid coating on the inside.  They are pushed through the column with a carrier gas, He in our instrument.  The column is initially held at low temperature (a little above room temperature) and ramped at a defined rate up to 250 degrees C.  The combination of the temperature ramp and the non-polar column allows compounds to be separated based on boiling point and polarity.  GC can be paired with many different techniques, and is often used with electron-ionization mass spectrometry.  This type of mass spectrometer breaks molecules apart into fragments, sorts the fragments by mass, and counts the number of fragments of each mass.  The specific spectrum (or distribution of fragments) is unique for every chemical compound and is based on the stability of each bond in the molecule.  In this way, the identity of a compound can usually be deduced from a mass spectrum alone, although techniques such as nuclear magnetic resonance spectroscopy and Fourier-transform infrared spectroscopy can greatly aid in identification.
 
@@ -300,13 +300,13 @@ You should turn a ZIP folder containing:
     - A CSV of the mass spectrum for each compound you are analyzing.  
 
 1. Transfer the data to your lab notebook folder and complete your analysis.
-1. Plot your chromatogram as *Relative Abundance (%)* vs. *Time (minutes)*. (See Appendix 2 for Octave examples)
-1. Plot your mass spectra as *Relative Abundance (%)* vs. *m/z*. (See Appendix 2 for Octave examples)
+1. Plot your chromatogram as *Relative Abundance (%)* vs. *Time (minutes)*. (See Appendix 2 for R examples)
+1. Plot your mass spectra as *Relative Abundance (%)* vs. *m/z*. (See Appendix 2 for R examples)
 1. Clearly identify the base peak, the molecular ion, and any important isotope peaks.  Also state how many rings and double bonds your molecule has, and whether it has an odd or even number of nitrogen atoms.  Provide a formula, common name, and molecular weight for each compound.  You must show your calculations for all of these items.  See the [mass spec guide](/chem370/guides/mass-spec) for help with interpretation.  Does your interpretation match the library?
 
 \newpage
 
-## Flame AA
+## Flame AA {#am-faas}
 
 Flame atomic absorption spectroscopy is a common method of determining the concentration of specific metals (cations) in a sample.  A solution is nebulized (aerosolized) into an acetylene flame where it is atomized (broken apart into its constituent atoms).  The atoms in the flame absorb characteristic wavelengths of light, unique to each element.  A light source specific to the analyte of interest (specifically, a hollow cathode lamp) shines through the flame, where the light gets absorbed by the sample.  The amount of absorption absorbed is linearly proportional to the concentration of the analyte in solution.  Although the instrument is relatively robust and inexpensive, it is limited to probing for a single analyte at a time.
 
@@ -378,7 +378,7 @@ You should turn a ZIP folder containing:
 ```
 
 1. Export your data as a CSV using the CHEM 370 template in the Data Manager software.
-1. Use the absorbances of the standards to calculate your standard curve in Octave.
+1. Use the absorbances of the standards to calculate your standard curve in R.
 1. Use the absorbances of the samples and QCs to calculate the sample and QC concentrations.
 1. Report your concentrations as the mean concentration $\pm$ 1 SD.
 1. Perform a *t*-test to determine if the sodium concentration is *significantly* different from 0. (See Appendix 3, "Comparing Means")

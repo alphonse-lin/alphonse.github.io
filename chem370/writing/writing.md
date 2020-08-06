@@ -1,8 +1,7 @@
 ---
 layout: chem370
 title:  CHEM 370 Writing Resources
-permalink: /chem370/writing
-
+permalink: /chem370/writing/
 ---
 
 
@@ -14,15 +13,15 @@ permalink: /chem370/writing
 
 ### Paper Formatting Guidelines
 
-- Dr. Fischer's [Writing Tips]({{ site.url }}/chem370/writing/writing-tips)
-- Dr. Fischer's [Publication-quality Figures Guide]({{ site.url }}/chem370/writing/figures)
+- Dr. Fischer's [Writing Tips]({{site.baseurl}}/chem370/writing/writing-tips)
+- Dr. Fischer's [Publication-quality Figures Guide]({{site.baseurl}}/chem370/writing/figures)
 - You report should contain the following sections (click each link for info on that section):
-    - [Title and Abstract]({{site.url}}/chem370/writing/title-abstract)
-    - [Introduction]({{site.url}}/chem370/writing/introduction)
-    - [Materials and Methods]({{site.url}}/chem370/writing/materials-methods)
-    - [Results and Discussion]({{site.url}}/chem370/writing/results-discussion)
-    - [Conclusions]({{site.url}}/chem370/writing/conclusion)
-    - [References]({{site.url}}/chem370/writing/references)
+    - [Title and Abstract]({{site.baseurl}}/chem370/writing/title-abstract)
+    - [Introduction]({{site.baseurl}}/chem370/writing/introduction)
+    - [Materials and Methods]({{site.baseurl}}/chem370/writing/materials-methods)
+    - [Results and Discussion]({{site.baseurl}}/chem370/writing/results-discussion)
+    - [Conclusions]({{site.baseurl}}/chem370/writing/conclusion)
+    - [References]({{site.baseurl}}/chem370/writing/references)
 
 ### How you'll be graded
 
@@ -51,4 +50,4 @@ Your final submission will be graded *quantitatively* according to the lab repor
 
    - *Elements of Style*, William Strunk, Jr. and E.B. White (aka "Strunk and White") free html & ebook at [Project Gutenberg](http://www.gutenberg.org/ebooks/37134?msg=welcome_stranger) or free PDF [here](http://www.jlakes.org/ch/web/The-elements-of-style.pdf).
    - [ACS Style Guide](https://pubs.acs.org/isbn/9780841239999#)
-   - [Mendeley Reference Manager]({{ site.url }}/chem370/writing/mendeley)
+   - [Mendeley Reference Manager]({{site.baseurl}}/chem370/writing/mendeley)

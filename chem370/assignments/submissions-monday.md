@@ -1,7 +1,7 @@
 ---
 layout: chem370
 title:  CHEM 370 Assignment Submissions - MONDAY
-permalink: /chem370/assignments/submissions-monday
+permalink: /chem370/assignments/submissions
 ---
 
 Submission Links for the ***MONDAY*** lab.

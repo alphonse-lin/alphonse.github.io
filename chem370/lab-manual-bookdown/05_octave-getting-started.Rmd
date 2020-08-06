@@ -1,3 +1,4 @@
+# (APPENDIX) Additional Resources {-}
 # Appendix 1: Getting Started in Octave and Jupyter Lab {-}
 
 Chem 370 lab will make extensive use of electronic lab notebooks.  We'll use two tools to achieve a robust electronic lab notebook: (1) **Jupyter Notebooks** and (2) the **GNU Octave programming language**.  The Jupyter notebook provides a place to write everything that would normally go in your lab notebook, but is entirely electronic.  The Octave language is used to process data in a fashion similar to Excel, except that all actions are done by issuing commands rather than through a graphical interface.  Importantly, Octave can be linked to Jupyter so that all of your data processing steps and data files can be displayed directly in your lab notebook!  A visual representation of this is shown in the figure below.  You can also view the [notebook examples](../notebooks/index.html) to see what a notebook actually looks like.

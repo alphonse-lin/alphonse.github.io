@@ -11,7 +11,7 @@ output:
 description: 'Lab Manual for CHEM 370: Instrumental Analysis Laboratory'
 documentclass: lab
 link-citations: yes
-bibliography: book.bib
+# bibliography: book.bib
 site: bookdown::bookdown_site
 biblio-style: apalike
 graphics: yes

@@ -11,12 +11,15 @@ language:
 output_dir: "../lab-manual"
 rmd_files: [
             "index.Rmd",
-            "00_preface.Rmd",
-            "01_uv-vis.Rmd",
+            "00C_preface.Rmd",
+            "00A_syllabus.Rmd",
+            "00_R.Rmd",
             "02_gc-tcd.Rmd",
+            "01_uv-vis.Rmd",
             "03_vape.Rmd",
             "04_acetaminophen.Rmd",
-            "05_octave-getting-started.Rmd",
             "06_octave-cookbook.Rmd",
-            "07_statistical-data-analysis.Rmd"
+            "07_statistical-data-analysis.Rmd",
+            "08_lab-notebooks.Rmd",
+            "00B_schedule.Rmd"
             ]

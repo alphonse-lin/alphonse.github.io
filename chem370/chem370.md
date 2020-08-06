@@ -1,112 +1,72 @@
 ---
-title: Chem 370 | Instrumental Analysis Lab
-layout: chem370
+title: Instrumental Analysis I
+description: WCU Chem 370
+layout: home
 permalink: /chem370/
+icon: fa-digital-tachograph
 ---
-<!-- <img src="{{site.url}}/chem370/assets/img/pas-cover-image.jpg" class="img-circle zoombtn" style="margin-top: 30px; margin-bottom: 30px;"> -->
-<!-- ![]({{site.url}}/chem370/assets/img/pas-cover-image.jpg)  -->
 
+<div class="card">
+  {% for post in site.posts limit:1 %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}/chem370/announcements">This Week</a></h1>
+
+      <div class="entry">
+        {{ post.content }}
+      </div>
+
+      <a href="{{ site.baseurl }}/chem370/announcements" class="read-more">View All</a>
+    </article>
+  {% endfor %}
+</div>
+
+<h1>Course Materials</h1>
+
+<a class="homepage-button" href="{{site.baseurl}}/chem370/assignments/submissions.html">
+  <i class="fa fa-paper-plane fa-lg"></i>
+  assignment submissions
+</a>
+
+<div class="column">
+<a class="homepage-button" href="{{site.baseurl}}/chem370/syllabus">
+<i class="fa fa-scroll fa-lg"></i>
+lecture syllabus
+</a>
+<a class="homepage-button" href="{{site.baseurl}}/chem370/schedule">
+  <i class="fa fa-calendar-alt fa-lg"></i>
+  schedule
+</a>
+<!-- <a class="homepage-button" href="{{site.baseurl}}/chem370/schedule">
+ <i class="fa fa-calendar-alt fa-lg"></i>
+ lecture schedule
+</a> -->
+<a class="homepage-button" href="{{site.baseurl}}/chem370/lectures">
+  <i class="fa fa-chalkboard-teacher fa-lg"></i>
+  lectures
+</a>
+<!-- <a class="homepage-button" href="{{site.baseurl}}/chem370/instrument-tutorials">
+  <i class="fa fa-digital-tachograph fa-lg"></i>
+  instrument tutorials
+</a> -->
+
+</div>
 <!-- <hr class="hr-line"> -->
-
-**Instructor:** Dr. Al Fischer, PhD  
-**Office Hours:** By appointment at [calendly.com/drfischer](http://www.calendly.com/drfischer); drop-ins welcome.  (NS 209)  
-**Availability:** See my [calendar]({{site.url}}/contact)   
-**Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)
-
-<!-- <hr class="hr-line"> -->
-
-<h3 class="title">
-  <a class="btn zoombtn" style="color:#BE3A34;" href="{{ site.url }}/chem370/covid-19">
-    <i class="fa fa-virus fa-lg" style="color:#BE3A34;"></i>
-    COVID-19 Alternative Instruction Letter
-  </a>
-</h3>
-
-<h3 class="title">
-  <a class="btn zoombtn" href="{{ site.url }}/chem370/online-instruction">
-    <i class="fa fa-network-wired fa-lg"></i>
-    Online Instruction Resources
-  </a>
-</h3>
-
------
-
-<h3 class="title">
-  <a class="btn zoombtn" href="{{ site.url }}/chem370/syllabus">
-    <i class="fa fa-scroll fa-lg"></i>
-    syllabus
-  </a>
-  <a class="btn zoombtn" href="{{ site.url }}/chem370/schedule">
-     <i class="fa fa-calendar-alt fa-lg"></i>
-     schedule
-  </a>
-  <a class="btn zoombtn" href="{{ site.url }}/chem370/lab-manual">
-      <i class="fa fa-vial fa-lg"></i>
-      lab manual
-  </a>
-</h3>
-<h3 class="title">
-  <a class="btn zoombtn" href="{{ site.url }}/chem370/notebooks">
-      <i class="fa fa-book-open fa-lg"></i>
-      notebooks
-  </a>
-  <a class="btn zoombtn" href="{{ site.url }}/chem370/writing">
-     <i class="fa fa-edit fa-lg"></i>
-     writing
-  </a>
-  <!-- <a class="btn zoombtn" href="{{ site.url }}/chem370/chemistry">
-      <i class="fa fa-atom fa-lg"></i>
-      chemistry
-  </a> -->
-</h3>
-<h3 class="title">
-
-      <a class="btn zoombtn" href="{{ site.url }}/chem370/assignments/submissions-monday.html">
-          <i class="fa fa-paper-plane fa-lg"></i>
-          submissions (Monday)
-      </a>
-      <a class="btn zoombtn" href="{{ site.url }}/chem370/assignments/submissions-wednesday.html">
-          <i class="far fa-paper-plane fa-lg"></i>
-           submissions (Wednesday)
-      </a>
-</h3>
-
-<!-- ***DRAFT*** -->
-
-<!-- # General Course Information
-
-- [Syllabus]({{ site.url }}/chem370/syllabus)
-- [Schedule]({{ site.url }}/chem370/schedule)
-- [Assignment Submission Links](https://raw.githubusercontent.com/alphonse/alphonse.github.io/master/CHEM191/assignments/c191_2019f_crontab_assign.txt)
-
-<a id="lab-manual"/> -->
-
-<!-- # Lab Activities -->
-
-
-<!-- # Instrument Tutorials
-
-# Additional Chemistry Resources
-
-<a id="chemistry-resources"/>
-
-- [Analytical Chemistry 2.0](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.0_(Harvey))
-- "[Scientific Tools](https://github.com/alphonse/alphonse.github.io/raw/master/CHEM191/pdf/scientific-tools-stull.pdf)" from *Practical Meteorology* by Roland Stull. A useful guide to the SI system, unit conversions, graphs, and errors. -->
-
-<!-- <a id="writing-resources"/>
-
-# Writing Resources
-
-### Required reading
-
-- [SPIE: How to Write a Good Scientific Paper](https://www.spiedigitallibrary.org/ebooks/PM/How-to-Write-a-Good-Scientific-Paper/Chapter1/How-to-Write-a-Good-Scientific-Paper-Full-Book/10.1117/3.2317707.sup?SSO=1)
-- Dr. Fischer's [Writing Guide]({{ site.url }}/chem191/guides/writing)
-
-### How you'll be graded
-
-- Dr. Fischer's [Report Rubric](https://github.com/alphonse/alphonse.github.io/raw/master/CHEM191/pdf/lab-report-rubric.pdf) (PDF)
-
-### Examples & Templates
-- Claim assignment [template](https://github.com/alphonse/alphonse.github.io/raw/master/CHEM191/assignments/claim-report-template.docx) and [guidelines](https://github.com/alphonse/alphonse.github.io/raw/master/CHEM191/assignments/claim-report-example.pdf).
-
-### Other writing-related stuff -->
+<div class="column">
+<a class="homepage-button" href="{{site.baseurl}}/chem370/lab-manual">
+    <i class="fa fa-vial fa-lg"></i>
+    lab manual
+</a>
+<a class="homepage-button" href="{{site.baseurl}}/chem370/data-processing">
+    <i class="fa fa-chart-line fa-lg"></i>
+    data processing
+</a>
+<!-- <a class="homepage-button" href="{{site.baseurl}}/chem370/writing">
+   <i class="fa fa-edit fa-lg"></i>
+   writing
+</a> -->
+<a class="homepage-button" href="{{site.baseurl}}/chem370/chemistry">
+  <i class="fa fa-atom fa-lg"></i>
+  chemistry
+</a>
+</div>

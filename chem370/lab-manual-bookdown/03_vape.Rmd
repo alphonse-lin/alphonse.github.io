@@ -1,3 +1,5 @@
+# (PART) Rotations {-}
+
 # Rotation A: e-Cigarette Liquid
 
 ##### **Objective** {-}
@@ -17,7 +19,7 @@ Read the Memorandum on the following page to understand the scenario for this la
 - Utilize chemical instrumentation for qualitative analysis of complex samples (e.g. GC-MS, Flame AA to ID sample contents).  
 - Apply instrument calibration techniques to conduct quantitative analysis on complex samples (e.g. FT-IR, HPLC, and Flame AA).   
 - Assess data validity using quality control and blank samples.  
-- Utilize Octave and Jupyter to perform data analysis in an electronic lab notebook (including chemometric analysis).  
+- Utilize R and RStudio to perform data analysis in an electronic lab notebook (including chemometric analysis).  
 - Participate effectively in group lab work and writing activities.  
 - Compile results from multiple analyses into a unified report that clearly conveys conclusion(s) to the question(s) posed at project start.  
 
@@ -242,7 +244,7 @@ You should turn a ZIP folder containing:
 
 
 1. Export your data to a CSV file using the **Data Manager** software package (shortcut on Desktop).  Use the `CHEM370_template` design when prompted.
-1. Use Octave to create and plot a calibration curve.
+1. Use R to create and plot a calibration curve.
 1. Determine the concentration of your samples and QCs.  Remember to factor in all dilutions.
 1. Perform a *t*-test to determine whether the metal concentration is *significantly* different before and after vaping. (See Appendix 3, Comparing Means for more information on *t*-tests.)
 
@@ -415,7 +417,7 @@ Include these in your lab notebook and in a single figure in your final report.
 ##### **Standard Curve and Concentrations** {-}
 
 1. Use your standards to determine the retention time for nicotine.
-1. Use the HPLC software (or Octave if you prefer) to integrate the nicotine peak for each sample.
+1. Use the HPLC software (or R if you prefer) to integrate the nicotine peak for each sample.
 1. Manually record the integration results in your lab notebook.
 1. Calculate a standard curve using a linear model with a floating intercept.   Use units of ppm for your standard curve.
 1. Calculate the concentration (in ppm) of nicotine in the QCs using your standard curve.
