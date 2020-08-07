@@ -177,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
@@ -327,17 +328,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><code>flasks</code>: a column vector containing the volumes of the volumetric flasks used (in same order as <code>pipettes</code>). Volume units should match <code>pipettes</code>.</p></li>
 </ul>
 <p><strong>Code:</strong></p>
-<div class="sourceCode" id="cb49"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb49-1"><a href="serial-dilution.html#cb49-1"></a><span class="cf">function</span> concentrations <span class="op">=</span> serialDilution(stock<span class="op">,</span> pipettes<span class="op">,</span> flasks)</span>
-<span id="cb49-2"><a href="serial-dilution.html#cb49-2"></a>    concentrations <span class="op">=</span>[]<span class="op">;</span></span>
-<span id="cb49-3"><a href="serial-dilution.html#cb49-3"></a>    <span class="cf">for</span> <span class="fu">i</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(pipettes)</span>
-<span id="cb49-4"><a href="serial-dilution.html#cb49-4"></a>        <span class="cf">if</span> <span class="fu">i</span> <span class="op">==</span> <span class="fl">1</span></span>
-<span id="cb49-5"><a href="serial-dilution.html#cb49-5"></a>            concentrations(<span class="fu">i</span>) <span class="op">=</span> stock <span class="op">*</span> pipettes(<span class="fu">i</span>)<span class="op">/</span>flasks(<span class="fu">i</span>)<span class="op">;</span>  <span class="co"># calculate first dilution</span></span>
-<span id="cb49-6"><a href="serial-dilution.html#cb49-6"></a>        <span class="cf">else</span></span>
-<span id="cb49-7"><a href="serial-dilution.html#cb49-7"></a>            concentrations(<span class="fu">i</span>) <span class="op">=</span> concentrations(<span class="fu">i</span><span class="op">-</span><span class="fl">1</span>) <span class="op">*</span> pipettes(<span class="fu">i</span>)<span class="op">/</span>flasks(<span class="fu">i</span>)<span class="op">;</span> <span class="co"># calculate all other dilutions</span></span>
-<span id="cb49-8"><a href="serial-dilution.html#cb49-8"></a>        <span class="cf">end</span></span>
-<span id="cb49-9"><a href="serial-dilution.html#cb49-9"></a>    <span class="cf">end</span></span>
-<span id="cb49-10"><a href="serial-dilution.html#cb49-10"></a>    concentrations <span class="op">=</span> <span class="fu">flip</span>(concentrations)<span class="op">&#39;;</span> <span class="co"># reverse the vector from lowest to highest and transpose to column vector</span></span>
-<span id="cb49-11"><a href="serial-dilution.html#cb49-11"></a><span class="cf">end</span></span></code></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb36-1"><a href="serial-dilution.html#cb36-1"></a><span class="cf">function</span> concentrations <span class="op">=</span> serialDilution(stock<span class="op">,</span> pipettes<span class="op">,</span> flasks)</span>
+<span id="cb36-2"><a href="serial-dilution.html#cb36-2"></a>    concentrations <span class="op">=</span>[]<span class="op">;</span></span>
+<span id="cb36-3"><a href="serial-dilution.html#cb36-3"></a>    <span class="cf">for</span> <span class="fu">i</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(pipettes)</span>
+<span id="cb36-4"><a href="serial-dilution.html#cb36-4"></a>        <span class="cf">if</span> <span class="fu">i</span> <span class="op">==</span> <span class="fl">1</span></span>
+<span id="cb36-5"><a href="serial-dilution.html#cb36-5"></a>            concentrations(<span class="fu">i</span>) <span class="op">=</span> stock <span class="op">*</span> pipettes(<span class="fu">i</span>)<span class="op">/</span>flasks(<span class="fu">i</span>)<span class="op">;</span>  <span class="co"># calculate first dilution</span></span>
+<span id="cb36-6"><a href="serial-dilution.html#cb36-6"></a>        <span class="cf">else</span></span>
+<span id="cb36-7"><a href="serial-dilution.html#cb36-7"></a>            concentrations(<span class="fu">i</span>) <span class="op">=</span> concentrations(<span class="fu">i</span><span class="op">-</span><span class="fl">1</span>) <span class="op">*</span> pipettes(<span class="fu">i</span>)<span class="op">/</span>flasks(<span class="fu">i</span>)<span class="op">;</span> <span class="co"># calculate all other dilutions</span></span>
+<span id="cb36-8"><a href="serial-dilution.html#cb36-8"></a>        <span class="cf">end</span></span>
+<span id="cb36-9"><a href="serial-dilution.html#cb36-9"></a>    <span class="cf">end</span></span>
+<span id="cb36-10"><a href="serial-dilution.html#cb36-10"></a>    concentrations <span class="op">=</span> <span class="fu">flip</span>(concentrations)<span class="op">&#39;;</span> <span class="co"># reverse the vector from lowest to highest and transpose to column vector</span></span>
+<span id="cb36-11"><a href="serial-dilution.html#cb36-11"></a><span class="cf">end</span></span></code></pre></div>
 
 </div>
 <!-- </div> -->
@@ -389,7 +390,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["c370-lab-manual.pdf"],
+"download": null,
 "toc": {
 "collapse": "section",
 "download": "pdf",

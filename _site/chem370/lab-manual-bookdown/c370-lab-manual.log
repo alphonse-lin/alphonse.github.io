@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.7.2)  19 JUL 2020 17:30
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.7.2)  7 AUG 2020 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -18,21 +18,21 @@ ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count167
+\XKV@depth=\count163
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texlive/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count168
-\calc@Bcount=\count169
+\calc@Acount=\count164
+\calc@Bcount=\count165
 \calc@Adimen=\dimen134
 \calc@Bdimen=\dimen135
 \calc@Askip=\skip47
 \calc@Bskip=\skip48
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count170
+\calc@Ccount=\count166
 \calc@Cskip=\skip49
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -57,7 +57,7 @@ Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 ) (/usr/share/texlive/texmf-dist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
@@ -72,44 +72,116 @@ Package ifplatform Warning:
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
-\hw@charcount=\count171
-\hw@wordcount=\count172
-\hw@maxprintline=\count173
-(|kpsewhich -var-value=max_print_line))
+\hw@charcount=\count167
+\hw@wordcount=\count168
+\hw@maxprintline=\count169
+)
 Class tufte-book Info: Loading the base class `book'
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count174
-\c@chapter=\count175
-\c@section=\count176
-\c@subsection=\count177
-\c@subsubsection=\count178
-\c@paragraph=\count179
-\c@subparagraph=\count180
-\c@figure=\count181
-\c@table=\count182
+\c@part=\count170
+\c@chapter=\count171
+\c@section=\count172
+\c@subsection=\count173
+\c@subsubsection=\count174
+\c@paragraph=\count175
+\c@subparagraph=\count176
+\c@figure=\count177
+\c@table=\count178
 \abovecaptionskip=\skip50
 \belowcaptionskip=\skip51
 \bibindent=\dimen136
 ) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/xelatex/xltxtra/xltxtra.sty
+Package: xltxtra 2018/12/31 v0.7 Improvements for the "XeLaTeX" format
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/share/texl
+ive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texlive/texmf
+-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-02-03 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count179
+\l__pdf_internal_box=\box45
+\g__pdf_backend_object_int=\count180
+\g__pdf_backend_annotation_int=\count181
+))
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count182
+\g__xparse_grabber_int=\count183
+\l__xparse_m_args_int=\count184
+\l__xparse_v_nesting_int=\count185
+)
+Package: fontspec 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count186
+\l__fontspec_language_int=\count187
+\l__fontspec_strnum_int=\count188
+\l__fontspec_tmp_int=\count189
+\l__fontspec_tmpa_int=\count190
+\l__fontspec_tmpb_int=\count191
+\l__fontspec_tmpc_int=\count192
+\l__fontspec_em_int=\count193
+\l__fontspec_emdef_int=\count194
+\l__fontspec_strong_int=\count195
+\l__fontspec_strongdef_int=\count196
+\l__fontspec_tmpa_dim=\dimen137
+\l__fontspec_tmpb_dim=\dimen138
+\l__fontspec_tmpc_dim=\dimen139
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/share
+/texlive/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+\subsupersep=\dimen140
+) (/usr/share/texlive/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+\xl@everylogo=\toks16
+\xl@@everylogo=\toks17
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box46
+\l__xetex_show_hyphens_temp_box=\box47
+\l__xetex_show_hyphens_final_box=\box48
+\g__xetex_show_hyphens_word_box=\box49
 ) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box45
+\ttl@box=\box50
 \beforetitleunit=\skip52
 \aftertitleunit=\skip53
-\ttl@plus=\dimen137
-\ttl@minus=\dimen138
-\ttl@toksa=\toks16
-\titlewidth=\dimen139
-\titlewidthlast=\dimen140
-\titlewidthfirst=\dimen141
+\ttl@plus=\dimen143
+\ttl@minus=\dimen144
+\ttl@toksa=\toks18
+\titlewidth=\dimen145
+\titlewidthlast=\dimen146
+\titlewidthfirst=\dimen147
 ) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2019/10/16 v2.13 TOC entries
-\ttl@leftsep=\dimen142
+\ttl@leftsep=\dimen148
 ) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
@@ -127,23 +199,18 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen143
-\Hy@linkcounter=\count183
-\Hy@pagecounter=\count184
+\@linkdim=\dimen149
+\Hy@linkcounter=\count197
+\Hy@pagecounter=\count198
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 ) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count185
-\pdfmajorversion=\count186
+\Hy@SavedSpaceFactor=\count199
 Package hyperref Info: Option `unicode' set `true' on input line 4421.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Option `hyperfootnotes' set `false' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
@@ -153,22 +220,22 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count187
+\c@Hy@tempcnt=\count266
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5159.
-\XeTeXLinkMargin=\dimen144
+\XeTeXLinkMargin=\dimen150
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count188
-\Field@Width=\dimen145
-\Fld@charsize=\dimen146
+\Fld@menulength=\count267
+\Field@Width=\dimen151
+\Fld@charsize=\dimen152
 Package hyperref Info: Hyper figures OFF on input line 6430.
 Package hyperref Info: Link nesting OFF on input line 6435.
 Package hyperref Info: Hyper index ON on input line 6438.
@@ -181,21 +248,27 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count189
-\c@Item=\count190
+\Hy@abspage=\count268
+\c@Item=\count269
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+Package hyperref Info: Driver: hxetex.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2020/01/14 v7.00d Hyperref driver for XeTeX
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box51
+\c@Hy@AnnotLevel=\count270
+\HyField@AnnotCount=\count271
+\Fld@listcount=\count272
+\c@bookmark@seq@number=\count273
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-)
-\Fld@listcount=\count191
-\c@bookmark@seq@number=\count192
-(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+) (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -226,22 +299,22 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count193
-\Gm@cntv=\count194
-\c@Gm@tempcnt=\count195
-\Gm@bindingoffset=\dimen147
-\Gm@wd@mp=\dimen148
-\Gm@odd@mp=\dimen149
-\Gm@even@mp=\dimen150
-\Gm@layoutwidth=\dimen151
-\Gm@layoutheight=\dimen152
-\Gm@layouthoffset=\dimen153
-\Gm@layoutvoffset=\dimen154
-\Gm@dimlist=\toks17
+\Gm@cnth=\count274
+\Gm@cntv=\count275
+\c@Gm@tempcnt=\count276
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/latex/changepage/changepage.sty
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count196
-\cp@tempcnt=\count197
+\c@cp@cntr=\count277
+\cp@tempcnt=\count278
 )
 \@tufte@overhang=\skip69
 \@tufte@fullwidth=\skip70
@@ -252,16 +325,24 @@ Package: paralist 2017/01/22 v2.7 Extended list environments
 \plpartopsep=\skip73
 \plitemsep=\skip74
 \plparsep=\skip75
-\pl@lab=\toks18
+\pl@lab=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/letterspace.sty
-Package: letterspace 2019/11/18 v2.7d Robust letterspacing (RS)
-LaTeX Info: Redefining \lsstyle on input line 345.
-LaTeX Info: Redefining \lslig on input line 346.
-LaTeX Info: Redefining \textls on input line 371.
-\MT@outer@kern=\dimen155
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks21
+\SOUL@lasttoken=\toks22
+\SOUL@cmds=\toks23
+\SOUL@buffer=\toks24
+\SOUL@token=\toks25
+\SOUL@spaceskip=\skip76
+\SOUL@ttwidth=\dimen161
+\SOUL@uldp=\dimen162
+\SOUL@ulht=\dimen163
+)
+LaTeX Info: Redefining \allcapsspacing on input line 737.
+LaTeX Info: Redefining \smallcapsspacing on input line 737.
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -269,12 +350,8 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Package option `usenames' ignored on input line 216.
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)
+Package xcolor Info: Driver file: xetex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -288,83 +365,64 @@ File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 )) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip76
-\bibsep=\skip77
+\bibhang=\skip77
+\bibsep=\skip78
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count198
+\c@NAT@ctr=\count279
 ) (/usr/share/texlive/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
 No file c370-lab-manual.bbl.
-\c@@tufte@num@bibkeys=\count199
+\c@@tufte@num@bibkeys=\count280
 (/usr/share/texlive/texmf-dist/tex/latex/sauerj/optparams.sty
 Package: optparams 2004/08/14 v0.9 multiple optional parameters in macros
 )
-\@tufte@sidenote@vertical@offset=\skip78
+\@tufte@sidenote@vertical@offset=\skip79
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-\@tufte@margin@floatbox=\box46
-\@tufte@figure@box=\box47
-\@tufte@caption@box=\box48
-\@tufte@caption@vertical@offset=\skip79
-\@tufte@float@contents@width=\skip80
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathpazo.sty
-Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
-\symupright=\mathgroup4
-) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
-Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+pplj on input line 1
-12.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pplj.fd
-File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-)) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\@tufte@margin@floatbox=\box52
+\@tufte@figure@box=\box53
+\@tufte@caption@box=\box54
+\@tufte@caption@vertical@offset=\skip80
+\@tufte@float@contents@width=\skip81
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip81
-\f@nch@O@elh=\skip82
-\f@nch@O@erh=\skip83
-\f@nch@O@olh=\skip84
-\f@nch@O@orh=\skip85
-\f@nch@O@elf=\skip86
-\f@nch@O@erf=\skip87
-\f@nch@O@olf=\skip88
-\f@nch@O@orf=\skip89
+\f@nch@headwidth=\skip82
+\f@nch@O@elh=\skip83
+\f@nch@O@erh=\skip84
+\f@nch@O@olh=\skip85
+\f@nch@O@orh=\skip86
+\f@nch@O@elf=\skip87
+\f@nch@O@erf=\skip88
+\f@nch@O@olf=\skip89
+\f@nch@O@orf=\skip90
 )
-\tufteskipamount=\skip90
+\tufteskipamount=\skip91
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count266
-\mult@box=\box49
-\multicol@leftmargin=\dimen156
-\c@unbalance=\count267
-\c@collectmore=\count268
-\doublecol@number=\count269
-\multicoltolerance=\count270
-\multicolpretolerance=\count271
-\full@width=\dimen157
-\page@free=\dimen158
-\premulticols=\dimen159
-\postmulticols=\dimen160
-\multicolsep=\skip91
-\multicolbaselineskip=\skip92
-\partial@page=\box50
-\last@line=\box51
-\maxbalancingoverflow=\dimen161
-\mult@rightbox=\box52
-\mult@grightbox=\box53
-\mult@gfirstbox=\box54
-\mult@firstbox=\box55
-\@tempa=\box56
-\@tempa=\box57
-\@tempa=\box58
-\@tempa=\box59
-\@tempa=\box60
-\@tempa=\box61
+\c@tracingmulticols=\count281
+\mult@box=\box55
+\multicol@leftmargin=\dimen164
+\c@unbalance=\count282
+\c@collectmore=\count283
+\doublecol@number=\count284
+\multicoltolerance=\count285
+\multicolpretolerance=\count286
+\full@width=\dimen165
+\page@free=\dimen166
+\premulticols=\dimen167
+\postmulticols=\dimen168
+\multicolsep=\skip92
+\multicolbaselineskip=\skip93
+\partial@page=\box56
+\last@line=\box57
+\maxbalancingoverflow=\dimen169
+\mult@rightbox=\box58
+\mult@grightbox=\box59
+\mult@gfirstbox=\box60
+\mult@firstbox=\box61
 \@tempa=\box62
 \@tempa=\box63
 \@tempa=\box64
@@ -396,76 +454,82 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box90
 \@tempa=\box91
 \@tempa=\box92
-\c@minrows=\count272
-\c@columnbadness=\count273
-\c@finalcolumnbadness=\count274
-\last@try=\dimen162
-\multicolovershoot=\dimen163
-\multicolundershoot=\dimen164
-\mult@nat@firstbox=\box93
-\colbreak@box=\box94
-\mc@col@check@num=\count275
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\c@minrows=\count287
+\c@columnbadness=\count288
+\c@finalcolumnbadness=\count289
+\last@try=\dimen170
+\multicolovershoot=\dimen171
+\multicolundershoot=\dimen172
+\mult@nat@firstbox=\box99
+\colbreak@box=\box100
+\mc@col@check@num=\count290
 ))) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks19
-\symAMSa=\mathgroup5
-\symAMSb=\mathgroup6
+\@emptytoks=\toks26
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip93
+\@mathmargin=\skip94
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen165
+\@emptytoks=\toks27
+\ex@=\dimen173
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen166
+\pmbraise@=\dimen174
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count276
+\inf@bad=\count291
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count277
-\leftroot@=\count278
+\uproot@=\count292
+\leftroot@=\count293
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count279
-\DOTSCASE@=\count280
+\classnum@=\count294
+\DOTSCASE@=\count295
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box95
-\strutbox@=\box96
-\big@size=\dimen167
+\Mathstrutbox@=\box101
+\strutbox@=\box102
+\big@size=\dimen175
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count281
-\c@MaxMatrixCols=\count282
+\macc@depth=\count296
+\c@MaxMatrixCols=\count297
 \dotsspace@=\muskip17
-\c@parentequation=\count283
-\dspbrk@lvl=\count284
-\tag@help=\toks21
-\row@=\count285
-\column@=\count286
-\maxfields@=\count287
-\andhelp@=\toks22
-\eqnshift@=\dimen168
-\alignsep@=\dimen169
-\tagshift@=\dimen170
-\tagwidth@=\dimen171
-\totwidth@=\dimen172
-\lineht@=\dimen173
-\@envbody=\toks23
-\multlinegap=\skip94
-\multlinetaggap=\skip95
-\mathdisplay@stack=\toks24
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks28
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks29
+\eqnshift@=\dimen176
+\alignsep@=\dimen177
+\tagshift@=\dimen178
+\tagwidth@=\dimen179
+\totwidth@=\dimen180
+\lineht@=\dimen181
+\@envbody=\toks30
+\multlinegap=\skip95
+\multlinetaggap=\skip96
+\mathdisplay@stack=\toks31
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
@@ -477,228 +541,76 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 (fixltx2e)                See the latexrelease package for details.
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
-) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks25
-\inpenc@posthook=\toks26
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 105.
-)
-\Gin@req@height=\dimen174
-\Gin@req@width=\dimen175
 ) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen176
-\lightrulewidth=\dimen177
-\cmidrulewidth=\dimen178
-\belowrulesep=\dimen179
-\belowbottomsep=\dimen180
-\aboverulesep=\dimen181
-\abovetopsep=\dimen182
-\cmidrulesep=\dimen183
-\cmidrulekern=\dimen184
-\defaultaddspace=\dimen185
-\@cmidla=\count288
-\@cmidlb=\count289
-\@aboverulesep=\dimen186
-\@belowrulesep=\dimen187
-\@thisruleclass=\count290
-\@lastruleclass=\count291
-\@thisrulewidth=\dimen188
+\heavyrulewidth=\dimen182
+\lightrulewidth=\dimen183
+\cmidrulewidth=\dimen184
+\belowrulesep=\dimen185
+\belowbottomsep=\dimen186
+\aboverulesep=\dimen187
+\abovetopsep=\dimen188
+\cmidrulesep=\dimen189
+\cmidrulekern=\dimen190
+\defaultaddspace=\dimen191
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen192
+\@belowrulesep=\dimen193
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen194
 ) (/usr/share/texlive/texmf-dist/tex/latex/units/units.sty
 Package: units 1998/08/04 v0.9b Typesetting units
 (/usr/share/texlive/texmf-dist/tex/latex/units/nicefrac.sty
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
-\L@UnitsRaiseDisplaystyle=\skip96
-\L@UnitsRaiseTextstyle=\skip97
-\L@UnitsRaiseScriptstyle=\skip98
+\L@UnitsRaiseDisplaystyle=\skip97
+\L@UnitsRaiseTextstyle=\skip98
+\L@UnitsRaiseScriptstyle=\skip99
 )) (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count292
+\FV@CodeLineNo=\count307
 \FV@InFile=\read2
-\FV@TabBox=\box97
-\c@FancyVerbLine=\count293
-\FV@StepNumber=\count294
+\FV@TabBox=\box103
+\c@FancyVerbLine=\count308
+\FV@StepNumber=\count309
 \FV@OutFile=\write3
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip99
-\LTright=\skip100
-\LTpre=\skip101
-\LTpost=\skip102
-\LTchunksize=\count295
-\LTcapwidth=\dimen189
-\LT@head=\box98
-\LT@firsthead=\box99
-\LT@foot=\box100
-\LT@lastfoot=\box101
-\LT@cols=\count296
-\LT@rows=\count297
-\c@LT@tables=\count298
-\c@LT@chunks=\count299
-\LT@p@ftn=\toks27
+\LTleft=\skip100
+\LTright=\skip101
+\LTpre=\skip102
+\LTpost=\skip103
+\LTchunksize=\count310
+\LTcapwidth=\dimen195
+\LT@head=\box104
+\LT@firsthead=\box105
+\LT@foot=\box106
+\LT@lastfoot=\box107
+\LT@cols=\count311
+\LT@rows=\count312
+\c@LT@tables=\count313
+\c@LT@chunks=\count314
+\LT@p@ftn=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box102
-\UL@hyphenbox=\box103
-\UL@skip=\skip103
-\UL@hook=\toks28
-\UL@height=\dimen190
-\UL@pe=\count300
-\UL@pixel=\dimen191
-\ULC@box=\box104
+\UL@box=\box108
+\UL@hyphenbox=\box109
+\UL@skip=\skip104
+\UL@hook=\toks33
+\UL@height=\dimen196
+\UL@pe=\count315
+\UL@pixel=\dimen197
+\ULC@box=\box110
 Package: ulem 2019/11/18
-\ULdepth=\dimen192
+\ULdepth=\dimen198
 ) (/usr/share/texlive/texmf-dist/tex/latex/morefloats/morefloats.sty
 Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
 Package morefloats Info: Maximum number of possible floats asked for: 36
 (morefloats)             (i.e. 18 more floats).
 (morefloats)             LaTeX might run out of memory before this
 (morefloats)             (in which case it will notify you).
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count301
-\l__pdf_internal_box=\box105
-) (./c370-lab-manual.aux
-
-LaTeX Warning: Label `overview' multiply defined.
-
-
-LaTeX Warning: Label `student-learning-outcomes-by-the-end-of-this-lab-students
--will' multiply defined.
-
-
-LaTeX Warning: Label `to-turn-in-you-should-turn-a-zip-folder-containing' multi
-ply defined.
-
-
-LaTeX Warning: Label `student-learning-outcomes-by-the-end-of-this-lab-students
--will' multiply defined.
-
-
-LaTeX Warning: Label `to-turn-in' multiply defined.
-
-
-LaTeX Warning: Label `student-learning-outcomes-by-the-end-of-this-lab-students
--will' multiply defined.
-
-
-LaTeX Warning: Label `safety' multiply defined.
-
-
-LaTeX Warning: Label `data-processing' multiply defined.
-
-
-LaTeX Warning: Label `waste-disposal-and-cleanup' multiply defined.
-
-
-LaTeX Warning: Label `reference' multiply defined.
-
-
-LaTeX Warning: Label `objective' multiply defined.
-
-
-LaTeX Warning: Label `to-turn-in' multiply defined.
-
-
-LaTeX Warning: Label `student-learning-outcomes-by-the-end-of-this-lab-students
--will' multiply defined.
-
-
-LaTeX Warning: Label `western-analysts' multiply defined.
-
-
-LaTeX Warning: Label `your-job-is-to-screen-the-products-for' multiply defined.
-
-
-
-LaTeX Warning: Label `sample-information' multiply defined.
-
-
-LaTeX Warning: Label `record-keeping' multiply defined.
-
-
-LaTeX Warning: Label `keep-in-mind' multiply defined.
-
-
-LaTeX Warning: Label `safety' multiply defined.
-
-
-LaTeX Warning: Label `standard-preparation' multiply defined.
-
-
-LaTeX Warning: Label `running-standards' multiply defined.
-
-
-LaTeX Warning: Label `sample-preparation' multiply defined.
-
-
-LaTeX Warning: Label `running-samples' multiply defined.
-
-
-LaTeX Warning: Label `waste-disposal-and-cleanup' multiply defined.
-
-
-LaTeX Warning: Label `data-processing' multiply defined.
-
-
-LaTeX Warning: Label `standard-curve-and-concentrations' multiply defined.
-
-
-LaTeX Warning: Label `safety-1' multiply defined.
-
-
-LaTeX Warning: Label `sample-preparation-1' multiply defined.
-
-
-LaTeX Warning: Label `instrumentation' multiply defined.
-
-
-LaTeX Warning: Label `waste-disposal-and-cleanup-1' multiply defined.
-
-
-LaTeX Warning: Label `data-processing-1' multiply defined.
-
-
-LaTeX Warning: Label `safety-2' multiply defined.
-
-
-LaTeX Warning: Label `instrumentation-1' multiply defined.
-
-
-LaTeX Warning: Label `data-processing-2' multiply defined.
-
-
-LaTeX Warning: Label `safety-3' multiply defined.
-
-
-LaTeX Warning: Label `standard-preparation-1' multiply defined.
-
-
-LaTeX Warning: Label `running-samples-1' multiply defined.
-
-
-LaTeX Warning: Label `waste-disposal-and-cleanup-2' multiply defined.
-
-
-LaTeX Warning: Label `data-processing-3' multiply defined.
-
-
-LaTeX Warning: Label `reference' multiply defined.
-
-
-LaTeX Warning: Label `limits-of-detection-and-quantitation' multiply defined.
-
 )
+No file c370-lab-manual.aux.
 \openout1 = `c370-lab-manual.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -710,6 +622,13 @@ LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+09.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
@@ -719,7 +638,64 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
 LaTeX Font Info:    ... okay on input line 109.
-\AtBeginShipoutBox=\box106
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 109.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 109.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 109.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 109.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 109.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 109.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 109.
+LaTeX Font Info:    Redeclaring math accent \check on input line 109.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 109.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 109.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 109.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 109.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 109.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 109.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 109.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 109.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 109.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 109.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 109.
+\AtBeginShipoutBox=\box111
 Package hyperref Info: Link coloring OFF on input line 109.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -728,21 +704,23 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count302
+\c@section@level=\count316
 )
 LaTeX Info: Redefining \ref on input line 109.
 LaTeX Info: Redefining \pageref on input line 109.
 LaTeX Info: Redefining \nameref on input line 109.
-(./c370-lab-manual.out) (./c370-lab-manual.out)
 \@outlinefile=\write4
 \openout4 = `c370-lab-manual.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 109.
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: xetex
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -773,600 +751,83 @@ LaTeX Info: Redefining \selectfont on input line 109.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen193
-\scratchbox=\box107
-\nofMPsegments=\count304
-\nofMParguments=\count305
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen194
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks30
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 \langwohyphens=\language3
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 11
-1.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
-)
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 111.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 16.19989pt on input line 111.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 32.39978pt on input line 111.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.59991pt on input line 111.
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 111; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/18 ".
+(fontspec)                  The requested feature is "LetterSpace=15". 
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 111; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/36 ".
+(fontspec)                  The requested feature is "LetterSpace=15". 
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 111; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/14 ".
+(fontspec)                  The requested feature is "LetterSpace=15". 
+
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+] [2
 
 
-] (./c370-lab-manual.toc [3] [4])
+]
 \tf@toc=\write5
 \openout5 = `c370-lab-manual.toc'.
 
+[3] [4
+
+]
+File: images/cover-image-mass-spec.png Graphic file (type bmp)
+<images/cover-image-mass-spec.png>
 [5] [6
 
 ]
-<images/cover-image-mass-spec.png, id=322, 274.02374pt x 289.08pt>
-File: images/cover-image-mass-spec.png Graphic file (type png)
-<use images/cover-image-mass-spec.png>
-Package pdftex.def Info: images/cover-image-mass-spec.png  used on input line 1
-27.
-(pdftex.def)             Requested size: 312.02235pt x 329.16644pt.
-[7 <./images/cover-image-mass-spec.png>] [8
-
-] [9] [10]
-Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 
-154.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-56.
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [11
-
-]
-Overfull \hbox (5.08977pt too wide) in paragraph at lines 201--202
-\T1/pplj/b/n/10 R \T1/pplj/m/n/10 is the pro-gram-ming lan-guage we'll use to p
-ro-cess data this semester. 
- []
-
-[12]
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 256.
-[13]
-Overfull \hbox (4.66333pt too wide) in paragraph at lines 292--294
-[]\T1/pplj/m/n/10 Create a \T1/pplj/b/n/10 New Di-rec-tory\T1/pplj/m/n/10 /\T1/
-pplj/b/n/10 New Folder \T1/pplj/m/n/10 and call in \T1/cmtt/m/n/10 lab-notebook
-s\T1/pplj/m/n/10 .  
- []
-
-[14] [15] [16
-
-]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 324.
+(hyperref)                be the same. Added a new anchor on input line 143.
 
 
-Overfull \hbox (87.64983pt too wide) in alignment at lines 328--332
+Overfull \hbox (83.15007pt too wide) in alignment at lines 151--157
  [] [] 
  []
 
 
-Overfull \hbox (87.64983pt too wide) in alignment at lines 332--338
- [] [] 
- []
+Package longtable Warning: Column widths have changed
+(longtable)                in table 1 on input line 157.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[17]
-LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
-372.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pplx.fd
-File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
-)
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-372.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
-File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-372.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
-File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-372.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
-File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-372.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
-File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-)
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 372.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 372.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 372.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 372.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 372.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 372.
-[18]pdfTeX warning (ext4): destination with the same identifier (name{overview}
-) has been already used, duplicate ignored
+[7]
+
+LaTeX Warning: File `http://businessoverbroadway.com/wp-content/uploads/2019/01
+/programming_languages_used.png' not found on input line 167.
+
+! Unable to load picture or PDF file 'http://businessoverbroadway.com/wp-conten
+t/uploads/2019/01/programming_languages_used.png'.
 <to be read again> 
-                   \relax 
-l.390 \subsection*{Overview}\label{overview}}
-                                              [19
-
-] [20]
-Overfull \vbox (10.56891pt too high) has occurred while \output is active []
-
-[21] [22] [23] [24]
-Underfull \vbox (badness 1895) has occurred while \output is active []
-
-[25] [26] [27
-
-] [28]
-Chapter 2.
-pdfTeX warning (ext4): destination with the same identifier (name{student-learn
-ing-outcomes-by-the-end-of-this-lab-students-will}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \relax 
-l.685 ...es-by-the-end-of-this-lab-students-will}}
-                                                   [29
-
-] [30]
-
-LaTeX Warning: Marginpar on page 31 moved.
-
-[31] [32] [33] [34
-
-]
-Chapter 3.
-pdfTeX warning (ext4): destination with the same identifier (name{to-turn-in-yo
-u-should-turn-a-zip-folder-containing}) has been already used, duplicate ignore
-d
-<to be read again> 
-                   \relax 
-l.995 ...you-should-turn-a-zip-folder-containing}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{student-learning-outcomes-by-the-end-of-th
-is-lab-students-will}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1010 ...s-by-the-end-of-this-lab-students-will}}
-                                                   [35] [36] [37] [38] [39] [40
-
-] [41] [42]
-Chapter 4.
-pdfTeX warning (ext4): destination with the same identifier (name{to-turn-in}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1282 ...urn In}}{To Turn In}}\label{to-turn-in}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{student-learning-outcomes-by-the-end-of-th
-is-lab-students-will}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1300 ...s-by-the-end-of-this-lab-students-will}}
-                                                   [43
-
-]
-<../assets/img/e-cigarette-cdc.jpg, id=732, 702.625pt x 292.09125pt>
-File: ../assets/img/e-cigarette-cdc.jpg Graphic file (type jpg)
-<use ../assets/img/e-cigarette-cdc.jpg>
-Package pdftex.def Info: ../assets/img/e-cigarette-cdc.jpg  used on input line 
-1343.
-(pdftex.def)             Requested size: 312.00778pt x 129.70609pt.
-
-Overfull \hbox (1.71979pt too wide) in paragraph at lines 1362--1363
-[]\T1/pplj/m/n/10 General adul-ter-ation us-ing FTIR and the Hit Qual-ity In-de
-x method 
- []
-
-[44 <../assets/img/e-cigarette-cdc.jpg>] [45]pdfTeX warning (ext4): destination
- with the same identifier (name{safety}) has been already used, duplicate ignor
-ed
-<to be read again> 
-                   \relax 
-l.1420 \subsection*{Safety}\label{safety}}
-                                          
-Underfull \vbox (badness 5331) has occurred while \output is active []
-
-[46]
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 1446.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 1446.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 1446.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 5.21004pt on input line 1446.
-pdfTeX warning (ext4): destination with the same identifier (name{data-processi
-ng}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1492 ...Data Processing}\label{data-processing}}
-                                                   [47] [48] [49]pdfTeX warning
- (ext4): destination with the same identifier (name{waste-disposal-and-cleanup}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1674 ...anup}\label{waste-disposal-and-cleanup}}
-                                                   [50] [51] [52] [53]pdfTeX wa
-rning (ext4): destination with the same identifier (name{reference}) has been a
-lready used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1864 \subsection*{Reference}\label{reference}}
-                                                 [54]
-Overfull \hbox (32.23189pt too wide) in paragraph at lines 1895--1897
-[]\T1/pplj/m/n/10 Warm up the HPLC ac-cord-ing to the HPLC SOP. Use the \T1/cmt
-t/m/n/10 CHEM370_Vape.M 
- []
-
-[55]
-
-LaTeX Warning: Marginpar on page 56 moved.
-
-[56] [57] [58
-
-]
-Chapter 5.
-pdfTeX warning (ext4): destination with the same identifier (name{objective}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2089 ...bjective}}{Objective}}\label{objective}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{to-turn-in}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.2095 ...urn In}}{To Turn In}}\label{to-turn-in}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{student-learning-outcomes-by-the-end-of-th
-is-lab-students-will}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2113 ...s-by-the-end-of-this-lab-students-will}}
-                                                   [59]pdfTeX warning (ext4): d
-estination with the same identifier (name{western-analysts}) has been already u
-sed, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2149 ...tern Analysts:}\label{western-analysts}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{your-job-is-to-screen-the-products-for}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2155 ...your-job-is-to-screen-the-products-for}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{sample-information}) has been already used
-, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2174 ...nformation:}}\label{sample-information}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{record-keeping}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.2180 ...Record Keeping:}}\label{record-keeping}}
-                                                   [60]pdfTeX warning (ext4): d
-estination with the same identifier (name{keep-in-mind}) has been already used,
- duplicate ignored
-<to be read again> 
-                   \relax 
-l.2186 ...:}}{Keep in mind:}}\label{keep-in-mind}}
-                                                   [61]pdfTeX warning (ext4): d
-estination with the same identifier (name{safety}) has been already used, dupli
-cate ignored
-<to be read again> 
-                   \relax 
-l.2232 \subsection*{Safety}\label{safety}}
-                                          pdfTeX warning (ext4): destination wi
-th the same identifier (name{standard-preparation}) has been already used, dupl
-icate ignored
-<to be read again> 
-                   \relax 
-l.2244 ...reparation}\label{standard-preparation}}
-                                                   [62]pdfTeX warning (ext4): d
-estination with the same identifier (name{running-standards}) has been already 
-used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2258 ...ing Standards}\label{running-standards}}
-                                                  
-Overfull \hbox (79.47035pt too wide) in paragraph at lines 2264--2266
-[]\T1/pplj/m/n/10 Warm up the HPLC ac-cord-ing to the HPLC SOP. Use the \T1/cmt
-t/m/n/10 CHEM370_acetaminophen.M 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{sample-prepar
-ation}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2314 ... Preparation}\label{sample-preparation}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{running-samples}) has been already used, d
-uplicate ignored
-<to be read again> 
-                   \relax 
-l.2344 ...Running Samples}\label{running-samples}}
-                                                   [63]pdfTeX warning (ext4): d
-estination with the same identifier (name{waste-disposal-and-cleanup}) has been
- already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2377 ...anup}\label{waste-disposal-and-cleanup}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{data-processing}) has been already used, d
-uplicate ignored
-<to be read again> 
-                   \relax 
-l.2392 ...Data Processing}\label{data-processing}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{standard-curve-and-concentrations}) has be
-en already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2412 ...abel{standard-curve-and-concentrations}}
-                                                  
-
-LaTeX Warning: Marginpar on page 64 moved.
-
-[64] [65]pdfTeX warning (ext4): destination with the same identifier (name{safe
-ty-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2453 \subsection*{Safety}\label{safety-1}}
-                                            pdfTeX warning (ext4): destination 
-with the same identifier (name{sample-preparation-1}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.2465 ...reparation}\label{sample-preparation-1}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{instrumentation}) has been already used, d
-uplicate ignored
-<to be read again> 
-                   \relax 
-l.2479 ...Instrumentation}\label{instrumentation}}
-                                                  
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[66]pdfTeX warning (ext4): destination with the same identifier (name{waste-dis
-posal-and-cleanup-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2501 ...up}\label{waste-disposal-and-cleanup-1}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{data-processing-1}) has been already used,
- duplicate ignored
-<to be read again> 
-                   \relax 
-l.2519 ...ta Processing}\label{data-processing-1}}
-                                                   [67] [68]
-Overfull \hbox (4.21973pt too wide) in paragraph at lines 2557--2558
-\T1/pplj/m/n/10 should iden-tify the ma-jor fla-vor con-stituents and com-ment 
-on whether 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{safety-2}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2564 \subsection*{Safety}\label{safety-2}}
-                                            pdfTeX warning (ext4): destination 
-with the same identifier (name{instrumentation-1}) has been already used, dupli
-cate ignored
-<to be read again> 
-                   \relax 
-l.2578 ...strumentation}\label{instrumentation-1}}
-                                                  
-Overfull \hbox (24.81035pt too wide) in paragraph at lines 2584--2585
-[]\T1/pplj/m/n/10 Run a sol-vent blank on the GC-MS us-ing the \T1/cmtt/m/n/10 
-CHEM370_Acetaminophen.M 
- []
-
-
-Underfull \vbox (badness 5331) has occurred while \output is active []
-
-[69]pdfTeX warning (ext4): destination with the same identifier (name{data-proc
-essing-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2630 ...ta Processing}\label{data-processing-2}}
-                                                   [70] [71]pdfTeX warning (ext
-4): destination with the same identifier (name{safety-3}) has been already used
-, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2700 \subsection*{Safety}\label{safety-3}}
-                                            pdfTeX warning (ext4): destination 
-with the same identifier (name{standard-preparation-1}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.2712 ...paration}\label{standard-preparation-1}}
-                                                   [72]pdfTeX warning (ext4): d
-estination with the same identifier (name{running-samples-1}) has been already 
-used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2746 ...nning Samples}\label{running-samples-1}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{waste-disposal-and-cleanup-2}) has been al
-ready used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2783 ...up}\label{waste-disposal-and-cleanup-2}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{data-processing-3}) has been already used,
- duplicate ignored
-<to be read again> 
-                   \relax 
-l.2799 ...ta Processing}\label{data-processing-3}}
-                                                  pdfTeX warning (ext4): destin
-ation with the same identifier (name{reference}) has been already used, duplica
-te ignored
-<to be read again> 
-                   \relax 
-l.2834 \subsection{Reference}\label{reference}}
-                                                [73] [74
-
-]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 2850.
-
-[75]
-<./images/chromatogram.png, id=1203, 420.6114pt x 315.0972pt>
-File: ./images/chromatogram.png Graphic file (type png)
-<use ./images/chromatogram.png>
-Package pdftex.def Info: ./images/chromatogram.png  used on input line 2886.
-(pdftex.def)             Requested size: 312.0113pt x 233.74042pt.
-<./images/mass-spectrum.png, id=1204, 415.5525pt x 315.0972pt>
-File: ./images/mass-spectrum.png Graphic file (type png)
-<use ./images/mass-spectrum.png>
-Package pdftex.def Info: ./images/mass-spectrum.png  used on input line 2892.
-(pdftex.def)             Requested size: 312.01234pt x 236.58675pt.
-
-Overfull \hbox (20.17181pt too wide) in paragraph at lines 2922--2923
-[]\T1/cmtt/m/n/10 A = peakArea([chromatogram(:, "TIME COLUMN"), chromatogram(:,
- 
- []
-
-[76 <./images/chromatogram.png>] [77 <./images/mass-spectrum.png>]
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-2975.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \hbox (25.42053pt too wide) in paragraph at lines 2975--2976
-[]\T1/cmtt/m/n/10 [fit_params, r2, fitline] = fitlm(concentrations, standards\T
-S1/cmtt/m/n/10 '\T1/cmtt/m/n/10 );  
- []
-
-[78] [79]
-<./images/ir-spectrum-example.png, id=1233, 562.1pt x 421.575pt>
-File: ./images/ir-spectrum-example.png Graphic file (type png)
-<use ./images/ir-spectrum-example.png>
-Package pdftex.def Info: ./images/ir-spectrum-example.png  used on input line 3
-113.
-(pdftex.def)             Requested size: 311.99492pt x 233.99619pt.
-[80] [81 <./images/ir-spectrum-example.png>] [82
-
-]
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 3188.
-
-[83]pdfTeX warning (ext4): destination with the same identifier (name{limits-of
--detection-and-quantitation}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3261 ...l{limits-of-detection-and-quantitation}}
-                                                   [84] [85] [86
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[87] [88] [89]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[90] [91] [92
-
-]
-Overfull \hbox (159.10974pt too wide) in alignment at lines 3490--3494
- [] [] [] 
- []
-
-
-Overfull \hbox (159.10974pt too wide) in alignment at lines 3494--3515
- [] [] [] 
- []
-
-
-Overfull \hbox (159.10974pt too wide) in alignment at lines 3515--3517
- [] [] [] 
- []
-
-
-Package bibentry Warning: You have used \nobibliography* 
-(bibentry)                without a following \bibliography.
-(bibentry)                You may not be able to run BibTeX.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3523.
-[93]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3523.
-(./c370-lab-manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3523.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3523.
-
-Package rerunfilecheck Info: File `c370-lab-manual.out' has not changed.
-(rerunfilecheck)             Checksum: 40E0D792049D6E1764DAD1655B4D4585;7312.
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3523.
- ) 
+                   }
+l.167 ...s/2019/01/programming_languages_used.png}
+                                                   
 Here is how much of TeX's memory you used:
- 14976 strings out of 483183
- 211718 string characters out of 5966293
- 496098 words of memory out of 5000000
- 28942 multiletter control sequences out of 15000+600000
- 633583 words of font info for 166 fonts, out of 8000000 for 9000
+ 16132 strings out of 481804
+ 288774 string characters out of 5937877
+ 615898 words of memory out of 5000000
+ 32813 multiletter control sequences out of 15000+600000
+ 533205 words of font info for 38 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,12n,59p,1211b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/al/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1000.600pk>
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/al/.texlive2
-019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecit1000.600pk> </home/al/.texlive201
-9/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/fpl/fplbij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fpl
-mri.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
-ino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.
-pfb>
-Output written on c370-lab-manual.pdf (93 pages, 486265 bytes).
-PDF statistics:
- 1659 PDF objects out of 1728 (max. 8388607)
- 1338 compressed objects within 14 object streams
- 652 named destinations out of 1000 (max. 500000)
- 2978 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 62i,11n,51p,864b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on c370-lab-manual.pdf (7 pages).

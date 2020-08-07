@@ -47,12 +47,13 @@ blockquote > p:first-child {
 }
 
 blockquote {
-  color: #BE3A34;
+  /* font-family: 'Barlow', sans-serif; */
   padding-left: 12px;
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 20px;
-  border-left: 4px solid #BE3A34;
+  border-left: 4px solid #4A7729;
+  color: #BE3A34;
 }
 
 .marginfigure {

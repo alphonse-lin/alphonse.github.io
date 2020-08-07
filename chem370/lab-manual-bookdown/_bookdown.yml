@@ -13,7 +13,7 @@ rmd_files: [
             "index.Rmd",
             "00C_preface.Rmd",
             "00A_syllabus.Rmd",
-            "00_R.Rmd",
+            "01_R.Rmd",
             "02_gc-tcd.Rmd",
             "01_uv-vis.Rmd",
             "03_vape.Rmd",

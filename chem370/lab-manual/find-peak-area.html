@@ -177,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
@@ -329,23 +330,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><code>p</code>: whether or not to plot the result (boolean, <code>true/false</code>)</p></li>
 </ul>
 <p><strong>Code:</strong></p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb42-1"><a href="find-peak-area.html#cb42-1"></a><span class="co">#####   peakArea   ##################################################</span></span>
-<span id="cb42-2"><a href="find-peak-area.html#cb42-2"></a></span>
-<span id="cb42-3"><a href="find-peak-area.html#cb42-3"></a><span class="cf">function</span> a <span class="op">=</span> peakArea(C<span class="op">,</span> x1<span class="op">,</span> x2<span class="op">,</span> p <span class="op">=</span> <span class="fu">true</span>)</span>
-<span id="cb42-4"><a href="find-peak-area.html#cb42-4"></a>    x <span class="op">=</span> C((C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&gt;</span> x1 <span class="op">&amp;</span> C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&lt;</span> x2)<span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span>
-<span id="cb42-5"><a href="find-peak-area.html#cb42-5"></a>    y <span class="op">=</span> C((C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&gt;</span> x1 <span class="op">&amp;</span> C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&lt;</span> x2)<span class="op">,</span> <span class="fl">2</span>)<span class="op">;</span></span>
-<span id="cb42-6"><a href="find-peak-area.html#cb42-6"></a>    a <span class="op">=</span> <span class="fu">trapz</span>(x<span class="op">,</span> y)<span class="op">;</span></span>
-<span id="cb42-7"><a href="find-peak-area.html#cb42-7"></a>    <span class="cf">if</span> p <span class="op">==</span> <span class="fu">true</span></span>
-<span id="cb42-8"><a href="find-peak-area.html#cb42-8"></a>        <span class="fu">plot</span>(C[<span class="op">:,</span> <span class="fl">1</span>]<span class="op">,</span> C[<span class="op">:,</span> <span class="fl">2</span>])<span class="op">;</span></span>
-<span id="cb42-9"><a href="find-peak-area.html#cb42-9"></a>        <span class="fu">hold</span> on</span>
-<span id="cb42-10"><a href="find-peak-area.html#cb42-10"></a>        <span class="fu">area</span>(x<span class="op">,</span>y)<span class="op">;</span></span>
-<span id="cb42-11"><a href="find-peak-area.html#cb42-11"></a>        <span class="fu">xlabel</span>(<span class="st">&quot;Time&quot;</span>)<span class="op">;</span></span>
-<span id="cb42-12"><a href="find-peak-area.html#cb42-12"></a>        <span class="fu">ylabel</span>(<span class="st">&quot;Signal (arbitrary units)&quot;</span>)</span>
-<span id="cb42-13"><a href="find-peak-area.html#cb42-13"></a>        <span class="fu">hold</span> off</span>
-<span id="cb42-14"><a href="find-peak-area.html#cb42-14"></a>        <span class="fu">disp</span>([<span class="st">&quot;Peak Area = &quot;</span><span class="op">,</span> <span class="fu">num2str</span>(a)])</span>
-<span id="cb42-15"><a href="find-peak-area.html#cb42-15"></a>    <span class="cf">end</span></span>
-<span id="cb42-16"><a href="find-peak-area.html#cb42-16"></a><span class="cf">end</span></span>
-<span id="cb42-17"><a href="find-peak-area.html#cb42-17"></a><span class="co">#####################################################################</span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb29-1"><a href="find-peak-area.html#cb29-1"></a><span class="co">#####   peakArea   ##################################################</span></span>
+<span id="cb29-2"><a href="find-peak-area.html#cb29-2"></a></span>
+<span id="cb29-3"><a href="find-peak-area.html#cb29-3"></a><span class="cf">function</span> a <span class="op">=</span> peakArea(C<span class="op">,</span> x1<span class="op">,</span> x2<span class="op">,</span> p <span class="op">=</span> <span class="fu">true</span>)</span>
+<span id="cb29-4"><a href="find-peak-area.html#cb29-4"></a>    x <span class="op">=</span> C((C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&gt;</span> x1 <span class="op">&amp;</span> C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&lt;</span> x2)<span class="op">,</span> <span class="fl">1</span>)<span class="op">;</span></span>
+<span id="cb29-5"><a href="find-peak-area.html#cb29-5"></a>    y <span class="op">=</span> C((C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&gt;</span> x1 <span class="op">&amp;</span> C(<span class="op">:,</span><span class="fl">1</span>) <span class="op">&lt;</span> x2)<span class="op">,</span> <span class="fl">2</span>)<span class="op">;</span></span>
+<span id="cb29-6"><a href="find-peak-area.html#cb29-6"></a>    a <span class="op">=</span> <span class="fu">trapz</span>(x<span class="op">,</span> y)<span class="op">;</span></span>
+<span id="cb29-7"><a href="find-peak-area.html#cb29-7"></a>    <span class="cf">if</span> p <span class="op">==</span> <span class="fu">true</span></span>
+<span id="cb29-8"><a href="find-peak-area.html#cb29-8"></a>        <span class="fu">plot</span>(C[<span class="op">:,</span> <span class="fl">1</span>]<span class="op">,</span> C[<span class="op">:,</span> <span class="fl">2</span>])<span class="op">;</span></span>
+<span id="cb29-9"><a href="find-peak-area.html#cb29-9"></a>        <span class="fu">hold</span> on</span>
+<span id="cb29-10"><a href="find-peak-area.html#cb29-10"></a>        <span class="fu">area</span>(x<span class="op">,</span>y)<span class="op">;</span></span>
+<span id="cb29-11"><a href="find-peak-area.html#cb29-11"></a>        <span class="fu">xlabel</span>(<span class="st">&quot;Time&quot;</span>)<span class="op">;</span></span>
+<span id="cb29-12"><a href="find-peak-area.html#cb29-12"></a>        <span class="fu">ylabel</span>(<span class="st">&quot;Signal (arbitrary units)&quot;</span>)</span>
+<span id="cb29-13"><a href="find-peak-area.html#cb29-13"></a>        <span class="fu">hold</span> off</span>
+<span id="cb29-14"><a href="find-peak-area.html#cb29-14"></a>        <span class="fu">disp</span>([<span class="st">&quot;Peak Area = &quot;</span><span class="op">,</span> <span class="fu">num2str</span>(a)])</span>
+<span id="cb29-15"><a href="find-peak-area.html#cb29-15"></a>    <span class="cf">end</span></span>
+<span id="cb29-16"><a href="find-peak-area.html#cb29-16"></a><span class="cf">end</span></span>
+<span id="cb29-17"><a href="find-peak-area.html#cb29-17"></a><span class="co">#####################################################################</span></span></code></pre></div>
 </div>
             </section>
 
@@ -395,7 +396,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["c370-lab-manual.pdf"],
+"download": null,
 "toc": {
 "collapse": "section",
 "download": "pdf",

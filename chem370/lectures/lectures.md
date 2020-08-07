@@ -5,9 +5,9 @@ permalink: /chem370/lectures/
 icon: fa-chalkboard-teacher
 ---
 
-<!-- [View Lecture Transcripts]({{ site.baseurl }}/chem370/lectures/transcripts/) -->
-
 ## Tentative Course Outline
+
+*Video lectures are available in the Lecture channel of MS Teams.*
 
 1. **Foundations**  
 
@@ -22,7 +22,12 @@ icon: fa-chalkboard-teacher
     5. Survey of Chemical Instrumentation (Week 5 & 6)  
         *Lab: Quantitative Analysis of Quinine*
 
-2. **Spectroscopy**  (Weeks 6-10)  
+2. **Separation Science** (Weeks 6-8)  
+
+    1. Liquid Chromatography
+    2. Gas Chromatography  
+
+3. **Spectroscopy**  (Weeks 8-12)  
 
     1. Introduction / Principles
     2. Optics
@@ -32,30 +37,28 @@ icon: fa-chalkboard-teacher
     
     *Lab: Flame atomic absorption spectroscopy*
 
-3. **Mass Spectrometry**  (Weeks 10-11)  
+4. **Mass Spectrometry**  (Weeks 12-13)  
 
     *Lab: Gas chromatography-mass spectrometry*
-
-4. **Separation Science** (Weeks 11-12)  
-
-    1. Liquid Chromatography
-    2. Gas Chromatography  
     
     *Lab: High performance liquid chromatography*
   
-5. *Advanced Topic in Instrumental Analysis (Week 13 & 15, topic(s) TBD, time permitting)*
+5. **Advanced Topic in Instrumental Analysis (Week 13 & 15, topic(s) TBD, time permitting)**
 
-6. Review and Last Exam (Week 14)  
+6. **Review and Last Exam (Week 14)**  
 
+*Order of topics and exact topics may change.*
 
-## Lecture List
+## Lecture Slides
 
-<!-- *Lectures are numbered by topic and broken up by day. (e.g. topic.subtopic.day)* -->
+If there are slides available for a lecture they will be listed here.
+
+*This list may update throughout the semester.*
 
 <div>
 <ul>
 {% for file in site.static_files %}
-  {% if file.path contains "devel/chem370/lectures" and file.extname == ".html" %}
+  {% if file.path contains "chem370/lectures" and file.extname == ".html" %}
    <li> <a href = "{{ site.baseurl }}{{ file.path }}">{{ file.path | replace:'.html','' | replace: '/chem370/lectures/', '' | replace: '-', ' ' }}</a> </li>
   {% endif %}
 {% endfor %}
@@ -80,6 +83,6 @@ icon: fa-chalkboard-teacher
 
 *I have tried to acknowledge all sources. If I have forgotten to acknowledge your work, have provided insufficient credits, or have misinterpreted your copyright, it has not been done with malicious intent. Please [notify me](mailto:difscher@wcu.edu) of any concerns.*
 
-These lectures draw heavily on *Analytical Chemistry 2.1* by David Harvey, available via [LibreTexts](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/01%3A_Introduction_to_Analytical_Chemistry/1.01%3A_What_is_Analytical_Chemistry).
+Some lectures draw heavily on *Analytical Chemistry 2.1* by David Harvey, available via [LibreTexts](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/01%3A_Introduction_to_Analytical_Chemistry/1.01%3A_What_is_Analytical_Chemistry).
 
 These slides were created using [remark](https://remarkjs.com/) by [Ole Petter Bang](https://github.com/gnab).

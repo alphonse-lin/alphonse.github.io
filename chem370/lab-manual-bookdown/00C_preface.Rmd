@@ -15,13 +15,15 @@ Students will work in pairs at the beginning of the semester to complete introdu
 
 ## Lab Notebooks {-}
 
-Students will use [Jupyter Lab](https://jupyter.org/) as an electronic lab notebook together with [Octave (or MATLAB)](https://www.gnu.org/software/octave/) for data processing.  Octave is an open-source programming language that is largely modeled after MATLAB, one of the most commonly used programming languages in the fields of chemistry, physics, and engineering.  In general, MATLAB code will usually run in Octave.  So if you get stuck in Octave, you can usually find MATLAB examples that will help solve your problem.  More information on these software packages can be found in the [appendices](/chem370/lab-manual/appendix-1-getting-started-in-octave-and-jupyter-lab.html).
+Students will use [R](https://cran.r-project.org/) and [RStudio](https://rstudio.com/) to create an electronic lab notebook for data processing.  R is an open-source programming language and is one of the most commonly used data processing languages.  The figure below shows that 36% of surveyed data scientist used R on a regular basis in 2018, making it the third most popular language in the survey.
+
+![Graph of the most commonly used languages in data science in 2018 from [Business Over Broadway](https://businessoverbroadway.com/2019/01/13/programming-languages-most-used-and-recommended-by-data-scientists/)](http://businessoverbroadway.com/wp-content/uploads/2019/01/programming_languages_used.png)
 
 ## Features of the Book {-}
 
 ### **Typographical Conventions** {-}
 
-This lab manual will use some common typographical (formatting) conventions to distinguish between its different features.   For example, the data processing activities will make extensive use of [Octave (MATLAB)](https://www.gnu.org/software/octave/) code, which will always be represented with `monospace font with a grey background` (in the online version).  It may be `inline` or
+This lab manual will use some common typographical (formatting) conventions to distinguish between its different features.   For example, the data processing activities will make extensive use of [R](https://cran.r-project.org/) code, which will always be represented with `monospace font with a grey background` (in the online version).  It may be `inline` or
 
 ```
 offset.
@@ -31,9 +33,10 @@ You should take time to thoroughly digest code chunks.  Sometimes the code may w
 
 The lab procedures will often contain warnings that your should watch out for.  
 
-   > A warning will look like this!
+> A warning will look like this!
 
 It also contains checkpoints and tips to help keep you on track.  
+
 ```{marginfigure}
 A tip or checkpoint will look like this.
 ```

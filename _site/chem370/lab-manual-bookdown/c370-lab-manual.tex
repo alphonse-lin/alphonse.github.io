@@ -1,0 +1,3807 @@
+\documentclass[]{tufte-book}
+
+% ams
+\usepackage{amssymb,amsmath}
+
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \makeatletter
+  \@ifpackageloaded{fontspec}{}{\usepackage{fontspec}}
+  \makeatother
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \makeatletter
+  \@ifpackageloaded{soul}{
+     \renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+     \renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+   }{}
+  \makeatother
+
+\fi
+
+% graphix
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+
+% booktabs
+\usepackage{booktabs}
+
+% url
+\usepackage{url}
+
+% hyperref
+\usepackage{hyperref}
+
+% units.
+\usepackage{units}
+
+
+\setcounter{secnumdepth}{2}
+
+% citations
+
+% pandoc syntax highlighting
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+
+% longtable
+\usepackage{longtable,booktabs}
+
+% multiplecol
+\usepackage{multicol}
+
+% strikeout
+\usepackage[normalem]{ulem}
+
+% morefloats
+\usepackage{morefloats}
+
+
+% tightlist macro required by pandoc >= 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% title / author / date
+\title{CHEM 370 Lab Manual}
+\author{Al Fischer}
+\date{Western Carolina University}
+
+
+\begin{document}
+
+\maketitle
+
+
+
+{
+\hypersetup{linkcolor=black}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+
+\hypertarget{section}{%
+\chapter*{}\label{section}}
+\addcontentsline{toc}{chapter}{}
+
+\begin{figure}
+\centering
+\includegraphics{images/cover-image-mass-spec.png}
+\caption{Public domain \href{https://commons.wikimedia.org/wiki/File:Mass_Spectrometer_Schematic.svg\#/media/File:Mass_Spectrometer_Schematic.svg}{image} of mass spectrometer.}
+\end{figure}
+
+Copyright 2020 Al Fischer
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+\hypertarget{overview}{%
+\chapter*{Overview}\label{overview}}
+\addcontentsline{toc}{chapter}{Overview}
+
+This course is an introduction to instrumental analysis in the chemistry lab. Students will be introduced to components of the ``analyst's toolbox'' through real-world scenarios, including spectroscopy, mass spectrometry, and chromatography. Students will conduct sample preparation, instrument calibration, and qualitative and quantitative analysis using UV-visible spectroscopy (UV-vis), gas-chromatography/mass spectrometry (GC-MS), high-performance liquid chromatography (HP-LC), flame atomic absorption spectroscopy (FAAS), and Fourier-transform infrared spectroscopy (FT-IR). Throughout the semester, students will also work to develop skills related to reproducible data analysis, scientific communication, and collaboration in the laboratory. Prerequisites include CHEM-232 (Quantitative Analysis) and CHEM-242 (Organic Chemistry II).
+
+\hypertarget{lab-activities}{%
+\section*{Lab Activities}\label{lab-activities}}
+\addcontentsline{toc}{section}{Lab Activities}
+
+Students will work in pairs at the beginning of the semester to complete introductory labs involving spectroscopy and gas chromatography. After that, they will be assigned groups of 2-3 with which they will complete one rotation lab that lasts the remainder of the semester. Students may choose to analyze \href{/chem370/lab-manual/rotation-a-e-cigarette-liquid.html}{e-cigarette liquid} or \href{/chem370/lab-manual/rotation-b-acetaminophen.html}{acetaminophen tablets} for their rotation lab. The rotation lab are scenario-based, so students should refer to the memorandum at the beginning of each rotation for details. The lab activities for the rotation lab are:
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Vape Juice & Acetaminophen\tabularnewline
+\midrule
+\endhead
+GC-MS (ID flavor) & HPLC (Quantify acetaminophen, check purity)\tabularnewline
+AA (Quantify Metal) & FTIR (Check for Adulterants)\tabularnewline
+FTIR (Check for Adulterants) & GC-MS (ID flavor)\tabularnewline
+HPLC (Quantify Nicotine, check purity) & AA (Quantify Metal)\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{lab-notebooks}{%
+\section*{Lab Notebooks}\label{lab-notebooks}}
+\addcontentsline{toc}{section}{Lab Notebooks}
+
+Students will use \href{https://cran.r-project.org/}{R} and \href{https://rstudio.com/}{RStudio} to create an electronic lab notebook for data processing. R is an open-source programming language and is one of the most commonly used data processing languages. The figure below shows that 36\% of surveyed data scientist used R on a regular basis in 2018, making it the third most popular language in the survey.
+
+\begin{figure}
+\centering
+\includegraphics{http://businessoverbroadway.com/wp-content/uploads/2019/01/programming_languages_used.png}
+\caption{Graph of the most commonly used languages in data science in 2018 from \href{https://businessoverbroadway.com/2019/01/13/programming-languages-most-used-and-recommended-by-data-scientists/}{Business Over Broadway}}
+\end{figure}
+
+\hypertarget{features-of-the-book}{%
+\section*{Features of the Book}\label{features-of-the-book}}
+\addcontentsline{toc}{section}{Features of the Book}
+
+\hypertarget{typographical-conventions}{%
+\subsection*{\texorpdfstring{\textbf{Typographical Conventions}}{Typographical Conventions}}\label{typographical-conventions}}
+\addcontentsline{toc}{subsection}{\textbf{Typographical Conventions}}
+
+This lab manual will use some common typographical (formatting) conventions to distinguish between its different features. For example, the data processing activities will make extensive use of \href{https://cran.r-project.org/}{R} code, which will always be represented with \texttt{monospace\ font\ with\ a\ grey\ background} (in the online version). It may be \texttt{inline} or
+
+\begin{verbatim}
+offset.
+\end{verbatim}
+
+You should take time to thoroughly digest code chunks. Sometimes the code may work as-is; other times you may have to add to the code or change placeholders to make it work. And other times the code may be \emph{pseudocode}, which is example code that looks like it would work but will throw an error. The code will often be color-coded to highlight various features of the programming language (a feature called syntax highlighting).
+
+The lab procedures will often contain warnings that your should watch out for.
+
+\begin{quote}
+A warning will look like this!
+\end{quote}
+
+It also contains checkpoints and tips to help keep you on track.
+
+\begin{marginfigure}
+A tip or checkpoint will look like this.
+\end{marginfigure}
+
+\hypertarget{e-book-vs.-pdf}{%
+\subsection*{\texorpdfstring{\textbf{e-Book vs.~PDF}}{e-Book vs.~PDF}}\label{e-book-vs.-pdf}}
+\addcontentsline{toc}{subsection}{\textbf{e-Book vs.~PDF}}
+
+This lab manual is available in both HTML (webpage) format and as a PDF. These two formats generally have identical content, although some features of the book (such as videos) may only work in the online version and do not appear in the PDF.
+
+\hypertarget{syllabus}{%
+\chapter*{Syllabus}\label{syllabus}}
+\addcontentsline{toc}{chapter}{Syllabus}
+
+\textbf{Instructor:} Al Fischer, PhD\\
+\textbf{Office Hours:} By appointment at \href{http://www.calendly.com/drfischer}{calendly.com/drfischer} (NS 209)\\
+\textbf{Availability:} See my calendar at \href{\%7B\%7Bsite.baseurl\%7D\%7D/contact}{alphonse.github.io/contact}\\
+\textbf{Email:} \href{mailto:dfischer@wcu.edu}{\nolinkurl{dfischer@wcu.edu}}
+
+\hypertarget{overview}{%
+\subsection*{Overview}\label{overview}}
+\addcontentsline{toc}{subsection}{Overview}
+
+This course is an introduction to instrumental analysis in the chemistry lab. Students will be introduced to components of the ``analyst's toolbox'' through real-world scenarios, including spectroscopy, mass spectrometry, and chromatography. Students will conduct sample preparation, instrument calibration, and qualitative and quantitative analysis using UV-visible spectroscopy (UV-vis), gas-chromatography/mass spectrometry (GC-MS), high-performance liquid chromatography (HP-LC), flame atomic absorption spectroscopy (FAAS), and Fourier-transform infrared spectroscopy (FT-IR). Throughout the semester, students will also work to develop skills related to reproducible data analysis, scientific communication, and collaboration in the laboratory. Prerequisites include CHEM-232 (Quantitative Analysis) and CHEM-242 (Organic Chemistry II).
+
+\hypertarget{student-learning-outcomes}{%
+\subsection*{Student Learning Outcomes}\label{student-learning-outcomes}}
+\addcontentsline{toc}{subsection}{Student Learning Outcomes}
+
+To achieve a satisfactory grade, students will:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Relate a theoretical, mechanical, and practical understanding of chemical instrumentation.
+\item
+  Combine concepts from Quantitative Analysis, Organic Chemistry, and General Chemistry with instrumental theory and programmatic data analysis to demonstrate accurate, reproducible qualitative and quantitative analysis of complex samples.
+\item
+  Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
+\item
+  Participate effectively in group projects.
+\item
+  Demonstrate safe laboratory practices.
+\item
+  Critically evaluate peer work.
+\end{enumerate}
+
+\hypertarget{required-course-materials}{%
+\subsection*{Required Course Materials}\label{required-course-materials}}
+\addcontentsline{toc}{subsection}{Required Course Materials}
+
+\textbf{Text Book:} Granger, R. M., Yochum, H. M., Granger, J. N., \& Sienerth, K. D. (2017). \emph{Instrumental Analysis}. Oxford University Press. (WCU rental book available at bookstore)
+
+\textbf{Lab Manual:} Fischer, D.A. (2020) \emph{\href{\%7B\%7Bsite.baseurl\%7D\%7D/chem370/lab-manual}{Chem 370 Lab Manual}} (free online)
+
+\textbf{Technology:} Students will need a laptop computer meeting Chemistry and Physics' \href{https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx}{minimum computer requirements}. Students will be required to install \href{https://cran.r-project.org/}{R} + \href{https://rstudio.com/}{RStudio} on their computer, both of which are freely available for non-commercial use. Alternatively, student may use R + RStudio via VCAT, although this may add complexity to assignments. A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.
+
+\textbf{Additional Required Course Materials:}
+
+\begin{itemize}
+\tightlist
+\item
+  Goggles rated for chemical protection
+\item
+  Nitrile gloves
+\item
+  Appropriate clothing: closed-toed shoes, long pants, hair tie for long hair
+\item
+  Permanent, felt-tipped marker (e.g.~a Sharpie®)
+\item
+  A laptop computer meeting Chemistry and Physics' \href{https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx}{minimum computer requirements}.
+\end{itemize}
+
+Most materials are available from the WCU bookstore; goggles are also available from the WCU Chemistry Club (recommended). A lab coat is optional.
+
+\hypertarget{lab-notebooks-and-data-analysis}{%
+\subsection*{Lab Notebooks and Data Analysis}\label{lab-notebooks-and-data-analysis}}
+\addcontentsline{toc}{subsection}{Lab Notebooks and Data Analysis}
+
+Lab notebooks will be completed electronically either using R and RStudio. Students will be required to submit their data files along with their lab notebooks so that they can be checked for accuracy. A lab notebook that does not compile will not be graded.
+
+\hypertarget{grading}{%
+\subsection*{Grading}\label{grading}}
+\addcontentsline{toc}{subsection}{Grading}
+
+\textbf{Grading Methods}
+
+Your grade is tied directly to the student learning outcomes for the course. Each SLO will be assessed as below. Each assignment will be categorized by SLO and used to assess your progress in achieving that objective. Your final grade will be determined by calculating the weighted average (out of 100) across all SLOs using the weightings listed in parentheses. If you are unsure how to calculate your grade please ask your instructor.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  (25\%) Relate a theoretical, mechanical, and practical understanding of chemical instrumentation.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assessed by written quizzes and/or face-to-face examinations.
+  \end{itemize}
+\item
+  (25\%) Combine concepts from Quantitative Analysis, Organic Chemistry, and General Chemistry with instrumental theory and programmatic data analysis to demonstrate accurate, reproducible qualitative and quantitative analysis of complex samples.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assessed by inspection of lab notebooks for accuracy, thoroughness, and data quality.
+  \end{itemize}
+\item
+  (25\%) Communicate analysis questions, methods, results, and conclusions using written word, pictorial figures, and data tables.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assessed by peer and instructor review of technical reports for accuracy and clarity.
+  \end{itemize}
+\item
+  (10\%) Participate effectively in group projects.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assessed by peer and instructor evaluation.
+  \end{itemize}
+\item
+  (10\%) Demonstrate safe laboratory practices.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assessed by an ability and willingness to follow standard safety protocols.
+  \end{itemize}
+\item
+  (5\%) Critically evaluate peer work.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Assessed by participation in peer-review exercises.
+  \end{itemize}
+\end{enumerate}
+
+\textbf{Grading Scale}
+
+\begin{longtable}[]{@{}cc@{}}
+\toprule
+Number Range & Letter Grade\tabularnewline
+\midrule
+\endhead
+97-100 & A+\tabularnewline
+93-96.9 & A\tabularnewline
+90-92.9 & A-\tabularnewline
+87-89.9 & B+\tabularnewline
+83-86.9 & B\tabularnewline
+80-82.9 & B-\tabularnewline
+77-79.9 & C+\tabularnewline
+73-76.9 & C\tabularnewline
+70-72.9 & C-\tabularnewline
+67-69.9 & D+\tabularnewline
+63-66.9 & D\tabularnewline
+60-62.9 & D-\tabularnewline
+\textless60 & F\tabularnewline
+\bottomrule
+\end{longtable}
+
+These grades indicate levels in quality from excellent to unsatisfactory. Students are responsible for knowing class attendance, withdrawal, and drop-add policies and procedures.
+
+\textbf{Submitting Assignments}
+
+Most assignments will be submitted electronically. Unless otherwise specified, assignments are due at 23:59:59 on the due date (usually the day before lab).
+
+\begin{itemize}
+\tightlist
+\item
+  A file submission URL or Blackboard submission folder will be provided for each assignment. Assignments submitted through said URL are visible only by the instructor.
+\item
+  Students must provide their name via the file submission link to get credit. For group assignments, put the group name in the submission fields instead; only one submission per group per assignment is necessary.
+\item
+  Files should be given a clear, logical filename that reflects the assignment name.
+\item
+  Files may be sorted automatically by a computer. Therefore, any files not named appropriately, not in the specified format, or submitted elsewhere will either incur point deductions or not be graded.
+\item
+  Any electronic assignments turned in via hardcopy will not be graded.
+\end{itemize}
+
+Submissions that do not follow these guidelines may incur point deductions.
+
+\textbf{Late Work}
+
+Late work is not accepted in this course. Due dates are automatically enforced by software. However:
+
+\begin{itemize}
+\tightlist
+\item
+  Assignments are accepted up to 7 days \emph{early} and students are encouraged to submit assignments before the due date. Extra credit of 5\% per assignment is granted for assignments submitted more than 24 hours early!
+\item
+  Each student is granted one exception to the late policy. You must fill out a \href{https://forms.office.com/Pages/ResponsePage.aspx?id=WluzxdUWFESO4XvecFQ_GwFnoMNxJhxDhln9pQs53sVUOEMxSk9IWThGUExPNEEzTTlONTJXR1dSNS4u}{late work exception form} to use your exception. You may use this exception for any reason, but bear in mind future exceptions aren't guaranteed. Exceptions cannot be used on pass/fail assignments.
+\item
+  If you experience \emph{extenuating circumstances} (e.g.~a medical emergency, professionally diagnosed illness, or death in the family) or a \href{https://www.wcu.edu/experience/health-and-wellness/student-concern-response-team/absence-notification-protocol.aspx}{\emph{university-sponsored absence}} you may ask to be considered for an extension on a case-by-base basis. Communication of the issue to your instructor and identification of when you plan to turn in the assignment are important in such circumstances. For university-sponsored absences, exceptions should be arranged \emph{before} your absence or will not be granted.
+\end{itemize}
+
+\textbf{Grading Technology}
+
+Some items may be graded by computer software. Any answers not in the specified format will not be graded. Written work may be checked for plagiarism using computer software. Plagiarism will NOT be tolerated (see policies in \emph{Fine Print}, below). Due dates/times are computer-enforced.
+
+\hypertarget{covid19-policies}{%
+\subsection*{COVID19 Policies}\label{covid19-policies}}
+\addcontentsline{toc}{subsection}{COVID19 Policies}
+
+The lab portion of Instrumental Analysis will use a \emph{Hybrid Web} format. Lab work and instrumental analyses will be completed in lab, but data processing and writing will be completed outside the laboratory. Students will work in groups of 2-3 in lab, and each group will be assigned a specific time of day to attend lab. If you do not attend during this time you will not be able to complete the lab. This is necessary to help maintain the room capacity requirements introduced to slow the spread of SARS-CoV-2. During all in-person meetings, students \emph{must}:
+
+\begin{itemize}
+\tightlist
+\item
+  Wear a face mask at all times (see ``Masking for a Friend'' statement below).
+\item
+  Practice social distancing (maintain a distance of 2 meters from other individuals as much as possible).
+\item
+  Practice good hygiene practices and follow \href{https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html}{CDC guidelines} to minimize spread of COVID19.
+\item
+  Avoid coming to class if you experience and cold, flu, or \href{https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html}{COVID19 symptoms}, have been diagnosed with COVID19, or have been in contact with someone who's tested positive for COVID19 within the last 14 days.
+\end{itemize}
+
+Note that these policies are subject to changes as the COVID19 pandemic grows or shrinks and recommended best-practices continue to develop.
+
+\hypertarget{course-policies}{%
+\subsection*{Course Policies}\label{course-policies}}
+\addcontentsline{toc}{subsection}{Course Policies}
+
+\textbf{Classroom Expectations:} The shared learning space of the college classroom is built on respect for each other and each other's learning. Learning together means our actions can intentionally and unintentionally distract others from their learning goals. As responsible learners who respect the rights of others and vow to minimize avoidable distractions such as: non-academic technology use, coming in late, sleeping, off-topic discussions, doing other homework, eating, etc.
+
+\textbf{\emph{Proper Laboratory Attire:}} Students must arrive to lab wearing appropriate attire. Students without appropriate attire will be asked to leave and will not be able to complete the activity for the day (and will be counted absent).
+
+\begin{itemize}
+\tightlist
+\item
+  Wear eye protection at all times (whenever you are in the room).\\
+\item
+  Wear closed-toed shoes that fully cover your feet up to the ankle at all times.\\
+\item
+  Wear long pants that extend over the top of your shoes at all times.\\
+\item
+  Wear a hair tie for long hair.\\
+\item
+  Never wear tank tops, sleeveless shirts, shorts, or sandals.
+\end{itemize}
+
+\textbf{\emph{Masking for a Friend:}} As the WCU Community Creed articulates, members of the WCU community are expected to live by high standards of academic and personal integrity and embrace their responsibility as a member of the Catamount community. In recognition of this responsibility, and in response to the best available science and current guidance from the Centers for Disease Control and Prevention, every student must wear a mask or other cloth face-covering that covers their nose and mouth while in this classroom. Students who do not have a mask will be asked to leave the classroom and only return when they follow this basic public health recommendation. Following this simple, science-based guideline will help ensure the safety of the entire Catamount community.
+
+Note that masks do little to protect the person wearing the mask; rather, they minimize the chances that someone who is already sick will spread the disease to others. When you come to class in your mask, you're not only protecting your friends, peers, and instructors in the room with you, but also their friends, family, and loved ones, especially those in high-risk populations. Students who miss class because they are not wearing a maks will not be able to make up the work missed. Students who do not have masks can obtain them at the locations below:
+
+\begin{itemize}
+\tightlist
+\item
+  University Center - Main Information Desk (2nd floor)
+\item
+  Hunter Library - Circulation Desk
+\item
+  Belk Building -- CET Dean's Office (Room 161)
+\item
+  Health and Human Sciences Building -- CHHS Dean's Office (Room 201)
+\item
+  Biltmore Park Instructional Site -- 3rd floor Information Desk
+\end{itemize}
+
+\emph{Special note for laboratory work:} In the event of a chemical spill, splash, or other event than causes your mask to become contaminated, you should remove the mask and follow appropriate rinsing protocols to remove the contaminants from your skin, just as you would with any contaminated clothing.
+
+\textbf{\emph{Laboratory Behavior:}} Never bring food or drink into the laboratory. This includes sealed bottles and items inside backpacks -- leave them outside the lab! Do not chew gum, use tobacco products, or apply cosmetics in the lab. Do not place personal items inside fume hoods or where they may come into contact with chemicals. Keep walkways clear of chairs, bookbags, etc. Wash your hands before leaving lab, and never wear gloves or lab coats outside the lab!
+
+The sparing use of cell phones during lab sessions is permitted but discouraged. If you must, please use your cell phone outside the laboratory, and never leave an experiment unattended to do so!
+
+In an effort to maintain a productive work environment for all students, please refrain from playing music, videos, etc., in the classroom.
+
+\textbf{\emph{Pregnancy:}} Certain chemicals can have severe harmful effects on unborn children. Any student who is pregnant or might have become pregnant and wished to avoid these hazards should notify her TA or instructor before conducting any laboratory work so that proper safety precautions can be taken.
+
+\textbf{Attendance:} Please email your instructor \emph{ahead of time} if you encounter circumstances that absolutely prevent you from making it to lab on time. Attendance to all class periods is mandatory. Absences from group work sessions may incur a loss of points up to a zero for the assignment and deductions in the student's participation grade.
+
+\textbf{\emph{If you experience any symptoms of COVID-19, cold, flu, or other contagious sickness please do NOT come to class! Likewise, do not attend if you have been in contact with someone who has tested positive for COVID-19 or is suspected to have COVID-19. Please maintain diligent communication with your instructor during these situations and appropriate accommodations will be made.}}
+
+\textbf{Inclement Weather:} Please check the University website for campus closings during times of bad weather. Your safety is a priority when traveling. Use common sense when attempting to get to campus and notify your instructor if you are unable to safely make it. Announcements will be made via e-mail if class must be cancelled when the University has not officially closed.
+
+\textbf{Composition-Condition Marks:} Proper mastery of the English language will be considered when assessing written work. A student whose written work fails to meet acceptable standards will be assigned a composition-condition (CC) mark by the instructor on the final grade report. All undergraduates who receive two CC grades prior to the semester in which they complete 110 hours at WCU are so notified by the registrar and are required to pass English 300 or English 401 before they will be eligible for graduation. This course must be taken within two semesters of receiving the second CC and must be passed with a grade of C (2.0) or better. Students needing assistance with writing are encouraged to get help from WaLC. All written work submitted for this class may be checked with SafeAssign.
+
+\textbf{Civil Discourse at Western Carolina:} Consistent with WCU's core values and our campus creed, the WCU community accepts the freedoms and responsibilities of our shared community. WCU encourages all to clearly express their own views while at the same time seeking to understand the varieties of style, identity, and opinion that are held in any diverse community. In order for us to sustain a learning environment that promotes and values freedom of expression, we have a shared charge to accept personal responsibility for our actions, reactions, and speech, while seeking to learn from the actions, reactions, and speech of others.
+
+\hypertarget{institutional-policies}{%
+\subsection*{Institutional Policies}\label{institutional-policies}}
+\addcontentsline{toc}{subsection}{Institutional Policies}
+
+\textbf{Course Recording and Broadcasting:} Students may make visual or audio recordings (Recording) of any class related content, using any approved recording device (e.g., smart phone, computer, digital recorder, etc.) upon the \textbf{prior permission of the instructor} and subject to the following restriction(s). The Recording, along with the video capture of visible course materials (e.g., visible PowerPoint slides and/or visible lecture notes), shall be limited to the student's personal, course related, educational use and shall be subject to all applicable copyright laws and institutional policies. The student may not transfer, transmit, or otherwise disseminate the Recording to any third party, including classmates, without the permission of the instructor. Any violation of these restrictions, or any other restriction verbally communicated by the instructor, may subject the student to the provisions of the WCU Academic Integrity Policy, the WCU Code of Student Conduct or both.
+
+\textbf{Accommodations for Students with Disabilities:} Western Carolina University is committed to providing equal educational opportunities for students with documented disabilities and/or medical conditions. Students who require accommodations must identify themselves as having a disability and/or medical condition and provide current diagnostic documentation to the Office of Accessibility Resources. Please contact the Office of Accessibility Resources, 135 Killian Annex, (828) 227-3886, by \href{mailto:accessibility@wcu.edu}{email}, or at \href{https://www.wcu.edu/learn/academic-services/disability-services/index.aspx}{http://accessibility.wcu.edu/}.
+
+\textbf{Academic Integrity Policy and Reporting Process:} This policy addresses academic integrity violations of undergraduate and graduate students. Students, faculty, staff, and administrators of Western Carolina University strive to achieve the highest standards of scholarship and integrity. Any violation of the Academic Integrity Policy is a serious offense because it threatens the quality of scholarship and undermines the integrity of the community. While academic in scope, any violation of this policy is by nature, a violation of the Code of Student Conduct and will follow the same conduct process (see ArticleVII.B.1.a.). If the charge occurs close to the end of an academic semester or term or in the event of the reasonable need of either party for additional time to gather information timelines may be extended at the discretion of the Department of Student Community Ethics (DSCE).
+
+Instructors have the right to determine the appropriate academic sanctions for violations of the Academic Integrity Policy within their courses, up to and including a final grade of ``F'' in the course in which the violation occurs.
+
+Definitions:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Cheating}: Using, or attempting to use, unauthorized materials, information, or study aids in any academic exercise.
+\item
+  \emph{Fabrication}: Creating and/or falsifying information or citation in any academic exercise.
+\item
+  \emph{Plagiarism}: Representing the words or ideas of someone else as one's own in any academic exercise.
+\item
+  \emph{Facilitation}: Helping or attempting to help someone to commit a violation of the Academic Integrity Policy in any academic exercise (e.g.~allowing another person to copy information during an examination).
+\end{itemize}
+
+Undergraduate and Graduate Academic Integrity Process: Additional information is available on the Student Success website under Student Community Ethics: \url{http://www.wcu.edu/experience/dean-of-students/academic-integrity.aspx}.
+
+\hypertarget{student-resources}{%
+\subsection*{Student Resources}\label{student-resources}}
+\addcontentsline{toc}{subsection}{Student Resources}
+
+\textbf{Writing and Learning Commons (WaLC):} The Writing and Learning Commons (WaLC), located in Belk 207, writing tutoring and online writing and learning resources for all students. To view schedules and make appointments for any of these services, visit tutoring.wcu.edu or call 828-227-2274.
+
+\textbf{Math Tutoring Center:} The Mathematics Tutoring Center (MTC) in Stillwell 455 provides drop-in tutoring for math courses and math-related content across the curriculum. Tutoring is available on a drop-in basis, MTWR 9:00am-9:00pm and Friday 9:00am-5:00pm. For more information, please visit \url{http://mtc.wcu.edu/} or contact us at 828--227--3830.
+
+\textbf{Academic Calendar:} The University academic calendar can be found at \href{http://www.wcu.edu/learn/academic-calendar.aspx}{here}. It includes dates for all breaks, University closures, final exams, etc.
+
+\textbf{Final Exam:} The University final exam schedule can be found on the \href{http://www.wcu.edu/learn/academic-services/registrars-office/}{Registrar's webpage}. Note there is no final exam for the lab portion of Chem 370 (but there may be for the lecture portion).
+
+\hypertarget{syllabus-updates}{%
+\subsection*{Syllabus Updates}\label{syllabus-updates}}
+\addcontentsline{toc}{subsection}{Syllabus Updates}
+
+This syllabus and the course schedule are subject to revision as needed. Students will be notified of changes and are responsible for adhering to the modifications.
+
+\hypertarget{part-introduction}{%
+\part{Introduction}\label{part-introduction}}
+
+\hypertarget{getting-started-in-r}{%
+\chapter{Getting Started in R}\label{getting-started-in-r}}
+
+\hypertarget{objective-become-familiar-with-markdown-and-install-r-rstudio-on-your-computer}{%
+\paragraph{\texorpdfstring{\textbf{Objective} \textbar{} Become familiar with Markdown and install R + RStudio on your computer}{Objective \textbar{} Become familiar with Markdown and install R + RStudio on your computer}}\label{objective-become-familiar-with-markdown-and-install-r-rstudio-on-your-computer}}
+\addcontentsline{toc}{paragraph}{\textbf{Objective} \textbar{} Become familiar with Markdown and install R + RStudio on your computer}
+
+\hypertarget{to-turn-in}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in}}
+\addcontentsline{toc}{paragraph}{\textbf{To Turn In}}
+
+This Lab will be completed on the honor system. You must complete the following activities before Week 2 or you will not be able to participate in lab.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.markdowntutorial.com/}{Markdown Tutorial}
+\item
+  Install R + RStudio + \texttt{chem370learnR} package
+\item
+  Create a Lab Notebook Template for Lab 1
+\end{itemize}
+
+\hypertarget{student-learning-outcomes-by-the-end-of-this-lab-students-will}{%
+\paragraph{\texorpdfstring{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}{Student Learning Outcomes \textbar{} By the end of this lab, students will:}}\label{student-learning-outcomes-by-the-end-of-this-lab-students-will}}
+\addcontentsline{toc}{paragraph}{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}
+
+\begin{itemize}
+\tightlist
+\item
+  Familiarize themselves with Markdown syntax.
+\item
+  Create a working installation of R + RStudio on their computer.
+\item
+  Understand how to create a lab notebook template in RStudio.
+\end{itemize}
+
+\hypertarget{r-intro}{%
+\section*{Introduction}\label{r-intro}}
+\addcontentsline{toc}{section}{Introduction}
+
+Chem 370 lab will make extensive use of electronic lab notebooks. We'll use two tools to achieve a robust electronic lab notebook: (1) \textbf{R Markdown Notebooks}, (2) the \textbf{R} programming language, and (3) the \href{https://www.google.com/url?sa=t\&rct=j\&q=\&esrc=s\&source=web\&cd=\&cad=rja\&uact=8\&ved=2ahUKEwictpuN2IvqAhVtl3IEHUhSCUUQFjAAegQIAhAC\&url=https\%3A\%2F\%2Frstudio.com\%2F\&usg=AOvVaw2mM_qCjo878d2q5bcC0XUS}{RStudio} integrated development (IDE, a tool that will make it easier to use items 1 and 2). The R Markdown (RMD) notebook provides a place to write everything that would normally go in your lab notebook, but is entirely electronic. The R language is used to process data in a fashion similar to Excel, except that all actions are done by issuing commands rather than through a graphical interface. Importantly, this configuration allows all of the data processing steps and data files you have in electronic form to be displayed directly in your lab notebook! You'll learn more about what these software are as you complete this lab activity.
+
+The configuration described above requires the R language and the RStudio IDE. These are both freely available online for Windows, Mac OSX, and Linux. You have several options when using the software: (1) You may install R and RStudio directly on your personal computer (recommended) or (2) use R and RStudio through WCU's VCAT interface (might be useful as a backup if your computer isn't cooperating).
+
+Know up front that learning to program can be a daunting experience and takes time to learn. You'll experience many occasions in which your code won't run, and you'll have to figure out why. This can be frustrating at times, and you may often feel lost. But programming can also be very rewarding once you start to get the hang of it! To help with your transition into the world of programmatic data analysis, you'll be provided with several forms of tutorials. Some will be built directly into RStudio, and you'll be able to access them after installing the Chem 370 add-on package; others will be in the form of video tutorials in which I'll walk you through various steps of installing the software, navigating it, and processing your data.
+
+Your goals for this lab are to become familiar with the Markdown syntax, install R and R+Studio on your computer, and then create a lab notebook template using R Markdown that you'll use to record details and data next week in lab (so make sure you bring your computer next week!).
+
+\hypertarget{learning-markdown}{%
+\section{Learning Markdown}\label{learning-markdown}}
+
+\textbf{Markdown} is a markup language that was developed by John Gruber and Aaron Swartz in the mid-2000's. It provides a simple, streamlined utility for word processing and web page creation. It's been adopted in many places, which numerous websites, message boards, blogs, and even all the materials for this course being written in Markdown. In essence, the writer creates a plain text document (extension: \texttt{.txt} or \texttt{.md}) and uses software to render the Markdown into a nicely formatted document (originally just HTML (web format), but now there's support for PDFs, Word Docs, and more). The language is quite simple; if you can use Word, you can easily use Markdown. The tutorial linked below will help you get started.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{TASK:} Complete the \href{https://www.markdowntutorial.com/}{Markdown Tutorial}
+\end{itemize}
+
+\hypertarget{install-r}{%
+\section{Installing R + RStudio}\label{install-r}}
+
+\textbf{R} is the programming language we'll use to process data this semester. We'll discuss more of the details about what R is and why we're using it in a few weeks. For now we just need to get it installed and create a basic Markdown document. \textbf{RStudio} is a peice of software called an \emph{integrated development environment} (IDE) that provides a unified interface for all the tools we need to use R. It is \textbf{\emph{highly}} recommended that you use RStudio to interact with R. The steps below will walk you through installing both of them.
+
+The following video shows you how to complete the steps listed below:
+
+\hypertarget{install-r-must-be-done-first}{%
+\subsection{Install R (Must be done first)}\label{install-r-must-be-done-first}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open a web browser and navigate to the \href{http://archive.linux.duke.edu/cran/}{Duke University R Mirror} and click the link for your operating system (Windows, Mac OSX, Linux).\\
+\item
+  Follow the on-screen prompts to install R (will vary by operating system).
+\end{enumerate}
+
+\hypertarget{install-rstudio}{%
+\subsection{Install RStudio}\label{install-rstudio}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \emph{Once you've successfully installed R}, navigate to the \href{https://rstudio.com/products/rstudio/download/\#download}{RStudio downloads page} and click the link to download the version that matches your operating system.\\
+\item
+  Follow the on-screen prompts to install RStudio (will vary by operating system).
+\end{enumerate}
+
+\hypertarget{installing-c370-package}{%
+\subsection{Installing the CHEM 370 Package}\label{installing-c370-package}}
+
+One of the great things about R is that anyone can develop add-ons (called ``packages'') for it. I've developed a package for Chem 370 that has functions and tutorials specifically for this class. You'll need to install it to follow along with the tutorials.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Once you've installed R and RStudio, you open up RStudio (opening RStudio also opens an R session automatically).\\
+\item
+  Install the \texttt{devtools} package, which will make it easier to install the Chem 370 package.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    In RStduio, navigate to the \textbf{Packages} tab in the lower right pane and click \textbf{Install}.
+  \item
+    In the dialog that opens, type in \texttt{devtools} on the \emph{Packages} line.
+  \item
+    Click \textbf{Install}.
+  \end{enumerate}
+
+  \emph{If you get a ``non-zero exit status'' or error message, read through it to see if you find ``package `XYZ' not available'' and then install the package(s) it mentions. Try installing \texttt{devtools} again after that.}
+\item
+  \emph{Install the \texttt{chem370learnR} package}: In Rstudio, find the \textbf{Console} tab in the lower left pane. Copy and paste the following lines \emph{exactly}:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{require}\NormalTok{(devtools)}
+\KeywordTok{install.packages}\NormalTok{(}\StringTok{"learnr"}\NormalTok{)}
+\KeywordTok{install_github}\NormalTok{(}\StringTok{"rstudio-education/gradethis"}\NormalTok{)}
+\KeywordTok{install_github}\NormalTok{(}\StringTok{"dr-fischer/chem370learnR"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\end{enumerate}
+
+The \texttt{chem370learnR} package should now be installed on your system.
+
+\hypertarget{create-lab-notebook}{%
+\section{Creating a Lab Notebook Project}\label{create-lab-notebook}}
+
+The following video shows you how to complete the steps listed below, assuming you have installed the \texttt{chem370learnR} package (Exercise 1.2).
+
+\hypertarget{create-a-project}{%
+\subsection{Create a Project}\label{create-a-project}}
+
+In this step, you'll create an R ``project'' for lab 1. The project will help keep all your files for lab 1 organized. You should create a separate project for each lab.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  In RStudio, click the \textbf{Project: (none)} button in the top corner and then click **New Project\ldots*
+\item
+  Choose \textbf{New Directory} and \textbf{New Project}.
+\item
+  Type in \textbf{Lab 1: UV-vis} in the \emph{Directory name} line. In the \emph{Create project as subdirectory of:} box choose \textbf{Browse}. Then:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Navigate to your \texttt{Documents} folder (or another directory if you prefer to save your notebooks somewhere else).
+  \item
+    Create a \textbf{New Directory}/\textbf{New Folder} and call in \textbf{\texttt{lab-notebooks}}.
+  \item
+    Click OK to exit the dialog. The path should be set to something like \texttt{\textasciitilde{}/Documents/lab-notebooks} (may vary slightly depending on your OS).
+  \end{enumerate}
+\item
+  Click \textbf{Create Project}. You'll see that project icon in the top right corner now read \textbf{Project: Lab 1: UV-vis}.
+\end{enumerate}
+
+\hypertarget{create-a-notebook-file}{%
+\subsection{Create a Notebook File}\label{create-a-notebook-file}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Load the Chem 370 learnR package: Go to the \textbf{Packages} tab in the bottom right pane and check \texttt{chem370learnR} on. You should load this package everytime you start R.
+\item
+  In the top left corner, click the \textbf{New File} icon and choose \textbf{R Markdown}.
+\item
+  In the new window that opens, choose \textbf{From Template} (left side) and then \textbf{Chem 370 Lab Notebook}. Enter \textbf{\emph{lab1\_uv-vis}} for the title (i.e.~filename) and your name for the author. Make sure the output is set to HTML and click \textbf{OK}. Use this format for all your lab notebooks this semester.
+\item
+  The notebook document is populated with a bare bones template for use in lab. Fill in a title and your name, and write and introduction before lab next week.
+\end{enumerate}
+
+\hypertarget{gas-chromatography-with-thermal-conductivity-detection-gc-tcd}{%
+\chapter{Gas Chromatography with Thermal Conductivity Detection (GC-TCD)}\label{gas-chromatography-with-thermal-conductivity-detection-gc-tcd}}
+
+\hypertarget{objective-determine-the-number-of-components-of-an-unknown-mixture-and-the-percent-composition-of-each.}{%
+\paragraph{\texorpdfstring{\textbf{Objective} \textbar{} Determine the number of components of an unknown mixture and the percent composition of each.}{Objective \textbar{} Determine the number of components of an unknown mixture and the percent composition of each.}}\label{objective-determine-the-number-of-components-of-an-unknown-mixture-and-the-percent-composition-of-each.}}
+\addcontentsline{toc}{paragraph}{\textbf{Objective} \textbar{} Determine the number of components of an unknown mixture and the percent composition of each.}
+
+\hypertarget{to-turn-in-you-should-turn-a-zip-folder-containing}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In} \textbar{} \emph{You should turn a ZIP folder containing:}}{To Turn In \textbar{} You should turn a ZIP folder containing:}}\label{to-turn-in-you-should-turn-a-zip-folder-containing}}
+\addcontentsline{toc}{paragraph}{\textbf{To Turn In} \textbar{} \emph{You should turn a ZIP folder containing:}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Your complete lab notebook as an .Rmd and .html file, functioning with no errors.\\
+\item
+  Your data files.\\
+\item
+  The completed Assessment questions (included in the template).
+\end{enumerate}
+
+\hypertarget{student-learning-outcomes-by-the-end-of-this-lab-students-will}{%
+\paragraph{\texorpdfstring{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}{Student Learning Outcomes \textbar{} By the end of this lab, students will:}}\label{student-learning-outcomes-by-the-end-of-this-lab-students-will}}
+\addcontentsline{toc}{paragraph}{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}
+
+\begin{itemize}
+\tightlist
+\item
+  Recognize that {[}gas{]} chromatography separates a mixture of compounds.\\
+\item
+  Explain how chromatographic peak area relates to composition of a mixture.\\
+\item
+  Estimate the signal to noise ratio (S/N) for a gas chromatograph.
+\item
+  Relate concepts about polarity from general and organic chemistry to instrumental analysis.\\
+\item
+  Utilize RMarkdown as an electronic lab notebook.
+\item
+  Utilize R functions to analyze chromatographic data.
+\end{itemize}
+
+\hypertarget{introduction}{%
+\section*{Introduction}\label{introduction}}
+\addcontentsline{toc}{section}{Introduction}
+
+You will be given mixture of unknown composition for this lab. It will contain several organic compounds with \emph{similar boiling points}. You goals are to (1) determine how many components there are in the mixture, (2) determine the percent composition for each compound, and (3) determine the relative polarities of the compounds.
+
+To complete these tasks you will use a gas chromatograph. Specifically, you will use Gow-Mac 150-series and 400-series isothermal gas chromatographs with thermal conductivity detectors (GC-TCD). These instruments separate compounds by both boiling point and polarity, and produce a peak for each component wherein the peak area is proportional to the amount of that component present.
+
+Before coming to lab you should be familiar with the concepts presented in the following videos:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.youtube.com/watch?v=SnbXQTTHGs4}{Chromatography}
+\item
+  \href{https://www.youtube.com/watch?v=4Xaa9WdXVTM}{Gas chromatography}\\
+\item
+  \href{https://youtu.be/0fxH9WRKigw}{Gow-Mac GC-TCDs} (\emph{optional - we will go over this material in lab})
+\end{itemize}
+
+\hypertarget{lab-procedure}{%
+\section{Lab Procedure}\label{lab-procedure}}
+
+\hypertarget{prepare-samples}{%
+\subsection{Prepare Samples}\label{prepare-samples}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Obtain a vial containing your unknown mixture from your instructor. Make sure to record the ID/name in your notebook!
+
+  \begin{quote}
+  If you don't record the ID you cannot get credit for getting the right answer!
+  \end{quote}
+\end{enumerate}
+
+Your runlist for this experiment is:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Blank
+\item
+  Sample
+\end{enumerate}
+
+\hypertarget{setup-the-instrument}{%
+\subsection{Setup the Instrument}\label{setup-the-instrument}}
+
+\emph{You will need \href{https://www.vernier.com/products/software/logger-lite/\#section5}{Vernier Logger Lite} (free) installed on your computer for these steps.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Connect the Instrumentation Amplifier/GoLink! to your computer via USB and open Logger Lite.\\
+\item
+  Go to \textbf{Experiment \textgreater{} Set up sensors \textgreater{} GoLink:1}.\\
+\item
+  Select \textbf{Choose Sensor} and select \textbf{Instrumentation Amplifier from the dropdown menu}.\\
+\item
+  Open the \textbf{dropdown menu} again and choose the \textbf{0-20 mV} range for the amplifier.
+\item
+  Use the \textbf{Zero} knob (on the GC) to adjust the signal until the readout is between 1 and 2 mV.
+
+  \begin{quote}
+  Do not touch any other knobs -- they are very sensitive and moving them even a small amount may lead to several additional hours of stabilization time.
+  \end{quote}
+\item
+  Let the instrument run for a minute or two until you're cetain the baseline is stable.
+
+  \begin{marginfigure}
+   The instrument is ``stable'' when the baseline fluctuates by no more
+   than a few percent of full-scale (20 mV in this case).
+   \end{marginfigure}
+\end{enumerate}
+
+\hypertarget{load-the-syringe}{%
+\subsection{Load the Syringe}\label{load-the-syringe}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Obtain a microliter syringe and clean it with acetone in the syringe cleaning apparatus:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Place the syringe in the funnel on top of the apparatus.\\
+  \item
+    Turn on the vacuum pump with the \textbf{black on/off switch}.\\
+  \item
+    Squirt solvent through the syringe.\\
+  \item
+    Clean the plunger and the needle with a Kimwipe moistened with your solvent.\\
+  \end{enumerate}
+\item
+  For a solvent blank: Pull about 4 \(\mu\)L acetone into the syringe.\\
+\item
+  For a samples:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Pull 4 \(\mu\)L of your sample into the syringe.
+  \item
+    Pull air into the syringe until you can clearly see how much sample you loaded. Record this value in your lab notebook.
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{inject-the-sample}{%
+\subsection{Inject the Sample}\label{inject-the-sample}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Make sure the software is running and the instrument is ready to run. (It should be if you completed the steps above and the baseline is stable.)
+\item
+  Push the syringe through the septum of the \textbf{side B} injection port and then depress the plunger. Do this step as smoothly and quickly as possible, and be consistent.
+
+  \begin{quote}
+  The syringe plunger does not go all the way down to the glass body! Do not force it or you will ruin the syringe!
+  \end{quote}
+\item
+  Press the start button in the software. Again, the key is to be consistent with when you press the start button relative to sample injection!
+\item
+  Allow the instrument to run for at least 5 minutes for all peaks to elute.
+\item
+  Immediately clean the syringe in the syringe cleaning apparatus, and then repeat the loading and injection steps as needed for all blanks/samples. Make sure you clean the syringe after the last sample.
+\end{enumerate}
+
+\hypertarget{save-the-data}{%
+\subsection{Save the Data}\label{save-the-data}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  When your run is finished, click the \textbf{Store} button and then give the run a name in the data viewer on the left side of the screen.
+\item
+  When all of your runs have finished go to \textbf{File \textgreater{} Export As \textgreater{} CSV} to save your data as a CSV file for processing.
+\end{enumerate}
+
+\hypertarget{data-processing}{%
+\section{Data Processing}\label{data-processing}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Open your notebook project for this lab and use it for data processing. Make sure your data files are also in this folder. Use the path: \texttt{lab-notebooks/lab2\_gc-tcd}.
+\item
+  Load the CSV files into R/RStudio (see {[}import data from csv{]}). You may also want to plot the data to inspect it.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{chromatogram <-}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{'filename.csv'}\NormalTok{);  }\CommentTok{# replace 'filename' with your filename}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Remove the baseline offset (DC offset) from the data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(time, signal, }\DataTypeTok{xlab =} \StringTok{"Time (min)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"Signal (arbitrary)"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Plot the chromatogram with Time on the \(x\) axis and signal level on the \(y\) axis.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{## Define the "baseline" as 4 minutes to end of chromatogram where there are no peaks}
+\NormalTok{baseline =}\StringTok{ }\KeywordTok{mean}\NormalTok{(chromatogram[}\DecValTok{481}\OperatorTok{:}\NormalTok{end, }\DecValTok{2}\NormalTok{]);}
+
+\CommentTok{## subtract the mean baseline value and store in second column of data set}
+\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{] <-}\StringTok{ }\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{] }\OperatorTok{-}\StringTok{ }\NormalTok{baseline;  }
+\end{Highlighting}
+\end{Shaded}
+\item
+  Use the function {[}\texttt{peakArea()}{]}{[}Find Peak Area{]} to calculate the area of each peak in your chromatograms.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{### You must first run the code shown in the peak area function for this to work!}
+\CommentTok{### Copy and paste it into your notebook and run the cell.}
+
+\NormalTok{peak1_area }\OperatorTok{=}\NormalTok{ peakArea([chromatogram(}\OperatorTok{:,} \FloatTok{1}\NormalTok{)}\OperatorTok{,}\NormalTok{ chromatogram(}\OperatorTok{:,} \FloatTok{2}\NormalTok{)]}\OperatorTok{,}\NormalTok{ x1}\OperatorTok{,}\NormalTok{ x2}\OperatorTok{,} \FunctionTok{true}\NormalTok{)}\OperatorTok{;}
+\CommentTok{### substitute the lower limit of integration for x1 and the upper limit for x2 (in minutes)}
+\CommentTok{### if the last argument is true, a plot will be created}
+
+\CommentTok{### Repeat the function as many times as necessary to integrate each peak.  You will need to change the time for each peak.}
+
+\CommentTok{### ... and so on}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Find the percent composition for each peak. The percent composition for peak \(n\) is:
+
+  \[
+   C_n(\%)=\frac{A_n}{A_1 + A_2 + ... A_n} \times 100\%
+   \]
+
+  where \(A_n\) represents the peak area of peak \(n\). Devise a way program this in Octave.
+\item
+  Estimate the signal to noise (S/N) ratio for each peak. S/N is defined as:
+
+  \[
+   \frac{S}{N} = \frac{2H}{h} = \frac{\text{Peak Height}}{\text{min-to-max baseline noise}}
+   \]
+
+  where \(H\) is the peak height at maximum and \(h\) is the min-to-max noise in the baseline. Use the maximum peak height as signal. The example below shows how to subset the data and find the min and max values. You will need to calculate \(S/N\) from those values according to the formula above.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{## find standard deviation of baseline, from 4 minutes to end where there are no peaks}
+\NormalTok{h <-}\StringTok{ }\DecValTok{2} \OperatorTok{*}\StringTok{ }\NormalTok{(}\KeywordTok{max}\NormalTok{(chromatogram[}\DecValTok{481}\OperatorTok{:}\NormalTok{end, }\DecValTok{2}\NormalTok{]) }\OperatorTok{-}\StringTok{ }\KeywordTok{min}\NormalTok{(chromatogram[}\DecValTok{81}\OperatorTok{:}\NormalTok{end, }\DecValTok{2}\NormalTok{]))}
+
+\NormalTok{H1 <-}\StringTok{ }\KeywordTok{max}\NormalTok{(chromatogram[chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{1}\NormalTok{] }\OperatorTok{<}\StringTok{ }\NormalTok{x, }\DecValTok{2}\NormalTok{]) }\CommentTok{# x represents dividing line between the two peaks in minutes.}
+\NormalTok{H2 <-}\StringTok{ }\KeywordTok{max}\NormalTok{(chromatogram[chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{1}\NormalTok{] }\OperatorTok{>}\StringTok{ }\NormalTok{x, }\DecValTok{2}\NormalTok{]) }\CommentTok{# x represents dividing line between the two peaks in minutes.}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Include a discussion of (1) how many constituents are in your sample, (2) the percent composition for each, and (3) the relative polarity of each component.
+\item
+  Before turning in your notebook, run \texttt{rm(list\ =\ ls())} to clear your workspace and then run your entire notebook again. Fix any errors before turning in your notebook.
+\item
+  Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to \href{https://alphonse.github.io/chem370/assignments/submissions.html}{Dropbox}.
+\end{enumerate}
+
+\hypertarget{assessment}{%
+\section{Assessment}\label{assessment}}
+
+Answer the following questions by saving the result as the specified R variable in an R code block at the end of your lab notebook. These questions are graded automatically. If you do not name your variable correctly (including capitals) your questions will be marked incorrect. Make sure you include the option \texttt{purl\ =\ TRUE} when creating your code block.
+
+Each question is worth 1 point. You must get the question \emph{exactly} right to get credit.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What is your sample ID? Call it \texttt{ID}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ID <-}\StringTok{ "Sample A"}  \CommentTok{# Delete sample A and insert your sample name.  Leave the quotes.}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Which instrument did you use, the 150 or 400? Save your answer as the variable \texttt{instrument}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{instrument <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  How many compounds are in your sample. Save your answer as the variable \texttt{noCompounds}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{noCompounds <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  What is the percent composition for least polar compound, as a percentage (\%)? Provide your answer as the variable \texttt{leastPolarPercent}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{leastPolarPercent <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  What is the percent composition for least polar compound, as a percentage (\%)? Provide your answer as the variable \texttt{mostPolarPercent}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{leastPolarPercent <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  What is the standard deviation of the baseline, in millivolts (mV)? Provide your answer as the variable \texttt{baselineSD}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{baselineSD <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  What is the signal level for Peak 1, in millivolts (mV)? Provide your answer as the variable \texttt{peak1}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{peak1 <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  What is the signal level for Peak 1, in millivolts (mV)? Provide your answer as the variable \texttt{peak2}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{peak2 <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  What is the signal to noise ratio for Peak 1? Provide your answer as the variable \texttt{peak1\_sn}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{peak1_sn <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  What is the signal to noise ratio for Peak 1? Provide your answer as the variable \texttt{peak2\_sn}.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{peak2_sn <-}\StringTok{ }\DecValTok{0}  \CommentTok{# put your answer between the '<-' and '#'}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{uv-visible-spectroscopy}{%
+\chapter{UV-visible Spectroscopy}\label{uv-visible-spectroscopy}}
+
+\hypertarget{objective-determine-the-concentration-of-quinine-in-tonic-water-using-spectroscopic-methods.}{%
+\paragraph{\texorpdfstring{\textbf{Objective} \textbar{} Determine the concentration of quinine in tonic water using spectroscopic methods.}{Objective \textbar{} Determine the concentration of quinine in tonic water using spectroscopic methods.}}\label{objective-determine-the-concentration-of-quinine-in-tonic-water-using-spectroscopic-methods.}}
+\addcontentsline{toc}{paragraph}{\textbf{Objective} \textbar{} Determine the concentration of quinine in tonic water using spectroscopic methods.}
+
+\hypertarget{to-turn-in-you-should-turn-a-zip-folder-containing}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In} \textbar{} You should turn a ZIP folder containing:}{To Turn In \textbar{} You should turn a ZIP folder containing:}}\label{to-turn-in-you-should-turn-a-zip-folder-containing}}
+\addcontentsline{toc}{paragraph}{\textbf{To Turn In} \textbar{} You should turn a ZIP folder containing:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/lab1_uv-vis_data-analysis.xlsx}{analysis sheet}.
+\end{enumerate}
+
+\hypertarget{student-learning-outcomes-by-the-end-of-this-lab-students-will}{%
+\paragraph{\texorpdfstring{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}{Student Learning Outcomes \textbar{} By the end of this lab, students will:}}\label{student-learning-outcomes-by-the-end-of-this-lab-students-will}}
+\addcontentsline{toc}{paragraph}{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}
+
+\begin{itemize}
+\tightlist
+\item
+  Recall methods of creating standards and standard curves from Quantitative Analysis.\\
+\item
+  Describe the difference between absorption spectroscopy and luminescence spectroscopy.
+\item
+  Calculate the limits of detection and limits of quantitation from a blank sample.
+\item
+  Employ a quality control sample to check the accuracy of their results.
+\item
+  Utilize RMarkdown as an electronic lab notebook.
+\item
+  Utilize R functions to analyze spectroscopic data.
+\end{itemize}
+
+\hypertarget{uv-vis-intro}{%
+\section*{Introduction}\label{uv-vis-intro}}
+\addcontentsline{toc}{section}{Introduction}
+
+This lab will use Vernier SpectroVis UV-visible/fluorescence spectrometers to quantify the amount of quinine in tonic water. You will be given a sample of store-bought tonic water and a concentrated stock solution of quinine. You will then dilute the stock solution to create a standard curve and measure the concentration of quinine in solution and use quality-control sample of known concentration to test the accuracy of your curve. This lab will compare results between absorption and fluorescence spectroscopy. Samples and the QC will be measured in triplicate so that you can get a mean and standard deviation for your measurement, and the limit of quantitation (LOQ) will be determined from a blank sample.
+
+Students should work in pairs for the lab activity and turn in independent data analysis sheets and lab notebooks.
+
+\hypertarget{safety}{%
+\subsection*{Safety}\label{safety}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  This lab uses 0.05 M sulfuric acid (\href{https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-s/S25895.pdf}{SDS}). Wear goggles and gloves.
+\item
+  Tonic water contains quinine hydrochloride and the stock solution contains \href{https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-q/S25510A.pdf}{quinine sulfate}.
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{required-materials}{%
+\subsection*{Required Materials}\label{required-materials}}
+\addcontentsline{toc}{subsection}{Required Materials}
+
+\begin{itemize}
+\tightlist
+\item
+  5 25-mL volumetric flasks
+\item
+  1 50-mL volumetric flask
+\item
+  Volumetric pipettes (you determine the size you need)
+\item
+  Pipette bulb
+\item
+  1-cm plastic cuvette
+\item
+  Beakers, for temporary storage of stock solutions
+\item
+  Waste beaker
+\item
+  SpectroVis UV-visible spectrometer
+\end{itemize}
+
+\hypertarget{required-solutions}{%
+\subsection*{Required Solutions}\label{required-solutions}}
+\addcontentsline{toc}{subsection}{Required Solutions}
+
+\begin{itemize}
+\tightlist
+\item
+  0.05 M sulfuric acid, about 150 ml
+\item
+  100-ppm quinine stock solution, about 20 mL
+\item
+  100-ppm quinine QC stock solution, about 10 mL
+\item
+  Tonic water, about 20 mL
+\item
+  Wash bottle of DI water
+\end{itemize}
+
+\hypertarget{reference}{%
+\subsection*{Reference}\label{reference}}
+\addcontentsline{toc}{subsection}{Reference}
+
+\begin{itemize}
+\tightlist
+\item
+  Lawson-Wood, Kathryn, and Kieran Evans. ``Determination of Quinine
+  in Tonic Water Using Fluorescence Spectroscopy,'' (Application Note: Fluorescence Spectroscopy) \href{https://www.perkinelmer.com/lab-solutions/resources/docs/APP_Quinine_in_Tonic_Water_014133_01.pdf}{Link}
+\end{itemize}
+
+\newpage
+
+\hypertarget{uv-vis-procedure}{%
+\section{Lab Procedure}\label{uv-vis-procedure}}
+
+\hypertarget{prepare-your-standards}{%
+\subsection{Prepare Your Standards}\label{prepare-your-standards}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Create your standards by diluting one of the 100-ppm quinine stock solutions to concentrations of approximately 100, 75, 40, 20, and 10 ppm using the technique of serial dilution. Use 25 mL volumetric flasks for these dilutions.
+
+  \begin{marginfigure}
+   It doesn't matter if you make these concentrations \emph{exactly}, what
+   matters is that you're in the right ballpark and \emph{know} your
+   concentrations exactly.
+   \end{marginfigure}
+\item
+  Create a quality control sample from a separate stock solution. Make it roughly 20 ppm. Use a 50 mL volumetric flask.
+
+  \begin{marginfigure}
+   When creating your QC, make sure you use stock solution from a different
+   lot and preferrably a different manufacturer. This helps check for
+   contamination in the chemicals received from the supplier. You should
+   also do your QC calculations entirely from scratch so that you check
+   your math with the QC.
+   \end{marginfigure}
+\end{enumerate}
+
+\hypertarget{prepare-your-samples}{%
+\subsection{Prepare Your Samples}\label{prepare-your-samples}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  There is no sample preparation -- run all samples undiluted.
+\end{enumerate}
+
+\hypertarget{acquire-data}{%
+\subsection{Acquire Data}\label{acquire-data}}
+
+\emph{You will need \href{https://www.vernier.com/products/software/logger-lite/\#section5}{Vernier Logger Lite} (free) installed on your computer for these steps.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Connect the spectrophotometer to your computer via USB and open Logger Lite.\\
+\item
+  Go to \textbf{Experiment \textgreater{} Set up sensors \textgreater{} Spectrometer:1}.\\
+\item
+  Select \textbf{Fluorescence (405nm)} and click \textbf{OK}.\\
+\item
+  Select \textbf{Experiment \textgreater{} Calibrate \textgreater{} Spectrometer:1} and follow the on-screen instructions.
+
+  \begin{marginfigure}
+   Your blank should be a cuvette filled with solvent and nothing else.
+   \end{marginfigure}
+\item
+  Press \textbf{Collect (play button)} and load your sample. When you're happy with the spectrum press \textbf{Stop}. Press \textbf{Store} and then double click the stored column header to name your run.
+\item
+  Discard the sample, rinse the cuvette with DI water, and repeat the previous step as necessary for each standard/sample.
+
+  \begin{marginfigure}
+   You should measure each standard once, the QC in triplicate, and the
+   sample in triplicate.
+
+   When running your standards, always work from low concentration to high
+   concentration to avoid carryover.
+   \end{marginfigure}
+\item
+  When you are done, go to \textbf{File \textgreater{} Export As \textgreater{} CSV\ldots{}} and save your spectra into a CSV (comma-separated values) file. This file type can be easily read by Octave.
+\end{enumerate}
+
+After the spectrometer calibration step you should run:
+
+\begin{itemize}
+\tightlist
+\item
+  A blank (in triplicate)
+\item
+  Your standards (from low to high)
+\item
+  A QC (in triplicate)
+\item
+  Your sample (in triplicate)
+\end{itemize}
+
+\hypertarget{waste-disposal-and-cleanup}{%
+\subsection{Waste Disposal and Cleanup}\label{waste-disposal-and-cleanup}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  All acid waste should be placed in the waste container provided in the fume hood.
+\item
+  Make sure you wash all glassware with Alconox and warm water, followed by a triple DI rinse.
+\item
+  Shake out the glassware and put it back where you found it (with the caps on). A little residual DI water in the glassware is OK.
+\end{enumerate}
+
+\hypertarget{uv-vis-data}{%
+\section{Data Processing}\label{uv-vis-data}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Download the lab notebook \href{../notebooks/}{template} for this lab.\\
+\item
+  Calculate the concentration of each standard and the QC in your lab notebook. (Use the \href{serial-dilution.html}{\texttt{serialDilution()}} function and example code in the template.)
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{## Calculate standard concentrations}
+\NormalTok{serialDilution(stock_concentration}\OperatorTok{,}\NormalTok{ [pipette_vols]}\OperatorTok{,}\NormalTok{ [flask_vols])}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Import your spectra from your CSV file.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{csvread}\NormalTok{(}\StringTok{'data/your_filename.csv'}\NormalTok{)}\OperatorTok{;}  \CommentTok{## replace with your actual folder/filename}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Plot the full UV-visible spectrum for your medium standard and for one sample replicate on the same plot. The spectra should show \emph{Emission Intensity} as \(y\) and \emph{Wavelength} as \(x\).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{plot}\NormalTok{(x}\OperatorTok{,}\NormalTok{ y}\OperatorTok{,} \StringTok{'DisplayName'}\OperatorTok{,} \StringTok{'Insert Name for Legend Here'}\NormalTok{)}\OperatorTok{;}
+\FunctionTok{xlabel}\NormalTok{(}\StringTok{'Wavelength (nm)'}\NormalTok{)}\OperatorTok{;}
+\FunctionTok{ylabel}\NormalTok{(}\StringTok{'Intensity (arbitrary)'}\NormalTok{)}\OperatorTok{;}
+\FunctionTok{xlim}\NormalTok{([}\FloatTok{380} \FloatTok{700}\NormalTok{])}\OperatorTok{;} \FunctionTok{ylim}\NormalTok{([}\FloatTok{0} \FloatTok{0.25}\NormalTok{])}\OperatorTok{;}
+\FunctionTok{hold}\NormalTok{ on}
+\FunctionTok{plot}\NormalTok{(x}\OperatorTok{,}\NormalTok{ y}\OperatorTok{,} \StringTok{'DisplayName'}\OperatorTok{,} \StringTok{'Insert Name for Legend Here'}\NormalTok{)}\OperatorTok{;}
+\FunctionTok{legend}\NormalTok{()}\OperatorTok{;}
+\FunctionTok{hold}\NormalTok{ off}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Determine the wavelength of maximum emission (\(\lambda_{e-max}\)) for quinine. You may try the following code to find this programmatically:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{[max_values indices] }\OperatorTok{=} \FunctionTok{max}\NormalTok{(X(}\OperatorTok{:,} \FloatTok{3}\NormalTok{))}\OperatorTok{;}
+\NormalTok{lambda_max }\OperatorTok{=}\NormalTok{ wavelengths(indices)}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Plot a calibration curve with your data, with the intensity at \(\lambda_{e-max}\) as \(y\) and \emph{Concentration (ppm)} as \(x\).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{##### Plot cal data}
+\FunctionTok{plot}\NormalTok{(x}\OperatorTok{,}\NormalTok{ y}\OperatorTok{,} \StringTok{'*'}\OperatorTok{,} \StringTok{'DisplayName'}\OperatorTok{,} \StringTok{'Experimental Data'}\NormalTok{)}\OperatorTok{;}
+\FunctionTok{xlabel}\NormalTok{(}\StringTok{'Concentration (ppm)'}\NormalTok{)}\OperatorTok{;}
+\FunctionTok{ylabel}\NormalTok{(}\StringTok{'Intensity (arbitrary)'}\NormalTok{)}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Find the calibration coefficient using the function \href{fit-linear-model-calibration.html}{\texttt{fitlm()}}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{##### Calculate linear model / cal curve}
+\NormalTok{[fit_params}\OperatorTok{,}\NormalTok{ r2}\OperatorTok{,}\NormalTok{ fitline] }\OperatorTok{=}\NormalTok{ fitlm(conc_vector}\OperatorTok{,}\NormalTok{ intensity_vector}\OperatorTok{'}\NormalTok{)}\OperatorTok{;}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Add the output of \texttt{fitlm()} to the calibration plot (see the example notebook).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{##### Add cal line to previous plot}
+\FunctionTok{hold}\NormalTok{ on}\OperatorTok{;} \CommentTok{% this keeps our previous plot of the training data visible}
+\FunctionTok{plot}\NormalTok{(fitline(}\OperatorTok{:,} \FloatTok{1}\NormalTok{)}\OperatorTok{,}\NormalTok{ fitline(}\OperatorTok{:,} \FloatTok{2}\NormalTok{)}\OperatorTok{,} \StringTok{'b--'}\OperatorTok{,} \StringTok{'DisplayName'}\OperatorTok{,} \StringTok{'Linear regression'}\NormalTok{)}
+\FunctionTok{legend}\NormalTok{(}\StringTok{'location'}\OperatorTok{,} \StringTok{'northwest'}\NormalTok{)}
+\FunctionTok{hold}\NormalTok{ off }\CommentTok{% Don't put any more plots on this figure}
+\end{Highlighting}
+\end{Shaded}
+\item
+  Use your calibration curve to determine the concentration of quinine in the QC.
+
+  \begin{marginfigure}
+   The percent difference between the measured and known concentration of
+   your QC should be \textless5\%
+   \end{marginfigure}
+\item
+  Use your calibration curve to determine the concentration of quinine in the samples.\\
+\item
+  Report your final answer as the average concentration \(\pm\) one standard deviation, both in your lab notebook and on the analysis sheet. Make sure to round to the correct number of significant digits!
+
+  \begin{quote}
+  Make sure all of the above steps are clearly labeled in your lab notebook and easy to find.
+
+  Make sure you include the other information requested in the template.
+  \end{quote}
+\item
+  Include a conclusion dicussing the measured concentration of your sample (and how it compares to other studies), the validity of your results, and your limits of detection/quantitation (i.e.~are your results meaningful?).
+\item
+  Before turning in your notebook, go to \textbf{Kernel \textgreater{} Restart Kernel} and then \textbf{Run \textgreater{} Run All}. Fix any errors before turning in your notebook.
+\item
+  Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for \href{https://alphonse.github.io/chem370/assignments/submissions.html}{Monday} or \href{https://alphonse.github.io/chem370/assignments/submissions-wednesday.html}{Wednesday}).
+\end{enumerate}
+
+\hypertarget{part-rotations}{%
+\part{Rotations}\label{part-rotations}}
+
+\hypertarget{rotation-a-e-cigarette-liquid}{%
+\chapter{Rotation A: e-Cigarette Liquid}\label{rotation-a-e-cigarette-liquid}}
+
+\hypertarget{objective}{%
+\paragraph{\texorpdfstring{\textbf{Objective}}{Objective}}\label{objective}}
+\addcontentsline{toc}{paragraph}{\textbf{Objective}}
+
+Read the Memorandum on the following page to understand the scenario for this lab and determine your objectives.
+
+\hypertarget{to-turn-in}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in}}
+\addcontentsline{toc}{paragraph}{\textbf{To Turn In}}
+
+\begin{itemize}
+\tightlist
+\item
+  Separate lab notebooks for each technique (e.g.~one for HPLC, one for FT-IR, etc.) as ZIP folders containing your notebook and data. Each student will submit a notebook individually roughly every three weeks.
+\item
+  A technical report detailing the entire project, to be turned in in stages (one per group).
+\item
+  Consult the \href{/chem370/schedule}{schedule} to keep track of due dates for notebooks and report stages.\\
+\item
+  Refer to the materials on the \href{/chem370/writing}{writing page} for templates, formatting guidelines, content expectations, and grading rubrics.
+\item
+  An analysis worksheet for each instrument (linked under the Data Processing sections for each instrument).
+\end{itemize}
+
+\hypertarget{student-learning-outcomes-by-the-end-of-this-lab-students-will}{%
+\paragraph{\texorpdfstring{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}{Student Learning Outcomes \textbar{} By the end of this lab, students will:}}\label{student-learning-outcomes-by-the-end-of-this-lab-students-will}}
+\addcontentsline{toc}{paragraph}{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}
+
+\begin{itemize}
+\tightlist
+\item
+  Utilize chemical instrumentation for qualitative analysis of complex samples (e.g.~GC-MS, Flame AA to ID sample contents).\\
+\item
+  Apply instrument calibration techniques to conduct quantitative analysis on complex samples (e.g.~FT-IR, HPLC, and Flame AA).\\
+\item
+  Assess data validity using quality control and blank samples.\\
+\item
+  Utilize R and RStudio to perform data analysis in an electronic lab notebook (including chemometric analysis).\\
+\item
+  Participate effectively in group lab work and writing activities.\\
+\item
+  Compile results from multiple analyses into a unified report that clearly conveys conclusion(s) to the question(s) posed at project start.
+\end{itemize}
+
+\newpage
+
+\hypertarget{memorandum}{%
+\section*{Memorandum}\label{memorandum}}
+\addcontentsline{toc}{section}{Memorandum}
+
+\noindent
+\textbf{\emph{Western Analytics, Inc.}}
+
+\noindent  
+\textbf{To:} Aerosol Exposure Division\\
+\noindent  
+\textbf{From:} Al Fischer, PhD\\
+\noindent  
+\textbf{Subject:} e-Cigarette Liquid Analysis
+
+\hypertarget{western-analysts}{%
+\subsection*{Western Analysts:}\label{western-analysts}}
+\addcontentsline{toc}{subsection}{Western Analysts:}
+
+The Centers for Disease Control (CDC) reports that an outbreak of e-cigarette, or vaping, associated lung injury (EVALI) began in June 2019. It continues today, and will continue until a culprit is found. As of December 17, 2019 a total of \textbf{2,506 EVALI hospitalizations} from 50 states, the District of Columbia, and two U.S. territories (Puerto Rico and U.S. Virgin Islands), and \textbf{54 EVALI deaths} from 27 US states have been reported to CDC. Studies have found vitamin E acetate, plant and vegetable oils, petroleum distillates, and terpenes in the bronchoalveolar lavage fluid of many affected individuals. {[}1{]} The figure below shows some common chemical exposures from e-cigarettes.
+
+\begin{figure}
+\centering
+\includegraphics{../assets/img/e-cigarette-cdc.jpg}
+\caption{Common exposure pathways related to e-cigarettes. Public domain image from \href{https://stacks.cdc.gov/gsearch?collection=\&terms=CS292347-A}{CDC Stacks}.}
+\end{figure}
+
+The North Carolina Department of Health and Human Services (NCDHHS) is seeking our help in finding the cause of the outbreak in NC. (See \href{https://wlos.com/news/local/nc-health-officials-report-3-cases-of-severe-lung-disease-after-vaping}{this WLOS story} for additional information.) We are asked to screen e-cigarette liquid for toxicants.
+
+\hypertarget{your-job-is-to-screen-the-products-for}{%
+\paragraph{\texorpdfstring{\emph{Your job is to screen the products for:}}{Your job is to screen the products for:}}\label{your-job-is-to-screen-the-products-for}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Flavoring compounds using GC-MS\\
+\item
+  Nicotine concentration using HPLC\\
+\item
+  Zinc concentration using flame AA (before and after vaping)\\
+\item
+  General adulteration using FTIR and the Hit Quality Index method in \href{https://www.researchgate.net/profile/John_Clarkson6/post/What_are_some_good_reference_bands_for_Raman_spectroscopy/attachment/59d6244c79197b8077982a27/AS\%3A312109580128257\%401451424130311/download/Standardization+of+Raman+spectra+for+transfer+of+spectral+libraries+across+different+instruments.pdf}{Rodriguez et al 2011}.
+\end{enumerate}
+
+Please turn in a technical report detailing the findings of your analyses. Your report should link together the results from all your analyses, use complementary results to bolster your conclusions, and discuss what implications the findings from each analysis have on human health.
+
+\hypertarget{sample-information}{%
+\paragraph{\texorpdfstring{\textbf{Sample Information:}}{Sample Information:}}\label{sample-information}}
+\addcontentsline{toc}{paragraph}{\textbf{Sample Information:}}
+
+NCDHHS asked EVALI patients which types of of vaping liquids they used. NCDHHS acquired these products and sent them to Western Analytics for characterization. Aliquots of two samples will be randomly assigned to your workgroup for analysis. Some samples are regulated off-the-shelf e-cigarette liquid and some may be home-made or ``black-market'' samples. You may find problems with one, both, or none of your samples. You will also be given a toxicant-free reference sample. Although samples are over-the-counter products, they are all presumed toxic; you should avoid ingesting and/or contacting them with your skin.
+
+\hypertarget{record-keeping}{%
+\paragraph{\texorpdfstring{\textbf{Record Keeping:}}{Record Keeping:}}\label{record-keeping}}
+\addcontentsline{toc}{paragraph}{\textbf{Record Keeping:}}
+
+Due to the high-impact nature of this work, you must diligently keep track of all sample information (e.g.~samples names) and data. You must also follow our standard quality-control and data-validation practices to ensure your results are accurate. Likewise, all results must meet the precision guidelines described in the procedure for each instrument.
+
+\hypertarget{keep-in-mind}{%
+\paragraph{\texorpdfstring{\emph{Keep in mind:}}{Keep in mind:}}\label{keep-in-mind}}
+\addcontentsline{toc}{paragraph}{\emph{Keep in mind:}}
+
+\begin{itemize}
+\tightlist
+\item
+  There are no additional samples available -- plan ahead to make sure you don't use up all your sample!\\
+\item
+  The lot number for each sample (provided on the bag/vial) must be explicitly tracked in your lab notebook and final report.\\
+\item
+  You must provide me with your data files and lab notebooks (in addition to your report) for validation.\\
+\item
+  You must get certified on each instrument prior to using it.
+\end{itemize}
+
+This is of utmost importance. The sooner the culprit(s) is (are) found, the sooner we can help get dangerous products off the shelf, and the more lives we can save!
+
+Please visit my office or email me with any questions.
+
+\hypertarget{references}{%
+\subsection*{References}\label{references}}
+\addcontentsline{toc}{subsection}{References}
+
+{[}1{]} \href{https://www.cdc.gov/tobacco/basic_information/e-cigarettes/severe-lung-disease.html}{CDC: Outbreak of Lung Injury Associated with the Use of E-Cigarette, or Vaping, Products}
+{[}2{]} \href{https://academic.oup.com/ntr/article/17/2/134/1258864}{Journal Article}
+
+\newpage
+
+\hypertarget{gc-ms}{%
+\section{GC-MS}\label{gc-ms}}
+
+Gas chromatography is a technique used to separate mixtures of gases. The gases are injected into a column, which (in our case) is a long, hollow tube with a non-polar liquid coating on the inside. They are pushed through the column with a carrier gas, He in our instrument. The column is initially held at low temperature (a little above room temperature) and ramped at a defined rate up to 250 degrees C. The combination of the temperature ramp and the non-polar column allows compounds to be separated based on boiling point and polarity. GC can be paired with many different techniques, and is often used with electron-ionization mass spectrometry. This type of mass spectrometer breaks molecules apart into fragments, sorts the fragments by mass, and counts the number of fragments of each mass. The specific spectrum (or distribution of fragments) is unique for every chemical compound and is based on the stability of each bond in the molecule. In this way, the identity of a compound can usually be deduced from a mass spectrum alone, although techniques such as nuclear magnetic resonance spectroscopy and Fourier-transform infrared spectroscopy can greatly aid in identification.
+
+You will conduct liquid phase microextraction to analyze the volatile constituents of e-cigarette liquid. You should identify the major flavor constituents and comment on whether or not they may be harmful at the approximate levels present.
+
+The general order for GC-MS sampling is: (1) run solvent blanks on the GC-MS until the instrument is clean, (2) prepare a single sample using liquid-phase microextraction, (3) run the sample, and (4) repeat 2-4 as necessary. You should obtain a clean blank before preparing your samples. For GC-MS, a passing blank will have a baseline less than 50,000 counts that is stable and peak-free. You may see an increase in the baseline at temperature above 250\(^{\circ}\)C; this is normal and still considered passing. If the blank is dirty you will not be able to tell what is from your sample and what is contamination!
+
+This is a qualitative analysis.
+
+\hypertarget{safety}{%
+\subsection*{Safety}\label{safety}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  This lab uses small amounts of methanol (\href{http://www.sciencelab.com/msds.php?msdsId=9927227}{SDS}). Methanol can cause blindness and absorbs through the skin. Wear gloves and goggles when working with methanol, and use it in a hood.\\
+\item
+  Microliter syringes are very sharp -- avoid poking yourself!
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{instrumentation}{%
+\subsection{Instrumentation}\label{instrumentation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Run a solvent blank on the GC-MS using the \texttt{CHEM370\_Vape.M} method. Use a microliter syringe to inject your sample and consult the GC-MS SOP.
+\end{enumerate}
+
+\begin{marginfigure}
+  \textbf{\emph{Checkpoint:}}
+  
+  A solvent blank in this case is 1 \(\mu\)L methanol and nothing else.
+  
+  Your blank should have a baseline less than 50,000 counts that is stable
+  and free of peaks. If you see peaks, run another blank until you don't!
+  \end{marginfigure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  If your blank is clean, prepare a sample as per below and run on the GC-MS using the \texttt{CHEM370\_Vape.M} method. Consult the GC-MS SOP for more information.
+\end{enumerate}
+
+\hypertarget{sample-preparation}{%
+\subsection{Sample Preparation}\label{sample-preparation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Place 5 drops of the e-cigarette liquid in a 2-mL GC autosampler vial.
+\item
+  Clean a microliter syringe with the syringe cleaning apparatus.
+\item
+  Load the syringe with 2 \(\mu\)L of methanol.
+\item
+  Place the syringe in an arm clamp/ring stand and push the GC autosampler vial onto the tip of the syringe. You want the tip of the syringe to be about 1.5 mm from the top of the sample.
+
+  \begin{quote}
+  Do NOT let the tip touch the sample or the vial!
+  \end{quote}
+\item
+  \emph{Gently} push the plunger of the syringe down all the way so that you have a small drop of methanol on the end of the syringe. Do not let the drop touch anything!
+
+  \begin{quote}
+  The syringe plunger does not go all the way down to the glass body! Do not force it or you will ruin the syringe!
+  \end{quote}
+\item
+  Expose the drop of solvent for 30 seconds and then pull the plunger back up to pull the methanol back into the syringe. Do not bump the syringe, sample, or lab bench during this time.
+\item
+  Inject the sample into the GC immediately.
+\item
+  Clean the syringe and repeat as-needed for each sample.
+\end{enumerate}
+
+\hypertarget{data-processing}{%
+\subsection{Data Processing}\label{data-processing}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\emph{An example notebook is available \href{https://alphonse.github.io/chem370/notebooks/good-example/}{here}}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Use the GC-MS library to get an initial idea of what compounds are present.
+\item
+  Export your data as a CSV file and save the file to NEON.
+
+  \emph{You will need to export:}
+
+  \begin{itemize}
+  \item
+    CSV files of your chromatograms (``TIC in R0'')
+  \item
+    A CSV of the mass spectrum for each compound you are analyzing (at minimum the most abundant compound in each sample).
+  \end{itemize}
+\item
+  Transfer the data to your lab notebook folder and complete your analysis of the \emph{2 most abundant compounds} in each sample.
+\item
+  Plot your chromatogram as \emph{Relative Abundance (\%)} vs.~\emph{Time (minutes)}.
+\item
+  Plot your mass spectra as \emph{Relative Abundance (\%)} vs.~\emph{m/z}.
+\item
+  Clearly identify the base peak, the molecular ion, and any important isotope peaks. Also state how many rings and double bonds your molecule has, and whether it has an odd or even number of nitrogen atoms. Provide a formula, common name, and molecular weight for each compound. You must show your calculations for all of these items. See the \href{/chem370/guides/mass-spec}{mass spec guide} for help with interpretation. Does your interpretation match the library?
+\end{enumerate}
+
+\newpage
+
+\hypertarget{flame-aa}{%
+\section{Flame AA}\label{flame-aa}}
+
+Flame atomic absorption spectroscopy is a common method of determining the concentration of specific metals (cations) in a sample. A solution is nebulized (aerosolized) into an acetylene flame where it is atomized (broken apart into its constituent atoms). The atoms in the flame absorb characteristic wavelengths of light, unique to each element. A light source specific to the analyte of interest (specifically, a hollow cathode lamp) shines through the flame, where the light gets absorbed by the sample. The amount of absorption absorbed is linearly proportional to the concentration of the analyte in solution. Although the instrument is relatively robust and inexpensive, it is limited to probing for a single analyte at a time.
+
+The general procedure for this lab is to: (1) vape a sample and collect the aerosol, (2) prepare standards, blanks, and QCs, (3) run the standards, blank, and QC, and (4) run the samples.
+
+For flame AA, the definitions of ``passing'' are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Blank:} Flat, smooth baseline showing only random noise and/or instrument drift no greater than a few percent over 10-15 minutes.\\
+\item
+  \textbf{Standard Curve:} A linear line with \(R^2 \ge 0.9990\).\\
+\item
+  \textbf{QC:} A measured concentration within 5\% (\(\pm\) 5\%) of the known concentration.
+\end{enumerate}
+
+This is a quantitative analysis.
+
+\hypertarget{safety-1}{%
+\subsection*{Safety}\label{safety-1}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  This experiment involves using an e-cigarette for an extended period of time. The cigarette may get very hot over this time period; take care not to burn yourself.\\
+\item
+  Nicotine is toxic. Wear gloves when working with the vape juice and handling the e-cigarette.\\
+\item
+  Do not breathe the e-liquid aerosol or let it into the room -- do the vaping step in a fume hood!\\
+\item
+  Never leave the flame AA unattended when the flame is on.\\
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{standard-preparation}{%
+\subsection{Standard Preparation}\label{standard-preparation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Prepare blanks from a mix of 90\% ultrapure water/5\% propylene glycol/5\% glycerin (solution provided for you).
+\item
+  Prepare 5 zinc standards spanning the range of 1--10 ppm using the stock solution provided. Dilute with 90\% ultrapure water/5\% propylene glycol/5\% glycerin (solution provided for you) using volumetric glassware.
+\item
+  Prepare a QC from a different stock solution. The concentration should fall somewhere near the middle of your standard curve.
+\item
+  Place your standards in 50 mL plastic centrifuge tubes for analysis.
+\end{enumerate}
+
+\hypertarget{vaping-and-sample-preparation}{%
+\subsection{Vaping and Sample Preparation}\label{vaping-and-sample-preparation}}
+
+\textbf{\emph{Note: you only need to do this procedure with ONE of your samples!}}
+
+\hypertarget{pre-vape-sample}{%
+\paragraph{\texorpdfstring{\textbf{Pre-vape Sample}}{Pre-vape Sample}}\label{pre-vape-sample}}
+\addcontentsline{toc}{paragraph}{\textbf{Pre-vape Sample}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Place approximately 1 mL of e-liquid in a tared 15-mL centrifuge tube.
+\item
+  Obtain the mass of the liquid in the tube.
+\item
+  Fill the tube to 10 g with ultrapure water.
+\item
+  Filter the sample into a clean centrifuge tube using a 0.45 \(\mu\)m syringe filter.
+\end{enumerate}
+
+\hypertarget{post-vape-sample}{%
+\paragraph{\texorpdfstring{\textbf{Post-vape Sample}}{Post-vape Sample}}\label{post-vape-sample}}
+\addcontentsline{toc}{paragraph}{\textbf{Post-vape Sample}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Fill an e-cigarette about half full with your e-liquid.
+\item
+  Use the laboratory vaping apparatus (peristaltic pump and collection tube) to vape the sample into a tared 15-mL centrifuge tube. Vape the sample in 5-second bursts followed by 30-second pauses to mimic an actual user. Do this step in the fume hood!
+\item
+  Obtain the mass of the liquid in the tube.
+\item
+  Fill the tube to 10 g with ultrapure water.
+\item
+  Filter the sample into a clean centrifuge tube using a 0.45 \(\mu\)m syringe filter.
+\end{enumerate}
+
+\hypertarget{running-samples}{%
+\subsection{Running Samples}\label{running-samples}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Use the Flame AA SOP to prepare a flame AA \emph{method} file containing your blanks and standards. Use the \texttt{CHEM370\_Vape} method as a template, but don't save over the template!
+\item
+  Prepare a \emph{Sample Information File} containing your QC.
+\item
+  Run the blanks, standards, and QC.
+
+  \begin{marginfigure}
+   \textbf{Checkpoint:}
+
+   \begin{itemize}
+   \tightlist
+   \item
+     A passing blank will show no signs of contamination.\\
+   \item
+     A passing standard curve will have \(R^2 \ge 0.9990\).\\
+   \item
+     A passing QC will be within \(\pm\) 5\% of the known concentration.
+   \end{itemize}
+
+   If any of these is not passing you must repeat the analysis and/or
+   remake your standards until they pass!
+   \end{marginfigure}
+\item
+  If everything passes, add your samples to your Sample Information File.
+\item
+  Run your newly-added samples.
+\end{enumerate}
+
+\emph{If you have extra sample, try screening it for other metals! (Ask how.)}
+
+\hypertarget{waste-disposal-and-cleanup}{%
+\subsection{Waste Disposal and Cleanup}\label{waste-disposal-and-cleanup}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Collect all wastes in the Flame AA waste container.
+\item
+  Place used (empty) centrifuge tubes in the trash.
+\item
+  Wipe up any spilled e-cigarette liquid with a paper towel (including liquid that's leaked onto the e-cigarette).
+\item
+  Remove the vaping machine tubing and rinse it out with ultrapure water.
+\end{enumerate}
+
+\hypertarget{data-processing-1}{%
+\subsection{Data Processing}\label{data-processing-1}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Export your data to a CSV file using the \textbf{Data Manager} software package (shortcut on Desktop). Use the \texttt{CHEM370\_template} design when prompted.
+\item
+  Use R to create and plot a calibration curve.
+\item
+  Determine the concentration of your samples and QCs. Remember to factor in all dilutions.
+\item
+  Perform a \emph{t}-test to determine whether the metal concentration is \emph{significantly} different before and after vaping. (See Appendix 3, Comparing Means for more information on \emph{t}-tests.)
+\end{enumerate}
+
+\newpage
+
+\hypertarget{ft-ir}{%
+\section{FT-IR}\label{ft-ir}}
+
+FT-IR spectroscopy is used to deduce the bonds present in liquids, solids, and gases. It is widely used in industry, research, and teaching for qualitative analysis, but can also provide very accurate quantitative information. All molecules have a unique infrared spectrum, comparable to a person's fingerprint. However, it is usually very difficult to interpret infrared spectra of mixtures. Chemometrics and linear algebra can circumvent this issue by picking out minute differences between spectra using statistical methods. During this lab, FT-IR will be used to match a sample of e-cigarette liquid to a reference spectrum using a metric called the hit quality index (HQI). This methods provides a measure of how well two spectra match, and a HQI of 0.99 or better is required to indicate a contaminant-free sample.
+
+This lab will use the Perkin Elmer Spectrum One FT-IR (Fourier-transform infrared spectrometer) to determine whether samples of Tylenol (acetaminophen) are pure. The Spectrum One is in NS 226. Before lab, read \emph{Standardization of Raman Spectra for Transfer of Spectral Libraries Across Different Instruments}. Focus on the paragraph regarding hit-quality index calculation.
+
+The general order for FT-IR sampling is: (1) collect a background (no sample present) and (2) collect sample spectra by placing a drop of sample on the instrument. You will collect 3 spectra for each sample and 3 spectra of the reference sample.
+
+\hypertarget{safety-2}{%
+\subsection*{Safety}\label{safety-2}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  This lab will require the use of small amounts of \href{http://www.sciencelab.com/msds.php?msdsId=9927062}{acetone}; avoid contact with skin and eyes.
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{instrumentation-1}{%
+\subsection{Instrumentation}\label{instrumentation-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use the CHEM370 user on the FTIR. Make sure you are collecting spectra as \emph{Absorbance} vs.~\emph{Wavenumber}.
+\item
+  Record a background spectrum on the FT-IR according to the FT-IR SOP.
+\item
+  Place 1 drop the sample on the ATR window and acquire a spectrum. You do not need the anvil for liquid samples.
+\item
+  Wet a Kimwipe with a small amount of acetone and clean the ATR cell with it.
+\item
+  Repeat the above steps 2 more times, for a total of three spectra for your sample.
+\item
+  Repeat the above steps for each sample, so you end up with three spectra of each sample.
+\item
+  Make sure you leave the instrument and your work area clean, and log out of the computer.
+\end{enumerate}
+
+\hypertarget{waste-disposal-and-cleanup-1}{%
+\subsection{Waste Disposal and Cleanup}\label{waste-disposal-and-cleanup-1}}
+
+\begin{itemize}
+\item
+  Clean the IR with acetone and replace the cover.
+
+  \begin{quote}
+  Never spray acetone directly on the IR -- always spray it on a Kimwipe pointed away from the instrument.
+  \end{quote}
+\item
+  Brush up any acetaminophen powder on and around the IR.
+\item
+  Use a minimal amount of warm water to rinse any powdered acetaminophen into the bottle labelled ``Hazardous Waste: Lab 2 Acetaminophen'' that is stored under the sample prep hood in the Instrument Lab.
+\item
+  Make sure your work area and the instrument are cleaner than you found them.
+\end{itemize}
+
+\hypertarget{data-processing-2}{%
+\subsection{Data Processing}\label{data-processing-2}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_ftir_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\begin{itemize}
+\tightlist
+\item
+  You will need to export you data as a CSV file. The Spectrum One does this automatically. Just copy the exported data from the ``Spectrum One Data Folder'' (there is a shortcut on the desktop) to your folder on NEON.
+\item
+  See Appendix 2 for examples of the following steps:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Baseline correct your spectra by subtracting the minimum value from each data point. This should make the minimum value on your plot 0.
+  \item
+    Normalize your spectra by converting from absorbance units to relative absorbance. You do this by dividing the whole spectrum by the maximum absorbance value. Your final plot should range from 0 to 1.\\
+  \item
+    Calculate the Hit Quality Index according to Eq. 2 in \href{https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments}{Rodriguez et al (2011)}. Be mindful of the difference between ``x'' (multiplication) and ``·'' (dot product).
+  \end{itemize}
+\end{itemize}
+
+\newpage
+
+\hypertarget{hplc}{%
+\section{HPLC}\label{hplc}}
+
+This lab will use the Agilent 1220 HPLC (high performance liquid chromatograph) to determine the concentration of nicotine in vaping liquid.
+
+HPLC is a separation method. Like all chromatographic methods, it employs a mobile phase and a stationary phase. An analyte dissolved in solution is injected onto a column (the stationary phase) and carried through the column by a solvent, called the eluent or mobile phase. The column is packed with a substrate, which -- for reverse-phase HPLC as we'll perform here -- is a non-polar substance with a C18 coating. In the column, the sample partitions between the stationary and the mobile phase, and it's relative affinity for each determines how quickly it moves through the column. In this way, HPLC allows us to separate analytes based on polarity. In this lab, you'll use the HPLC to perform quantitative analysis. This is possible because the area under each chromatographic peak is proportional to the concentration of each analyte.
+
+The general order for HPLC sample preparation is: (1) Prepare standard and quality control samples (QCs), (2) run standards and a QC, (3) prepare the samples, and (4) run the samples. You should obtain a clean blank, a passing standard curve, and a passing QC before preparing your samples. If any of these fails there is no point in running your samples!
+
+For HPLC, the definitions of ``passing'' are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Blank:} Flat, smooth baseline showing only random noise and/or instrument drift no greater than a few percent over 15 minutes.\\
+\item
+  \textbf{Standard Curve:} A linear line with \(R^2 \ge 0.9900\).\\
+\item
+  \textbf{QC:} A measured concentration within 5\% (\(\pm\) 5\%) of the known concentration.
+\end{enumerate}
+
+This is a quantitative analysis.
+
+\hypertarget{safety-3}{%
+\subsection*{Safety}\label{safety-3}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  Nicotine is toxic. Wear gloves when working with the vape juice and preparing standards.\\
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\item
+  75\% water / 25\% Acetonitrile / 0.1\% formic acid is used as the HPLC mobile phase. Avoid skin contact with mobile phase.
+\end{itemize}
+
+\hypertarget{reference}{%
+\subsection*{Reference}\label{reference}}
+\addcontentsline{toc}{subsection}{Reference}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892702/}{Davis et al (2015)}
+\end{itemize}
+
+\hypertarget{standard-preparation-1}{%
+\subsection{Standard Preparation}\label{standard-preparation-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Prepare blanks from ultrapure water.
+\item
+  Prepare nicotine standards ranging from 1--100 ppm using the stock solution provided. Use ultrapure water as your solvent.
+\item
+  Use a separate stock solution to prepare a QC. The nicotine concentration should fall toward the middle of your standard curve.
+\item
+  Place your standards in 2 mL HPLC autosampler vials for analysis (the ultrapure water is already filtered, so as long as you use fresh water you do not need to filter again!).
+\end{enumerate}
+
+\hypertarget{running-standards}{%
+\subsection{Running Standards}\label{running-standards}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Warm up the HPLC according to the HPLC SOP. Use the \texttt{CHEM370\_Vape.M} method.
+\item
+  Place your standards in the HPLC autosampler.
+\item
+  Prepare a sequence based on the autosampler locations of your samples (refer to HPLC SOP for more info). Prepare your sequence in this order:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Zero Standard/Rinse Blank (water)
+  \item
+    Low Standard
+  \item
+    Medium-low Standard
+  \item
+    Medium Standard
+  \item
+    Medium High Standard
+  \item
+    High Standard
+  \item
+    Rinse Blank
+  \item
+    QC Sample
+  \end{enumerate}
+\item
+  After the instrument has warmed up (stable baseline), run your sequence.
+\item
+  Analyze your standard curve, blanks, and QC.
+
+  \begin{marginfigure}
+   \textbf{Checkpoint:}
+
+   \begin{itemize}
+   \tightlist
+   \item
+     A passing blank will show no signs of contamination.\\
+   \item
+     A passing standard curve will have \(R^2 \ge 0.9900\).\\
+   \item
+     A passing QC will be within \(\pm\) 5\% of the known concentration.
+   \end{itemize}
+
+   If any of these is not passing you must repeat the analysis and/or
+   remake your standards until they pass!
+   \end{marginfigure}
+\end{enumerate}
+
+\hypertarget{sample-preparation-1}{%
+\subsection{Sample Preparation}\label{sample-preparation-1}}
+
+Repeat the following for each sample:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Tare an HPLC sample vial.
+\item
+  Place 2 drops of e-cigarette liquid in the vial and record the mass of liquid added.
+\item
+  Fill to top with approximately 2 mL ultrapure water.
+\item
+  Record the mass of the solvent you added. You will need the masses to back calculate the undiluted nicotine concentration during data analysis.
+\item
+  Prepare enough samples to analyze all samples in triplicate.
+
+  \begin{marginfigure}
+   Note that the ultrapure water and e-cigarette liquid are already
+   filtered, so you do not need to filter them again during sample prep!
+   \end{marginfigure}
+\end{enumerate}
+
+\hypertarget{running-samples-1}{%
+\subsection{Running Samples}\label{running-samples-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Warm up the HPLC according the the HPLC SOP (skip if already warm).
+\item
+  Place your standards in the HPLC autosampler.
+\item
+  Prepare a sequence based on the autosampler locations of your samples (refer to HPLC SOP for more info). Prepare your sequence in this order:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Standards \& QC (see \emph{HPLC \textbar{} Instrumentation: Standards} section)
+  \item
+    Up to 10 samples
+  \item
+    QC Sample (same as previous QC; always finish with QC)
+  \end{enumerate}
+\item
+  After the instrument has warmed up, run your sequence.
+\item
+  Analyze your standards and samples (you may skip the standards again if you've run them in the past hour -- just start with a QC instead).
+\item
+  Use a \emph{t}-test to determine if the mass of nicotine is \emph{significantly} different from the expected mass. (See Appendix 3, Comparing Means for more information on \emph{t}-tests.)
+\end{enumerate}
+
+\hypertarget{waste-disposal-and-cleanup-2}{%
+\subsection{Waste Disposal and Cleanup}\label{waste-disposal-and-cleanup-2}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Place all liquid wastes in the HPLC waste container for the lab.
+\item
+  Place all (cleaned) disposable glass vials in the broken class bin.
+
+  \begin{quote}
+  No chemicals should go in broken glass!
+  \end{quote}
+\end{enumerate}
+
+\hypertarget{data-processing-3}{%
+\subsection{Data Processing}\label{data-processing-3}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_hplc_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\hypertarget{exporting-plotting-representative-chromatograms}{%
+\paragraph{\texorpdfstring{\textbf{Exporting \& Plotting Representative Chromatograms}}{Exporting \& Plotting Representative Chromatograms}}\label{exporting-plotting-representative-chromatograms}}
+\addcontentsline{toc}{paragraph}{\textbf{Exporting \& Plotting Representative Chromatograms}}
+
+You do not need to export every single chromatogram (you standards should all be very similar, just different in magnitude). Instead, export the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The chromatogram for your medium standard.
+\item
+  The chromatogram for each sample.
+\end{enumerate}
+
+Include these in your lab notebook and in a single figure in your final report.
+
+\hypertarget{standard-curve-and-concentrations}{%
+\paragraph{\texorpdfstring{\textbf{Standard Curve and Concentrations}}{Standard Curve and Concentrations}}\label{standard-curve-and-concentrations}}
+\addcontentsline{toc}{paragraph}{\textbf{Standard Curve and Concentrations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use your standards to determine the retention time for nicotine.
+\item
+  Use the HPLC software (or R if you prefer) to integrate the nicotine peak for each sample.
+\item
+  Manually record the integration results in your lab notebook.
+\item
+  Calculate a standard curve using a linear model with a floating intercept. Use units of ppm for your standard curve.
+\item
+  Calculate the concentration (in ppm) of nicotine in the QCs using your standard curve.
+\item
+  Calculate the concentration (in ppm) of nicotine in the samples using your standard curve.
+\item
+  Perform a \emph{t}-test to determine in if the concentration of nicotine in your samples is \emph{significantly} different than the expected amount.
+\end{enumerate}
+
+\hypertarget{limits-of-detection-and-quantitation}{%
+\paragraph{\texorpdfstring{\textbf{Limits of Detection and Quantitation}}{Limits of Detection and Quantitation}}\label{limits-of-detection-and-quantitation}}
+\addcontentsline{toc}{paragraph}{\textbf{Limits of Detection and Quantitation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Calculate limits of detection and quantitation as you did in Lab 1. Use the standard deviation of the entire blank as your standard deviation for the calculation. Report these in your technical report.
+\end{enumerate}
+
+\hypertarget{rotation-b-acetaminophen}{%
+\chapter{Rotation B: Acetaminophen}\label{rotation-b-acetaminophen}}
+
+\hypertarget{objective}{%
+\paragraph{\texorpdfstring{\textbf{Objective}}{Objective}}\label{objective}}
+\addcontentsline{toc}{paragraph}{\textbf{Objective}}
+
+Read the Memorandum on the following page to understand the scenario for this lab and determine your objectives.
+
+\hypertarget{to-turn-in}{%
+\paragraph{\texorpdfstring{\textbf{To Turn In}}{To Turn In}}\label{to-turn-in}}
+\addcontentsline{toc}{paragraph}{\textbf{To Turn In}}
+
+\begin{itemize}
+\tightlist
+\item
+  Separate lab notebooks for each technique (e.g.~one for HPLC, one for FT-IR, etc.) as ZIP folders containing your notebook and data. Each student will submit a notebook individually roughly every three weeks.
+\item
+  A technical report detailing the entire project, to be turned in in stages (one per group).
+\item
+  Consult the \href{/chem370/schedule}{schedule} to keep track of due dates for notebooks and report stages.\\
+\item
+  Refer to the materials on the \href{/chem370/writing}{writing page} for templates, formatting guidelines, content expectations, and grading rubrics.
+\item
+  An analysis worksheet for each instrument (linked under the Data Processing sections for each instrument).
+\end{itemize}
+
+\hypertarget{student-learning-outcomes-by-the-end-of-this-lab-students-will}{%
+\paragraph{\texorpdfstring{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}{Student Learning Outcomes \textbar{} By the end of this lab, students will:}}\label{student-learning-outcomes-by-the-end-of-this-lab-students-will}}
+\addcontentsline{toc}{paragraph}{\textbf{Student Learning Outcomes} \textbar{} \emph{By the end of this lab, students will:}}
+
+\begin{itemize}
+\tightlist
+\item
+  Utilize chemical instrumentation for qualitative analysis of complex samples (e.g.~GC-MS, Flame AA to ID sample contents).\\
+\item
+  Apply instrument calibration techniques to conduct quantitative analysis on complex samples (e.g.~FT-IR, HPLC, and Flame AA).\\
+\item
+  Assess data validity using quality control and blank samples (GCs).\\
+\item
+  Utilize R and RStudio to perform data analysis in an electronic lab notebook (including chemometric analysis).\\
+\item
+  Participate effectively in group lab work and writing activities.\\
+\item
+  Compile results from multiple analyses into a unified report that clearly conveys conclusion(s) to the question(s) posed at project start.
+\end{itemize}
+
+\newpage
+
+\hypertarget{am-memo}{%
+\section*{Memorandum}\label{am-memo}}
+\addcontentsline{toc}{section}{Memorandum}
+
+\noindent
+\textbf{\emph{Western Analytics, Inc.}}
+
+\noindent  
+\textbf{To:} Pharmaceutical Division\\
+\noindent  
+\textbf{From:} Al Fischer, PhD\\
+\noindent  
+\textbf{Subject:} Acetaminophen Analysis
+
+\hypertarget{western-analysts}{%
+\subsection*{Western Analysts:}\label{western-analysts}}
+\addcontentsline{toc}{subsection}{Western Analysts:}
+
+A confidential manufacturer of pharmaceuticals has recently received complaints of hospitalizations related to their generic-brand, child-strength, chewable acetaminophen (``Tylenol''). The following symptoms have been observed in the patients (1) high acetaminophen concentration in the blood, (2) high zinc concentration in the blood, and (3) high concentrations of an unidentified organic compound in the blood, thought to be either caffeine or a flavoring compound. The customer is unsure what the contaminant is or which production facility the bad product(s) came from. They have halted manufacturing of the drug until the problem can be tracked down, and have sent samples to Western Analytics for analysis.
+
+\hypertarget{your-job-is-to-screen-the-products-for}{%
+\paragraph{\texorpdfstring{\emph{Your job is to screen the products for:}}{Your job is to screen the products for:}}\label{your-job-is-to-screen-the-products-for}}
+\addcontentsline{toc}{paragraph}{\emph{Your job is to screen the products for:}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Acetaminophen concentration and contamination using HPLC
+\item
+  General adulteration/contamination using FTIR and the Hit Quality Index method in \href{https://www.researchgate.net/profile/John_Clarkson6/post/What_are_some_good_reference_bands_for_Raman_spectroscopy/attachment/59d6244c79197b8077982a27/AS\%3A312109580128257\%401451424130311/download/Standardization+of+Raman+spectra+for+transfer+of+spectral+libraries+across+different+instruments.pdf}{Rodriguez et al 2011}
+\item
+  Harmful flavoring agents using GCMS
+\item
+  Quantify the sodium concentration using flame AA to screen for sodium naproxen contamination.
+\end{enumerate}
+
+Please turn in a technical report detailing the findings of your analyses. Your report should link together the results from all your analyses, use complementary results to bolster each other, and discuss what effects (if any) the findings from each analysis are likely to have on human health.
+
+\hypertarget{sample-information}{%
+\paragraph{\texorpdfstring{\textbf{Sample Information:}}{Sample Information:}}\label{sample-information}}
+\addcontentsline{toc}{paragraph}{\textbf{Sample Information:}}
+
+The customers pulled tablets from all production lines and marked them with their respective lot numbers. Samples from two separate lots will be randomly assigned to your workgroup for analysis. You may find things wrong with one, both, or none of your samples. You will also be given a toxicant-free reference sample.
+
+\hypertarget{record-keeping}{%
+\paragraph{\texorpdfstring{\textbf{Record Keeping:}}{Record Keeping:}}\label{record-keeping}}
+\addcontentsline{toc}{paragraph}{\textbf{Record Keeping:}}
+
+Due to the high-impact nature of this work, you must diligently keep track of all sample information -- especially lot numbers -- and data. You must also follow our standard quality-control and data-validation practices to ensure your results are accurate. Likewise, all results must meet the precision guidelines described in the procedure for each instrument.
+
+\hypertarget{keep-in-mind}{%
+\paragraph{\texorpdfstring{\emph{Keep in mind:}}{Keep in mind:}}\label{keep-in-mind}}
+\addcontentsline{toc}{paragraph}{\emph{Keep in mind:}}
+
+\begin{itemize}
+\tightlist
+\item
+  There are no additional samples available -- plan ahead to make sure you don't use up all your sample!\\
+\item
+  The identity of each sample (provided on the bag/vial) must be explicitly tracked in your lab notebook and final report.\\
+\item
+  You must provide me with your data files and lab notebooks (in addition to your report) for validation.\\
+\item
+  You must get certified on each instrument prior to using it.
+\end{itemize}
+
+This is of utmost importance. Each day the customer is down constitutes tens of thousands of dollars in lost revenue.
+
+Please visit my office or email me with any questions.
+
+\newpage
+
+\hypertarget{am-hplc}{%
+\section{HPLC}\label{am-hplc}}
+
+This lab will use the Agilent 1220 HPLC (high performance liquid chromatograph) to determine the concentration of acetaminophen in Tylenol tablets.
+
+HPLC is a separation method. Like all chromatographic methods, it employs a mobile phase and a stationary phase. An analyte dissolved in solution is injected onto a column (the stationary phase) and carried through the column by a solvent, called the eluent or mobile phase. The column is packed with a substrate, which -- for reverse-phase HPLC as we'll perform here -- is a non-polar substance with a C18 coating. In the column, the sample partitions between the stationary and the mobile phase, and it's relative affinity for each determines how quickly it moves through the column. In this way, HPLC allows us to separate analytes based on polarity. In this lab, you'll use the HPLC to perform quantitative analysis. This is possible because the area under each chromatographic peak is proportional to the concentration of each analyte.
+
+The general order for HPLC sample preparation is: (1) Prepare standard and quality control samples (QCs), (2) run standards and a QC, (3) prepare the samples, and (4) run the samples. You should obtain a clean blank, a passing standard curve, and a passing QC before preparing your samples. If any of these fails there is no point in running your samples!
+
+For HPLC, the definitions of ``passing'' are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Blank:} Flat, smooth baseline showing only random noise and/or instrument drift no greater than a few percent over 15 minutes.\\
+\item
+  \textbf{Standard Curve:} A linear line with \(R^2 \ge 0.9900\).\\
+\item
+  \textbf{QC:} A measured concentration within 5\% (\(\pm\) 5\%) of the known concentration.
+\end{enumerate}
+
+This is a quantitative analysis.
+
+\hypertarget{safety}{%
+\subsection*{Safety}\label{safety}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  This lab uses methanol (\href{http://www.sciencelab.com/msds.php?msdsId=9927227}{SDS}). Methanol can cause blindness and absorbs through the skin. Wear gloves and goggles when working with methanol, and use it in a hood.\\
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{standard-preparation}{%
+\subsection{Standard Preparation}\label{standard-preparation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Make 50 ml of 100-ppm (w/v) acetaminophen stock solution using 98\% 4-acetamidophenol in 1:3 methanol:water.
+\item
+  Perform serial dilutions to create a set of 5 standards with concentrations ranging from 0.5 - 25 ppm. You will need 2 ml of each standard for HPLC analysis, but it won't hurt to have a little extra.
+\item
+  Filter your standards into autosampler vials for analysis using a 0.45\(\mu\)m syringe filter.
+\end{enumerate}
+
+\hypertarget{running-standards}{%
+\subsection{Running Standards}\label{running-standards}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Warm up the HPLC according to the HPLC SOP. Use the \texttt{CHEM370\_acetaminophen.M} method.
+\item
+  Place your standards in the HPLC autosampler.
+\item
+  Prepare a sequence based on the autosampler locations of your samples (refer to HPLC SOP for more info). Prepare your sequence in this order:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Zero Standard (blank)
+  \item
+    Low Standard
+  \item
+    Medium-low Standard
+  \item
+    Medium Standard
+  \item
+    Medium High Standard
+  \item
+    High Standard
+  \item
+    Blank
+  \item
+    QC Sample
+  \end{enumerate}
+\item
+  After the instrument has warmed up (stable baseline), run your sequence.
+\item
+  Analyze your standard curve, blanks, and QC.
+\end{enumerate}
+
+\begin{marginfigure}
+  \textbf{Checkpoint:}
+  
+  \begin{itemize}
+  \tightlist
+  \item
+    A passing blank will show no signs of contamination.\\
+  \item
+    A passing standard curve will have \(R^2 \ge 0.9900\).\\
+  \item
+    A passing QC will be within \(\pm\) 5\% of the known concentration.
+  \end{itemize}
+  
+  If any of these is not passing you must repeat the analysis and/or
+  remake your standards until they pass!
+  \end{marginfigure}
+
+\hypertarget{sample-preparation}{%
+\subsection{Sample Preparation}\label{sample-preparation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Determine the mass of all the contents of your vials.
+\item
+  Grind your sample into a fine, homogenous powder using a mortar and pestle.
+\item
+  Cone and quarter your sample (on weighing paper) until you have just over 100 mg.
+\item
+  Dissolve 100.0 mg of the tablet in 1:3 methanol:water, and bring the final volume to 100.0 ml.
+\item
+  Perform a 1:100 dilution of you sample in 1:3 methanol:water.
+\item
+  Filter you final dilution through a 0.45 \(\mu\)m syringe filter using a 20 ml syringe. Make sure you:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Don't pull up on the plunger with the filter attached to the syringe (you may tear the filter).
+  \item
+    Discard the first 10 ml of filtrate.
+  \item
+    Use an aliquot of the last 10 ml of filtrate for analysis.
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{running-samples}{%
+\subsection{Running Samples}\label{running-samples}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Place approximately 2 ml of your final dilution in an autosampler vial; you should prepare at least 3 vials to run in triplicate.
+\item
+  Prepare the appropriate blanks, using 1:3 methanol:water as your blank solution. Please be sure to filter your blanks before analysis.
+\item
+  Warm up the HPLC according the the HPLC SOP (skip if already warm).
+\item
+  Place your standards in the HPLC autosampler.
+\item
+  Prepare a sequence based on the autosampler locations of your samples (refer to HPLC SOP for more info). Prepare your sequence in this order:
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Blank, standards, and QC (see \emph{HPLC \textbar{} Instrumentation: Standards} section)
+  \item
+    Up to 10 samples
+  \item
+    QC Sample (same as previous QC; always finish with QC)
+  \end{enumerate}
+\item
+  After the instrument has warmed up, run your sequence.
+\item
+  Analyze your standards and samples (you may skip the standards again if you've run them in the past hour -- just start with a QC instead).
+\end{enumerate}
+
+\hypertarget{waste-disposal-and-cleanup}{%
+\subsection{Waste Disposal and Cleanup}\label{waste-disposal-and-cleanup}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Place all liquid and/or powder wastes in the HPLC waste container for the lab.
+\item
+  Place all (cleaned) disposable glass vials in the broken class bin.
+
+  \begin{quote}
+  No chemicals should go in broken glass!
+  \end{quote}
+\end{enumerate}
+
+\hypertarget{data-processing}{%
+\subsection{Data Processing}\label{data-processing}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_hplc_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\hypertarget{standard-curve-and-concentrations}{%
+\paragraph{\texorpdfstring{\textbf{Standard Curve and Concentrations}}{Standard Curve and Concentrations}}\label{standard-curve-and-concentrations}}
+\addcontentsline{toc}{paragraph}{\textbf{Standard Curve and Concentrations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use your standards to determine which peak in your sample is acetaminophen.
+
+  \begin{marginfigure}
+    Don't disregard the peaks that aren't acetaminophen. They contain
+    valuable information that you should discuss.
+    \end{marginfigure}
+\item
+  Use the HPLC software (or R if you prefer) to integrate the acetaminophen peak for each sample.
+\item
+  Manually record the integration results in your lab notebook
+\item
+  Calculate a standard curve using a linear model with a floating intercept. Use units of ppm for your standard curve.
+\item
+  Calculate the concentration (in ppm) of the QCs using your standard curve.
+\item
+  Calculate the concentration (in ppm) of the samples using your standard curve.
+\item
+  Use a \emph{t}-test to determine if the mass of acetaminophen is \emph{significantly} different from the expected mass. (See Appendix 3, ``Comparing Means'')
+\item
+  Plot \emph{representative chromatograms}: You do not need to export every single chromatogram (your standards should all be very similar, just different in magnitude). Instead, export and plot the chromatogram for your medium standard and the chromatogram for each sample. Include these in your lab notebook and in a single figure in your final report. (See Appendix 2 for R examples).
+\end{enumerate}
+
+\newpage
+
+\hypertarget{am-ftir}{%
+\section{FT-IR}\label{am-ftir}}
+
+FT-IR spectroscopy is used to deduce the bonds present in liquids, solids, and gases. It is widely used in industry, research, and teaching for qualitative analysis, but can also provide very accurate quantitative information. All molecules have a unique infrared spectrum, comparable to a person's fingerprint. However, it is usually very difficult to interpret infrared spectra of mixtures. Chemometrics and linear algebra can circumvent this issue by picking out minute differences between spectra using statistical methods. During this lab, FT-IR will be used to match a sample of acetaminophen to a reference spectrum using a metric called the hit quality index (HQI). This methods provides a measure of how well two spectra match, and a HQI of 0.99 or better is required to indicate a contaminant-free sample.
+
+This lab will use the Perkin Elmer Spectrum One FT-IR (Fourier-transform infrared spectrometer) to determine whether samples of Tylenol (acetaminophen) are pure. The Spectrum One is in NS 226. Before lab, read \href{https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments}{\emph{Standardization of Raman Spectra for Transfer of Spectral Libraries Across Different Instruments}.} Focus on the paragraph regarding hit-quality index calculation.
+
+The general order for FT-IR sampling is: (1) collect a background (no sample present) and (2) collect sample spectra by placing a drop of sample on the instrument. You will collect 3 spectra for each sample and 3 spectra of the reference sample.
+
+\hypertarget{safety-1}{%
+\subsection*{Safety}\label{safety-1}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  This lab will require the use of small amounts of \href{http://www.sciencelab.com/msds.php?msdsId=9927062}{acetone}; avoid contact with skin and eyes.
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{sample-preparation-1}{%
+\subsection{Sample Preparation}\label{sample-preparation-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Determine the mass of all contents of your sample vials.
+\item
+  Grind your samples into a fine, homogenous powder using a mortar and pestle.
+\item
+  Cone a quarter your samples on weighing paper until you have approximately 100 mg of each for FT-IR, and store the extra sample in glass vials.
+\end{enumerate}
+
+\hypertarget{instrumentation}{%
+\subsection{Instrumentation}\label{instrumentation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Choose the CHEM370 user when opening the FTIR software; make sure your spectra are in \emph{Absorbance} vs.~\emph{Frequency (wavenumber)}.
+\item
+  Record a background spectrum on the FT-IR according to the FT-IR SOP.
+\item
+  Place approximately one-third of the sample on the ATR window and acquire a spectrum.
+\item
+  Wet a Kimwipe with a small amount of acetone and clean the ATR cell and anvil with it.
+\item
+  Repeat the above steps 2 more times, for a total of three spectra.
+\item
+  Repeat the above steps for each sample, for a total of three spectra per sample.
+\item
+  Make sure you leave the instrument and your work area clean, and log out of the computer.
+\end{enumerate}
+
+\hypertarget{waste-disposal-and-cleanup-1}{%
+\subsection{Waste Disposal and Cleanup}\label{waste-disposal-and-cleanup-1}}
+
+\begin{itemize}
+\item
+  Clean the IR with acetone and replace the cover.
+
+  \begin{quote}
+  Never spray acetone directly on the IR -- always spray it on a Kimwipe pointed away from the instrument.
+  \end{quote}
+\item
+  Brush up any acetaminophen powder on and around the IR.
+\item
+  Use a minimal amount of warm water to rinse any powdered acetaminophen into the bottle labelled ``Hazardous Waste: Lab 2 Acetaminophen'' that is stored under the sample prep hood in the Instrument Lab.
+\item
+  Make sure your work area and the instrument are cleaner than you found them.
+\end{itemize}
+
+\hypertarget{data-processing-1}{%
+\subsection{Data Processing}\label{data-processing-1}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_ftir_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\begin{itemize}
+\tightlist
+\item
+  You will need to export you data as a CSV file. The Spectrum One does this automatically. Just copy the exported data from the ``Spectrum One Data Folder'' (there is a shortcut on the desktop) to your folder on NEON.
+\item
+  Baseline correct your spectra by subtracting the minimum value from each data point. This should make the minimum value on your plot 0. (See Appendix 2 for R examples)
+\item
+  Normalize your spectra by converting from absorbance units to relative absorbance. Your final plot should range from 0 to 1. (See Appendix 2 for R examples)
+\item
+  Calculate the Hit Quality Index according to Eq. 2 in \href{https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments}{Rodriguez et al (2011)}. Be mindful of the difference between ``x'' (multiplication) and ``·'' (dot product). (See Appendix 2 for R examples)
+\end{itemize}
+
+\newpage
+
+\hypertarget{am-gcms}{%
+\section{GC-MS}\label{am-gcms}}
+
+Gas chromatography is a technique used to separate mixtures of gases. The gases are injected into a column, which (in our case) is a long, hollow tube with a non-polar liquid coating on the inside. They are pushed through the column with a carrier gas, He in our instrument. The column is initially held at low temperature (a little above room temperature) and ramped at a defined rate up to 250 degrees C. The combination of the temperature ramp and the non-polar column allows compounds to be separated based on boiling point and polarity. GC can be paired with many different techniques, and is often used with electron-ionization mass spectrometry. This type of mass spectrometer breaks molecules apart into fragments, sorts the fragments by mass, and counts the number of fragments of each mass. The specific spectrum (or distribution of fragments) is unique for every chemical compound and is based on the stability of each bond in the molecule. In this way, the identity of a compound can usually be deduced from a mass spectrum alone, although techniques such as nuclear magnetic resonance spectroscopy and Fourier-transform infrared spectroscopy can greatly aid in identification.
+
+You will conduct liquid phase microextraction to analyze the volatile constituents of children's chewable acetaminophen. You should identify the major flavor constituents and comment on whether or not they may be harmful at the approximate levels present.
+
+The general order for GC-MS sampling is: (1) run solvent blanks on the GC-MS until the instrument is clean, (2) prepare a single sample using liquid-phase microextraction, (3) run the sample, and (4) repeat 2-4 as necessary. You should obtain a clean blank before preparing your samples. For GC-MS, a passing blank will have a baseline less than 50,000 counts that is stable and peak-free. You may see an increase in the baseline at temperature above 250\(^{\circ}\)C; this is normal and still considered passing. If the blank is dirty you will not be able to tell what is from your sample and what is contamination!
+
+This is a qualitative analysis.
+
+\hypertarget{safety-2}{%
+\subsection*{Safety}\label{safety-2}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  This lab uses small amounts of methanol (\href{http://www.sciencelab.com/msds.php?msdsId=9927227}{SDS}). Methanol can cause blindness and absorbs through the skin. Wear gloves and goggles when working with methanol, and use it in a hood.\\
+\item
+  Microliter syringes may be very sharp!\\
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{instrumentation-1}{%
+\subsection{Instrumentation}\label{instrumentation-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Run a solvent blank on the GC-MS using the \texttt{CHEM370\_Acetaminophen.M} method. Use a microliter syringe to inject your sample and consult the GC-MS SOP.
+
+  \begin{marginfigure}
+   \textbf{\emph{Checkpoint:}}
+
+   A solvent blank in this case is 2 \(\mu\)L methanol and nothing else.
+
+   Your blank should have a baseline less than 50,000 counts that is stable
+   and free of peaks. If you see peaks, run another blank until you don't!
+   \end{marginfigure}
+\item
+  If your blank is clean, prepare a sample as per below and run on the GC-MS using the \texttt{CHEM370\_Acetaminophen.M} method. Consult the GC-MS SOP for more information.
+\end{enumerate}
+
+\hypertarget{sample-preparation-2}{%
+\subsection{Sample Preparation}\label{sample-preparation-2}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Grind a Tylenol tablet in a clean mortar and pestle.
+\item
+  Cone and quarter your sample until you have about 0.5 g. Place that in an 2-mL GC autosampler vial.
+\item
+  Clean a microliter syringe with the syringe cleaning apparatus.
+\item
+  Load the syringe with 2 \(\mu\)L of methanol.
+\item
+  Place the syringe in an arm clamp/ring stand and push the GC autosampler vial onto the tip of the syringe.
+
+  \begin{quote}
+  Do NOT let the tip touch the powder in vial!
+  \end{quote}
+\item
+  Push the plunger of the syringe down all the way so that you have a small drop of methanol on the end of the syringe.
+
+  \begin{quote}
+  The syringe plunger does not go all the way down to the glass body! Do not force it or you will ruin the syringe!
+  \end{quote}
+\item
+  Expose the drop of solvent for 30 seconds and then pull the plunger back up to pull the methanol back into the syringe.
+\item
+  Inject the sample into the GC immediately.
+\end{enumerate}
+
+\hypertarget{data-processing-2}{%
+\subsection{Data Processing}\label{data-processing-2}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Use the GC-MS library to get an initial idea of what compounds are present.
+\item
+  Export your data as a CSV file and save the file to NEON.
+
+  \emph{You will need to export:}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A CSV of your chromatogram (``TIC in R0'')\\
+  \item
+    A CSV of the mass spectrum for each compound you are analyzing.
+  \end{itemize}
+\item
+  Transfer the data to your lab notebook folder and complete your analysis.
+\item
+  Plot your chromatogram as \emph{Relative Abundance (\%)} vs.~\emph{Time (minutes)}. (See Appendix 2 for R examples)
+\item
+  Plot your mass spectra as \emph{Relative Abundance (\%)} vs.~\emph{m/z}. (See Appendix 2 for R examples)
+\item
+  Clearly identify the base peak, the molecular ion, and any important isotope peaks. Also state how many rings and double bonds your molecule has, and whether it has an odd or even number of nitrogen atoms. Provide a formula, common name, and molecular weight for each compound. You must show your calculations for all of these items. See the \href{/chem370/guides/mass-spec}{mass spec guide} for help with interpretation. Does your interpretation match the library?
+\end{enumerate}
+
+\newpage
+
+\hypertarget{am-faas}{%
+\section{Flame AA}\label{am-faas}}
+
+Flame atomic absorption spectroscopy is a common method of determining the concentration of specific metals (cations) in a sample. A solution is nebulized (aerosolized) into an acetylene flame where it is atomized (broken apart into its constituent atoms). The atoms in the flame absorb characteristic wavelengths of light, unique to each element. A light source specific to the analyte of interest (specifically, a hollow cathode lamp) shines through the flame, where the light gets absorbed by the sample. The amount of absorption absorbed is linearly proportional to the concentration of the analyte in solution. Although the instrument is relatively robust and inexpensive, it is limited to probing for a single analyte at a time.
+
+The general procedure for this lab is to: (1) grind and dissolve a sample of acetaminophen, (2) prepare standards, blanks, and QCs, (3) run the standards, blank, and QC, and (4) run the samples.
+
+For flame AA, the definitions of ``passing'' are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Blank:} Flat, smooth baseline showing only random noise and/or instrument drift no greater than a few percent over 15 minutes.\\
+\item
+  \textbf{Standard Curve:} A linear line with \(R^2 \ge 0.9990\).\\
+\item
+  \textbf{QC:} A measured concentration within 5\% (\(\pm\) 5\%) of the known concentration.
+\end{enumerate}
+
+This is a quantitative analysis.
+
+\hypertarget{safety-3}{%
+\subsection*{Safety}\label{safety-3}}
+\addcontentsline{toc}{subsection}{Safety}
+
+\begin{itemize}
+\tightlist
+\item
+  Never leave the flame AA unattended when the flame is on.\\
+\item
+  Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
+\end{itemize}
+
+\hypertarget{standard-preparation-1}{%
+\subsection{Standard Preparation}\label{standard-preparation-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Prepare blanks from ultrapure water.
+\item
+  Prepare sodium standards at 1-50 ppm using the stock solution provided. Dilute with ultrapure water using volumetric glassware.
+\item
+  Place your standards in 50 mL plastic centrifuge tubes for analysis.
+\end{enumerate}
+
+\hypertarget{sample-preparation-3}{%
+\subsection{Sample Preparation}\label{sample-preparation-3}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Tare a clean 50-mL centrifuge tube.
+\item
+  Place an acetaminophen tablet in the tube.
+\item
+  Obtain the mass of the tablet in the tube.
+\item
+  Fill to 50 g with ultrapure water.
+\item
+  Place the entire tube in an ultrasonic bath for 5 minutes.
+\item
+  Filter the sample into a clean centrifuge tube using a 0.45 \(\mu\)m syringe filter.
+\end{enumerate}
+
+\hypertarget{running-samples-1}{%
+\subsection{Running Samples}\label{running-samples-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Use the Flame AA SOP to prepare a flame AA \emph{method} file containing your blanks and standards. Use the \texttt{CHEM370\_Acetaminophen} method as a template.
+\item
+  Prepare a \emph{Sample Information File} containing your QC.
+\item
+  Run the blanks, standards, and QC.
+
+  \begin{marginfigure}
+   \textbf{Checkpoint:}
+
+   \begin{itemize}
+   \tightlist
+   \item
+     A passing blank will show no signs of contamination.\\
+   \item
+     A passing standard curve will have \(R^2 \ge 0.9990\).\\
+   \item
+     A passing QC will be within \(\pm\) 5\% of the known concentration.
+   \end{itemize}
+
+   If any of these is not passing you must repeat the analysis and/or
+   remake your standards until they pass!
+   \end{marginfigure}
+\item
+  If everything passes, add your samples to your Sample Information File.
+\item
+  Run your newly-added samples.
+\end{enumerate}
+
+\emph{If you have extra sample, try screening it for other metals! (Ask how.)}
+
+\hypertarget{waste-disposal-and-cleanup-2}{%
+\subsection{Waste Disposal and Cleanup}\label{waste-disposal-and-cleanup-2}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Collect all wastes in the Flame AA waste container.
+\item
+  Place used (empty) centrifuge tubes in the trash.
+\item
+  Wipe up any spilled powder with a paper towel.
+\item
+  Remove the vaping machine tubing and rinse it out with ultrapure water.
+\end{enumerate}
+
+\hypertarget{data-processing-3}{%
+\subsection{Data Processing}\label{data-processing-3}}
+
+\begin{marginfigure}
+You should turn a ZIP folder containing:
+
+\begin{itemize}
+\tightlist
+\item
+  Your complete lab notebook as an .ipynb file, functioning with no
+  errors.\\
+\item
+  Your data files.\\
+\item
+  Your completed
+  \href{https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx}{analysis
+  sheet}.
+\end{itemize}
+\end{marginfigure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Export your data as a CSV using the CHEM 370 template in the Data Manager software.
+\item
+  Use the absorbances of the standards to calculate your standard curve in R.
+\item
+  Use the absorbances of the samples and QCs to calculate the sample and QC concentrations.
+\item
+  Report your concentrations as the mean concentration \(\pm\) 1 SD.
+\item
+  Perform a \emph{t}-test to determine if the sodium concentration is \emph{significantly} different from 0. (See Appendix 3, ``Comparing Means'')
+\end{enumerate}
+
+\hypertarget{reference}{%
+\subsection{Reference}\label{reference}}
+
+{[}1{]} Williams, M.; Li, J.; Talbot, P. Effects of Model, Method of Collection, and Topography on Chemical Elements and Metals in the Aerosol of Tank-Style Electronic Cigarettes. \emph{Sci. Rep.} 2019, 9 (1), 1--14. (doi: 10.1038/s41598-019-50441-4){[}\url{https://doi.org/10.1038/s41598-019-50441-4}{]}.
+
+\hypertarget{appendix-2-r-cookbook}{%
+\chapter*{Appendix 2: R Cookbook}\label{appendix-2-r-cookbook}}
+\addcontentsline{toc}{chapter}{Appendix 2: R Cookbook}
+
+This appendix contains snippets of code you can use to accomplish specific tasks in R. For the most part, you can copy and past this code and change the variable names to perform the tasks listed. Most of the programming tasks you'll need to accomplish in Chem 370 can be found here.
+
+Some of the code is in the form of \emph{functions}. The code for each function should be run once in your notebook, after which point you can use that function just like any built-in R function.
+
+Any code preceded by a \texttt{\#} is a comment and is not interpreted by R.
+
+\hypertarget{chromatogram-mass-spectrum-plotting}{%
+\section*{Chromatogram \& Mass Spectrum Plotting}\label{chromatogram-mass-spectrum-plotting}}
+\addcontentsline{toc}{section}{Chromatogram \& Mass Spectrum Plotting}
+
+Chromatograms and mass spectra are often normalized to the maximum value in the chromatogram to give a \(y\)-axis in \emph{Relative Abundance}, either as a fraction (0-1) or percentage (0-100\%). The following example assumes a data frame with \emph{Time} as column 1 and \emph{Detector Signal} as column 2.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{### add a new column (3) that is the detector signal divided by the maximum detector signal.}
+\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] =}\StringTok{ }\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{] }\OperatorTok{/}\StringTok{ }\KeywordTok{max}\NormalTok{(chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{]) }\OperatorTok{*}\StringTok{ }\DecValTok{100}\NormalTok{;}
+\end{Highlighting}
+\end{Shaded}
+
+For chromatograms, it may sometimes be desirable to baseline correct the data first, as in:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{### add a new column (3) that is baseline corrected}
+\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] =}\StringTok{ }\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{] }\OperatorTok{-}\StringTok{ }\KeywordTok{min}\NormalTok{(chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{])}
+\CommentTok{### normalize the baseline-corrected data and convert to percentage}
+\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] =}\StringTok{ }\NormalTok{chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] }\OperatorTok{/}\StringTok{ }\KeywordTok{max}\NormalTok{(chromatogram[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{]) }\OperatorTok{*}\StringTok{ }\DecValTok{100}
+\end{Highlighting}
+\end{Shaded}
+
+For mass spectra, data are mostly commonly plotted as bar plots instead of line plots. This is because the the ions effectively have discrete, integer masses. The example below assumes you have a data matrix called \texttt{massSpectrum} with \(m/z\) in column 1 and detector signal in column 2.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{### convert to relative abundance}
+\NormalTok{massSpectrum =}\StringTok{ }\NormalTok{massSpectrum[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] }\OperatorTok{/}\StringTok{ }\KeywordTok{max}\NormalTok{(massSpectrum[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{]) }\OperatorTok{*}\StringTok{ }\DecValTok{100}
+
+\CommentTok{### plot as bar plot}
+\KeywordTok{bar}\NormalTok{(massSpectrum[}\OperatorTok{:}\NormalTok{, }\DecValTok{1}\NormalTok{], massSpectrum[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\centering
+\includegraphics{./images/chromatogram.png}
+\caption{Example of a chromatogram that has been properly normalized for comparison to other data.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{./images/mass-spectrum.png}
+\caption{Example of a mass spectrum that has been properly normalized to the base peak. The mass spectrum was acquired at the time indicated by the dashed line in the chromatogram above.}
+\end{figure}
+
+\hypertarget{import-data-from-csv}{%
+\section*{Import Data from CSV}\label{import-data-from-csv}}
+\addcontentsline{toc}{section}{Import Data from CSV}
+
+Reads data from CSV file. Must be comma delimited.
+
+\textbf{Example:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{X <-}\StringTok{ }\KeywordTok{csv.read}\NormalTok{(}\StringTok{"filename.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{find-peak-area}{%
+\section*{Find Peak Area}\label{find-peak-area}}
+\addcontentsline{toc}{section}{Find Peak Area}
+
+Returns area under curve (integrates peak) for 2-column matrix \texttt{C} from limits \texttt{x1} to \texttt{x2}.
+
+\textbf{Form:}
+
+\texttt{peakArea(C,\ x1,\ x2,\ p\ =\ true)}
+
+\textbf{Example:}
+
+\texttt{A\ =\ peakArea({[}chromatogram(:,\ "TIME\ COLUMN"),\ chromatogram(:,\ "Signal\ Column"){]},\ 1.7,\ 2.05);}
+
+finds the area of chromatogram from 1.7 to 2.05 time units and plots the result.
+
+\textbf{Arguments:}
+
+\begin{itemize}
+\item
+  \texttt{C}: 2-column matrix with \(x\) data in column 1 and \(y\) data in column 2 (numeric matrix)
+\item
+  \texttt{x1}: The lower limit of integration (numeric value)
+\item
+  \texttt{x2}: The upper limit of integration (numeric value)
+\item
+  \texttt{p}: whether or not to plot the result (boolean, \texttt{true/false})
+\end{itemize}
+
+\textbf{Code:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#####   peakArea   ##################################################}
+
+\ControlFlowTok{function}\NormalTok{ a }\OperatorTok{=}\NormalTok{ peakArea(C}\OperatorTok{,}\NormalTok{ x1}\OperatorTok{,}\NormalTok{ x2}\OperatorTok{,}\NormalTok{ p }\OperatorTok{=} \FunctionTok{true}\NormalTok{)}
+\NormalTok{    x }\OperatorTok{=}\NormalTok{ C((C(}\OperatorTok{:,}\FloatTok{1}\NormalTok{) }\OperatorTok{>}\NormalTok{ x1 }\OperatorTok{&}\NormalTok{ C(}\OperatorTok{:,}\FloatTok{1}\NormalTok{) }\OperatorTok{<}\NormalTok{ x2)}\OperatorTok{,} \FloatTok{1}\NormalTok{)}\OperatorTok{;}
+\NormalTok{    y }\OperatorTok{=}\NormalTok{ C((C(}\OperatorTok{:,}\FloatTok{1}\NormalTok{) }\OperatorTok{>}\NormalTok{ x1 }\OperatorTok{&}\NormalTok{ C(}\OperatorTok{:,}\FloatTok{1}\NormalTok{) }\OperatorTok{<}\NormalTok{ x2)}\OperatorTok{,} \FloatTok{2}\NormalTok{)}\OperatorTok{;}
+\NormalTok{    a }\OperatorTok{=} \FunctionTok{trapz}\NormalTok{(x}\OperatorTok{,}\NormalTok{ y)}\OperatorTok{;}
+    \ControlFlowTok{if}\NormalTok{ p }\OperatorTok{==} \FunctionTok{true}
+        \FunctionTok{plot}\NormalTok{(C[}\OperatorTok{:,} \FloatTok{1}\NormalTok{]}\OperatorTok{,}\NormalTok{ C[}\OperatorTok{:,} \FloatTok{2}\NormalTok{])}\OperatorTok{;}
+        \FunctionTok{hold}\NormalTok{ on}
+        \FunctionTok{area}\NormalTok{(x}\OperatorTok{,}\NormalTok{y)}\OperatorTok{;}
+        \FunctionTok{xlabel}\NormalTok{(}\StringTok{"Time"}\NormalTok{)}\OperatorTok{;}
+        \FunctionTok{ylabel}\NormalTok{(}\StringTok{"Signal (arbitrary units)"}\NormalTok{)}
+        \FunctionTok{hold}\NormalTok{ off}
+        \FunctionTok{disp}\NormalTok{([}\StringTok{"Peak Area = "}\OperatorTok{,} \FunctionTok{num2str}\NormalTok{(a)])}
+    \ControlFlowTok{end}
+\ControlFlowTok{end}
+\CommentTok{#####################################################################}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{fit-linear-model-calibration}{%
+\section*{Fit Linear Model (Calibration)}\label{fit-linear-model-calibration}}
+\addcontentsline{toc}{section}{Fit Linear Model (Calibration)}
+
+Returns slope, intercept, \(R^2\), and line of best fit data of best fit line given a data frame containing \(x\) (usually concentration) and \(y\) (signal) data.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{calcurve =}\StringTok{ }\KeywordTok{lm}\NormalTok{(y }\OperatorTok{~}\StringTok{ }\NormalTok{x)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{ir-spectrum-processing}{%
+\section*{IR Spectrum Processing}\label{ir-spectrum-processing}}
+\addcontentsline{toc}{section}{IR Spectrum Processing}
+
+IR spectra will be collected as \emph{Absorbance} vs.~\emph{Frequency (in wavenumbers)}. You will use this to calculate the hit-quality index (HQI) of each spectrum compared to a reference sample. Read \href{https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments}{Rodriguez et al 2011} for more information on HQI.
+
+The examples below assume \texttt{X} is defined as a spectrum containing \emph{wavenumber} as the first column and \emph{absorbance} and the second column.
+
+\hypertarget{pre-processing}{%
+\subsection*{Pre-processing}\label{pre-processing}}
+\addcontentsline{toc}{subsection}{Pre-processing}
+
+Often, IR spectra are normalized for comparison to each other. This is done by baseline correcting the spectra so that the minimum value is zero (i.e.~subtracting the minimum value in the spectrum) and setting the maximum value of each spectrum to 1 (i.e.~dividing by the maximum value). This approach is shown below. An alternative approach is \emph{mean centering}, which is not shown here.
+
+You should show your normalized data when comparing spectra in your lab notebooks or reports (at least for Chem 370 lab).
+
+\textbf{Baseline the data:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{X[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] <-}\StringTok{ }\NormalTok{X[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{] }\OperatorTok{-}\StringTok{ }\KeywordTok{min}\NormalTok{(X[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{])  }\CommentTok{# subtract minimum abs. from all abs. values a new column}
+\CommentTok{### Do this for all 3 of your spectra}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Normalize the data to 1:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{X[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] <-}\StringTok{ }\NormalTok{X[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{] }\OperatorTok{/}\StringTok{ }\KeywordTok{max}\NormalTok{(X[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{])  }\CommentTok{# divide all baselined abs. values by max abs. value}
+\CommentTok{### Do this for all 3 of your spectra}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Take the mean of 3 spectra:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{### Put your three spectra in a 3-column matrix}
+\NormalTok{sample_A <-}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(X[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{], }\KeywordTok{X_2}\NormalTok{(}\OperatorTok{:}\NormalTok{,}\DecValTok{2}\NormalTok{), X_}\DecValTok{3}\NormalTok{[}\OperatorTok{:}\NormalTok{, }\DecValTok{2}\NormalTok{])}
+
+\CommentTok{### Then, take the mean across rows}
+\NormalTok{sample_A <-}\StringTok{ }\KeywordTok{rowMeans}\NormalTok{(sample_A) }
+
+\CommentTok{### Do this for both samples and the reference}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{hit-quality-index-calculation}{%
+\subsection*{Hit-quality Index Calculation}\label{hit-quality-index-calculation}}
+\addcontentsline{toc}{subsection}{Hit-quality Index Calculation}
+
+The hit-quality index is defined as:
+
+\[
+HQI = \frac{(\text{Reference} \cdot \text{Sample})^2}{(\text{Reference} \cdot \text{Reference}) \times (\text{Sample} \cdot \text{Sample})}
+\]
+
+Note that the dot is the \emph{dot product}, NOT multiplication! The dot product is easily calculated in Octave with the \texttt{dot()} function. The example below assumes you have created a matrix with the normalize absorbance in column 3 as per the examples above.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{dot}\NormalTok{(Ref[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{], X[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{])}\OperatorTok{^}\DecValTok{2} \OperatorTok{/}\StringTok{ }\NormalTok{(}\KeywordTok{dot}\NormalTok{(Ref[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{], Ref[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{]) }\OperatorTok{*}\StringTok{ }\KeywordTok{dot}\NormalTok{(X[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{], X[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{]))}
+\CommentTok{### do this for both samples}
+\end{Highlighting}
+\end{Shaded}
+
+This produces a single value that should be less than 1. If your answer does not meet these criteria try the calculation again.
+
+\hypertarget{plotting-ir-spectra}{%
+\subsection*{Plotting IR Spectra}\label{plotting-ir-spectra}}
+\addcontentsline{toc}{subsection}{Plotting IR Spectra}
+
+You should always plot your normalized data when comparing spectra in your lab notebooks or reports (at least for Chem 370 lab).
+
+Note that (according to IUPAC convention) spectra are always plotted with higher energy on the left and lower energy on the right side of the \(x\)-axis. For IR spectra displayed with frequency as \(x\), this means you have to reverse the axis to be in reverse order, such that it go from higher frequency (higher energy, smaller wavelength) to lower frequency (lower energy, longer wavelength).
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{plot}\NormalTok{(}
+\NormalTok{  X[}\OperatorTok{:}\NormalTok{, }\DecValTok{1}\NormalTok{], sample_A, }
+  \DataTypeTok{xlim =} \KeywordTok{c}\NormalTok{(}\DecValTok{4000}\NormalTok{, }\DecValTok{600}\NormalTok{), }\DataTypeTok{ylim =} \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{)}
+  \DataTypeTok{xlab =} \StringTok{"Frequency (cm^-1)"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"Normalized Absorbance"}
+\NormalTok{)}
+\KeywordTok{lines}\NormalTok{(X_}\DecValTok{2}\NormalTok{[}\OperatorTok{:}\NormalTok{, }\DecValTok{1}\NormalTok{], sample_B)}
+\KeywordTok{lines}\NormalTok{(Ref[}\OperatorTok{:}\NormalTok{, }\DecValTok{1}\NormalTok{], Ref[}\OperatorTok{:}\NormalTok{, }\DecValTok{3}\NormalTok{])}
+
+\CommentTok{### Make sure you include a legend too!}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+\centering
+\includegraphics{./images/ir-spectrum-example.png}
+\caption{Example of IR spectra that have been baselined, normalized, and plotted with a reversed (correct) x-axis.}
+\end{figure}
+
+\hypertarget{serial-dilution}{%
+\section*{Serial Dilution}\label{serial-dilution}}
+\addcontentsline{toc}{section}{Serial Dilution}
+
+Returns standard concentrations based on serial dilutions of a stock solution.
+
+\textbf{Form:}
+
+\texttt{serialDilution(stock,\ pipettes,\ flasks)}
+
+\textbf{Example:}
+
+\texttt{serialDilution(100.2,\ {[}5\ 10\ 10{]},\ {[}50\ 50\ 50{]});}
+
+\textbf{Arguments:}
+
+\begin{itemize}
+\item
+  \texttt{stock}: a scalar indicating the concentration of the stock solution.
+\item
+  \texttt{pipettes}: a column vector containing the volumes of the pipettes used (in order). Volume units should match \texttt{flasks}.
+\item
+  \texttt{flasks}: a column vector containing the volumes of the volumetric flasks used (in same order as \texttt{pipettes}). Volume units should match \texttt{pipettes}.
+\end{itemize}
+
+\textbf{Code:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{function}\NormalTok{ concentrations }\OperatorTok{=}\NormalTok{ serialDilution(stock}\OperatorTok{,}\NormalTok{ pipettes}\OperatorTok{,}\NormalTok{ flasks)}
+\NormalTok{    concentrations }\OperatorTok{=}\NormalTok{[]}\OperatorTok{;}
+    \ControlFlowTok{for} \FunctionTok{i} \OperatorTok{=} \FloatTok{1}\OperatorTok{:}\FunctionTok{length}\NormalTok{(pipettes)}
+        \ControlFlowTok{if} \FunctionTok{i} \OperatorTok{==} \FloatTok{1}
+\NormalTok{            concentrations(}\FunctionTok{i}\NormalTok{) }\OperatorTok{=}\NormalTok{ stock }\OperatorTok{*}\NormalTok{ pipettes(}\FunctionTok{i}\NormalTok{)}\OperatorTok{/}\NormalTok{flasks(}\FunctionTok{i}\NormalTok{)}\OperatorTok{;}  \CommentTok{# calculate first dilution}
+        \ControlFlowTok{else}
+\NormalTok{            concentrations(}\FunctionTok{i}\NormalTok{) }\OperatorTok{=}\NormalTok{ concentrations(}\FunctionTok{i}\OperatorTok{-}\FloatTok{1}\NormalTok{) }\OperatorTok{*}\NormalTok{ pipettes(}\FunctionTok{i}\NormalTok{)}\OperatorTok{/}\NormalTok{flasks(}\FunctionTok{i}\NormalTok{)}\OperatorTok{;} \CommentTok{# calculate all other dilutions}
+        \ControlFlowTok{end}
+    \ControlFlowTok{end}
+\NormalTok{    concentrations }\OperatorTok{=} \FunctionTok{flip}\NormalTok{(concentrations)}\OperatorTok{';} \CommentTok{# reverse the vector from lowest to highest and transpose to column vector}
+\ControlFlowTok{end}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{appendix-3-statistical-data-analysis}{%
+\chapter*{Appendix 3: Statistical Data Analysis}\label{appendix-3-statistical-data-analysis}}
+\addcontentsline{toc}{chapter}{Appendix 3: Statistical Data Analysis}
+
+Throughout this course, you should use statistical measures when analyzing your data and drawing conclusions. You are expected to:
+
+\begin{itemize}
+\tightlist
+\item
+  Record and report the correct number of significant digits.
+\item
+  Track uncertainties and propagate them in calculations.
+\item
+  Identify and report sources of error.
+\item
+  Analyze samples in triplicate and report the mean and standard deviation of your measurements.
+\item
+  Perform \emph{t}-tests to compare means when necessary.
+\item
+  Perform Grubbs' tests to detect outliers when necessary.
+\item
+  Determine and report the limit of detection and/or limit of quantitation for each technique when conducting quantitative work.
+\end{itemize}
+
+Please read Chapter 22 in your textbook for a refresher on statistical data analysis.
+
+\hypertarget{types-of-error}{%
+\section*{Types of Error}\label{types-of-error}}
+\addcontentsline{toc}{section}{Types of Error}
+
+You will make many mistakes when analyzing your samples, and that's OK! The important thing is that you can recognize when you've made a mistake and figure out how to correct it.
+
+\hypertarget{gross-error}{%
+\paragraph{\texorpdfstring{\textbf{Gross Error}}{Gross Error}}\label{gross-error}}
+\addcontentsline{toc}{paragraph}{\textbf{Gross Error}}
+
+Gross error occurs when the analyst makes a mistake. For example, you may make your standards too concentrated, dilute a sample incorrectly, or record a value incorrectly in your lab notebook. If only one sample is affected, you can use a Grubb's test to identify the sample as an outlier and exclude it. If the error affects all your samples, you may need to start over.
+
+See Section 22.2 in your textbook for more information.
+
+\hypertarget{systematic-error}{%
+\paragraph{\texorpdfstring{\textbf{Systematic Error}}{Systematic Error}}\label{systematic-error}}
+\addcontentsline{toc}{paragraph}{\textbf{Systematic Error}}
+
+Systematic error occurs when a measurement is systematically high or low, usually the result of instrument drift, improper calibration, or habitual misuse of laboratory glassware (for example, filling to the top of the meniscus instead of the bottom). If your systematic error is big enough you may need to redo your analysis.
+
+See Section 22.2 in your textbook for more information.
+
+\hypertarget{random-error}{%
+\paragraph{\texorpdfstring{\textbf{Random Error}}{Random Error}}\label{random-error}}
+\addcontentsline{toc}{paragraph}{\textbf{Random Error}}
+
+Random error occurs due to unpredictable (statistically random) fluctuations in instrument response, pipette delivery volumes, balance fluctations, etc. A key factor of random error is that it averages out as the sample size increases. Generally, there is little that can be done to eliminate random error other than increasing the averaging time and/or number of samples.
+
+See Section 22.2 in your textbook for more information.
+
+\hypertarget{replicate-measurements}{%
+\section*{Replicate Measurements}\label{replicate-measurements}}
+\addcontentsline{toc}{section}{Replicate Measurements}
+
+Most unknown samples should be analyzed in triplicate. You should measure the sample three separate times and report the mean, standard deviation, and relative standard deviation of each measurement. See section 22.4 in your textbook for more information. An example results table is shown below.
+
+\textbf{Table 1: Sulfate concentration in multivitamin pills}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Sample ID & {[}Sulfate{]} (ppm) & SD (ppm) & RSD (\%)\tabularnewline
+\midrule
+\endhead
+254-9846 & 50.13 & 4.63 & 9.2\tabularnewline
+254-9849 & 78.55 & 5.78 & 7.36\tabularnewline
+\bottomrule
+\end{longtable}
+
+In Octave, the mean is:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{1} \DecValTok{2} \DecValTok{3}\NormalTok{)}
+\NormalTok{avg <-}\StringTok{ }\KeywordTok{mean}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+The standard deviation is:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{, }\DecValTok{3}\NormalTok{)}
+\NormalTok{sd <-}\StringTok{ }\KeywordTok{std}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+The relative standard deviation (RSD, in percent) is:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{rsd =}\StringTok{ }\NormalTok{sd}\OperatorTok{/}\NormalTok{avg }\OperatorTok{*}\StringTok{ }\DecValTok{100}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{limits-of-detection-and-quantitation}{%
+\section*{Limits of Detection and Quantitation}\label{limits-of-detection-and-quantitation}}
+\addcontentsline{toc}{section}{Limits of Detection and Quantitation}
+
+For this course, the \emph{Limit of Detection} (\(LOD_y\)) is defined as 3 times the standard deviation of a blank measurement, \(y_blank\), plus the mean value of the blank (\(\bar{y}_{blank}\)). This is the 3\(\sigma\) detection limit and is represented as:
+
+\[
+LOD_y = \bar{y}_{blank} + 3\sigma_{blank}
+\]
+
+When a calibration plot (standard curve) is used, this becomes:
+
+\[
+LOD_x = \frac{3\sigma_{blank}}{m}
+\]
+
+\noindent where \(m\) is the slope of the calibration curve and \(LOD_x\) is the LOD in the concentration units of the calibration curve.
+
+The \emph{Limit of Quantitation} (\(LOQ_y\)) is defined as 10 times the standard deviation of the blank:
+
+\[
+LOQ_y = \bar{y}_{blank} + 10\sigma_{blank}
+\]
+
+When a calibration plot (standard curve) is used, this becomes:
+
+\[
+LOQ_x = \frac{10\sigma_{blank}}{m}
+\]
+
+\hypertarget{comparing-means}{%
+\section*{Comparing Means}\label{comparing-means}}
+\addcontentsline{toc}{section}{Comparing Means}
+
+If you are comparing two means or comparing a mean to an expected value (e.g.~comparing the concentration of a compound to the concentration listed on the manufacturer's label), you should use a \emph{t}-test to draw you conclusions. A \emph{t}-test can be performed in R using the \texttt{t.test()} function.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{measurements <-}\StringTok{ }\KeywordTok{rnorm}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{)  }\CommentTok{# this is your sample vector}
+\NormalTok{expected_value <-}\StringTok{ }\FloatTok{0.5}
+\KeywordTok{t.test}\NormalTok{(measurements, expected_value)}
+\end{Highlighting}
+\end{Shaded}
+
+If the output is 0, the sample mean is not significantly different from the provided mean at the 95\% confidence interval. If the output is 1, the means are significantly different at the 95\% confidence interval. Run \texttt{?t.test()} in R for more information.
+
+\hypertarget{outlier-detection}{%
+\section*{Outlier Detection}\label{outlier-detection}}
+\addcontentsline{toc}{section}{Outlier Detection}
+
+You should never throw away data unless you have a good reason to do. Generally, this means that you've identified the data point as an outlier using a Grubbs' test. See section 22.4 in your textbook for more information.
+
+\hypertarget{appendix-4-lab-notebook-guidelines}{%
+\chapter*{Appendix 4: Lab Notebook Guidelines}\label{appendix-4-lab-notebook-guidelines}}
+\addcontentsline{toc}{chapter}{Appendix 4: Lab Notebook Guidelines}
+
+Your lab notebook is the single \textbf{\emph{exact, permanent, legally defensible, archival record}} of what you did in lab. In an academic setting, notebooks are often used by the person who wrote the notebook or a lab colleague when trying to repeat an experiment, process data, or publish results. In a professional setting, they may be used to communicate work to new employees, defend against patent lawsuits, or support forensic or toxicological conclusions in a court of law. A good test of your lab notebook is to imagine handing it to a peer who has never completed the lab. Then, try to determine if there would enough information for them to (1) complete the lab with no other resources, (2) \textbf{\emph{exactly}} repeat your data analysis and calculations and arrive at the \textbf{\emph{exact}} same answer (including all significant digits), and (3) understand your conclusions and how you arrived at those conclusions. When in doubt, it's better to include too much than too little!
+
+Instrumental analysis presents unique challenges when it comes to keeping lab notebooks. Often, the final data collected is a spectrum or chromatogram with thousands of data points. Instruments save this directly in an electronic format, and archiving it in a paper lab notebook is often unfeasible. To deal with that, this lab uses electronic lab notebooks. You should use your electronic lab notebook exactly as you've used paper notebooks in the past -- record \textbf{\emph{exactly}} what you did in lab \emph{as you do it} (not afterwards!). Include direct observations as necessary. In addition, you will be required to link all data files to your notebook so that your analysis can be exactly repeated and checked for accuracy.
+
+In an effort to conduct reproducible data analysis, you will use open-source tools for programmatic data analysis. Your notebook will be kept using \textbf{RMarkdown} and your data will be analyzed directly in your notebook using \textbf{R}.
+
+\hypertarget{example-lab-notebooks}{%
+\subsection*{Example Lab Notebooks}\label{example-lab-notebooks}}
+\addcontentsline{toc}{subsection}{Example Lab Notebooks}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{../notebooks/good-example/}{Good Example} \emph{Note: data processing in this example was done in the language Julia, not R.}\\
+\item
+  \href{../notebooks/bad-example/}{Bad Example} \emph{Note: data processing in this example was done in the language Julia, not R.}\\
+\item
+  \href{../notebooks/bad-example-2/}{Bad Example 2} \emph{Note: data processing in this example was done in the language Julia, not R.}
+\end{itemize}
+
+\hypertarget{keeping-an-archival-record}{%
+\subsection*{Keeping an Archival Record}\label{keeping-an-archival-record}}
+\addcontentsline{toc}{subsection}{Keeping an Archival Record}
+
+To maintain an archival record, the lab notebook should:
+
+\begin{itemize}
+\tightlist
+\item
+  contain an \textbf{\emph{exact}} record of what you \textbf{\emph{did}} (past tense);
+\item
+  show \textbf{\emph{all}} procedures and calculations, instrument parameters, and pertinent conclusions and background information;
+\item
+  consist of functional code that can be run by another individual with no errors.
+\end{itemize}
+
+\hypertarget{writing-your-procedures}{%
+\subsection*{Writing Your Procedures}\label{writing-your-procedures}}
+\addcontentsline{toc}{subsection}{Writing Your Procedures}
+
+\begin{itemize}
+\item
+  Write all procedures in \emph{past tense}. Do not just copy the handout.
+
+  \begin{itemize}
+  \item
+    \emph{Good:} I added 1.0162 g of acetaminophen to a 200-mL volumetric flask and brought to volume with ultrapure water.
+  \item
+    \emph{Bad:} \sout{Add 1 g of acetaminophen to 200 mL of water.}
+  \item
+    \emph{Explanation:} The lab notebook is a record of what you did, not a cookbook. If you were telling a friend about your vacation you wouldn't say ``Get on a plane. Fly to Europe. Go to hotel.'', you would say ``I flew from Atlanta to Paris, and then stayed at a hotel in the city center.'' Your lab notebook is no different.
+
+    More importantly, the difference in significant digits is drastic. In the first example, the results will be limited to 5 significant digits by the balance (the balance reports 4 decimal places, or 5 SF in this case, and the volumetric flask contains 200 +/- 0.15 mL); in the second, all that precision has been thrown away and we're left with a single significant digit.
+
+    Finally, the second provides no indication as to the purity of the water used, although this is very important for trace instrumental analysis.
+  \end{itemize}
+\item
+  Include direct observations.
+
+  \begin{itemize}
+  \item
+    \emph{Good:} Upon collection, I saw that the e-cigarette liquid had turned from clear-yellow to clear-brown after aerosolization.
+  \item
+    \emph{Bad:} \sout{e-Cigarette liquid was collected.}
+  \item
+    \emph{Explanation:} The first example includes pertinent observations of exactly what occurred when the step was performed. This helps someone who is doing the lab for the first time know what to expect, and helps you remember what happened when you're going back through your notes. Importantly, the color change probably indicates a chemical change occured in the sample, which may be worth investigating later.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{significant-figures}{%
+\subsection*{Significant Figures}\label{significant-figures}}
+\addcontentsline{toc}{subsection}{Significant Figures}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Balances:} In general, your significant digits should be limited by the balance. The exact number may depend on which balance you use. Be sure to record all digits on the balance when mass is important, even if they are zeroes; if the last digit fluctuates do the best you can to estimate it. Remember you do NOT have to weigh out the masses exactly as they appear on the worksheet -- what matters is that you get close and that you record the actual \emph{exact} mass you used!
+\item
+  \textbf{Volumetric Glassware:} All volumetric pipettes and flasks should be labeled with the volume of water they deliver or contain at room temperature along with the error associated with that volume. Use this to determine your significant digits. Flasks should be used \emph{to contain} liquid (marked TC) and pipettes should be used \emph{to deliver} liquid (marked TD); if your pipette has lines for both make sure you use the correct one (TD).
+\item
+  \textbf{Graduated cylinders:} For small volumes, these typically have 3 significant digits. You should interpolate to at least the nearest 0.5 mL when using a graduated cylinder. Again, there is a large difference between recording 10 ml and 10.5 ml in your notebook in regards to significant figures (1 vs 3)! Most work in instrumental analysis should use volumetric glassware and not graduated cylinders.
+\item
+  \textbf{Beakers/Erlenmeyer Flasks:} These should not be used to measure volumes in instrumental analysis..
+\end{itemize}
+
+\hypertarget{creating-instrument-tables}{%
+\subsection*{Creating Instrument Tables}\label{creating-instrument-tables}}
+\addcontentsline{toc}{subsection}{Creating Instrument Tables}
+
+You are expected to provide a table of all relevant instrument information in your lab notebook for each instrument you use. There is no specific formula for creating these -- the information you need depends on the instrument. The best way to learn what to include is to look at examples, a few of which are linked below. You will need to look in the instrument method (in the software) and sometimes on the physical instrument itself to find the information you need. If you're weary about opening an instrument up to look, please ask for help!
+
+\textbf{Example Instrument Table for HPLC:}\\
+- \href{https://www.osha.gov/dts/sltc/methods/mdt/mdt1007/1007.pdf}{OSHA Method 1007} (see p.~15, under Section 3.5, ``Liquid chromatograph conditions'')
+
+\textbf{Example Instrument Table for Flame AA:}\\
+- Flame AA: \href{https://www.perkinelmer.com/lab-solutions/resources/docs/PinAAcleMineralsinVitaminsbyFAAAppNote.pdf}{Perkin Elmer Application Note} (See Table 1)
+
+\textbf{Example Instrument Table for FT-IR:}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Parameter & Value\tabularnewline
+\midrule
+\endhead
+Make \& Model & Thermo-Nicolet iS10\tabularnewline
+Sampling Configuration & Diamond ATR Cell\tabularnewline
+Scan Range (cm-1) & 4000-600\tabularnewline
+Resolution (cm-1) & 0.5\tabularnewline
+No.~Scans & 64\tabularnewline
+Sampling Arrangement & Diamond ATR\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Example Instrument Table for GC-MS:}
+
+\emph{Note: these are} examples \emph{-- the actual parameters you used may be different!}
+
+\textbf{Table 1: GC Method}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Parameter & Value\tabularnewline
+\midrule
+\endhead
+Make \& Model & Agilent 5890\tabularnewline
+Column & HP-5ms\tabularnewline
+Carrier & UHP He @ 9 psi\tabularnewline
+Injection Port Temp (°C) & 250\tabularnewline
+Initial Oven Temp & 30°C for 1 min\tabularnewline
+Oven Ramp Rate & 30°C per min\tabularnewline
+Final Oven & 250°C for 3 min\tabularnewline
+Detector & Mass Spectrometer\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Table 2: MS Parameters}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+Parameter & Value\tabularnewline
+\midrule
+\endhead
+Make \& Model & Agilent 5975C\tabularnewline
+Source & Electron Ionization\tabularnewline
+Mass Filter & Quadrupole\tabularnewline
+Detector & Electron Multiplier\tabularnewline
+Acquisition Mode & Scan\tabularnewline
+Scan Range & 30 - 400 m/z\tabularnewline
+Scan Speed & Normal\tabularnewline
+Source Temp & 250°C\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{the-block-diagram}{%
+\subsection*{The Block Diagram}\label{the-block-diagram}}
+\addcontentsline{toc}{subsection}{The Block Diagram}
+
+Your block diagram should illustrate the main parts of the instrument and provide clear labels for all parts. An example of a UV-vis block diagram is shown below. Notice that the main parts of the instrument are clearly shown with a labels. Colors, shapes, images, and line thickness are used to convey information as well. For example, the filter wheel selects green light from the broad-spectrum source so the light path is shown in green after that point. Likewise, the beam splitter sends a fraction of the beam through the reference cell and the rest to the sample; thus, the line width is varied to show this.
+
+There is no specific formula for creating a block diagram -- your goal is to clearly, but succinctly, convey the key components and operating principle behind the instrument. The best way to learn how to make one is to look at examples. Your textbook has examples for most (if not all) the instruments it covers, and there are innumerable examples online on the websites of instrument manufacturers, in scientific papers, and in online encyclopedias. Take a look around and get some ideas, and then make your own. (And don't just copy one you found!)
+
+\textbf{Need help making the diagram or getting it into your notebook? Watch these videos:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Working with images in Jupyter and Exporting Images from Octave for your Report: \href{https://wcu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57aa8a5b-df1d-4004-927a-ab90001bc595}{Panopto Video}
+\item
+  Making a block diagram {[}Editing in Progress{]}
+\end{enumerate}
+
+\hypertarget{appendix-5-schedule-of-labs}{%
+\chapter*{Appendix 5: Schedule of Labs}\label{appendix-5-schedule-of-labs}}
+\addcontentsline{toc}{chapter}{Appendix 5: Schedule of Labs}
+
+\emph{This schedule is subject to change as needed.}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+\begin{minipage}[b]{0.04\columnwidth}\raggedright
+Week\strut
+\end{minipage} & \begin{minipage}[b]{0.13\columnwidth}\raggedright
+Week Beginning\strut
+\end{minipage} & \begin{minipage}[b]{0.32\columnwidth}\raggedright
+Lab Activity\strut
+\end{minipage} & \begin{minipage}[b]{0.40\columnwidth}\raggedright
+Due\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+1\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+8/17\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Safety Lecture, Intro to R/Markdown\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Markdown Tutorial, R Tutorial (honor system)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+2\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+8/24\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+GC Lab\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+3\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+8/31\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+GC Data Analysis\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+GC Notebook + Worksheet\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+4\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+9/7\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+UV-vis Lab\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+5\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+9/14\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+UV-vis Data Analysis\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+UV-vis Notebook + Worksheet\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+6\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+9/21\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Instrument Quizzes Passed\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+7\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+9/28\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\emph{Writing Workshop}\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+8\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+10/5\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+9\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+10/12\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Notebook 1 + 2\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+10\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+10/19\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Intro + Methods\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+11\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+10/26\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+12\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+11/2\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+All 4 Notebooks, All 4 Analysis Worksheets\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+13\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+11/9\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Rotations\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Full Draft\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+14\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+11/16\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+Lab \& Instrument Clean\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Peer Review\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+15\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+11/23\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\emph{No Labs (Thanksgiving)}\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.04\columnwidth}\raggedright
+15\strut
+\end{minipage} & \begin{minipage}[t]{0.13\columnwidth}\raggedright
+11/23\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright
+\emph{No Labs (Final Exams)}\strut
+\end{minipage} & \begin{minipage}[t]{0.40\columnwidth}\raggedright
+Final Report\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Students will be required to attend instrumentation workshops outside of class to learn how to use each instrument. They will take a multiple-choice test to get a certification for that instrument. Each student must be certified before using an instrument. This certification contributes to your grade through SLO \#1 on the syllabus.
+
+
+
+\end{document}

@@ -177,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
@@ -356,18 +357,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="running-samples-1" class="section level3">
 <h3><span class="header-section-number">5.4.3</span> Running Samples</h3>
 <ol style="list-style-type: decimal">
-<li><p>Use the Flame AA SOP to prepare a flame AA <em>method</em> file containing your blanks and standards. Use the <code>CHEM370_Acetaminophen</code> method as a template.</p></li>
-<li><p>Prepare a <em>Sample Information File</em> containing your QC.</p></li>
-<li><p>Run the blanks, standards, and QC.</p>
-<pre class="marginfigure"><code>**Checkpoint:**
-
-- A passing blank will show no signs of contamination.  
-- A passing standard curve will have $R^2 \ge 0.9990$.  
-- A passing QC will be within $\pm$ 5% of the known concentration.  
-
-If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!</code></pre></li>
-<li><p>If everything passes, add your samples to your Sample Information File.</p></li>
-<li><p>Run your newly-added samples.</p></li>
+<li>Use the Flame AA SOP to prepare a flame AA <em>method</em> file containing your blanks and standards. Use the <code>CHEM370_Acetaminophen</code> method as a template.</li>
+<li>Prepare a <em>Sample Information File</em> containing your QC.</li>
+<li>Run the blanks, standards, and QC.
+<div class="marginfigure">
+<p>
+<strong>Checkpoint:</strong>
+</p>
+<ul>
+<li>
+A passing blank will show no signs of contamination.<br />
+</li>
+<li>
+A passing standard curve will have <span class="math inline"><span class="math inline">\(R^2 \ge 0.9990\)</span></span>.<br />
+</li>
+<li>
+A passing QC will be within <span class="math inline"><span class="math inline">\(\pm\)</span></span> 5% of the known concentration.
+</li>
+</ul>
+<p>
+If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!
+</p>
+</div></li>
+<li>If everything passes, add your samples to your Sample Information File.</li>
+<li>Run your newly-added samples.</li>
 </ol>
 <p><em>If you have extra sample, try screening it for other metals! (Ask how.)</em></p>
 </div>
@@ -382,11 +395,22 @@ If any of these is not passing you must repeat the analysis and/or remake your s
 </div>
 <div id="data-processing-3" class="section level3">
 <h3><span class="header-section-number">5.4.5</span> Data Processing</h3>
-<pre class="marginfigure"><code>You should turn a ZIP folder containing:  
-
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
-- Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx).</code></pre>
+<div class="marginfigure">
+<p>
+You should turn a ZIP folder containing:
+</p>
+<ul>
+<li>
+Your complete lab notebook as an .ipynb file, functioning with no errors.<br />
+</li>
+<li>
+Your data files.<br />
+</li>
+<li>
+Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx">analysis sheet</a>.
+</li>
+</ul>
+</div>
 <ol style="list-style-type: decimal">
 <li>Export your data as a CSV using the CHEM 370 template in the Data Manager software.</li>
 <li>Use the absorbances of the standards to calculate your standard curve in R.</li>
@@ -450,7 +474,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["c370-lab-manual.pdf"],
+"download": null,
 "toc": {
 "collapse": "section",
 "download": "pdf",

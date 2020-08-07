@@ -177,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
@@ -316,6 +317,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="install-r" class="section level2">
 <h2><span class="header-section-number">1.2</span> Installing R + RStudio</h2>
 <p><strong>R</strong> is the programming language we’ll use to process data this semester. We’ll discuss more of the details about what R is and why we’re using it in a few weeks. For now we just need to get it installed and create a basic Markdown document. <strong>RStudio</strong> is a peice of software called an <em>integrated development environment</em> (IDE) that provides a unified interface for all the tools we need to use R. It is <strong><em>highly</em></strong> recommended that you use RStudio to interact with R. The steps below will walk you through installing both of them.</p>
+<p>The following video shows you how to complete the steps listed below:</p>
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/60fdf3dd-97d0-4490-94de-44ffe3a5bcff?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;">
+</iframe>
 <div id="install-r-must-be-done-first" class="section level3">
 <h3><span class="header-section-number">1.2.1</span> Install R (Must be done first)</h3>
 <ol style="list-style-type: decimal">
@@ -346,10 +350,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p><em>If you get a “non-zero exit status” or error message, read through it to see if you find “package ‘XYZ’ not available” and then install the package(s) it mentions. Try installing <code>devtools</code> again after that.</em></p></li>
 <li><p><em>Install the <code>chem370learnR</code> package</em>: In Rstudio, find the <strong>Console</strong> tab in the lower left pane. Copy and paste the following lines <em>exactly</em>:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="install-r.html#cb3-1"></a><span class="kw">require</span>(devtools)</span>
-<span id="cb3-2"><a href="install-r.html#cb3-2"></a><span class="kw">install.packages</span>(<span class="st">&quot;learnr&quot;</span>)</span>
-<span id="cb3-3"><a href="install-r.html#cb3-3"></a><span class="kw">install_github</span>(<span class="st">&quot;rstudio-education/gradethis&quot;</span>)</span>
-<span id="cb3-4"><a href="install-r.html#cb3-4"></a><span class="kw">install_github</span>(<span class="st">&quot;dr-fischer/chem370learnR&quot;</span>)</span></code></pre></div></li>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="install-r.html#cb2-1"></a><span class="kw">require</span>(devtools)</span>
+<span id="cb2-2"><a href="install-r.html#cb2-2"></a><span class="kw">install.packages</span>(<span class="st">&quot;learnr&quot;</span>)</span>
+<span id="cb2-3"><a href="install-r.html#cb2-3"></a><span class="kw">install_github</span>(<span class="st">&quot;rstudio-education/gradethis&quot;</span>)</span>
+<span id="cb2-4"><a href="install-r.html#cb2-4"></a><span class="kw">install_github</span>(<span class="st">&quot;dr-fischer/chem370learnR&quot;</span>)</span></code></pre></div></li>
 </ol>
 <p>The <code>chem370learnR</code> package should now be installed on your system.</p>
 </div>
@@ -402,7 +406,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["c370-lab-manual.pdf"],
+"download": null,
 "toc": {
 "collapse": "section",
 "download": "pdf",

@@ -177,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
@@ -362,13 +363,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>After the instrument has warmed up (stable baseline), run your sequence.</li>
 <li>Analyze your standard curve, blanks, and QC.</li>
 </ol>
-<pre class="marginfigure"><code>**Checkpoint:**  
-
-- A passing blank will show no signs of contamination.  
-- A passing standard curve will have $R^2 \ge 0.9900$.  
-- A passing QC will be within $\pm$ 5% of the known concentration.  
-
-If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!</code></pre>
+<div class="marginfigure">
+<p>
+<strong>Checkpoint:</strong>
+</p>
+<ul>
+<li>
+A passing blank will show no signs of contamination.<br />
+</li>
+<li>
+A passing standard curve will have <span class="math inline"><span class="math inline">\(R^2 \ge 0.9900\)</span></span>.<br />
+</li>
+<li>
+A passing QC will be within <span class="math inline"><span class="math inline">\(\pm\)</span></span> 5% of the known concentration.
+</li>
+</ul>
+<p>
+If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!
+</p>
+</div>
 </div>
 <div id="sample-preparation" class="section level3">
 <h3><span class="header-section-number">5.1.3</span> Sample Preparation</h3>
@@ -415,18 +428,31 @@ If any of these is not passing you must repeat the analysis and/or remake your s
 </div>
 <div id="data-processing" class="section level3">
 <h3><span class="header-section-number">5.1.6</span> Data Processing</h3>
-<pre class="marginfigure"><code>You should turn a ZIP folder containing:  
-
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
-- Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_hplc_data-analysis.xlsx).</code></pre>
+<div class="marginfigure">
+<p>
+You should turn a ZIP folder containing:
+</p>
+<ul>
+<li>
+Your complete lab notebook as an .ipynb file, functioning with no errors.<br />
+</li>
+<li>
+Your data files.<br />
+</li>
+<li>
+Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_hplc_data-analysis.xlsx">analysis sheet</a>.
+</li>
+</ul>
+</div>
 <div id="standard-curve-and-concentrations" class="section level5 unnumbered">
 <h5><strong>Standard Curve and Concentrations</strong></h5>
 <ol style="list-style-type: decimal">
-<li>Use your standards to determine which peak in your sample is acetaminophen.</li>
-</ol>
-<pre class="marginfigure"><code>Don&#39;t disregard the peaks that aren&#39;t acetaminophen.  They contain valuable information that you should discuss.</code></pre>
-<ol style="list-style-type: decimal">
+<li>Use your standards to determine which peak in your sample is acetaminophen.
+<div class="marginfigure">
+<p>
+Don’t disregard the peaks that aren’t acetaminophen. They contain valuable information that you should discuss.
+</p>
+</div></li>
 <li>Use the HPLC software (or R if you prefer) to integrate the acetaminophen peak for each sample.</li>
 <li>Manually record the integration results in your lab notebook</li>
 <li>Calculate a standard curve using a linear model with a floating intercept. Use units of ppm for your standard curve.</li>
@@ -487,7 +513,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["c370-lab-manual.pdf"],
+"download": null,
 "toc": {
 "collapse": "section",
 "download": "pdf",

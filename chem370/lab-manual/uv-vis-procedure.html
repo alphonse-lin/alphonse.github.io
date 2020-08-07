@@ -177,6 +177,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
@@ -319,9 +320,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">3.1.1</span> Prepare Your Standards</h3>
 <ol style="list-style-type: decimal">
 <li><p>Create your standards by diluting one of the 100-ppm quinine stock solutions to concentrations of approximately 100, 75, 40, 20, and 10 ppm using the technique of serial dilution. Use 25 mL volumetric flasks for these dilutions.</p>
-<pre class="marginfigure"><code>It doesn&#39;t matter if you make these concentrations *exactly*, what matters is that you&#39;re in the right ballpark and *know* your concentrations exactly.</code></pre></li>
+<div class="marginfigure">
+<p>
+It doesn’t matter if you make these concentrations <em>exactly</em>, what matters is that you’re in the right ballpark and <em>know</em> your concentrations exactly.
+</p>
+</div></li>
 <li><p>Create a quality control sample from a separate stock solution. Make it roughly 20 ppm. Use a 50 mL volumetric flask.</p>
-<pre class="marginfigure"><code>When creating your QC, make sure you use stock solution from a different lot and preferrably a different manufacturer.  This helps check for contamination in the chemicals received from the supplier.  You should also do your QC calculations entirely from scratch so that you check your math with the QC.</code></pre></li>
+<div class="marginfigure">
+<p>
+When creating your QC, make sure you use stock solution from a different lot and preferrably a different manufacturer. This helps check for contamination in the chemicals received from the supplier. You should also do your QC calculations entirely from scratch so that you check your math with the QC.
+</p>
+</div></li>
 </ol>
 </div>
 <div id="prepare-your-samples" class="section level3">
@@ -341,12 +350,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Select <strong>Fluorescence (405nm)</strong> and click <strong>OK</strong>.<br />
 </p></li>
 <li><p>Select <strong>Experiment &gt; Calibrate &gt; Spectrometer:1</strong> and follow the on-screen instructions.</p>
-<pre class="marginfigure"><code>Your blank should be a cuvette filled with solvent and nothing else.</code></pre></li>
+<div class="marginfigure">
+<p>
+Your blank should be a cuvette filled with solvent and nothing else.
+</p>
+</div></li>
 <li><p>Press <strong>Collect (play button)</strong> and load your sample. When you’re happy with the spectrum press <strong>Stop</strong>. Press <strong>Store</strong> and then double click the stored column header to name your run.</p></li>
 <li><p>Discard the sample, rinse the cuvette with DI water, and repeat the previous step as necessary for each standard/sample.</p>
-<pre class="marginfigure"><code>You should measure each standard once, the QC in triplicate, and the sample in triplicate.
-
-When running your standards, always work from low concentration to high concentration to avoid carryover.</code></pre></li>
+<div class="marginfigure">
+<p>
+You should measure each standard once, the QC in triplicate, and the sample in triplicate.
+</p>
+<p>
+When running your standards, always work from low concentration to high concentration to avoid carryover.
+</p>
+</div></li>
 <li><p>When you are done, go to <strong>File &gt; Export As &gt; CSV…</strong> and save your spectra into a CSV (comma-separated values) file. This file type can be easily read by Octave.</p></li>
 </ol>
 <p>After the spectrometer calibration step you should run:</p>
@@ -363,19 +381,16 @@ When running your standards, always work from low concentration to high concentr
 1. Select **Absorption** and click **OK**.  
 1. Select **Experiment > Calibrate > Spectrometer:1** and follow the on-screen instructions.  
 
-    
-    ```marginfigure
-    Your blank should be a cuvette filled with solvent and nothing else.
-    ```
+    <div class="marginfigure">
+    <p>Your blank should be a cuvette filled with solvent and nothing else.</p>
+    </div>
 1. Press **Collect (play button)** and load your sample.  When you're happy with the spectrum press **Stop**.  Press **Store** and then double click the stored column header to name your run.
 1. Discard the sample, rinse the cuvette with DI water, and repeat the previous step as necessary for each standard/sample.
 
-    
-    ```marginfigure
-    You should measure each standard once, the QC in triplicate, and the sample in triplicate.
-    
-    When running your standards, always work from low concentration to high concentration to avoid carryover.
-    ```
+    <div class="marginfigure">
+    <p>You should measure each standard once, the QC in triplicate, and the sample in triplicate.</p>
+    <p>When running your standards, always work from low concentration to high concentration to avoid carryover.</p>
+    </div>
 -->
 </div>
 <div id="waste-disposal-and-cleanup" class="section level3">
@@ -435,7 +450,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": ["c370-lab-manual.pdf"],
+"download": null,
 "toc": {
 "collapse": "section",
 "download": "pdf",

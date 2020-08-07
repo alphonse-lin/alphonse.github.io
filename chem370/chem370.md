@@ -23,7 +23,7 @@ icon: fa-digital-tachograph
 
 <h1>Course Materials</h1>
 
-<a class="homepage-button" href="{{site.baseurl}}/chem370/assignments/submissions.html">
+<a class="homepage-button" href="{{site.baseurl}}/chem370/submissions.html">
   <i class="fa fa-paper-plane fa-lg"></i>
   assignment submissions
 </a>
