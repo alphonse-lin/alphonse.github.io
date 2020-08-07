@@ -120,3 +120,16 @@ navigation-370:
   - title: Submissions
     url: /chem370/submissions
     icon: fa-paper-plane    
+navigation-689:
+  - title:  
+    url: /#
+    icon: fa-user-circle
+  - title: 689 Main Page
+    url: /chem689/#
+    icon: fa-home
+  - title: Syllabus
+    url: /chem689/syllabus
+    icon: fa-scroll
+  - title: Notebooks
+    url: /chem689/notebooks
+    icon: fa-edit    

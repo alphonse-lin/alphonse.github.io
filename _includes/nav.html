@@ -34,10 +34,23 @@
           </a>
       {% endfor %}
 </nav>
-{% else if page.url contains 'chem370' %}
+{% elsif page.url contains 'chem370' %}
 <nav id="navigation" class = "nav-370">
       {% for item in site.navigation-370 %}
           {% assign class = 'nav-370' %}
+          {% if page.url contains item.url %}
+              {% assign class = 'active-370' %}
+          {% endif %}
+          <a href="{{ item.url }}" class="{{ class }}" alt="{{item.title}}">
+                <i class="fa {{ item.icon }}"></i>
+                {{ item.title }}
+          </a>
+      {% endfor %}
+</nav>
+{% elsif page.url contains 'chem689' %}
+<nav id="navigation" class = "nav-370">
+      {% for item in site.navigation-689 %}
+          {% assign class = 'nav-689' %}
           {% if page.url contains item.url %}
               {% assign class = 'active-370' %}
           {% endif %}

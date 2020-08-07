@@ -281,7 +281,7 @@ button {
 #navigation-bar a:hover {
   color: #C1A875;
   background-color: white;
-  border-bottom: 1px solid #433024;
+  border-bottom: 2px solid #C1A875;
 }
 
 #navigation-bar a.active {
