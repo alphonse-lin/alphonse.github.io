@@ -58,40 +58,10 @@ Returns area under curve (integrates peak) for 2-column matrix `C` from limits `
 
 **Example:**  
 
-`A = peakArea([chromatogram(:, "TIME COLUMN"), chromatogram(:, "Signal Column")], 1.7, 2.05);`
+`A = peakArea([chromatogram[:, "TIME COLUMN"], chromatogram[:, "Signal Column"], 1.7, 2.05)`
 
 finds the area of chromatogram from 1.7 to 2.05 time units and plots the result.
 
-**Arguments:**  
-
-- `C`: 2-column matrix with $x$ data in column 1 and $y$ data in column 2 (numeric matrix)
-
-- `x1`: The lower limit of integration (numeric value)
-
-- `x2`: The upper limit of integration (numeric value)
-
-- `p`: whether or not to plot the result (boolean, `true/false`)
-
-**Code:**
-```{octave, eval=FALSE}
-#####   peakArea   ##################################################
-
-function a = peakArea(C, x1, x2, p = true)
-    x = C((C(:,1) > x1 & C(:,1) < x2), 1);
-    y = C((C(:,1) > x1 & C(:,1) < x2), 2);
-    a = trapz(x, y);
-    if p == true
-        plot(C[:, 1], C[:, 2]);
-        hold on
-        area(x,y);
-        xlabel("Time");
-        ylabel("Signal (arbitrary units)")
-        hold off
-        disp(["Peak Area = ", num2str(a)])
-    end
-end
-#####################################################################
-```
 
 
 ## Fit Linear Model (Calibration) {-}
@@ -99,9 +69,7 @@ end
 Returns slope, intercept, $R^2$, and line of best fit data of best fit line given a data frame containing $x$ (usually concentration) and $y$ (signal) data.
 
 ```{r eval=FALSE}
-calcurve = lm(
-  y ~ x
-  )
+calcurve = lm(y ~ x, data = calData)
 ```
 ## IR Spectrum Processing {-}
 

@@ -18,7 +18,7 @@ rmd_files: [
             "01_uv-vis.Rmd",
             "03_vape.Rmd",
             "04_acetaminophen.Rmd",
-            "06_octave-cookbook.Rmd",
+            "06_R-cookbook.Rmd",
             "07_statistical-data-analysis.Rmd",
             "08_lab-notebooks.Rmd",
             "00B_schedule.Rmd"

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4.3 FT-IR | CHEM 370 Lab Manual</title>
+  <title>2.3 Assessment | CHEM 370 Lab Manual</title>
   <meta name="description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4.3 FT-IR | CHEM 370 Lab Manual" />
+  <meta property="og:title" content="2.3 Assessment | CHEM 370 Lab Manual" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/cover-image-mass-spec.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4.3 FT-IR | CHEM 370 Lab Manual" />
+  <meta name="twitter:title" content="2.3 Assessment | CHEM 370 Lab Manual" />
   
   <meta name="twitter:description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="twitter:image" content="images/cover-image-mass-spec.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="flame-aa.html"/>
-<link rel="next" href="hplc.html"/>
+<link rel="prev" href="data-processing.html"/>
+<link rel="next" href="uv-visible-spectroscopy.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -324,109 +324,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ft-ir" class="section level2">
-<h2><span class="header-section-number">4.3</span> FT-IR</h2>
-<p>FT-IR spectroscopy is used to deduce the bonds present in liquids, solids, and gases. It is widely used in industry, research, and teaching for qualitative analysis, but can also provide very accurate quantitative information. All molecules have a unique infrared spectrum, comparable to a person’s fingerprint. However, it is usually very difficult to interpret infrared spectra of mixtures. Chemometrics and linear algebra can circumvent this issue by picking out minute differences between spectra using statistical methods. During this lab, FT-IR will be used to match a sample of e-cigarette liquid to a reference spectrum using a metric called the hit quality index (HQI). This methods provides a measure of how well two spectra match, and a HQI of 0.99 or better is required to indicate a contaminant-free sample.</p>
-<p>This lab will use the Perkin Elmer Spectrum One FT-IR (Fourier-transform infrared spectrometer) to determine whether samples of Tylenol (acetaminophen) are pure. The Spectrum One is in NS 226. Before lab, read <em>Standardization of Raman Spectra for Transfer of Spectral Libraries Across Different Instruments</em>. Focus on the paragraph regarding hit-quality index calculation.</p>
-<p>The general order for FT-IR sampling is: (1) collect a background (no sample present) and (2) collect sample spectra by placing a drop of sample on the instrument. You will collect 3 spectra for each sample and 3 spectra of the reference sample.</p>
-<div id="safety-2" class="section level3 unnumbered">
-<h3>Safety</h3>
-<ul>
-<li>This lab will require the use of small amounts of <a href="http://www.sciencelab.com/msds.php?msdsId=9927062">acetone</a>; avoid contact with skin and eyes.</li>
-<li>Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.</li>
-</ul>
-</div>
-<div id="instrumentation-1" class="section level3">
-<h3><span class="header-section-number">4.3.1</span> Instrumentation</h3>
-<ol style="list-style-type: decimal">
-<li>Use the CHEM370 user on the FTIR. Make sure you are collecting spectra as <em>Absorbance</em> vs. <em>Wavenumber</em>.</li>
-<li>Record a background spectrum on the FT-IR according to the FT-IR SOP.</li>
-<li>Place 1 drop the sample on the ATR window and acquire a spectrum. You do not need the anvil for liquid samples.</li>
-<li>Wet a Kimwipe with a small amount of acetone and clean the ATR cell with it.</li>
-<li>Repeat the above steps 2 more times, for a total of three spectra for your sample.</li>
-<li>Repeat the above steps for each sample, so you end up with three spectra of each sample.</li>
-<li>Make sure you leave the instrument and your work area clean, and log out of the computer.</li>
-</ol>
-</div>
-<div id="waste-disposal-and-cleanup-1" class="section level3">
-<h3><span class="header-section-number">4.3.2</span> Waste Disposal and Cleanup</h3>
-<ul>
-<li><p>Clean the IR with acetone and replace the cover.</p>
-<blockquote>
-<p>Never spray acetone directly on the IR – always spray it on a Kimwipe pointed away from the instrument.</p>
-</blockquote></li>
-<li><p>Brush up any acetaminophen powder on and around the IR.</p></li>
-<li><p>Use a minimal amount of warm water to rinse any powdered acetaminophen into the bottle labelled “Hazardous Waste: Lab 2 Acetaminophen” that is stored under the sample prep hood in the Instrument Lab.</p></li>
-<li><p>Make sure your work area and the instrument are cleaner than you found them.</p></li>
-</ul>
-</div>
-<div id="data-processing-2" class="section level3">
-<h3><span class="header-section-number">4.3.3</span> Data Processing</h3>
-<div class="marginfigure">
-<p>
-You should turn a ZIP folder containing:
-</p>
-<ul>
-<li>
-Your complete lab notebook as an .ipynb file, functioning with no errors.<br />
-</li>
-<li>
-Your data files.<br />
-</li>
-<li>
-Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_ftir_data-analysis.xlsx">analysis sheet</a>.
-</li>
-</ul>
-</div>
-<ul>
-<li>You will need to export you data as a CSV file. The Spectrum One does this automatically. Just copy the exported data from the “Spectrum One Data Folder” (there is a shortcut on the desktop) to your folder on NEON.</li>
-<li>See Appendix 2 for examples of the following steps:
-<ul>
-<li>Baseline correct your spectra by subtracting the minimum value from each data point. This should make the minimum value on your plot 0.</li>
-<li>Normalize your spectra by converting from absorbance units to relative absorbance. You do this by dividing the whole spectrum by the maximum absorbance value. Your final plot should range from 0 to 1.<br />
-</li>
-<li>Calculate the Hit Quality Index according to Eq. 2 in <a href="https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments">Rodriguez et al (2011)</a>. Be mindful of the difference between “x” (multiplication) and “·” (dot product).</li>
-</ul></li>
-</ul>
-</div>
-<div id="vape-ftir-assessment" class="section level3">
-<h3><span class="header-section-number">4.3.4</span> Assessment</h3>
-<p>Answer the following questions by saving the result as the specified R variable in an R code block. These questions are graded automatically. If you do not name your variable correctly (including capitals) your questions will be marked incorrect.</p>
+<div id="gctcd-assessment" class="section level2">
+<h2><span class="header-section-number">2.3</span> Assessment</h2>
+<p>These questions also appear in the notebook template.</p>
+<p>Answer the following questions by saving the result as the specified R variable in an R code block at the end of your lab notebook. These questions are graded automatically. If you do not name your variable correctly (including capitals) your questions will be marked incorrect. Make sure you include the option <code>purl = TRUE</code> when creating your code block.</p>
 <p>Each question is worth 1 point. You must get the question <em>exactly</em> right to get credit.</p>
 <ol style="list-style-type: decimal">
-<li>What is the unique ID (UID) value for Sample 1? Call the variable <code>s1_uid</code>.</li>
+<li>What is your sample ID? Call it <code>ID</code>.</li>
 </ol>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="ft-ir.html#cb53-1"></a>s1_uid &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="gctcd-assessment.html#cb8-1"></a>ID &lt;-<span class="st"> &quot;Sample A&quot;</span>  <span class="co"># Delete sample A and insert your sample name.  Leave the quotes.</span></span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
-<li>What is the unique ID (UID) value for Sample 2? Call the variable <code>s2_uid</code>.</li>
+<li>Which instrument did you use, the 150 or 400? Save your answer as the variable <code>instrument</code>.</li>
 </ol>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="ft-ir.html#cb54-1"></a>s2_uid &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="gctcd-assessment.html#cb9-1"></a>instrument &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
-<li>What is the hit quality index (HQI) value for Sample 1? Call the variable <code>s1_hqi</code>.</li>
+<li>How many compounds are in your sample. Save your answer as the variable <code>noCompounds</code>.</li>
 </ol>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="ft-ir.html#cb55-1"></a>s1_hqi &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="gctcd-assessment.html#cb10-1"></a>noCompounds &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
-<li>What is the hit quality index (HQI) value for Sample 2? Call the variable <code>s2_hqi</code>.</li>
+<li>What is the percent composition for least polar compound, as a percentage (%)? Provide your answer as the variable <code>leastPolarPercent</code>.</li>
 </ol>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="ft-ir.html#cb56-1"></a>s2_hqi &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="gctcd-assessment.html#cb11-1"></a>leastPolarPercent &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
-<li>TRUE or FALSE: Sample 1 shows signs of contamination. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>s1_passfail</code>.</li>
+<li>What is the percent composition for least polar compound, as a percentage (%)? Provide your answer as the variable <code>mostPolarPercent</code>.</li>
 </ol>
-<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="ft-ir.html#cb57-1"></a>s1_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="gctcd-assessment.html#cb12-1"></a>leastPolarPercent &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="6" style="list-style-type: decimal">
-<li>TRUE or FALSE: Sample 2 shows signs of contamination. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>s2_passfail</code>.</li>
+<li>What is the standard deviation of the baseline, in millivolts (mV)? Provide your answer as the variable <code>baselineSD</code>.</li>
 </ol>
-<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="ft-ir.html#cb58-1"></a>s2_passfail &lt;-<span class="st"> </span><span class="ot">TRUE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
-<div style="page-break-after: always;"></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="gctcd-assessment.html#cb13-1"></a>baselineSD &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<ol start="7" style="list-style-type: decimal">
+<li>What is the signal level for Peak 1, in millivolts (mV)? Provide your answer as the variable <code>peak1</code>.</li>
+</ol>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="gctcd-assessment.html#cb14-1"></a>peak1 &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<ol start="8" style="list-style-type: decimal">
+<li>What is the signal level for Peak 1, in millivolts (mV)? Provide your answer as the variable <code>peak2</code>.</li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="gctcd-assessment.html#cb15-1"></a>peak2 &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<ol start="9" style="list-style-type: decimal">
+<li>What is the signal to noise ratio for Peak 1? Provide your answer as the variable <code>peak1_sn</code>.</li>
+</ol>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="gctcd-assessment.html#cb16-1"></a>peak1_sn &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<ol start="10" style="list-style-type: decimal">
+<li>What is the signal to noise ratio for Peak 1? Provide your answer as the variable <code>peak2_sn</code>.</li>
+</ol>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="gctcd-assessment.html#cb17-1"></a>peak2_sn &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+
 </div>
-</div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="flame-aa.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="hplc.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="data-processing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="uv-visible-spectroscopy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

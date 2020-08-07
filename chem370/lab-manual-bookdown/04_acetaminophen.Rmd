@@ -163,7 +163,6 @@ You should turn a ZIP folder containing:
 - Your data files.  
 - Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_hplc_data-analysis.xlsx).
 ```
-
 ##### **Standard Curve and Concentrations** {-}
 
 1. Use your standards to determine which peak in your sample is acetaminophen.
@@ -177,6 +176,78 @@ You should turn a ZIP folder containing:
 1. Calculate the concentration (in ppm) of the samples using your standard curve.
 1. Use a *t*-test to determine if the mass of acetaminophen is *significantly* different from the expected mass. (See Appendix 3, "Comparing Means")
 1. Plot *representative chromatograms*:  You do not need to export every single chromatogram (your standards should all be very similar, just different in magnitude).  Instead, export and plot the chromatogram for your medium standard and the chromatogram for each sample.  Include these in your lab notebook and in a single figure in your final report. (See Appendix 2 for R examples).
+
+### Assessment {#am-hplc-assessment}
+
+Answer the following questions by saving the result as the specified R variable in an R code block.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.
+
+Each question is worth 1 point.  You must get the question *exactly* right to get credit.
+
+1. What is $R^2$ value for your calibration curve?  Call the variable `r2`.
+
+```{r question-am-hplc-1, purl = TRUE}
+r2 <- 0     # put your answer between the '<-' and '#'
+```
+
+2. What is sensitivity factor?  Call the variable `m`.
+
+```{r question-am-hplc-2, purl = TRUE}
+m <- 0     # put your answer between the '<-' and '#'
+```
+
+3. What is mean measured analyte concentration for the QC in mg/L?  Call the variable `qc_conc`.
+
+```{r question-am-hplc-3, purl = TRUE}
+qc_conc <- 0     # put your answer between the '<-' and '#'
+```
+
+4. What is the expected analyte concentration for the QC in mg/L?  Call the variable `qc_expected`.
+
+```{r question-am-hplc-4, purl = TRUE}
+qc_expected <- 0     # put your answer between the '<-' and '#'
+```
+
+5. TRUE or FALSE: My QC passes at the 95% confidence level.  Save your `TRUE` or `FALSE` answer as `qc_passfail`.
+
+```{r question-am-hplc-5, purl = TRUE}
+passfail <- FALSE     # put your answer between the '<-' and '#'
+```
+
+6. What is mean analyte concentration for sample 1 in mg/L?  Call the variable `s1_conc`.
+
+```{r question-am-hplc-6, purl = TRUE}
+s1_conc <- 0     # put your answer between the '<-' and '#'
+```
+
+7. What is mean analyte concentration for sample 2 in mg/L?  Call the variable `s2_conc`.
+
+```{r question-am-hplc-7, purl = TRUE}
+s2_conc <- 0     # put your answer between the '<-' and '#'
+```
+
+8. What is the 95% CI for sample 1 in mg/L?  Call the variable `s1_ci`.
+
+```{r question-am-hplc-8, purl = TRUE}
+s1_ci <- 0     # put your answer between the '<-' and '#'
+```
+
+9. What is the 95% CI for sample 2 in mg/L?  Call the variable `s2_ci`.
+
+```{r question-am-hplc-9, purl = TRUE}
+s2_ci <- 0     # put your answer between the '<-' and '#'
+```
+
+10. TRUE or FALSE: The concentration of Sample 1 is significantly different from the labeled value.  Save your `TRUE` or `FALSE` answer as `s1_passfail`.
+
+```{r question-am-hplc-10, purl = TRUE}
+s1_passfail <- FALSE     # put your answer between the '<-' and '#'
+```
+
+11. TRUE or FALSE: The concentration of Sample 2 is significantly different from the labeled value.  Save your `TRUE` or `FALSE` answer as `s2_passfail`.
+
+```{r question-am-hplc-11, purl = TRUE}
+s2_passfail <- FALSE     # put your answer between the '<-' and '#'
+```
 
 \newpage
 
@@ -233,6 +304,48 @@ You should turn a ZIP folder containing:
 - Baseline correct your spectra by subtracting the minimum value from each data point.  This should make the minimum value on your plot 0. (See Appendix 2 for R examples)
 - Normalize your spectra by converting from absorbance units to relative absorbance.  Your final plot should range from 0 to 1. (See Appendix 2 for R examples)
 - Calculate the Hit Quality Index according to Eq. 2 in [Rodriguez et al (2011)](https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments).  Be mindful of the difference between "x" (multiplication) and "·" (dot product). (See Appendix 2 for R examples)
+
+### Assessment {#am-ftir-assessment}
+
+Answer the following questions by saving the result as the specified R variable in an R code block.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.
+
+Each question is worth 1 point.  You must get the question *exactly* right to get credit.
+
+1. What is the unique ID (UID) value for Sample 1?  Call the variable `s1_uid`.
+
+```{r question-am-ftir-1, purl = TRUE}
+s1_uid <- 0     # put your answer between the '<-' and '#'
+```
+
+2. What is the unique ID (UID) value for Sample 2?  Call the variable `s2_uid`.
+
+```{r question-am-ftir-2, purl = TRUE}
+s2_uid <- 0     # put your answer between the '<-' and '#'
+```
+
+3. What is the hit quality index (HQI) value for Sample 1?  Call the variable `s1_hqi`.
+
+```{r question-am-ftir-3, purl = TRUE}
+s1_hqi <- 0     # put your answer between the '<-' and '#'
+```
+
+4. What is the hit quality index (HQI) value for Sample 2?  Call the variable `s2_hqi`.
+
+```{r question-am-ftir-4, purl = TRUE}
+s2_hqi <- 0     # put your answer between the '<-' and '#'
+```
+
+5. TRUE or FALSE: Sample 1 shows signs of contamination.  Save your `TRUE` or `FALSE` answer as `s1_passfail`.
+
+```{r question-am-ftir-5, purl = TRUE}
+s1_passfail <- FALSE     # put your answer between the '<-' and '#'
+```
+
+6. TRUE or FALSE: Sample 2 shows signs of contamination.  Save your `TRUE` or `FALSE` answer as `s2_passfail`.
+
+```{r question-am-ftir-6, purl = TRUE}
+s2_passfail <- TRUE     # put your answer between the '<-' and '#'
+```
 
 \newpage
 
@@ -303,6 +416,57 @@ You should turn a ZIP folder containing:
 1. Plot your chromatogram as *Relative Abundance (%)* vs. *Time (minutes)*. (See Appendix 2 for R examples)
 1. Plot your mass spectra as *Relative Abundance (%)* vs. *m/z*. (See Appendix 2 for R examples)
 1. Clearly identify the base peak, the molecular ion, and any important isotope peaks.  Also state how many rings and double bonds your molecule has, and whether it has an odd or even number of nitrogen atoms.  Provide a formula, common name, and molecular weight for each compound.  You must show your calculations for all of these items.  See the [mass spec guide](/chem370/guides/mass-spec) for help with interpretation.  Does your interpretation match the library?
+
+## Assessment {#am-gc-assessment}
+
+Answer the following questions by saving the result as the specified R variable in an R code block.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.
+
+Each question is worth 1 point.  You must get the question *exactly* right to get credit.
+
+1. What is the mass-to-charge ratio of the base peak in your spectrum?  Call the variable `base`.
+
+```{r question-am-gcms-1, purl = TRUE}
+base <- 0     # put your answer between the '<-' and '#'
+```
+
+2. What is the mass-to-charge ratio of the molecular ion?  Call the variable `molion`.
+
+```{r question-am-gcms-2, purl = TRUE}
+molion <- 0     # put your answer between the '<-' and '#'
+```
+
+3. How many C atoms are present in your sample?  Call the variable `catoms`.
+
+```{r question-am-gcms-3, purl = TRUE}
+catoms <- 0     # put your answer between the '<-' and '#'
+```
+
+4. How many rings and/or double bonds are present in your sample? Call the variable `rdb`.
+
+```{r question-am-gcms-4, purl = TRUE}
+rdb <- 0     # put your answer between the '<-' and '#'
+```
+
+5. TRUE or FALSE: My molecule contains an EVEN number of N atoms.  Answer `TRUE` or `FALSE` in the variable `oddeven`.
+
+```{r question-am-gcms-5, purl = TRUE}
+oddeven <- FALSE     # put your answer between the '<-' and '#'
+```
+
+6. What is the monoisotopic molecular weight of your molecule? Call the variable `molwt`.
+
+```{r question-am-gcms-6, purl = TRUE}
+molwt <- 0     # put your answer between the '<-' and '#'
+```
+
+7. Propose a formula for your molecule.  Use the variables `c` for number carbon atoms, `h` for number of hydrogen, `o` for oxygen, and `n` for nitrogen.  Your sample will not contain atoms other than these for this lab activity.
+
+```{r question-am-gcms-7, purl = TRUE}
+c <- 0     # put your answer between the '<-' and '#'
+h <- 0     # put your answer between the '<-' and '#'
+o <- 0     # put your answer between the '<-' and '#'
+n <- 0     # put your answer between the '<-' and '#'
+```
 
 \newpage
 
@@ -386,3 +550,75 @@ You should turn a ZIP folder containing:
 ### Reference
 
 [1] Williams, M.; Li, J.; Talbot, P. Effects of Model, Method of Collection, and Topography on Chemical Elements and Metals in the Aerosol of Tank-Style Electronic Cigarettes. *Sci. Rep.* 2019, 9 (1), 1–14. (doi: 10.1038/s41598-019-50441-4)[https://doi.org/10.1038/s41598-019-50441-4].
+
+### Assessment {#am-faas-assessment}
+
+Answer the following questions by saving the result as the specified R variable in an R code block.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.
+
+Each question is worth 1 point.  You must get the question *exactly* right to get credit.
+
+1. What is $R^2$ value for your calibration curve?  Call the variable `r2`.
+
+```{r question-am-faas-1, purl = TRUE}
+r2 <- 0     # put your answer between the '<-' and '#'
+```
+
+2. What is sensitivity factor?  Call the variable `m`.
+
+```{r question-am-faas-2, purl = TRUE}
+m <- 0     # put your answer between the '<-' and '#'
+```
+
+3. What is mean measured analyte concentration for the QC in mg/L?  Call the variable `qc_conc`.
+
+```{r question-am-faas-3, purl = TRUE}
+qc_conc <- 0     # put your answer between the '<-' and '#'
+```
+
+4. What is the expected analyte concentration for the QC in mg/L?  Call the variable `qc_expected`.
+
+```{r question-am-faas-4, purl = TRUE}
+qc_expected <- 0     # put your answer between the '<-' and '#'
+```
+
+5. TRUE or FALSE: My QC passes at the 95% confidence level.  Save your `TRUE` or `FALSE` answer as `qc_passfail`.
+
+```{r question-am-faas-5, purl = TRUE}
+passfail <- FALSE     # put your answer between the '<-' and '#'
+```
+
+6. What is mean analyte concentration for sample 1 in mg/L?  Call the variable `s1_conc`.
+
+```{r question-am-faas-6, purl = TRUE}
+s1_conc <- 0     # put your answer between the '<-' and '#'
+```
+
+7. What is mean analyte concentration for sample 2 in mg/L?  Call the variable `s2_conc`.
+
+```{r question-am-faas-7, purl = TRUE}
+s2_conc <- 0     # put your answer between the '<-' and '#'
+```
+
+8. What is the 95% CI for sample 1 in mg/L?  Call the variable `s1_ci`.
+
+```{r question-am-faas-8, purl = TRUE}
+s1_ci <- 0     # put your answer between the '<-' and '#'
+```
+
+9. (Acetaminophen Only) What is the 95% CI for sample 2 in mg/L?  Call the variable `s2_ci`.
+
+```{r question-am-faas-9, purl = TRUE}
+s2_ci <- 0     # put your answer between the '<-' and '#'
+```
+
+10. TRUE or FALSE: The concentration of Sample 1 is significantly different from the labeled value.  Save your `TRUE` or `FALSE` answer as `s1_passfail`.
+
+```{r question-am-faas-10, purl = TRUE}
+s1_passfail <- FALSE     # put your answer between the '<-' and '#'
+```
+
+11. (Acetaminophen Only)  TRUE or FALSE: The concentration of Sample 2 is significantly different from the labeled value.  Save your `TRUE` or `FALSE` answer as `s2_passfail`.
+
+```{r question-am-faas-11, purl = TRUE}
+s2_passfail <- FALSE     # put your answer between the '<-' and '#'
+```
