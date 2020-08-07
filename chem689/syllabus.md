@@ -23,7 +23,7 @@ icon: fa-scroll
 
 # Overview
 
-*CHEM 689 - Cooperative Education in Chemistry*  provides graduate students with an applied project or internship focused on the management, upkeep, and business aspects of a chemical analysis lab.  The course satisfies the applied project/internship component of the Chemistry M.S. Professional Science Concentration.  Prerequisites include a minimum of 9 hours of graduate courses, minimum B average in graduate work, and approval of department head, advisor, and cooperative education coordinator. Chem 689 is a 6 credit course.
+*CHEM 689 - Cooperative Education in Chemistry*  provides graduate students with an applied project or internship focused on the management, upkeep, and business aspects of a chemical analysis lab.  This may include maintaining instruments, developing methods, conducting literature searches and market research, developing price structures, and/or developing new instrumentation, dependent on student interest and project availability.  The course satisfies the applied project/internship component of the Chemistry M.S. Professional Science Concentration.  Prerequisites include a minimum of 9 hours of graduate courses, minimum B average in graduate work, and approval of department head, advisor, and cooperative education coordinator. Chem 689 is a 6 credit course.
 
 # Student Learning Outcomes
 
@@ -31,9 +31,9 @@ To achieve a *satisfactory* grade, students will:
 
 - Demonstrate an ability to perform routine upkeep of scientific instrumentation and/or train others on the use of chemical instrumentation.
 
-- Develop a routine method for analytic services of a specific type (e.g. "cannabinoid analysis", "beer aroma analysis", or "well water metal screening")
+- Develop a routine method for analytical services of a specific type (e.g. "cannabinoid analysis", "beer aroma analysis", or "well water metal screening") and/or develop new analytical equipment.
 
-- Conduct a cost analysis and develop pricing for the proposed method.
+- Conduct a cost analysis and develop pricing for the proposed method and/or equipment.
 
 - Communicate the method, cost analysis, and proposed pricing in a written report.
 
