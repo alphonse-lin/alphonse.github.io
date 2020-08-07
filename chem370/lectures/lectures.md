@@ -22,12 +22,7 @@ icon: fa-chalkboard-teacher
     5. Survey of Chemical Instrumentation (Week 5 & 6)  
         *Lab: Quantitative Analysis of Quinine*
 
-2. **Separation Science** (Weeks 6-8)  
-
-    1. Liquid Chromatography
-    2. Gas Chromatography  
-
-3. **Spectroscopy**  (Weeks 8-12)  
+3. **Spectroscopy** 
 
     1. Introduction / Principles
     2. Optics
@@ -37,11 +32,16 @@ icon: fa-chalkboard-teacher
     
     *Lab: Flame atomic absorption spectroscopy*
 
-4. **Mass Spectrometry**  (Weeks 12-13)  
+4. **Mass Spectrometry** 
 
     *Lab: Gas chromatography-mass spectrometry*
     
     *Lab: High performance liquid chromatography*
+    
+2. **Separation Science**
+
+    1. Liquid Chromatography
+    2. Gas Chromatography  
   
 5. **Advanced Topic in Instrumental Analysis (Week 13 & 15, topic(s) TBD, time permitting)**
 

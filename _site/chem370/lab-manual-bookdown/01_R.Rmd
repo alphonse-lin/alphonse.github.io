@@ -9,7 +9,7 @@
 This Lab will be completed on the honor system.  You must complete the following activities before Week 2 or you will not be able to participate in lab.
 
 - [Markdown Tutorial](https://www.markdowntutorial.com/)
-- Install R + RStudio + `chem370learnR` package
+- Install R + RStudio + `instRumental` package
 - Create a Lab Notebook Template for Lab 1
 
 ##### **Student Learning Outcomes** | *By the end of this lab, students will:*   {-}
@@ -64,20 +64,20 @@ One of the great things about R is that anyone can develop add-ons (called "pack
     
     *If you get a "non-zero exit status" or error message, read through it to see if you find "package 'XYZ' not available" and then install the package(s) it mentions.  Try installing `devtools` again after that.* 
     
-1. *Install the `chem370learnR` package*: In Rstudio, find the **Console** tab in the lower left pane.  Copy and paste the following lines *exactly*:
+1. *Install the `instRumental` package*: In Rstudio, find the **Console** tab in the lower left pane.  Copy and paste the following lines *exactly*:
       
       ```{r eval=F}
       require(devtools)
       install.packages("learnr")
       install_github("rstudio-education/gradethis")
-      install_github("dr-fischer/chem370learnR")
+      install_github("dr-fischer/instRumental")
       ```
       
-The `chem370learnR` package should now be installed on your system.
+The `instRumental` package should now be installed on your system.
 
 ## Creating a Lab Notebook Project {#create-lab-notebook}
 
-The following video shows you how to complete the steps listed below, assuming you have installed the `chem370learnR` package (Exercise 1.2).
+The following video shows you how to complete the steps listed below, assuming you have installed the `instRumental` package (Exercise 1.2).
 
 <iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/a2e6c17b-017a-40cd-879e-0d903de4d45e?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
 
@@ -95,7 +95,7 @@ In this step, you'll create an R "project" for lab 1.  The project will help kee
 
 ### Create a Notebook File
 
-1. Load the Chem 370 learnR package: Go to the **Packages** tab in the bottom right pane and check `chem370learnR` on.  You should load this package everytime you start R.
+1. Load the Chem 370 learnR package: Go to the **Packages** tab in the bottom right pane and check `instRumental` on.  You should load this package everytime you start R.
 1. In the top left corner, click the **New File** icon and choose **R Markdown**.
 1. In the new window that opens, choose **From Template** (left side) and then **Chem 370 Lab Notebook**. Enter ***lab1_uv-vis*** for the title (i.e. filename) and your name for the author.  Make sure the output is set to HTML and click **OK**.  Use this format for all your lab notebooks this semester.
 1. The notebook document is populated with a bare bones template for use in lab.  Fill in a title and your name, and write and introduction before lab next week.

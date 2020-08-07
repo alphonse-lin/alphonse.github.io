@@ -4,6 +4,8 @@ title:  CHEM 370 Schedule
 permalink: /chem370/schedule
 ---
 
+<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/schedule.pdf" target="blank">Download Schedule as  PDF</a>
+
 This schedule is subject to change as needed.
 
 For "In Class" work, cohort 1 meets on Mondays, cohort 2 meets on Wednesdays, and cohort 3 meets on Fridays.  Please ask your instructor if you're unsure which cohort you're in.  Unless otherwise specified, exams will be administered face-to-face.
