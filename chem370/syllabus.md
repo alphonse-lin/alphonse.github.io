@@ -48,11 +48,15 @@ To achieve a satisfactory grade, students will:
 
 **Lab Manual:** Fischer, D.A. (2020) *[Chem 370 Lab Manual]({{site.baseurl}}/chem370/lab-manual)* (free online)
 
+**Miscellaneous:** A scientific calculator not on a phone (for exams, a TI-XX will work but a simple $10 Casio *fx*-300 will work just as well).
+
 **Technology:** Students will need a laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).  A web browser and internet connection capable of streaming video will be necessary for submitting homework assignments and accessing course materials.  
 
 Students are strongly encouraged to install [R](https://cran.r-project.org/) + [RStudio](https://rstudio.com/) on their computers to complete coursework.  These software are free for students and run on Windows, Mac OSX, and Linux.  Students may alternatively use the software on STEM VCAT, although this may add some additional complexity to assignments.
 
 Much of the course content will be delivered via Microsoft Teams and/or the course website.  It is recommended that students install the Microsoft Teams desktop and/or mobile app(s) on their device(s).  MS Teams is available for installation through the WCU Office365 web portal.
+
+Communication will often be conducted via Microsoft Teams and/or email; students should check these frequently.
 
 <a id="covid"/>
 

@@ -87,15 +87,15 @@ In this step, you'll create an R "project" for lab 1.  The project will help kee
 
 1. In RStudio, click the **Project: (none)** button in the top corner and then click **New Project...*
 1. Choose **New Directory** and **New Project**.
-1. Type in **Lab 1: UV-vis** in the *Directory name* line.  In the *Create project as subdirectory of:* box choose **Browse**.  Then:
+1. Type in **Lab 2: GC-TCD** in the *Directory name* line.  In the *Create project as subdirectory of:* box choose **Browse**.  Then:
     1. Navigate to your `Documents` folder (or another directory if you prefer to save your notebooks somewhere else).
     1. Create a **New Directory**/**New Folder** and call in **`lab-notebooks`**.
     1. Click OK to exit the dialog.  The path should be set to something like `~/Documents/lab-notebooks` (may vary slightly depending on your OS).
-1. Click **Create Project**.  You'll see that project icon in the top right corner now read **Project: Lab 1: UV-vis**.
+1. Click **Create Project**.  You'll see that project icon in the top right corner now read **Project: Lab 2: GC-TCD**.
 
 ### Create a Notebook File
 
-1. Load the Chem 370 learnR package: Go to the **Packages** tab in the bottom right pane and check `instRumental` on.  You should load this package everytime you start R.
+1. Load the Chem 370 learnR package: Go to the **Packages** tab in the bottom right pane and check `instRumental` on.  You should load this package each time you start R.
 1. In the top left corner, click the **New File** icon and choose **R Markdown**.
-1. In the new window that opens, choose **From Template** (left side) and then **Chem 370 Lab Notebook**. Enter ***lab1_uv-vis*** for the title (i.e. filename) and your name for the author.  Make sure the output is set to HTML and click **OK**.  Use this format for all your lab notebooks this semester.
-1. The notebook document is populated with a bare bones template for use in lab.  Fill in a title and your name, and write and introduction before lab next week.
+1. In the new window that opens, choose **From Template** (left side) and then **Chem 370 Lab Notebook**. Enter ***lab2_gc-tcd*** for the title (i.e. filename) and your name for the author.  Make sure the output is set to HTML and click **OK**.  Use this format for all your lab notebooks this semester.
+1. The notebook document is populated with a bare bones template for use in lab.  Fill in a title and your name, and write and introduction before lab next week.  This template also contains the questions you will answer when you finish the lab for grading.
