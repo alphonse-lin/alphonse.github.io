@@ -1,0 +1,87 @@
+<p>All figures in lab reports and lab notebooks should follow these guidelines.  Captions may be omitted in lab notebooks if the figure is otherwise clearly labeled and/or explained.</p>
+
+<h1 id="preparing-plots">Preparing Plots</h1>
+
+<h2 id="axes">Axes</h2>
+
+<ol>
+  <li>All axes should be clearly labeled, with units.</li>
+  <li>Axes should be scaled to show the data clearly; where practical, set the axes to cross at major scale divisions.</li>
+  <li>Label axes with comprehensible numbers, in the range of 0.01 - 1000.  There are several ways to handle this:
+    <ul>
+      <li>10,000,000 is hard to grasp and the large numbers clutter the axis; try dividing the axis by 10<sup>6</sup> and use the M (mega) prefix before the units in the axis.</li>
+      <li>2.5e-7 is hard to grasp and the exponents clutter the axis; label the axis as 2.5, and list an exponent of 10<sup>7</sup> in the label.</li>
+      <li>Convert to another unit, such as percent abundance rather than raw abundance.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="data-series">Data series</h2>
+
+<ol>
+  <li>All data points and lines should be clearly legible (use thicker lines and bigger points if necessary).</li>
+  <li>If multiple series are plotted on the same plot, provide a clear legend explaining each.</li>
+  <li>Use color effectively, to differentiate data sets and provide symbolism where prudent, but don’t rely on color to convey the point.
+<!-- 1. If printing in black and white, all data series and legends should be clearly distinguishable *in black and white*.  Use different line types (dashed, dotted, solid, etc.) and shapes if necessary. --></li>
+</ol>
+
+<h2 id="plot-types">Plot types</h2>
+
+<ol>
+  <li>Use scatter plots (or line plots, a subset of scatter plots) for data with two continuous variables.  Use bar charts or box plots for data with one continuous and one categorical variable. (Bar charts are typically used for mass spectra.)</li>
+  <li>Use 3-D plots with extreme caution, and only when absolutely necessary.</li>
+</ol>
+
+<h2 id="saving-plots">Saving plots</h2>
+
+<ol>
+  <li>When possible, save plots as a vector graphic (PDF or SVG); this provides infinite resolution.  If using a vector graphic isn’t an option, save raster graphics (jpeg, PNG, TIFF) at a resolution of at least 300 dpi for printing in a paper, higher for a poster or presentation.</li>
+</ol>
+
+<!-- 1. Very often, you may need to make final edits to your plot in a vector or image editing program (e.g. Adobe Illustrator, Gravit Designer, Inkscape, Adobe Photoshop, GNU Gimp, etc.).  You can use this to, e.g., increase the font size on axes, add chemical structures to images, or combine subfigures into a single, multi-pane figure.  If you don't want to use any of the above programs, Microsoft PowerPoint works almost as well. -->
+
+<h2 id="displaying-plots">Displaying plots</h2>
+
+<ol>
+  <li>Plots (figures) should be displayed in a manuscript in the order in which they are discussed.</li>
+  <li>Correspondingly, each figure should be specifically referenced in the text.</li>
+  <li>
+    <p>Chart titles should be avoided; instead, each figure should have a caption below the figure that reads:</p>
+
+    <blockquote>
+      <p>Figure <em>n</em>: A brief title. A brief description of figure <em>n</em>.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h1 id="examples">Examples</h1>
+
+<h2 id="a-publication-quality-infrared-spectrum-for-color-prints">A Publication-quality infrared spectrum (for color prints)</h2>
+
+<p>The <strong>following</strong> figure is an example of a publication-quality infrared spectrum. The data series are clearly distinguishable with contrasting colors, the lines are clearly visible, and axes are clearly and intuitively labeled (with units), and there is an appropriate caption.  Moreover, the figure is clear, undistorted, and unpixellated. Note that the caption for this image includes a summary of the key message of the figure.</p>
+
+<p><img src="/chem689/assets/img/good.png" alt="good-color-plot" />
+<strong>Figure 1:</strong> Example normalized ATR FT-IR spectra of <em>Usnea</em> lichens.    The two species have clearly distinguishable spectra.  Notably, <em>U. strigosa</em> has a less intense -OH stretch peak but more intense bands in the fingerprint region.</p>
+
+<h2 id="a-publication-quality-infrared-spectrum-for-black-and-white-prints">A Publication-quality infrared spectrum (for black and white prints)</h2>
+
+<p>Sometimes it’s not possible to print in color, and some journals require figures be legible in black and white.  If your figure must be printed in black and white, you should use easily distinguishable shades of grey for data series (colors that look different in color may turn into the same shade of grey in black and white).  You should also distinguish data with different line types or marker shapes.  The following figure shows this.  In this case, the caption only provides a title; this practice is acceptable.</p>
+
+<p><img src="/chem689/assets/img/goodBW.png" alt="good-bw-plot" />
+<strong>Figure 1:</strong> Example normalized ATR FT-IR spectra of <em>Usnea</em> lichens.</p>
+
+<h2 id="what-not-to-do">What Not to Do</h2>
+
+<p>The <strong><em>following</em></strong> figure is an example of what <strong><em>not to do</em></strong>!  Key problems:</p>
+<ul>
+  <li>The axes are either unlabelled or labelled poorly; although there is a legend, the names are incomprehensible.</li>
+  <li>There are far too many ticks labeled on both axes.</li>
+  <li>The scale on the <em>y</em>-axis needs to be tightened to more clearly show the data.</li>
+  <li>The gridlines are overpowering compared to the data.</li>
+  <li>The lines representing the data are too thin and the colors to not contrast enough.</li>
+  <li>The chart is pixellated and distorted.</li>
+  <li>The caption is terse and unnumbered.</li>
+</ul>
+
+<p><img src="/chem689/assets/img/bad.png" alt="bad-plot" />
+Spectra of Sample</p>

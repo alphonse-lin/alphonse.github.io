@@ -1,6 +1,6 @@
 ---
-layout: chem370
-title:  CHEM 689 Lecture Syllabus
+layout: chem689
+title:  CHEM 689 Syllabus - Cooperative Education in Chemistry 
 permalink: /chem689/syllabus
 icon: fa-scroll
 ---
@@ -23,15 +23,15 @@ icon: fa-scroll
 
 # Overview
 
-*CHEM 689 - Cooperative Education in Chemistry*  provides graduate students with an applied project or internship focused on the management, upkeep, and business aspects of a chemical analysis lab.  This may include maintaining instruments, developing methods, conducting literature searches and market research, developing price structures, and/or developing new instrumentation, dependent on student interest and project availability.  The course satisfies the applied project/internship component of the Chemistry M.S. Professional Science Concentration.  Prerequisites include a minimum of 9 hours of graduate courses, minimum B average in graduate work, and approval of department head, advisor, and cooperative education coordinator. Chem 689 is a 6 credit course.
+*CHEM 689 - Cooperative Education in Chemistry*  provides graduate students with an applied project or internship focused on the management, upkeep, and business aspects of a chemical analysis lab.  This may include maintaining instruments, developing methods, conducting literature searches and market research, developing price structures, and/or developing new instrumentation, dependent on student interest and project availability.  The course satisfies the applied project/internship component of the Chemistry M.S. Professional Science Concentration.   Students are required to work a minimum of 120 hours to satisfy the 6 credit hour internship. The scheduling and duration will be negotiated and approved by the student, the student’s faculty advisor, and the internship supervisor.  Prerequisites include a minimum of 9 hours of graduate courses, minimum B average in graduate work, and approval of department head, advisor, and cooperative education coordinator.
 
 # Student Learning Outcomes
 
 To achieve a *satisfactory* grade, students will:
 
-- Demonstrate an ability to perform routine upkeep of scientific instrumentation and/or train others on the use of chemical instrumentation.
+- Demonstrate an ability to perform routine upkeep of scientific instrumentation and/or ability to train others on the use of chemical instrumentation.
 
-- Develop a routine method for analytical services of a specific type (e.g. "cannabinoid analysis", "beer aroma analysis", or "well water metal screening") and/or develop new analytical equipment.
+- Develop a routine method for analytical services of a specific type (e.g. "cannabinoid analysis", "natural product screen in species X", or "water quality analysis") and/or develop new analytical equipment.
 
 - Conduct a cost analysis and develop pricing for the proposed method and/or equipment.
 
@@ -49,17 +49,20 @@ A standard office suite (e.g. word processor, spreadsheet program, etc) will be 
 
 **Personal Protective Equipment:**
 
-- **Gloves** will be provided for you and should be work when necessary.
+- **Gloves** will be provided for you and should be worn when necessary.
 - **Goggles/Safety Glasses** can be provided if you do not already have your own.  You must wear goggles at all times while in the lab.
-- **Lab Coats** can be provided if you do not already have your own.  You should wear one when working with especially hazardous chemicals.
-- **Face Masks** must be worn at all times.  Please see "Masking for a Friend" to learn where to get them if you don't have any.
+- **Lab Coats** can be provided if you do not already have your own.  You should wear one when working with especially hazardous chemicals, especially concentrated acids and bases.
+
+**Other Protective Equipment:**
+
+- **Face Masks** must be worn at all times.  Surgical-style or N95 masks are preferred as these are most effective at blocking aerosols.  Neck gaiters should be avoided.  Please see "Masking for a Friend" to learn where to get masks if you don't have any.
  
 
 <a id="covid"/>
 
 # COVID19 Policies
 
-The lecture portion of Instrumental Analysis will use a *Hybrid Face-to-Face* format, meaning that students can expect >50% of course activities to occur in person.  During all in-person meetings, students *must*:
+This course will use a *Hybrid Face-to-Face* format, meaning that students can expect >50% of course activities to occur in person.  During all in-person meetings, students *must*:
 
   - Wear a face mask at all times (see "Masking for a Friend" statement below).
   - Practice social distancing (maintain a distance of 2 meters from other individuals as much as possible).
@@ -98,27 +101,29 @@ Each of these 4 categories is worth 100 points; your final grade will be determi
 
   3. **Notebooks (20%):** You will be issued a laboratory notebook.  You should follow the the [CHEM 689 Lab Notebook Guidelines]({{site.url}}/chem689/notebooks) found on the course website.  Electronic data (spectra, chromatograms, spreadsheets, etc.) should be sotred on the NEON server without exception.  All data files and your notebook remain property of WCU and must be turned in by the end of the semester.
 
-  4. **Final Report (35%):** Your final report is due the day before finals start at 23:59:59 via email.
-
-***INSERT INFO HERE***
+  4. **Final Report (35%):** Your final report is due the day before finals start at 23:59:59 via email.  Please see Dr. Fischer's [writing tips]({{site.url}}/chem689/writing/writing) for guidelines.  Specific requirements may vary based on your project and will be determined on a case-by-case basis.
 
 <a id="policies-course"/>
 
 # Course Policies
 
-**Communication:** Maintaining open communication is essential!  Please communicate regularly with your instructor using email or Microsoft Teams.  Please check your email and Microsoft Teams regularly throughout the semester for messages from your instructor.
+**Communication:** Maintaining open communication is essential!  Please communicate regularly with your instructor using email or Microsoft Teams, email, and/or in person.  Please check your email and Microsoft Teams regularly throughout the semester for messages from your instructor.
 
-**Attendance:** Your attendance will be monitored by the time you log in Microsoft Teams.  You are expected to spend 3 hours of time on coursework for each credit hour. ***If you experience any symptoms of COVID-19, cold, flu, or other contagious sickness please do NOT come to lab!  Likewise, do not attend if you have been in contact with someone who has tested positive for COVID-19 or is suspected to have COVID-19.  Please maintain diligent communication with your instructor during these situations and appropriate accommodations will be made.***
+**Attendance:** Your attendance will be monitored via your time logged in Microsoft Teams.  You are expected to work at least 120 hours to satisfy the attendance requirements.  For a 1-semester internship, this corresponds to  about 9 hours per week. Scheduling and duration will be negotiated and approved by the student, the student’s faculty advisor, and the internship supervisor.
+
+***If you experience any symptoms of COVID-19, cold, flu, or other contagious sickness please do NOT come to lab!  Likewise, do not attend if you have been in contact with someone who has tested positive for COVID-19 or is suspected to have COVID-19.  Please maintain diligent communication with your instructor during these situations and appropriate accommodations will be made.***
 
 <!-- Attendance to all lecture periods is ***strongly encouraged***.   There are no make-ups for in-class assignments, quizzes, exams, etc.   -->
 
-You should arrange *excused absences* with your instructor ***ahead of time***.  An excused absence is any official University-sanctioned event, a contagious sickness, or medical issue that either presents a severe limitation to your ability to attend class or puts the health/safety of others in the class at risk.  You are responsible for learning the topics covered during your absence.  
+You should arrange *excused absences* with your instructor ***ahead of time***.  An excused absence is any official University-sanctioned event, a contagious sickness, or medical issue that either presents a severe limitation to your ability to attend class or puts the health/safety of others in the class at risk.  You are responsible for completing work missed during your absence.  
 
 **Laboratory Safety:** Each student **must** complete research lab safety training each semester.  This training will be completed in person.  You will verify your training via an online survey no later than the end of the second week of classes.  All safety procedures must be followed at all times.  This includes wearing long pants, closed-toe shoes, safety glasses or goggles (depending on the work you're doing) and gloves (when necessary).  Lab coats may be required when working with strong acids or bases.  Any noxious or volatile chemicals must be used only in a fume hood.  All waste must be disposed of properly; if you have any questions about waste disposal please ask your instructor or the Research Operations Manager.
 
+**Instrument Safety:** Students should not use instruments that they have not been trained on.  If you are unsure how to complete a task on an instrument ask your instructor for clarification or training.  It is better to do something late after asking for help than to do something wrong and damage an instrument.  Students should keep the instruments they use and the space around clean and free of clutter.
+
 **Chemical Hygiene:** The instrumentation lab is a common area shared by many students and faculty. Students should leave their workspace clean at all times.  Dirty glassware should be cleaned before leaving for the day, shaken dry, and immediately put away.  All chemicals and samples must be clearly labeled at all times; the label should include the name of the compound, the user's initials, and the date.  Samples should never be left in any instrument or autosampler, except when actively running.  Weekly cleaning duties may be assigned as needed and failure to complete your assigned tasks will negatively impact your grade.
 
-**Laboratory Access:** The instrumentation lab is open from 8AM to 5PM daily.  Students should arrange to complete their lab work during this time, and should not be in the lab after hours (except under special circumstances with prior arrangement).  Aa key may be obtained from Ms. Diann Ferguson in the Chemistry Main Office; a $10 deposit is required.
+**Laboratory Access:** The instrumentation lab is open from 8AM to 5PM daily.  Students should arrange to complete their lab work during this time, and should not be in the lab after hours (except under special circumstances with prior arrangement).  A key may be obtained from Ms. Diann Ferguson in the Chemistry Main Office; a $10 deposit is required.
 
 **Inclement Weather & Other Emergencies (including COVID19):** Please check the University website for campus closings during times of bad weather, local, state, or national emergencies, and/or pandemics.  Your health and safety is a priority when traveling. Use common sense when attempting to get to campus and notify your instructor if you are unable to safely make it.  Announcements will be made via e-mail and/or Microsoft Teams if class must be canceled when the University has not officially closed and/or if we are otherwise unable to meet in person.
 
