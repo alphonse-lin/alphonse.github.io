@@ -178,12 +178,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#chemicals"><i class="fa fa-check"></i>Chemicals</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#safety"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-materials"><i class="fa fa-check"></i>Required Materials</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-solutions"><i class="fa fa-check"></i>Required Solutions</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#reference"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
 <li class="chapter" data-level="3.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>3.1</b> Lab Procedure</a><ul>
@@ -195,6 +197,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
 <li class="chapter" data-level="3.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
 <li class="chapter" data-level="3.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.4</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#solutions"><i class="fa fa-check"></i>Solutions</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>II Rotations</b></span></li>
 <li class="chapter" data-level="4" data-path="rotation-a-e-cigarette-liquid.html"><a href="rotation-a-e-cigarette-liquid.html"><i class="fa fa-check"></i><b>4</b> Rotation A: e-Cigarette Liquid</a><ul>
@@ -389,25 +395,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Use the Flame AA SOP to prepare a flame AA <em>method</em> file containing your blanks and standards. Use the <code>CHEM370_Vape</code> method as a template, but don’t save over the template!</p></li>
 <li><p>Prepare a <em>Sample Information File</em> containing your QC.</p></li>
 <li><p>Run the blanks, standards, and QC.</p>
-<div class="marginfigure">
-<p>
-<p><strong>Checkpoint:</strong></p>
-</p>
-<ul>
-<li>
-<p>A passing blank will show no signs of contamination.<br /></p>
-</li>
-<li>
-<p>A passing standard curve will have <span class="math inline"><span class="math inline">\(R^2 \ge 0.9990\)</span></span>.<br /></p>
-</li>
-<li>
-<p>A passing QC will be within <span class="math inline"><span class="math inline">\(\pm\)</span></span> 5% of the known concentration.</p>
-</li>
-</ul>
-<p>
-<p>If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!</p>
-</p>
-</div></li>
+<pre class="marginfigure"><code>**Checkpoint:**
+
+- A passing blank will show no signs of contamination.  
+- A passing standard curve will have $R^2 \ge 0.9990$.  
+- A passing QC will be within $\pm$ 5% of the known concentration.  
+
+If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!</code></pre></li>
 <li><p>If everything passes, add your samples to your Sample Information File.</p></li>
 <li><p>Run your newly-added samples.</p></li>
 </ol>
@@ -424,22 +418,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="data-processing-1" class="section level3">
 <h3><span class="header-section-number">4.2.5</span> Data Processing</h3>
-<div class="marginfigure">
-<p>
-You should turn a ZIP folder containing:
-</p>
-<ul>
-<li>
-Your complete lab notebook as an .ipynb file, functioning with no errors.<br />
-</li>
-<li>
-Your data files.<br />
-</li>
-<li>
-Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx">analysis sheet</a>.
-</li>
-</ul>
-</div>
+<pre class="marginfigure"><code>You should turn a ZIP folder containing:  
+
+- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your data files.  
+- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx).</code></pre>
 <ol style="list-style-type: decimal">
 <li>Export your data to a CSV file using the <strong>Data Manager</strong> software package (shortcut on Desktop). Use the <code>CHEM370_template</code> design when prompted.</li>
 <li>Use R to create and plot a calibration curve.</li>
@@ -454,47 +437,47 @@ Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/maste
 <ol style="list-style-type: decimal">
 <li>What is <span class="math inline">\(R^2\)</span> value for your calibration curve? Call the variable <code>r2</code>.</li>
 </ol>
-<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="flame-aa.html#cb42-1"></a>r2 &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="flame-aa.html#cb53-1"></a>r2 &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>What is sensitivity factor? Call the variable <code>m</code>.</li>
 </ol>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="flame-aa.html#cb43-1"></a>m &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="flame-aa.html#cb54-1"></a>m &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>What is mean measured analyte concentration for the QC in mg/L? Call the variable <code>qc_conc</code>.</li>
 </ol>
-<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="flame-aa.html#cb44-1"></a>qc_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="flame-aa.html#cb55-1"></a>qc_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
 <li>What is the expected analyte concentration for the QC in mg/L? Call the variable <code>qc_expected</code>.</li>
 </ol>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="flame-aa.html#cb45-1"></a>qc_expected &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="flame-aa.html#cb56-1"></a>qc_expected &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>TRUE or FALSE: My QC passes at the 95% confidence level. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>qc_passfail</code>.</li>
 </ol>
-<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="flame-aa.html#cb46-1"></a>passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="flame-aa.html#cb57-1"></a>passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="6" style="list-style-type: decimal">
 <li>What is mean analyte concentration for sample 1 in mg/L? Call the variable <code>s1_conc</code>.</li>
 </ol>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="flame-aa.html#cb47-1"></a>s1_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="flame-aa.html#cb58-1"></a>s1_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="7" style="list-style-type: decimal">
 <li>What is mean analyte concentration for sample 2 in mg/L? Call the variable <code>s2_conc</code>.</li>
 </ol>
-<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="flame-aa.html#cb48-1"></a>s2_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="flame-aa.html#cb59-1"></a>s2_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="8" style="list-style-type: decimal">
 <li>What is the 95% CI for sample 1 in mg/L? Call the variable <code>s1_ci</code>.</li>
 </ol>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="flame-aa.html#cb49-1"></a>s1_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="flame-aa.html#cb60-1"></a>s1_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="9" style="list-style-type: decimal">
 <li>(Acetaminophen Only) What is the 95% CI for sample 2 in mg/L? Call the variable <code>s2_ci</code>.</li>
 </ol>
-<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="flame-aa.html#cb50-1"></a>s2_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="flame-aa.html#cb61-1"></a>s2_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="10" style="list-style-type: decimal">
 <li>TRUE or FALSE: The concentration of Sample 1 is significantly different from the labeled value. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>s1_passfail</code>.</li>
 </ol>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="flame-aa.html#cb51-1"></a>s1_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="flame-aa.html#cb62-1"></a>s1_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="11" style="list-style-type: decimal">
 <li>(Acetaminophen Only) TRUE or FALSE: The concentration of Sample 2 is significantly different from the labeled value. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>s2_passfail</code>.</li>
 </ol>
-<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="flame-aa.html#cb52-1"></a>s2_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="flame-aa.html#cb63-1"></a>s2_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>IR Spectrum Processing | CHEM 370 Lab Manual</title>
+  <title>Materials (for Instructors) | CHEM 370 Lab Manual</title>
   <meta name="description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="IR Spectrum Processing | CHEM 370 Lab Manual" />
+  <meta property="og:title" content="Materials (for Instructors) | CHEM 370 Lab Manual" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/cover-image-mass-spec.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="IR Spectrum Processing | CHEM 370 Lab Manual" />
+  <meta name="twitter:title" content="Materials (for Instructors) | CHEM 370 Lab Manual" />
   
   <meta name="twitter:description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="twitter:image" content="images/cover-image-mass-spec.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="fit-linear-model-calibration.html"/>
-<link rel="next" href="serial-dilution.html"/>
+<link rel="prev" href="uv-vis-assessment.html"/>
+<link rel="next" href="rotation-a-e-cigarette-liquid.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -330,66 +330,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ir-spectrum-processing" class="section level2 unnumbered">
-<h2>IR Spectrum Processing</h2>
-<p>IR spectra will be collected as <em>Absorbance</em> vs. <em>Frequency (in wavenumbers)</em>. You will use this to calculate the hit-quality index (HQI) of each spectrum compared to a reference sample. Read <a href="https://www.researchgate.net/publication/51602215_Standardization_of_Raman_spectra_for_transfer_of_spectral_libraries_across_different_instruments">Rodriguez et al 2011</a> for more information on HQI.</p>
-<p>The examples below assume <code>X</code> is defined as a spectrum containing <em>wavenumber</em> as the first column and <em>absorbance</em> and the second column.</p>
-<div id="pre-processing" class="section level3 unnumbered">
-<h3>Pre-processing</h3>
-<p>Often, IR spectra are normalized for comparison to each other. This is done by baseline correcting the spectra so that the minimum value is zero (i.e. subtracting the minimum value in the spectrum) and setting the maximum value of each spectrum to 1 (i.e. dividing by the maximum value). This approach is shown below. An alternative approach is <em>mean centering</em>, which is not shown here.</p>
-<p>You should show your normalized data when comparing spectra in your lab notebooks or reports (at least for Chem 370 lab).</p>
-<p><strong>Baseline the data:</strong></p>
-<div class="sourceCode" id="cb133"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb133-1"><a href="ir-spectrum-processing.html#cb133-1"></a>X[<span class="op">:</span>, <span class="dv">3</span>] &lt;-<span class="st"> </span>X[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(X[<span class="op">:</span>, <span class="dv">2</span>])  <span class="co"># subtract minimum abs. from all abs. values a new column</span></span>
-<span id="cb133-2"><a href="ir-spectrum-processing.html#cb133-2"></a><span class="co">### Do this for all 3 of your spectra</span></span></code></pre></div>
-<p><strong>Normalize the data to 1:</strong></p>
-<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="ir-spectrum-processing.html#cb134-1"></a>X[<span class="op">:</span>, <span class="dv">3</span>] &lt;-<span class="st"> </span>X[<span class="op">:</span>, <span class="dv">3</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(X[<span class="op">:</span>, <span class="dv">3</span>])  <span class="co"># divide all baselined abs. values by max abs. value</span></span>
-<span id="cb134-2"><a href="ir-spectrum-processing.html#cb134-2"></a><span class="co">### Do this for all 3 of your spectra</span></span></code></pre></div>
-<p><strong>Take the mean of 3 spectra:</strong></p>
-<div class="sourceCode" id="cb135"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb135-1"><a href="ir-spectrum-processing.html#cb135-1"></a><span class="co">### Put your three spectra in a 3-column matrix</span></span>
-<span id="cb135-2"><a href="ir-spectrum-processing.html#cb135-2"></a>sample_A &lt;-<span class="st"> </span><span class="kw">data.frame</span>(X[<span class="op">:</span>, <span class="dv">2</span>], <span class="kw">X_2</span>(<span class="op">:</span>,<span class="dv">2</span>), X_<span class="dv">3</span>[<span class="op">:</span>, <span class="dv">2</span>])</span>
-<span id="cb135-3"><a href="ir-spectrum-processing.html#cb135-3"></a></span>
-<span id="cb135-4"><a href="ir-spectrum-processing.html#cb135-4"></a><span class="co">### Then, take the mean across rows</span></span>
-<span id="cb135-5"><a href="ir-spectrum-processing.html#cb135-5"></a>sample_A &lt;-<span class="st"> </span><span class="kw">rowMeans</span>(sample_A) </span>
-<span id="cb135-6"><a href="ir-spectrum-processing.html#cb135-6"></a></span>
-<span id="cb135-7"><a href="ir-spectrum-processing.html#cb135-7"></a><span class="co">### Do this for both samples and the reference</span></span></code></pre></div>
+<div id="uvvis-materials" class="section level2 unnumbered">
+<h2>Materials (for Instructors)</h2>
+<div id="materials" class="section level3 unnumbered">
+<h3>Materials</h3>
+<p>This lab requires per student:</p>
+<ul>
+<li>5 25-mL volumetric flasks</li>
+<li>1 50-mL volumetric flask</li>
+<li>Volumetric pipettes (you determine the size you need)</li>
+<li>Pipette bulb</li>
+<li>1-cm plastic cuvette</li>
+<li>Beakers, for temporary storage of stock solutions</li>
+<li>Waste beaker</li>
+<li>SpectroVis UV-visible spectrometer</li>
+</ul>
 </div>
-<div id="hit-quality-index-calculation" class="section level3 unnumbered">
-<h3>Hit-quality Index Calculation</h3>
-<p>The hit-quality index is defined as:</p>
-<p><span class="math display">\[
-HQI = \frac{(\text{Reference} \cdot \text{Sample})^2}{(\text{Reference} \cdot \text{Reference}) \times (\text{Sample} \cdot \text{Sample})}
-\]</span></p>
-<p>Note that the dot is the <em>dot product</em>, NOT multiplication! The dot product is easily calculated in Octave with the <code>dot()</code> function. The example below assumes you have created a matrix with the normalize absorbance in column 3 as per the examples above.</p>
-<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="ir-spectrum-processing.html#cb136-1"></a><span class="kw">dot</span>(Ref[<span class="op">:</span>, <span class="dv">3</span>], X[<span class="op">:</span>, <span class="dv">3</span>])<span class="op">^</span><span class="dv">2</span> <span class="op">/</span><span class="st"> </span>(<span class="kw">dot</span>(Ref[<span class="op">:</span>, <span class="dv">3</span>], Ref[<span class="op">:</span>, <span class="dv">3</span>]) <span class="op">*</span><span class="st"> </span><span class="kw">dot</span>(X[<span class="op">:</span>, <span class="dv">3</span>], X[<span class="op">:</span>, <span class="dv">3</span>]))</span>
-<span id="cb136-2"><a href="ir-spectrum-processing.html#cb136-2"></a><span class="co">### do this for both samples</span></span></code></pre></div>
-<p>This produces a single value that should be less than 1. If your answer does not meet these criteria try the calculation again.</p>
-</div>
-<div id="plotting-ir-spectra" class="section level3 unnumbered">
-<h3>Plotting IR Spectra</h3>
-<p>You should always plot your normalized data when comparing spectra in your lab notebooks or reports (at least for Chem 370 lab).</p>
-<p>Note that (according to IUPAC convention) spectra are always plotted with higher energy on the left and lower energy on the right side of the <span class="math inline">\(x\)</span>-axis. For IR spectra displayed with frequency as <span class="math inline">\(x\)</span>, this means you have to reverse the axis to be in reverse order, such that it go from higher frequency (higher energy, smaller wavelength) to lower frequency (lower energy, longer wavelength).</p>
-<div class="sourceCode" id="cb137"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb137-1"><a href="ir-spectrum-processing.html#cb137-1"></a><span class="kw">plot</span>(</span>
-<span id="cb137-2"><a href="ir-spectrum-processing.html#cb137-2"></a>  X[<span class="op">:</span>, <span class="dv">1</span>], sample_A, </span>
-<span id="cb137-3"><a href="ir-spectrum-processing.html#cb137-3"></a>  <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">4000</span>, <span class="dv">600</span>), <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb137-4"><a href="ir-spectrum-processing.html#cb137-4"></a>  <span class="dt">xlab =</span> <span class="st">&quot;Frequency (cm^-1)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Normalized Absorbance&quot;</span></span>
-<span id="cb137-5"><a href="ir-spectrum-processing.html#cb137-5"></a>)</span>
-<span id="cb137-6"><a href="ir-spectrum-processing.html#cb137-6"></a><span class="kw">lines</span>(X_<span class="dv">2</span>[<span class="op">:</span>, <span class="dv">1</span>], sample_B)</span>
-<span id="cb137-7"><a href="ir-spectrum-processing.html#cb137-7"></a><span class="kw">lines</span>(Ref[<span class="op">:</span>, <span class="dv">1</span>], Ref[<span class="op">:</span>, <span class="dv">3</span>])</span>
-<span id="cb137-8"><a href="ir-spectrum-processing.html#cb137-8"></a></span>
-<span id="cb137-9"><a href="ir-spectrum-processing.html#cb137-9"></a><span class="co">### Make sure you include a legend too!</span></span></code></pre></div>
-<div class="figure">
-<img src="images/ir-spectrum-example.png" alt="" />
-<p class="caption">Example of IR spectra that have been baselined, normalized, and plotted with a reversed (correct) x-axis.</p>
+<div id="solutions" class="section level3 unnumbered">
+<h3>Solutions</h3>
+<p>This lab requires per student:</p>
+<ul>
+<li>0.05 M sulfuric acid, about 150 ml</li>
+<li>100-ppm quinine stock solution, about 20 mL</li>
+<li>100-ppm quinine QC stock solution, about 10 mL</li>
+<li>Tonic water, about 20 mL</li>
+<li>Wash bottle of DI water</li>
+</ul>
+
 </div>
 </div>
-</div>
+<!-- </div> -->
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="fit-linear-model-calibration.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="serial-dilution.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="uv-vis-assessment.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="rotation-a-e-cigarette-liquid.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

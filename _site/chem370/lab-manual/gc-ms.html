@@ -178,12 +178,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#chemicals"><i class="fa fa-check"></i>Chemicals</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#safety"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-materials"><i class="fa fa-check"></i>Required Materials</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-solutions"><i class="fa fa-check"></i>Required Solutions</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#reference"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
 <li class="chapter" data-level="3.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>3.1</b> Lab Procedure</a><ul>
@@ -195,6 +197,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
 <li class="chapter" data-level="3.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
 <li class="chapter" data-level="3.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.4</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#solutions"><i class="fa fa-check"></i>Solutions</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>II Rotations</b></span></li>
 <li class="chapter" data-level="4" data-path="rotation-a-e-cigarette-liquid.html"><a href="rotation-a-e-cigarette-liquid.html"><i class="fa fa-check"></i><b>4</b> Rotation A: e-Cigarette Liquid</a><ul>
@@ -344,17 +350,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li>Run a solvent blank on the GC-MS using the <code>CHEM370_Vape.M</code> method. Use a microliter syringe to inject your sample and consult the GC-MS SOP.</li>
 </ol>
-<div class="marginfigure">
-<p>
-<strong><em>Checkpoint:</em></strong>
-</p>
-<p>
-A solvent blank in this case is 1 <span class="math inline"><span class="math inline">\(\mu\)</span></span>L methanol and nothing else.
-</p>
-<p>
-Your blank should have a baseline less than 50,000 counts that is stable and free of peaks. If you see peaks, run another blank until you don’t!
-</p>
-</div>
+<pre class="marginfigure"><code>***Checkpoint:***
+
+A solvent blank in this case is 1 $\mu$L methanol and nothing else.
+
+Your blank should have a baseline less than 50,000 counts that is stable and free of peaks.  If you see peaks, run another blank until you don&#39;t!</code></pre>
 <ol start="2" style="list-style-type: decimal">
 <li>If your blank is clean, prepare a sample as per below and run on the GC-MS using the <code>CHEM370_Vape.M</code> method. Consult the GC-MS SOP for more information.</li>
 </ol>
@@ -380,22 +380,11 @@ Your blank should have a baseline less than 50,000 counts that is stable and fre
 </div>
 <div id="data-processing" class="section level3">
 <h3><span class="header-section-number">4.1.3</span> Data Processing</h3>
-<div class="marginfigure">
-<p>
-You should turn a ZIP folder containing:
-</p>
-<ul>
-<li>
-Your complete lab notebook as an .ipynb file, functioning with no errors.<br />
-</li>
-<li>
-Your data files.<br />
-</li>
-<li>
-Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx">analysis sheet</a>.
-</li>
-</ul>
-</div>
+<pre class="marginfigure"><code>You should turn a ZIP folder containing:  
+
+- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your data files.  
+- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx).</code></pre>
 <p><em>An example notebook is available <a href="https://alphonse.github.io/chem370/notebooks/good-example/">here</a></em>.</p>
 <ol style="list-style-type: decimal">
 <li><p>Use the GC-MS library to get an initial idea of what compounds are present.</p></li>
@@ -418,34 +407,34 @@ Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/maste
 <ol style="list-style-type: decimal">
 <li>What is the mass-to-charge ratio of the base peak in your spectrum? Call the variable <code>base</code>.</li>
 </ol>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="gc-ms.html#cb35-1"></a>base &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="gc-ms.html#cb44-1"></a>base &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>What is the mass-to-charge ratio of the molecular ion? Call the variable <code>molion</code>.</li>
 </ol>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="gc-ms.html#cb36-1"></a>molion &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="gc-ms.html#cb45-1"></a>molion &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>How many C atoms are present in your sample? Call the variable <code>catoms</code>.</li>
 </ol>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="gc-ms.html#cb37-1"></a>catoms &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb46-1"><a href="gc-ms.html#cb46-1"></a>catoms &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
 <li>How many rings and/or double bonds are present in your sample? Call the variable <code>rdb</code>.</li>
 </ol>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="gc-ms.html#cb38-1"></a>rdb &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="gc-ms.html#cb47-1"></a>rdb &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>TRUE or FALSE: My molecule contains an EVEN number of N atoms. Answer <code>TRUE</code> or <code>FALSE</code> in the variable <code>oddeven</code>.</li>
 </ol>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="gc-ms.html#cb39-1"></a>oddeven &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="gc-ms.html#cb48-1"></a>oddeven &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="6" style="list-style-type: decimal">
 <li>What is the monoisotopic molecular weight of your molecule? Call the variable <code>molwt</code>.</li>
 </ol>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="gc-ms.html#cb40-1"></a>molwt &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="gc-ms.html#cb49-1"></a>molwt &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="7" style="list-style-type: decimal">
 <li>Propose a formula for your molecule. Use the variables <code>c</code> for number carbon atoms, <code>h</code> for number of hydrogen, <code>o</code> for oxygen, and <code>n</code> for nitrogen. Your sample will not contain atoms other than these for this lab activity.</li>
 </ol>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="gc-ms.html#cb41-1"></a>c &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span>
-<span id="cb41-2"><a href="gc-ms.html#cb41-2"></a>h &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span>
-<span id="cb41-3"><a href="gc-ms.html#cb41-3"></a>o &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span>
-<span id="cb41-4"><a href="gc-ms.html#cb41-4"></a>n &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="gc-ms.html#cb50-1"></a>c &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span>
+<span id="cb50-2"><a href="gc-ms.html#cb50-2"></a>h &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span>
+<span id="cb50-3"><a href="gc-ms.html#cb50-3"></a>o &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span>
+<span id="cb50-4"><a href="gc-ms.html#cb50-4"></a>n &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <div style="page-break-after: always;"></div>
 </div>
 </div>

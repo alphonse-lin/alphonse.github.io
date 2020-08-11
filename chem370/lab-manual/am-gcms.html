@@ -178,12 +178,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#chemicals"><i class="fa fa-check"></i>Chemicals</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#safety"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-materials"><i class="fa fa-check"></i>Required Materials</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-solutions"><i class="fa fa-check"></i>Required Solutions</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#reference"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
 <li class="chapter" data-level="3.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>3.1</b> Lab Procedure</a><ul>
@@ -195,6 +197,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
 <li class="chapter" data-level="3.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
 <li class="chapter" data-level="3.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.4</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#solutions"><i class="fa fa-check"></i>Solutions</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>II Rotations</b></span></li>
 <li class="chapter" data-level="4" data-path="rotation-a-e-cigarette-liquid.html"><a href="rotation-a-e-cigarette-liquid.html"><i class="fa fa-check"></i><b>4</b> Rotation A: e-Cigarette Liquid</a><ul>
@@ -343,19 +349,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="instrumentation-1" class="section level3">
 <h3><span class="header-section-number">5.3.1</span> Instrumentation</h3>
 <ol style="list-style-type: decimal">
-<li>Run a solvent blank on the GC-MS using the <code>CHEM370_Acetaminophen.M</code> method. Use a microliter syringe to inject your sample and consult the GC-MS SOP.
-<div class="marginfigure">
-<p>
-<strong><em>Checkpoint:</em></strong>
-</p>
-<p>
-A solvent blank in this case is 2 <span class="math inline"><span class="math inline">\(\mu\)</span></span>L methanol and nothing else.
-</p>
-<p>
-Your blank should have a baseline less than 50,000 counts that is stable and free of peaks. If you see peaks, run another blank until you don’t!
-</p>
-</div></li>
-<li>If your blank is clean, prepare a sample as per below and run on the GC-MS using the <code>CHEM370_Acetaminophen.M</code> method. Consult the GC-MS SOP for more information.</li>
+<li><p>Run a solvent blank on the GC-MS using the <code>CHEM370_Acetaminophen.M</code> method. Use a microliter syringe to inject your sample and consult the GC-MS SOP.</p>
+<pre class="marginfigure"><code>***Checkpoint:***
+
+A solvent blank in this case is 2 $\mu$L methanol and nothing else.
+
+Your blank should have a baseline less than 50,000 counts that is stable and free of peaks.  If you see peaks, run another blank until you don&#39;t!</code></pre></li>
+<li><p>If your blank is clean, prepare a sample as per below and run on the GC-MS using the <code>CHEM370_Acetaminophen.M</code> method. Consult the GC-MS SOP for more information.</p></li>
 </ol>
 </div>
 <div id="sample-preparation-2" class="section level3">
@@ -379,22 +379,11 @@ Your blank should have a baseline less than 50,000 counts that is stable and fre
 </div>
 <div id="data-processing-2" class="section level3">
 <h3><span class="header-section-number">5.3.3</span> Data Processing</h3>
-<div class="marginfigure">
-<p>
-You should turn a ZIP folder containing:
-</p>
-<ul>
-<li>
-Your complete lab notebook as an .ipynb file, functioning with no errors.<br />
-</li>
-<li>
-Your data files.<br />
-</li>
-<li>
-Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx">analysis sheet</a>.
-</li>
-</ul>
-</div>
+<pre class="marginfigure"><code>You should turn a ZIP folder containing:  
+
+- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your data files.  
+- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx).</code></pre>
 <ol style="list-style-type: decimal">
 <li><p>Use the GC-MS library to get an initial idea of what compounds are present.</p></li>
 <li><p>Export your data as a CSV file and save the file to NEON.</p>

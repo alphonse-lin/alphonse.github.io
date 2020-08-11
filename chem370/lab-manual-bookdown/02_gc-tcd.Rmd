@@ -228,7 +228,7 @@ peak1_sn <- 0    # put your answer between the '<-' and '#'
 peak2_sn <- 0    # put your answer between the '<-' and '#'
 ```
 
-## Materials (for Instructors) {-}
+## Materials (for Instructors) {- #gctcd-materials}
 
 ### Materials  {-}
 

@@ -178,12 +178,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#chemicals"><i class="fa fa-check"></i>Chemicals</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#safety"><i class="fa fa-check"></i>Safety</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-materials"><i class="fa fa-check"></i>Required Materials</a></li>
-<li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#required-solutions"><i class="fa fa-check"></i>Required Solutions</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#reference"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
 <li class="chapter" data-level="3.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>3.1</b> Lab Procedure</a><ul>
@@ -195,6 +197,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
 <li class="chapter" data-level="3.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
 <li class="chapter" data-level="3.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.4</b> Assessment</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#solutions"><i class="fa fa-check"></i>Solutions</a></li>
+</ul></li>
 </ul></li>
 <li class="part"><span><b>II Rotations</b></span></li>
 <li class="chapter" data-level="4" data-path="rotation-a-e-cigarette-liquid.html"><a href="rotation-a-e-cigarette-liquid.html"><i class="fa fa-check"></i><b>4</b> Rotation A: e-Cigarette Liquid</a><ul>
@@ -327,19 +333,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="chromatogram-mass-spectrum-plotting" class="section level2 unnumbered">
 <h2>Chromatogram &amp; Mass Spectrum Plotting</h2>
 <p>Chromatograms and mass spectra are often normalized to the maximum value in the chromatogram to give a <span class="math inline">\(y\)</span>-axis in <em>Relative Abundance</em>, either as a fraction (0-1) or percentage (0-100%). The following example assumes a data frame with <em>Time</em> as column 1 and <em>Detector Signal</em> as column 2.</p>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="chromatogram-mass-spectrum-plotting.html#cb105-1"></a><span class="co">### add a new column (3) that is the detector signal divided by the maximum detector signal.</span></span>
-<span id="cb105-2"><a href="chromatogram-mass-spectrum-plotting.html#cb105-2"></a>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] =<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(chromatogram[<span class="op">:</span>, <span class="dv">2</span>]) <span class="op">*</span><span class="st"> </span><span class="dv">100</span>;</span></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="chromatogram-mass-spectrum-plotting.html#cb128-1"></a><span class="co">### add a new column (3) that is the detector signal divided by the maximum detector signal.</span></span>
+<span id="cb128-2"><a href="chromatogram-mass-spectrum-plotting.html#cb128-2"></a>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] =<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(chromatogram[<span class="op">:</span>, <span class="dv">2</span>]) <span class="op">*</span><span class="st"> </span><span class="dv">100</span>;</span></code></pre></div>
 <p>For chromatograms, it may sometimes be desirable to baseline correct the data first, as in:</p>
-<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="chromatogram-mass-spectrum-plotting.html#cb106-1"></a><span class="co">### add a new column (3) that is baseline corrected</span></span>
-<span id="cb106-2"><a href="chromatogram-mass-spectrum-plotting.html#cb106-2"></a>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] =<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(chromatogram[<span class="op">:</span>, <span class="dv">2</span>])</span>
-<span id="cb106-3"><a href="chromatogram-mass-spectrum-plotting.html#cb106-3"></a><span class="co">### normalize the baseline-corrected data and convert to percentage</span></span>
-<span id="cb106-4"><a href="chromatogram-mass-spectrum-plotting.html#cb106-4"></a>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] =<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(chromatogram[<span class="op">:</span>, <span class="dv">3</span>]) <span class="op">*</span><span class="st"> </span><span class="dv">100</span></span></code></pre></div>
+<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="chromatogram-mass-spectrum-plotting.html#cb129-1"></a><span class="co">### add a new column (3) that is baseline corrected</span></span>
+<span id="cb129-2"><a href="chromatogram-mass-spectrum-plotting.html#cb129-2"></a>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] =<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(chromatogram[<span class="op">:</span>, <span class="dv">2</span>])</span>
+<span id="cb129-3"><a href="chromatogram-mass-spectrum-plotting.html#cb129-3"></a><span class="co">### normalize the baseline-corrected data and convert to percentage</span></span>
+<span id="cb129-4"><a href="chromatogram-mass-spectrum-plotting.html#cb129-4"></a>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] =<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">3</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(chromatogram[<span class="op">:</span>, <span class="dv">3</span>]) <span class="op">*</span><span class="st"> </span><span class="dv">100</span></span></code></pre></div>
 <p>For mass spectra, data are mostly commonly plotted as bar plots instead of line plots. This is because the the ions effectively have discrete, integer masses. The example below assumes you have a data matrix called <code>massSpectrum</code> with <span class="math inline">\(m/z\)</span> in column 1 and detector signal in column 2.</p>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="chromatogram-mass-spectrum-plotting.html#cb107-1"></a><span class="co">### convert to relative abundance</span></span>
-<span id="cb107-2"><a href="chromatogram-mass-spectrum-plotting.html#cb107-2"></a>massSpectrum =<span class="st"> </span>massSpectrum[<span class="op">:</span>, <span class="dv">3</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(massSpectrum[<span class="op">:</span>, <span class="dv">3</span>]) <span class="op">*</span><span class="st"> </span><span class="dv">100</span></span>
-<span id="cb107-3"><a href="chromatogram-mass-spectrum-plotting.html#cb107-3"></a></span>
-<span id="cb107-4"><a href="chromatogram-mass-spectrum-plotting.html#cb107-4"></a><span class="co">### plot as bar plot</span></span>
-<span id="cb107-5"><a href="chromatogram-mass-spectrum-plotting.html#cb107-5"></a><span class="kw">bar</span>(massSpectrum[<span class="op">:</span>, <span class="dv">1</span>], massSpectrum[<span class="op">:</span>, <span class="dv">3</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="chromatogram-mass-spectrum-plotting.html#cb130-1"></a><span class="co">### convert to relative abundance</span></span>
+<span id="cb130-2"><a href="chromatogram-mass-spectrum-plotting.html#cb130-2"></a>massSpectrum =<span class="st"> </span>massSpectrum[<span class="op">:</span>, <span class="dv">3</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(massSpectrum[<span class="op">:</span>, <span class="dv">3</span>]) <span class="op">*</span><span class="st"> </span><span class="dv">100</span></span>
+<span id="cb130-3"><a href="chromatogram-mass-spectrum-plotting.html#cb130-3"></a></span>
+<span id="cb130-4"><a href="chromatogram-mass-spectrum-plotting.html#cb130-4"></a><span class="co">### plot as bar plot</span></span>
+<span id="cb130-5"><a href="chromatogram-mass-spectrum-plotting.html#cb130-5"></a><span class="kw">bar</span>(massSpectrum[<span class="op">:</span>, <span class="dv">1</span>], massSpectrum[<span class="op">:</span>, <span class="dv">3</span>])</span></code></pre></div>
 <div class="figure">
 <img src="images/chromatogram.png" alt="" />
 <p class="caption">Example of a chromatogram that has been properly normalized for comparison to other data.</p>

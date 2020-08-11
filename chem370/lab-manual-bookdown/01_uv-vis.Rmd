@@ -265,7 +265,7 @@ lod <- 0     # put your answer between the '<-' and '#'
 loq <- 0     # put your answer between the '<-' and '#'
 ```
 
-## Materials (for Instructors) {-}
+## Materials (for Instructors) {- #uvvis-materials}
 
 ### Materials {-}
 
