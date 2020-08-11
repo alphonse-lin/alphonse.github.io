@@ -4,9 +4,9 @@
 
 ##### **To Turn In** | You should turn a ZIP folder containing:  {-}
 
-1. Your complete lab notebook as an .ipynb file, functioning with no errors.  
+1. Your complete lab notebook as an .Rmd and .html file, functioning with no errors.  
 2. Your data files.  
-3. Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/lab1_uv-vis_data-analysis.xlsx).
+3. Your completed assessment at the end of your notebook.
 
 ##### **Student Learning Outcomes** | *By the end of this lab, students will:*   {-}
 
@@ -30,25 +30,6 @@ Students should work in pairs for the lab activity and turn in independent data 
 - This lab uses 0.05 M sulfuric acid ([SDS](https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-s/S25895.pdf)).  Wear goggles and gloves.
 - Tonic water contains quinine hydrochloride and the stock solution contains [quinine sulfate](https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-q/S25510A.pdf).
 - Although samples are over-the-counter products, you should avoid ingesting and/or contacting them with your skin.
-
-### Required Materials {-}
-
-- 5 25-mL volumetric flasks
-- 1 50-mL volumetric flask
-- Volumetric pipettes (you determine the size you need)
-- Pipette bulb
-- 1-cm plastic cuvette
-- Beakers, for temporary storage of stock solutions
-- Waste beaker
-- SpectroVis UV-visible spectrometer
-
-### Required Solutions {-}
-
-- 0.05 M sulfuric acid, about 150 ml
-- 100-ppm quinine stock solution, about 20 mL
-- 100-ppm quinine QC stock solution, about 10 mL
-- Tonic water, about 20 mL
-- Wash bottle of DI water
 
 ### Reference {-}
 
@@ -283,3 +264,28 @@ lod <- 0     # put your answer between the '<-' and '#'
 ```{r question-uvvis-10, purl = TRUE}
 loq <- 0     # put your answer between the '<-' and '#'
 ```
+
+## Materials (for Instructors) {-}
+
+### Materials {-}
+
+This lab requires per student: 
+
+- 5 25-mL volumetric flasks
+- 1 50-mL volumetric flask
+- Volumetric pipettes (you determine the size you need)
+- Pipette bulb
+- 1-cm plastic cuvette
+- Beakers, for temporary storage of stock solutions
+- Waste beaker
+- SpectroVis UV-visible spectrometer
+
+### Solutions {-}
+
+This lab requires per student: 
+
+- 0.05 M sulfuric acid, about 150 ml
+- 100-ppm quinine stock solution, about 20 mL
+- 100-ppm quinine QC stock solution, about 10 mL
+- Tonic water, about 20 mL
+- Wash bottle of DI water

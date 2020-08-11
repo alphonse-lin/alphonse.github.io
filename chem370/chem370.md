@@ -61,12 +61,12 @@ lecture syllabus
     <i class="fa fa-chart-line fa-lg"></i>
     data processing
 </a>
-<!-- <a class="homepage-button" href="{{site.baseurl}}/chem370/writing">
+<a class="homepage-button" href="{{site.baseurl}}/chem370/writing">
    <i class="fa fa-edit fa-lg"></i>
    writing
-</a> -->
-<a class="homepage-button" href="{{site.baseurl}}/chem370/chemistry">
+</a>
+<!-- <a class="homepage-button" href="{{site.baseurl}}/chem370/chemistry">
   <i class="fa fa-atom fa-lg"></i>
   chemistry
-</a>
+</a> -->
 </div>

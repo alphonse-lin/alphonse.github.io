@@ -14,7 +14,7 @@ icon: fa-scroll
 <a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/syllabus.pdf" target="blank">Download Syllabus as  PDF</a>
 
 **Instructor:** Al Fischer, PhD   
-**Office Hours:** By appointment at [calendly.com/drfischer](http://www.calendly.com/drfischer) (Meet on MS Teams)  
+**Office Hours:** By appointment at [calendly.com/drfischer](http://www.calendly.com/drfischer) (Meet on Zoom)  
 **Availability:** See my [calendar]({{site.baseurl}}/contact)  
 **Email:** [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 

@@ -228,3 +228,15 @@ peak1_sn <- 0    # put your answer between the '<-' and '#'
 peak2_sn <- 0    # put your answer between the '<-' and '#'
 ```
 
+## Materials (for Instructors) {-}
+
+### Materials  {-}
+
+- Syringe cleaning apparatus
+- Microliter syringe
+- GC-TCD Instrument
+
+### Chemicals {-}
+
+- Acetone in wash bottle
+- Unknown mixtures 
