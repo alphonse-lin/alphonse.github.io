@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.7.2)  7 AUG 2020 15:19
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.7.2)  12 AUG 2020 21:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -626,6 +626,9 @@ LaTeX Warning: Label `student-learning-outcomes-by-the-end-of-this-lab-students
 -will' multiply defined.
 
 
+LaTeX Warning: Label `materials' multiply defined.
+
+
 LaTeX Warning: Label `to-turn-in' multiply defined.
 
 
@@ -911,7 +914,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 111; it cannot be
 
 ] (./c370-lab-manual.toc [3]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 190; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 189; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -978,7 +981,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 200; it cannot be
 
 ]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 277; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 279; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -986,10 +989,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 277; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [12]
-Overfull \vbox (23.16092pt too high) has occurred while \output is active []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 352; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 354; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -998,7 +999,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 352; it cannot be
 
 [13]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 388; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 389; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1016,7 +1017,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 421; it cannot be
 
 [15]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 456; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 451; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1024,7 +1025,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 456; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1895) has occurred while \output is active []
 
 
 Package fontspec Warning: \addfontfeature(s) ignored on line 471; it cannot be
@@ -1045,7 +1046,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 483; it cannot be
 
 [18]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 511; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 505; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1054,7 +1055,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 511; it cannot be
 
 [19]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 521; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 525; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1068,13 +1069,13 @@ Chapter 1.
 [23
 
 ]
-Overfull \hbox (0.42003pt too wide) in paragraph at lines 586--587
+Overfull \hbox (0.42003pt too wide) in paragraph at lines 590--591
 \TU/lmr/bx/n/10 R \TU/lmr/m/n/10 is the programming language we’ll use to proce
 ss data this semester. 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 587; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 591; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1083,7 +1084,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 587; it cannot be
 
 [24]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 642; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 646; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1092,16 +1093,16 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 642; it cannot be
 
 [25]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 643.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 647.
 
-Overfull \hbox (15.76001pt too wide) in paragraph at lines 679--681
+Overfull \hbox (15.76001pt too wide) in paragraph at lines 683--685
 []\TU/lmr/m/n/10 Create a \TU/lmr/bx/n/10 New Directory\TU/lmr/m/n/10 /\TU/lmr/
 bx/n/10 New Folder \TU/lmr/m/n/10 and call in \TU/lmtt/b/n/10 lab-notebooks\TU/
 lmr/m/n/10 .  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 700; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 704; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1110,7 +1111,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 700; it cannot be
 
 [26]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 704; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 708; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1123,7 +1124,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 704; it cannot be
 Chapter 2.
 [29]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 835; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 839; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1131,13 +1132,13 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 835; it cannot be
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [30]
-Overfull \hbox (0.22pt too wide) in paragraph at lines 897--899
+Overfull \hbox (0.22pt too wide) in paragraph at lines 901--903
 []\TU/lmr/m/n/10 Open your notebook project for this lab and use it for data pr
 ocess- 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 899; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 903; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1146,7 +1147,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 899; it cannot be
 
 [31]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 956; it cannot be
+Package fontspec Warning: \addfontfeature(s) ignored on line 960; it cannot be
 (fontspec)                used with a font that wasn't selected by a fontspec
 (fontspec)                command.
 (fontspec)                 
@@ -1155,7 +1156,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 956; it cannot be
 
 [32]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1012; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1016; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1163,19 +1164,19 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1012; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [33]
-Overfull \hbox (27.12001pt too wide) in paragraph at lines 1034--1035
+Overfull \hbox (27.12001pt too wide) in paragraph at lines 1038--1039
 \TU/lmr/m/n/10 percentage (%)? Provide your answer as the variable \TU/lmtt/m/n
 /10 leastPolarPercent\TU/lmr/m/n/10 .  
  []
 
 
-Overfull \hbox (21.87001pt too wide) in paragraph at lines 1048--1049
+Overfull \hbox (21.87001pt too wide) in paragraph at lines 1052--1053
 \TU/lmr/m/n/10 percentage (%)? Provide your answer as the variable \TU/lmtt/m/n
 /10 mostPolarPercent\TU/lmr/m/n/10 .  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1128; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1231; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1183,33 +1184,21 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1128; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [34]
-Chapter 3.
-[35
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1264; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[35] [36
 
 ]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1244; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[36]
-
-LaTeX Warning: Marginpar on page 37 moved.
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1342; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
+Chapter 3.
 [37]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1404; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1338; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1218,7 +1207,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1404; it cannot
 
 [38]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1456; it cannot
+LaTeX Warning: Marginpar on page 39 moved.
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1436; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1227,7 +1219,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1456; it cannot
 
 [39]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1574; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1498; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1236,50 +1228,48 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1574; it cannot
 
 [40]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1606; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1550; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[41] [42
+[41]
 
-] [43] [44]
+Package fontspec Warning: \addfontfeature(s) ignored on line 1668; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[42]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1750; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[43] [44
+
+] [45] [46]
 Chapter 4.
-[45
+[47
 
 ]
 File: ../assets/img/e-cigarette-cdc.jpg Graphic file (type bmp)
 <../assets/img/e-cigarette-cdc.jpg>
 
-Overfull \hbox (1.16002pt too wide) in paragraph at lines 1698--1699
+Overfull \hbox (1.16002pt too wide) in paragraph at lines 1842--1843
 []\TU/lmr/m/n/10 General adulteration using FTIR and the Hit Quality Index meth
 od 
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1702; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[46]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1742; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 1777; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1846; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1288,7 +1278,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1777; it cannot
 
 [48]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1863; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 1886; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1296,8 +1286,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1863; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1956; it cannot
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 1921; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1306,7 +1298,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1956; it cannot
 
 [50]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 1981; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2007; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1315,7 +1307,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 1981; it cannot
 
 [51]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2034; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2100; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1333,7 +1325,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2125; it cannot
 
 [53]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2247; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2178; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1342,7 +1334,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2247; it cannot
 
 [54]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2325; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2269; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1351,7 +1343,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2325; it cannot
 
 [55]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2367; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2391; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1360,7 +1352,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2367; it cannot
 
 [56]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2438; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2469; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1369,7 +1361,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2438; it cannot
 
 [57]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2516; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2511; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1378,7 +1370,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2516; it cannot
 
 [58]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2575; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2582; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1386,13 +1378,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2575; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [59]
-Overfull \hbox (35.53001pt too wide) in paragraph at lines 2588--2590
-[]\TU/lmr/m/n/10 Warm up the HPLC according to the HPLC SOP. Use the \TU/lmtt/m
-/n/10 CHEM370_Vape.M 
- []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2658; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2660; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1401,10 +1388,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2658; it cannot
 
 [60]
 
-LaTeX Warning: Marginpar on page 61 moved.
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 2758; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 2719; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1412,8 +1396,13 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2758; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [61]
+Overfull \hbox (35.53001pt too wide) in paragraph at lines 2732--2734
+[]\TU/lmr/m/n/10 Warm up the HPLC according to the HPLC SOP. Use the \TU/lmtt/m
+/n/10 CHEM370_Vape.M 
+ []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2865; it cannot
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2802; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1422,38 +1411,41 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 2865; it cannot
 
 [62]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 2939; it cannot
+LaTeX Warning: Marginpar on page 63 moved.
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 2902; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[63] [64
+[63]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 3009; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[64]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 3083; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[65] [66
 
 ]
 Chapter 5.
-[65]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 3037; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[66]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 3058; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
 [67]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3107; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3181; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1461,13 +1453,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3107; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [68]
-Overfull \hbox (82.78001pt too wide) in paragraph at lines 3117--3119
-[]\TU/lmr/m/n/10 Warm up the HPLC according to the HPLC SOP. Use the \TU/lmtt/m
-/n/10 CHEM370_acetaminophen.M 
- []
 
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 3205; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3202; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1476,10 +1463,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3205; it cannot
 
 [69]
 
-LaTeX Warning: Marginpar on page 70 moved.
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 3291; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3251; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1487,8 +1471,13 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3291; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [70]
+Overfull \hbox (82.78001pt too wide) in paragraph at lines 3261--3263
+[]\TU/lmr/m/n/10 Warm up the HPLC according to the HPLC SOP. Use the \TU/lmtt/m
+/n/10 CHEM370_acetaminophen.M 
+ []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3418; it cannot
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 3349; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1497,7 +1486,10 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3418; it cannot
 
 [71]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3454; it cannot
+LaTeX Warning: Marginpar on page 72 moved.
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 3435; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1506,7 +1498,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3454; it cannot
 
 [72]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3502; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3562; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1515,7 +1507,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3502; it cannot
 
 [73]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3567; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3598; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1524,7 +1516,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3567; it cannot
 
 [74]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3653; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3646; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1532,16 +1524,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3653; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [75]
-Overfull \hbox (24.52002pt too wide) in paragraph at lines 3687--3688
-[]\TU/lmr/m/n/10 Run a solvent blank on the GC-MS using the \TU/lmtt/m/n/10 CHE
-M370_Acetaminophen.M 
- []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 3688; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3711; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1550,7 +1534,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3688; it cannot
 
 [76]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3775; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3797; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1558,8 +1542,16 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3775; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [77]
+Overfull \hbox (24.52002pt too wide) in paragraph at lines 3831--3832
+[]\TU/lmr/m/n/10 Run a solvent blank on the GC-MS using the \TU/lmtt/m/n/10 CHE
+M370_Acetaminophen.M 
+ []
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3874; it cannot
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 3832; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1568,7 +1560,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3874; it cannot
 
 [78]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3885; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 3919; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1577,7 +1569,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3885; it cannot
 
 [79]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 3953; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4018; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1586,7 +1578,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 3953; it cannot
 
 [80]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4052; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4029; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1595,7 +1587,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 4052; it cannot
 
 [81]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4200; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4097; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1604,51 +1596,51 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 4200; it cannot
 
 [82]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4209; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4196; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[83] [84
+[83]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 4344; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[84]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 4353; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[85] [86
 
 ]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 4220.
+(hyperref)                be the same. Added a new anchor on input line 4364.
 
-[85]
+[87]
 File: ./images/chromatogram.png Graphic file (type bmp)
 <./images/chromatogram.png>
 File: ./images/mass-spectrum.png Graphic file (type bmp)
 <./images/mass-spectrum.png>
 
-Overfull \hbox (20.25pt too wide) in paragraph at lines 4292--4293
+Overfull \hbox (20.25pt too wide) in paragraph at lines 4436--4437
 []\TU/lmtt/m/n/10 A = peakArea([chromatogram[:, "TIME COLUMN"], chromatogram[:,
  
  []
 
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4301; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[86]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 4323; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
-
-[87]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 4389; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4445; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1656,10 +1648,8 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 4389; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [88]
-File: ./images/ir-spectrum-example.png Graphic file (type bmp)
-<./images/ir-spectrum-example.png>
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4428; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4467; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1668,7 +1658,7 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 4428; it cannot
 
 [89]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4449; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4533; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1676,15 +1666,19 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 4449; it cannot
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
 [90]
+File: ./images/ir-spectrum-example.png Graphic file (type bmp)
+<./images/ir-spectrum-example.png>
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 4476.
+Package fontspec Warning: \addfontfeature(s) ignored on line 4572; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
 
-[91
+[91]
 
-]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 4560; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4593; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1693,38 +1687,34 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 4560; it cannot
 
 [92]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4601; it cannot
+Package hyperref Warning: The anchor of a bookmark and its parent's must not
+(hyperref)                be the same. Added a new anchor on input line 4620.
+
+[93
+
+]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 4704; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[93] [94
+[94]
 
-] [95]
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 4670; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4745; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[96]
+[95] [96
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4699; it cannot
-(fontspec)                be used with a font that wasn't selected by a
-(fontspec)                fontspec command.
-(fontspec)                 
-(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
-(fontspec)                  The requested feature is "LetterSpace=10". 
+] [97]
 
-[97]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Package fontspec Warning: \addfontfeature(s) ignored on line 4762; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4814; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
@@ -1733,32 +1723,52 @@ Package fontspec Warning: \addfontfeature(s) ignored on line 4762; it cannot
 
 [98]
 
-Package fontspec Warning: \addfontfeature(s) ignored on line 4777; it cannot
+Package fontspec Warning: \addfontfeature(s) ignored on line 4843; it cannot
 (fontspec)                be used with a font that wasn't selected by a
 (fontspec)                fontspec command.
 (fontspec)                 
 (fontspec)                 The current font is "\TU/lmr/m/n/10 ".
 (fontspec)                  The requested feature is "LetterSpace=10". 
 
-[99] [100
+[99]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 4906; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[100]
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 4921; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmr/m/n/10 ".
+(fontspec)                  The requested feature is "LetterSpace=10". 
+
+[101] [102
 
 ]
-Overfull \hbox (11.1321pt too wide) in paragraph at lines 4785--4786
+Overfull \hbox (11.1321pt too wide) in paragraph at lines 4929--4930
 []\TU/lmr/m/n/10 Week|  
  []
 
 
-Overfull \hbox (3.19847pt too wide) in paragraph at lines 4787--4788
+Overfull \hbox (3.19847pt too wide) in paragraph at lines 4931--4932
 \TU/lmr/m/n/10 Beginning|  
  []
 
 
-Overfull \hbox (1.67987pt too wide) in alignment at lines 4782--4794
+Overfull \hbox (1.67987pt too wide) in alignment at lines 4926--4938
  [] [] [] [] 
  []
 
 
-Overfull \hbox (1.67987pt too wide) in alignment at lines 4794--4949
+Overfull \hbox (1.67987pt too wide) in alignment at lines 4938--5093
  [] [] [] [] 
  []
 
@@ -1767,27 +1777,27 @@ Package bibentry Warning: You have used \nobibliography*
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4955.
-[101]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4955.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5099.
+[103]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5099.
 (./c370-lab-manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4955.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4955.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5099.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5099.
 
 Package rerunfilecheck Info: File `c370-lab-manual.out' has not changed.
-(rerunfilecheck)             Checksum: A24F5FFC2A51C82829E173D8E2383ADC;7415.
+(rerunfilecheck)             Checksum: 2074E0B5FE75D068B9D516E74E4C90A8;7947.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4955.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5099.
  ) 
 Here is how much of TeX's memory you used:
- 16382 strings out of 481804
- 292147 string characters out of 5937877
- 657162 words of memory out of 5000000
- 33021 multiletter control sequences out of 15000+600000
+ 16387 strings out of 481804
+ 292195 string characters out of 5937877
+ 656908 words of memory out of 5000000
+ 33026 multiletter control sequences out of 15000+600000
  538164 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,12n,71p,1211b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on c370-lab-manual.pdf (101 pages).
+Output written on c370-lab-manual.pdf (103 pages).
