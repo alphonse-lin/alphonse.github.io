@@ -83,7 +83,7 @@ Note that masks do little to protect the person wearing the mask; rather, they m
   - Health and Human Sciences Building – CHHS Dean’s Office (Room 201)
   - Biltmore Park Instructional Site – 3rd floor Information Desk
   
-  The mask/face covering requirement for students is an expectation of our student code of conduct and violations are subject to code of conduct proceedings and disciplinary action. Faculty and staff will communicate with the Department of Student Community Ethics regarding students who do not honor the requirement.
+The mask/face covering requirement for students is an expectation of our student code of conduct and violations are subject to code of conduct proceedings and disciplinary action. Faculty and staff will communicate with the Department of Student Community Ethics regarding students who do not honor the requirement.
 
 <a id="grading"/>
 

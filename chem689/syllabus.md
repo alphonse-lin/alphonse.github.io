@@ -55,7 +55,7 @@ A standard office suite (e.g. word processor, spreadsheet program, etc) will be 
 
 **Other Protective Equipment:**
 
-- **Face Masks** must be worn at all times.  Surgical-style or N95 masks are preferred as these are most effective at blocking aerosols.  Neck gaiters should be avoided.  Please see "Masking for a Friend" to learn where to get masks if you don't have any.
+- **Face Masks** must be worn at all times.  You must wear a mask clearly designated for 'lab use only' when working with chemicals or inside a chemistry laboratory.  Surgical-style or N95 masks are preferred as these are most effective at blocking aerosols.  Neck gaiters should be avoided.  Please see "Masking for a Friend" to learn where to get masks if you don't have any.
  
 
 <a id="covid"/>
@@ -64,7 +64,7 @@ A standard office suite (e.g. word processor, spreadsheet program, etc) will be 
 
 This course will use a *Hybrid Face-to-Face* format, meaning that students can expect >50% of course activities to occur in person.  During all in-person meetings, students *must*:
 
-  - Wear a face mask at all times (see "Masking for a Friend" statement below).
+  - Wear a face mask at all times (see "Masking for a Friend" statement below).  You must wear a 'lab use only' mask when in a chemistry laboratory.
   - Practice social distancing (maintain a distance of 2 meters from other individuals as much as possible).
   - Practice good hygiene practices and follow [CDC guidelines](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html) to minimize spread of COVID19.
   - Avoid coming to class if you experience and cold, flu, or [COVID19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html), have been diagnosed with COVID19, or have been in contact with someone who's tested positive for COVID19 within the last 14 days.

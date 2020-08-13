@@ -40,6 +40,7 @@ To achieve a satisfactory grade, students will:
   -	Appropriate clothing: closed-toed shoes, long pants, hair tie for long hair
   -	Permanent, felt-tipped marker (e.g. a Sharpie®)
   - A laptop computer meeting Chemistry and Physics' [minimum computer requirements](https://www.wcu.edu/learn/academic-services/it/computer-guidelines/index.aspx).
+  - A lab-use only face mask to prevent spread of coronavirus.
 
 Most materials are available from the WCU bookstore; goggles are also available from the WCU Chemistry Club (recommended).  A lab coat is optional.
 
@@ -122,7 +123,7 @@ Some items may be graded by computer software.  Any answers not in the specified
 
 The lab portion of Instrumental Analysis will use a *Hybrid Web* format.  Lab work and instrumental analyses will be completed in lab, but data processing and writing will be completed outside the laboratory.  Students will work in groups of 2-3 in lab, and each group will be assigned a specific time of day to attend lab.  If you do not attend during this time you will not be able to complete the lab.  This is necessary to help maintain the room capacity requirements introduced to slow the spread of SARS-CoV-2.  During all in-person meetings, students *must*:
 
-  - Wear a face mask at all times (see "Masking for a Friend" statement below).
+  - Wear a face mask at all times (must be 'lab use only' - see "Masking for a Friend" statement below).
   - Practice social distancing (maintain a distance of 2 meters from other individuals as much as possible).
   - Practice good hygiene practices and follow [CDC guidelines](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html) to minimize spread of COVID19.
   - Avoid coming to class if you experience and cold, flu, or [COVID19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html), have been diagnosed with COVID19, or have been in contact with someone who's tested positive for COVID19 within the last 14 days.
@@ -151,7 +152,9 @@ Note that masks do little to protect the person wearing the mask; rather, they m
   - Health and Human Sciences Building – CHHS Dean’s Office (Room 201)
   - Biltmore Park Instructional Site – 3rd floor Information Desk
   
-*Special note for laboratory work:* In the event of a chemical spill, splash, or other event than causes your mask to become contaminated, you should remove the mask and follow appropriate rinsing protocols to remove the contaminants from your skin, just as you would with any contaminated clothing.
+The mask/face covering requirement for students is an expectation of our student code of conduct and violations are subject to code of conduct proceedings and disciplinary action. Faculty and staff will communicate with the Department of Student Community Ethics regarding students who do not honor the requirement.
+  
+*Special note for laboratory work:* You must switch to a lab-use only mask when in lab.  This mask should only be worn in lab and no where else and should be clearly marked as "lab use only".  In the event of a chemical spill, splash, or other event than causes your mask to become contaminated, you should remove the mask and follow appropriate rinsing protocols to remove the contaminants from your skin, just as you would with any contaminated clothing.
 
 ***Laboratory Behavior:*** Never bring food or drink into the laboratory.  This includes sealed bottles and items inside backpacks – leave them outside the lab!  Do not chew gum, use tobacco products, or apply cosmetics in the lab.  Do not place personal items inside fume hoods or where they may come into contact with chemicals.  Keep walkways clear of chairs, bookbags, etc.  Wash your hands before leaving lab, and never wear gloves or lab coats outside the lab!
 
