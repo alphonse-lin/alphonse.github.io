@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Serial Dilution | CHEM 370 Lab Manual</title>
+  <title>2.4 Notebook Rubric | CHEM 370 Lab Manual</title>
   <meta name="description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Serial Dilution | CHEM 370 Lab Manual" />
+  <meta property="og:title" content="2.4 Notebook Rubric | CHEM 370 Lab Manual" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/cover-image-mass-spec.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Serial Dilution | CHEM 370 Lab Manual" />
+  <meta name="twitter:title" content="2.4 Notebook Rubric | CHEM 370 Lab Manual" />
   
   <meta name="twitter:description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="twitter:image" content="images/cover-image-mass-spec.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ir-spectrum-processing.html"/>
-<link rel="next" href="appendix-3-statistical-data-analysis.html"/>
+<link rel="prev" href="gctcd-assessment.html"/>
+<link rel="next" href="gctcd-materials.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -331,41 +331,89 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="serial-dilution" class="section level2 unnumbered">
-<h2>Serial Dilution</h2>
-<p>Returns standard concentrations based on serial dilutions of a stock solution.</p>
-<p><strong>Form:</strong></p>
-<p><code>serialDilution(stock, pipettes, flasks)</code></p>
-<p><strong>Example:</strong></p>
-<p><code>serialDilution(100.2, [5 10 10], [50 50 50]);</code></p>
-<p><strong>Arguments:</strong></p>
-<ul>
-<li><p><code>stock</code>: a scalar indicating the concentration of the stock solution.</p></li>
-<li><p><code>pipettes</code>: a column vector containing the volumes of the pipettes used (in order). Volume units should match <code>flasks</code>.</p></li>
-<li><p><code>flasks</code>: a column vector containing the volumes of the volumetric flasks used (in same order as <code>pipettes</code>). Volume units should match <code>pipettes</code>.</p></li>
-</ul>
-<p><strong>Code:</strong></p>
-<div class="sourceCode" id="cb138"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb138-1"><a href="serial-dilution.html#cb138-1"></a><span class="cf">function</span> concentrations <span class="op">=</span> serialDilution(stock<span class="op">,</span> pipettes<span class="op">,</span> flasks)</span>
-<span id="cb138-2"><a href="serial-dilution.html#cb138-2"></a>    concentrations <span class="op">=</span>[]<span class="op">;</span></span>
-<span id="cb138-3"><a href="serial-dilution.html#cb138-3"></a>    <span class="cf">for</span> <span class="fu">i</span> <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu">length</span>(pipettes)</span>
-<span id="cb138-4"><a href="serial-dilution.html#cb138-4"></a>        <span class="cf">if</span> <span class="fu">i</span> <span class="op">==</span> <span class="fl">1</span></span>
-<span id="cb138-5"><a href="serial-dilution.html#cb138-5"></a>            concentrations(<span class="fu">i</span>) <span class="op">=</span> stock <span class="op">*</span> pipettes(<span class="fu">i</span>)<span class="op">/</span>flasks(<span class="fu">i</span>)<span class="op">;</span>  <span class="co"># calculate first dilution</span></span>
-<span id="cb138-6"><a href="serial-dilution.html#cb138-6"></a>        <span class="cf">else</span></span>
-<span id="cb138-7"><a href="serial-dilution.html#cb138-7"></a>            concentrations(<span class="fu">i</span>) <span class="op">=</span> concentrations(<span class="fu">i</span><span class="op">-</span><span class="fl">1</span>) <span class="op">*</span> pipettes(<span class="fu">i</span>)<span class="op">/</span>flasks(<span class="fu">i</span>)<span class="op">;</span> <span class="co"># calculate all other dilutions</span></span>
-<span id="cb138-8"><a href="serial-dilution.html#cb138-8"></a>        <span class="cf">end</span></span>
-<span id="cb138-9"><a href="serial-dilution.html#cb138-9"></a>    <span class="cf">end</span></span>
-<span id="cb138-10"><a href="serial-dilution.html#cb138-10"></a>    concentrations <span class="op">=</span> <span class="fu">flip</span>(concentrations)<span class="op">&#39;;</span> <span class="co"># reverse the vector from lowest to highest and transpose to column vector</span></span>
-<span id="cb138-11"><a href="serial-dilution.html#cb138-11"></a><span class="cf">end</span></span></code></pre></div>
-
+<div id="gctcd-rubric" class="section level2">
+<h2><span class="header-section-number">2.4</span> Notebook Rubric</h2>
+<p>I will use this rubric to judge the <em>content</em> (not accuracy) of your notebook. For all items: ‘2’ = exceptional, ‘1’ = satisfactory, and ‘0’ = inadequate/not present.</p>
+<table>
+<colgroup>
+<col width="92%" />
+<col width="2%" />
+<col width="2%" />
+<col width="2%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Descriptive title present?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Introduction present describing experimental goals?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Materials and Methods: detailed enough to convey <em>exactly</em> what was done?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Materials and Methods: Instrument table complete?</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Results and Data: Calibration curve (if needed) plotted with high quality, including R2, slope, and intercept</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Results and Data: all spectra, chromatograms, etc., plotted with high quality</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Results and Data: Notebook runs without errors</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Conclusion present and clearly states outcome of experiment while discussing errors/future direction as needed</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>References clearly cited and used in the notebooks</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="ir-spectrum-processing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="appendix-3-statistical-data-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="gctcd-assessment.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gctcd-materials.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

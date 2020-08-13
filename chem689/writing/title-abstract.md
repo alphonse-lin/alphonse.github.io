@@ -1,5 +1,5 @@
 ---
-layout: chem689
+layout: chem370
 title:  Formatting Your References
 permalink: /chem689/writing/title-abstract
 

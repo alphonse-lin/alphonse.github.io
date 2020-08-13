@@ -1,5 +1,5 @@
 ---
-layout: chem689
+layout: chem370
 title:  CHEM 370 Guide to Publication-quality Figures
 permalink: /chem689/writing/figures
 ---

@@ -1,5 +1,5 @@
 ---
-layout: chem689
+layout: chem370
 title:  Writing a Results and Discussion Section
 permalink: /chem689/writing/results-discussion
 

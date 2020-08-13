@@ -1,5 +1,5 @@
 ---
-layout: chem689
+layout: chem370
 title:  Writing a Materials and Methods Section
 permalink: /chem689/writing/materials-methods
 

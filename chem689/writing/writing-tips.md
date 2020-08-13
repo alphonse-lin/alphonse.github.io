@@ -1,5 +1,5 @@
 ---
-layout: chem689
+layout: chem370
 title:  CHEM 370 Writing Tips
 permalink: /chem689/writing/writing-tips
 ---

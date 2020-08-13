@@ -1,5 +1,5 @@
 ---
-layout: chem689
+layout: chem370
 title:  Writing a Conclusion
 permalink: /chem689/writing/conclusion
 

@@ -178,6 +178,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
+<li class="chapter" data-level="2.4" data-path="gctcd-rubric.html"><a href="gctcd-rubric.html"><i class="fa fa-check"></i><b>2.4</b> Notebook Rubric</a></li>
 <li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
 <li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
 <li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#chemicals"><i class="fa fa-check"></i>Chemicals</a></li>
@@ -334,7 +335,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.2</span> Data Processing</h2>
 <ol style="list-style-type: decimal">
 <li><p>Open your notebook project for this lab and use it for data processing. Make sure your data files are also in this folder. Use the path: <code>lab-notebooks/lab2_gc-tcd</code>.</p></li>
-<li><p>Load the CSV files into R/RStudio (see [import data from csv]). You may also want to plot the data to inspect it.</p>
+<li><p>Load the CSV files into R/RStudio. You may also want to plot the data to inspect it.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="data-processing.html#cb5-1"></a>chromatogram &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;filename.csv&#39;</span>);  <span class="co"># replace &#39;filename&#39; with your filename</span></span></code></pre></div></li>
 <li><p>Remove the baseline offset (DC offset) from the data.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-processing.html#cb6-1"></a><span class="kw">plot</span>(time, signal, <span class="dt">xlab =</span> <span class="st">&#39;Time (min)&#39;</span>, <span class="dt">ylab =</span> <span class="st">&#39;Signal (arbitrary)&#39;</span>);</span></code></pre></div></li>
@@ -344,7 +345,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb7-3"><a href="data-processing.html#cb7-3"></a></span>
 <span id="cb7-4"><a href="data-processing.html#cb7-4"></a><span class="co">## subtract the mean baseline value and store in second column of data set</span></span>
 <span id="cb7-5"><a href="data-processing.html#cb7-5"></a>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] &lt;-<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span>baseline;  </span></code></pre></div></li>
-<li><p>Use the function [<code>peakArea()</code>][Find Peak Area] to calculate the area of each peak in your chromatograms.</p>
+<li><p>Use the function <code>peakArea()</code> to calculate the area of each peak in your chromatograms.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb8-1"><a href="data-processing.html#cb8-1"></a><span class="co">### You must first run the code shown in the peak area function for this to work!</span></span>
 <span id="cb8-2"><a href="data-processing.html#cb8-2"></a><span class="co">### Copy and paste it into your notebook and run the cell.</span></span>
 <span id="cb8-3"><a href="data-processing.html#cb8-3"></a></span>

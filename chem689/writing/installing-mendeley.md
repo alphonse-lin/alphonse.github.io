@@ -1,5 +1,5 @@
 ---
-layout: chem689
+layout: chem370
 title:  Using Mendeley
 permalink: /chem689/writing/mendeley
 

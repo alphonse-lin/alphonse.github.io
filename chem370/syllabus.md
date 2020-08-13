@@ -82,6 +82,8 @@ Note that masks do little to protect the person wearing the mask; rather, they m
   - Belk Building – CET Dean’s Office (Room 161)
   - Health and Human Sciences Building – CHHS Dean’s Office (Room 201)
   - Biltmore Park Instructional Site – 3rd floor Information Desk
+  
+  The mask/face covering requirement for students is an expectation of our student code of conduct and violations are subject to code of conduct proceedings and disciplinary action. Faculty and staff will communicate with the Department of Student Community Ethics regarding students who do not honor the requirement.
 
 <a id="grading"/>
 
@@ -203,6 +205,8 @@ Additional information is available on the Student Success website under Student
 
 ## Student Resources
 <!-- **Writing and Learning Commons (WaLC):** The Writing and Learning Commons (WaLC), located in Belk 207, writing tutoring and online writing and learning resources for all students. To view schedules and make appointments for any of these services, visit [tutoring.wcu.edu](http://tutoring.wcu.edu) or call 828-227-2274. -->
+
+**Counseling and Psychological Services (CAPS):** College students often experience issues that may interfere with academic success such as juggling responsibilities, relationship concerns, sleep problems, or feelings of anxiety, hopelessness, or depression. There are many resources on campus to assist you in managing your academic and emotional well being. We encourage you to take advantage of these resources. However, if you find yourself struggling and you need professional support, please contact Counseling & Psychological Services (CAPS). Students must call 828-227-7469 to schedule an appointment with the main office during normal business hours (Monday through Friday, 8am-5pm). For after-hours and weekend care, call 828-227-7469 and follow the prompts. Additionally, you may call the Western NC 24-hour crisis line at 888-315-2880 or the Suicide Prevention Lifeline at 800-273-8255. For more information about the services CAPS offers, visit [https://www.wcu.edu/experience/health-and-wellness/caps/index.aspx](https://www.wcu.edu/experience/health-and-wellness/caps/index.aspx).
 
 The [Writing and Learning Commons (WaLC)](http://tutoring.wcu.edu/) located in Belk 207, provides free [course tutoring](http://tutoring.wcu.edu/), [writing tutoring](https://www.wcu.edu/learn/academic-success/tutoring-services/services-resources/writing-support/index.aspx), [writing fellows](https://www.wcu.edu/learn/academic-success/tutoring-services/faculty-toolbox/writing-fellows.aspx), [Supplemental Instruction](https://www.wcu.edu/learn/academic-success/tutoring-services/faculty-toolbox/writing-fellows.aspx), [academic skills consultations](https://www.wcu.edu/learn/academic-success/tutoring-services/services-resources/academic-skills-consultations.aspx), [international student consultations](https://www.wcu.edu/learn/academic-success/tutoring-services/services-resources/academic-skills-consultations.aspx), and online writing resources for all students. To schedule appointments for any of these services, visit tutoring.wcu.edu or call 828-227-2274. 
 
