@@ -40,7 +40,7 @@ Your goals for this lab are to become familiar with the Markdown syntax, install
 
 The following video shows you how to complete the steps listed below:
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/60fdf3dd-97d0-4490-94de-44ffe3a5bcff?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/5ca6c767-a7ea-42bd-845b-e4643f748222?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
 
 ### Install R (Must be done first)
 
