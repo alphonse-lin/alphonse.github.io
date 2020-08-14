@@ -10,7 +10,7 @@ icon: fa-digital-tachograph
   {% for post in site.posts limit:1 %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}/chem370/announcements">This Week</a></h1>
+      <h1>This Week</h1>
 
       <div class="entry">
         {{ post.content }}
