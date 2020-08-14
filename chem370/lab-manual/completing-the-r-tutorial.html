@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2.1 Lab Procedure | CHEM 370 Lab Manual</title>
+  <title>1.3 Completing the R Tutorial | CHEM 370 Lab Manual</title>
   <meta name="description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="2.1 Lab Procedure | CHEM 370 Lab Manual" />
+  <meta property="og:title" content="1.3 Completing the R Tutorial | CHEM 370 Lab Manual" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/cover-image-mass-spec.png" />
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2.1 Lab Procedure | CHEM 370 Lab Manual" />
+  <meta name="twitter:title" content="1.3 Completing the R Tutorial | CHEM 370 Lab Manual" />
   
   <meta name="twitter:description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
   <meta name="twitter:image" content="images/cover-image-mass-spec.png" />
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="introduction.html"/>
-<link rel="next" href="data-processing.html"/>
+<link rel="prev" href="install-r.html"/>
+<link rel="next" href="create-lab-notebook.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -332,96 +332,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lab-procedure" class="section level2">
-<h2><span class="header-section-number">2.1</span> Lab Procedure</h2>
-<div id="prepare-samples" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Prepare Samples</h3>
+<div id="completing-the-r-tutorial" class="section level2">
+<h2><span class="header-section-number">1.3</span> Completing the R Tutorial</h2>
 <ol style="list-style-type: decimal">
-<li><p>Obtain a vial containing your unknown mixture from your instructor. Make sure to record the ID/name in your notebook!</p>
-<blockquote>
-<p>If you don’t record the ID you cannot get credit for getting the right answer!</p>
-</blockquote></li>
+<li>Complete the <em>Lab 1A: What is R?</em> tutorial under the <strong>Tutorial</strong> tab in the top left pane of RStudio.</li>
 </ol>
-<p>Your runlist for this experiment is:</p>
-<ol style="list-style-type: decimal">
-<li>Blank</li>
-<li>Sample</li>
-</ol>
-</div>
-<div id="setup-the-instrument" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Setup the Instrument</h3>
-<p><em>You will need <a href="https://www.vernier.com/products/software/logger-lite/#section5">Vernier Logger Lite</a> (free) installed on your computer for these steps.</em></p>
-<ol style="list-style-type: decimal">
-<li><p>Connect the Instrumentation Amplifier/GoLink! to your computer via USB and open Logger Lite.<br />
-</p></li>
-<li><p>Go to <strong>Experiment &gt; Set up sensors &gt; GoLink:1</strong>.<br />
-</p></li>
-<li><p>Select <strong>Choose Sensor</strong> and select <strong>Instrumentation Amplifier from the dropdown menu</strong>.<br />
-</p></li>
-<li><p>Open the <strong>dropdown menu</strong> again and choose the <strong>0-20 mV</strong> range for the amplifier.</p></li>
-<li><p>Use the <strong>Zero</strong> knob (on the GC) to adjust the signal until the readout is between 1 and 2 mV.</p>
-<blockquote>
-<p>Do not touch any other knobs – they are very sensitive and moving them even a small amount may lead to several additional hours of stabilization time.</p>
-</blockquote></li>
-<li><p>Let the instrument run for a minute or two until you’re cetain the baseline is stable.</p>
-<div class="marginfigure">
-<p>
-The instrument is “stable” when the baseline fluctuates by no more than a few percent of full-scale (20 mV in this case).
-</p>
-</div></li>
-</ol>
-</div>
-<div id="load-the-syringe" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> Load the Syringe</h3>
-<ol style="list-style-type: decimal">
-<li>Obtain a microliter syringe and clean it with acetone in the syringe cleaning apparatus:
-<ol style="list-style-type: decimal">
-<li>Place the syringe in the funnel on top of the apparatus.<br />
-</li>
-<li>Turn on the vacuum pump with the <strong>black on/off switch</strong>.<br />
-</li>
-<li>Squirt solvent through the syringe.<br />
-</li>
-<li>Clean the plunger and the needle with a Kimwipe moistened with your solvent.<br />
-</li>
-</ol></li>
-<li>For a solvent blank: Pull about 4 <span class="math inline">\(\mu\)</span>L acetone into the syringe.<br />
-</li>
-<li>For a samples:
-<ol style="list-style-type: decimal">
-<li>Pull 4 <span class="math inline">\(\mu\)</span>L of your sample into the syringe.</li>
-<li>Pull air into the syringe until you can clearly see how much sample you loaded. Record this value in your lab notebook.</li>
-</ol></li>
-</ol>
-</div>
-<div id="inject-the-sample" class="section level3">
-<h3><span class="header-section-number">2.1.4</span> Inject the Sample</h3>
-<ol style="list-style-type: decimal">
-<li><p>Make sure the software is running and the instrument is ready to run. (It should be if you completed the steps above and the baseline is stable.)</p></li>
-<li><p>Push the syringe through the septum of the <strong>side B</strong> injection port and then depress the plunger. Do this step as smoothly and quickly as possible, and be consistent.</p>
-<blockquote>
-<p>The syringe plunger does not go all the way down to the glass body! Do not force it or you will ruin the syringe!</p>
-</blockquote></li>
-<li><p>Press the start button in the software. Again, the key is to be consistent with when you press the start button relative to sample injection!</p></li>
-<li><p>Allow the instrument to run for at least 5 minutes for all peaks to elute.</p></li>
-<li><p>Immediately clean the syringe in the syringe cleaning apparatus, and then repeat the loading and injection steps as needed for all blanks/samples. Make sure you clean the syringe after the last sample.</p></li>
-</ol>
-</div>
-<div id="save-the-data" class="section level3">
-<h3><span class="header-section-number">2.1.5</span> Save the Data</h3>
-<ol style="list-style-type: decimal">
-<li>When your run is finished, click the <strong>Store</strong> button and then give the run a name in the data viewer on the left side of the screen.</li>
-<li>When all of your runs have finished go to <strong>File &gt; Export As &gt; CSV</strong> to save your data as a CSV file for processing.</li>
-</ol>
-</div>
+<p>The following video shows you how to complete the steps listed below, assuming you have installed the <code>instRumental</code> package (Exercise 1.2).</p>
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/e0cd59b3-2492-47f7-88da-8d017b5dc720?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;">
+</iframe>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-processing.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="install-r.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="create-lab-notebook.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

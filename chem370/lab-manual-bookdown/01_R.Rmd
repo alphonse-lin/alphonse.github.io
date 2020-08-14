@@ -75,11 +75,22 @@ One of the great things about R is that anyone can develop add-ons (called "pack
       
 The `instRumental` package should now be installed on your system.
 
+
+## Completing the R Tutorial
+
+1. Complete the *Lab 1A: What is R?* tutorial under the **Tutorial** tab in the top left pane of RStudio.
+
+The following video shows you how to complete the steps listed below, assuming you have installed the `instRumental` package (Exercise 1.2).
+
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/e0cd59b3-2492-47f7-88da-8d017b5dc720?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+
 ## Creating a Lab Notebook Project {#create-lab-notebook}
 
 The following video shows you how to complete the steps listed below, assuming you have installed the `instRumental` package (Exercise 1.2).
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/a2e6c17b-017a-40cd-879e-0d903de4d45e?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/8ae9ce1a-d931-4b9a-a1d5-6f47cd55d4fe?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+
+
 
 ### Create a Project
 
