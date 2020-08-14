@@ -330,6 +330,13 @@ footer {
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom: 5%;
+  a {
+    border-bottom: 1px dotted $brown;
+    &:hover {
+      border-bottom-color: $gold;
+    }
+  }
+  
 }
 
 .column {

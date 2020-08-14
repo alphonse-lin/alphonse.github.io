@@ -553,6 +553,14 @@ footer {
   padding-bottom: 5%;
 }
 
+.card a {
+  border-bottom: 1px dotted #433024;
+}
+
+.card a:hover {
+  border-bottom-color: #C1A875;
+}
+
 .column {
   float: left;
   width: 50%;
