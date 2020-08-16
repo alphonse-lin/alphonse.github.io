@@ -7,8 +7,13 @@ permalink: /chem370/class-activities/
 This is an archive of the in-class worksheets we complete each week.
 
 
-{% for file in site.static_files %}
+<!-- {% for file in site.static_files %}
   {% if file.path contains "chem370/class-activities" %}
-   <li> <a href = "{{ site.baseurl }}{{ file.path }}">{{ file.path | replace:'.html','' | replace: '/chem370/lectures/', '' | replace: '-', ' ' }}</a> </li>
+   <li> <a href = "{{ site.baseurl }}{{ file.path }}">{{ file.path | replace:'.md','' | replace: '/chem370/class-activities/', '' | replace: '-', ' ' }}</a> </li>
   {% endif %}
+{% endfor %} -->
+{% for file in site.static_files %}
+  <li>
+  {{ file.path }}
+  </li>
 {% endfor %}
