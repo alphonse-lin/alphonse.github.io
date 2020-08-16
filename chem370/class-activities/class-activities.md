@@ -1,0 +1,14 @@
+---
+title: Chem 370 | In Class Activities
+layout: chem370
+permalink: /chem370/class-activities/
+---
+
+This is an archive of the in-class worksheets we complete each week.
+
+
+{% for file in site.static_files %}
+  {% if file.path contains "chem370/class-activities" %}
+   <li> <a href = "{{ site.baseurl }}{{ file.path }}">{{ file.path | replace:'.html','' | replace: '/chem370/lectures/', '' | replace: '-', ' ' }}</a> </li>
+  {% endif %}
+{% endfor %}

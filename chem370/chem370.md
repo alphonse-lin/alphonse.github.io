@@ -49,6 +49,10 @@ lecture syllabus
   <i class="fa fa-digital-tachograph fa-lg"></i>
   instrument tutorials
 </a> -->
+<a class="homepage-button" href="{{site.baseurl}}/chem370/class-activities">
+  <i class="fa fa-school fa-lg"></i>
+  class activities
+</a>
 
 </div>
 <!-- <hr class="hr-line"> -->
@@ -65,8 +69,8 @@ lecture syllabus
    <i class="fa fa-edit fa-lg"></i>
    writing
 </a>
-<!-- <a class="homepage-button" href="{{site.baseurl}}/chem370/chemistry">
+<a class="homepage-button" href="{{site.baseurl}}/chem370/chemistry">
   <i class="fa fa-atom fa-lg"></i>
   chemistry
-</a> -->
+</a>
 </div>
