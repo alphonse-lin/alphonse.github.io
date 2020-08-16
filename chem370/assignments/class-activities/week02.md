@@ -26,11 +26,8 @@ Scientists often talk in numbers and charts.  When presenting these items, it is
 > 
 > **value = number x magnitude x prefix x units**
 > For example:   
-> mass value = 1.3 x 
+<!-- > concentration value = $$ 1.3 \times 10^{-3} $$ M -->
 
-$$ a = b $$
+$$ 1.3 \times 10^{-3} $$
 
-ladsjf
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+$x$
