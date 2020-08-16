@@ -12,8 +12,10 @@ This is an archive of the in-class worksheets we complete each week.
    <li> <a href = "{{ site.baseurl }}{{ file.path }}">{{ file.path | replace:'.md','' | replace: '/chem370/class-activities/', '' | replace: '-', ' ' }}</a> </li>
   {% endif %}
 {% endfor %} -->
-{% for file in site.static_files %}
-  <li>
-  {{ file.path }}
-  </li>
+
+
+{% for page in site.pages %}
+  {% if page.path contains "chem370/class-activities" %}
+   <li> <a href = "{{ site.baseurl }}/{{ page.path | replace:'.md','' }}">{{ page.path | replace:'.md','' | replace: 'chem370/class-activities/', '' | replace: '-', ' ' }}</a> </li>
+  {% endif %}
 {% endfor %}
