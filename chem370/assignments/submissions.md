@@ -1,10 +1,10 @@
 ---
 layout: page_c370
-title:  CHEM 370 Assignment Submissions - MONDAY
-permalink: /chem370/assignments/submissions-monday
+title:  CHEM 370 Assignment Submissions
+permalink: /chem370/assignments/submissions
 ---
 
-Submission Links for the ***MONDAY*** lab.
+Submission Links for CHEM 370.
 
 Submissions links open 30 days before the due date and close on the due date.
 
