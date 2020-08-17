@@ -1,16 +1,16 @@
 ---
 layout: page_c370
 title:  CHEM 370 Assignment Submissions
-permalink: /chem370/assignments/submissions
+permalink: /chem370/submissions
 ---
 
 Submission Links for CHEM 370.
 
-Submissions links open 30 days before the due date and close on the due date.
+Submissions links open 10 days before the due date and close on the due date.
 
 | Assignment                   | Due                 | ID                   | Status | URL                                                          |
 | ---------------------------- | ------------------- | -------------------- | ------ | ------------------------------------------------------------ |
-| GC-TCD Lab Pack              | 2020-09-06 11:59:59 | nmUbYOF29oIx4GOJ5xMU | Open   | [link](https://www.dropbox.com/request/nmUbYOF29oIx4GOJ5xMU) |
+| GC-TCD Lab Pack              | 2020-09-06 11:59:59 | nmUbYOF29oIx4GOJ5xMU | Closed | [link](https://www.dropbox.com/request/nmUbYOF29oIx4GOJ5xMU) |
 | UV-vis Lab Pack              | 2020-09-20 11:59:59 | FzXL30enUUi7jy7N48L6 | Closed | [link](https://www.dropbox.com/request/FzXL30enUUi7jy7N48L6) |
 | Lab Notebook 1 and 2 Pack    | 2020-10-18 11:59:59 | jcw4uTdTunslXo3Rr7l5 | Closed | [link](https://www.dropbox.com/request/jcw4uTdTunslXo3Rr7l5) |
 | Report Intro-Methods         | 2020-10-25 11:59:59 | TUusgTTQEB5Ie7EoEUxk | Closed | [link](https://www.dropbox.com/request/TUusgTTQEB5Ie7EoEUxk) |
