@@ -10,30 +10,36 @@ This schedule is subject to change as needed.
 
 For "In Class" work, cohort 1 meets on Mondays, cohort 2 meets on Wednesdays, and cohort 3 meets on Fridays.  Please ask your instructor if you're unsure which cohort you're in.  Unless otherwise specified, exams will be administered face-to-face.
 
+'Lecture 1' and 'Lecture 2' represent the weekly video lectures.  These, along with the quiz at the end of the videos, should be completed every Sunday by 23:59:59.  If there is homework listed it will be due at the same time.
+
+'In Class' work will be completed during our face-to-face meeting.
+
 Please see the [lab schedule]({{ site.url }}/chem370/lab-manual/appendix-5-schedule-of-labs.html) for details on weekly labs and lab due dates.
 
 # Overview Schedule
 
-|  Week  | Begins | Theme                  | In Class           | Lecture 1              | Lecture 2             | Lab                 | HW                       |
-|:------:|:------:| ---------------------- | ------------------ | ---------------------- | --------------------- | ------------------- | ------------------------ |
-|   1    |  8/17  | Intro                  | No Meeting         | Analytical Perspective | Analyst's Toolbox     | Intro + Safety      |                          |
-|   2    |  8/24  | Signals and Noise      | Choosing a Method  | Distributions          | Errors and CIs        | GC Lab 1            | Errors & CIs             |
-|   3    |  8/31  | Data Analysis          | Distributions in R | Reproducible Research  | QA/QC + Standards     | GC Data @ Home      | Making Solutions         |
-|   4    |  9/7   | Quantitative Analysis  | No Meeting         | Standardization        | Blanks                | UV-vis (Labster)    |                          |
-|   5    |  9/14  | Instrumentation Survey | ***Exam 1***       | Survey 1 + 2           | Survey 3 + 4          | UV-vis Data @ Home  |                          |
-|   6    |  9/21  | Spectroscopy           |                    | Spectroscopy           | Optics                | Rotations           | ***Instrument Quizzes*** |
-|   7    |  9/28  | Spectroscopy           |                    | UV-vis: Theory         | UV-vis: Instruments   | Rotations           |                          |
-|   8    |  10/5  | Spectroscopy           |                    | Luminescence: Theory   | Atomic: Theory        | Rotations           |                          |
-|   9    | 10/12  | Spectroscopy           |                    | Atomic: Instruments    | FT-IR                 | Rotations           |                          |
-|   10   | 10/19  | Spectrometry           | ***Exam 2***       | MS                     | Structural Det.       | Rotations           |                          |
-|   11   | 10/26  | Spectrometry           |                    | Structural Det.        | Structural Det.       | Rotations           |                          |
-|   12   |  11/2  | Separations            | Structural Det.    | Chromatography         | LC                    | Rotations           |                          |
-|   13   |  11/9  | Separations            |                    | GC                     | TBA                   | Rotations           |                          |
-|   14   | 11/16  | Review                 | ***Exam 3***       | TBA                    | TBA                   | Rotations + Cleanup |                          |
-|   15   | 11/23  | Thanksgiving           | *Remote*           | -                      | -                     | -                   | ***Exam 4***             |
-| FINALS | 11/30  | Project                | *Remote*           | Presentations  (Final) | Presentations (Final) | Final Paper         |                          |
+|  Week  | Begins | Theme                  | In Class           | Lecture 1              | Lecture 2           | Lab                 | HW                       |
+|:------:|:------:| ---------------------- | ------------------ | ---------------------- | ------------------- | ------------------- | ------------------------ |
+|   1    |  8/17  | Intro                  | No Meeting         | Analytical Perspective | Analyst's Toolbox   | Intro + Safety      |                          |
+|   2    |  8/24  | Signals and Noise      | Choosing a Method  | Distributions          | Errors and CIs      | GC Lab 1            |                          |
+|   3    |  8/31  | Data Analysis          | Distributions in R | Reproducible Research  | QA/QC + Standards   | GC Data @ Home      |                          |
+|   4    |  9/7   | Quantitative Analysis  | No Meeting         | Standardization        | Blanks              | UV-vis              |                          |
+|   5    |  9/14  | Instrumentation Survey | ***Exam 1***       | Survey 1 + 2           | Survey 3 + 4        | UV-vis Data @ Home  |                          |
+|   6    |  9/21  | Spectroscopy           |                    | Spectroscopy           | Optics              | Rotations           | ***Instrument Quizzes*** |
+|   7    |  9/28  | Spectroscopy           |                    | UV-vis: Theory         | UV-vis: Instruments | Rotations           |                          |
+|   8    |  10/5  | Spectroscopy           |                    | Luminescence: Theory   | Atomic: Theory      | Rotations           |                          |
+|   9    | 10/12  | Spectroscopy           |                    | Atomic: Instruments    | FT-IR               | Rotations           |                          |
+|   10   | 10/19  | Spectrometry           | ***Exam 2***       | MS                     | Structural Det.     | Rotations           |                          |
+|   11   | 10/26  | Spectrometry           |                    | Structural Det.        | Structural Det.     | Rotations           |                          |
+|   12   |  11/2  | Separations            | Structural Det.    | Chromatography         | LC                  | Rotations           |                          |
+|   13   |  11/9  | Separations            |                    | GC                     | TBA                 | Rotations           |                          |
+|   14   | 11/16  | Review                 | ***Exam 3***       | TBA                    | TBA                 | Rotations + Cleanup |                          |
+|   15   | 11/23  | Thanksgiving           | *Remote*           | -                      | -                   | -                   | ***Exam 4***             |
+| FINALS | 11/30  | Project                | *Remote*           | TBA                    | TBA                 | Final Paper         |                          |
 
 # Lab Schedule
+
+Lab assignments are due at 23:59:59 on the Wednesday before lab unless otherwise specified.
 
 *This schedule is subject to change as needed.*
 
