@@ -48,7 +48,7 @@ Please see the [lab schedule]({{ site.url }}/chem370/lab-manual/appendix-5-sched
 | 7    | 9/28           | Rotations                           |                                              |
 |      |                | *Writing Workshop*                  |                                              |
 | 8    | 10/5           | Rotations                           |                                              |
-| 9    | 10/12          | Rotations                           | Notebook 1 + 2                               | 
+| 9    | 10/12          | Rotations                           | Notebook 1 + 2                               |
 | 10   | 10/19          | Rotations                           | Intro + Methods                              |
 | 11   | 10/26          | Rotations                           |                                              |
 | 12   | 11/2           | Rotations                           | All 4 Notebooks, All 4 Analysis Worksheets   |
@@ -59,7 +59,3 @@ Please see the [lab schedule]({{ site.url }}/chem370/lab-manual/appendix-5-sched
 
 
 Students will be required to attend instrumentation workshops outside of class to learn how to use each instrument.  They will take a multiple-choice test to get a certification for that instrument.  Each student must be certified before using an instrument.  This certification contributes to your grade through SLO #1 on the syllabus.
-
-$
-a = c
-$
