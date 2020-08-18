@@ -1,6 +1,6 @@
 # Gas Chromatography with Thermal Conductivity Detection (GC-TCD)
 
-##### **Objective** | Determine the number of components of an unknown mixture and the percent composition of each. {-}
+##### **Objective** | Determine which instrument is best for determining the percent composition of an unknown mixture. {-}
 
 
 ##### **To Turn In** |  *You should turn a ZIP folder containing:* {-}
@@ -13,16 +13,16 @@
 
 - Recognize that [gas] chromatography separates a mixture of compounds.  
 - Explain how chromatographic peak area relates to composition of a mixture.  
-- Estimate the signal to noise ratio (S/N) for a gas chromatograph.
+- Estimate the signal to noise ratio (S/N) for two gas chromatographs.
 - Relate concepts about polarity from general and organic chemistry to instrumental analysis.  
-- Utilize RMarkdown as an electronic lab notebook.
+- Utilize RMarkdown and knitr as an electronic lab notebook.
 - Utilize R functions to analyze chromatographic data.  
 
 ## Introduction {-}
 
-You will be given mixture of unknown composition for this lab.  It will contain several organic compounds with *similar boiling points*.  You goals are to (1) determine how many components there are in the mixture, (2) determine the percent composition for each compound, and (3) determine the relative polarities of the compounds.
+You will be given mixture of unknown composition for this lab.  It will contain several organic compounds with *similar boiling points* diluted in acetone.  You need to (1) determine how many components there are in the mixture, (2) determine the percent composition for each compound, and (3) determine the relative polarities of the compounds.
 
-To complete these tasks you will use a gas chromatograph.  Specifically, you will use Gow-Mac 150-series and 400-series isothermal gas chromatographs with thermal conductivity detectors (GC-TCD).  These instruments separate compounds by both boiling point and polarity, and produce a peak for each component wherein the peak area is proportional to the amount of that component present.
+There are two gas chromatographs available for this task, and your goal is to determine which works best.  You will run the sample on both instruments and compare their performance.  Specifically, one lab partner will use a Gow-Mac 150-series isothermal gas chromatography and the other will use a Gow-Mac 400-series.  Both use thermal conductivity detectors (GC-TCD) and work on the same principles.  They separate compounds by both boiling point and polarity, and produce a peak for each component wherein the peak area is proportional to the amount of that component present.
 
 Before coming to lab you should be familiar with the concepts presented in the following videos:
 
@@ -38,14 +38,16 @@ Before coming to lab you should be familiar with the concepts presented in the f
 
     > If you don't record the ID you cannot get credit for getting the right answer!
 
-Your runlist for this experiment is:
+Your run list for this experiment is, on each instrument:
 
 1. Blank
 1. Sample
 
 ### Setup the Instrument
 
-*You will need [Vernier Logger Lite](https://www.vernier.com/products/software/logger-lite/#section5) (free) installed on your computer for these steps.*
+~~*You will need [Vernier Logger Lite](https://www.vernier.com/products/software/logger-lite/#section5) (free) installed on your computer for these steps.*~~
+
+*Due to increased time constraints with COVID19, these steps will be completed for you. A computer and the software will be provided.*  
 
 1. Connect the Instrumentation Amplifier/GoLink! to your computer via USB and open Logger Lite.  
 1. Go to **Experiment > Set up sensors > GoLink:1**.  
@@ -68,9 +70,9 @@ Your runlist for this experiment is:
     2. Turn on the vacuum pump with the **black on/off switch**.  
     3. Squirt solvent through the syringe.  
     4. Clean the plunger and the needle with a Kimwipe moistened with your solvent.  
-1. For a solvent blank:  Pull about 4 $\mu$L acetone into the syringe.  
-1. For a samples:
-    1. Pull 4 $\mu$L of your sample into the syringe.
+1. For a solvent blank:  Pull about 4 $\mu$L acetone into the syringe.  Record how much you end up loading into the syringe.
+1. For samples:
+    1. Pull 4 $\mu$L of your sample into the syringe.  Make sure inject *exactly* the same amount into each instrument.
     1. Pull air into the syringe until you can clearly see how much sample you loaded.  Record this value in your lab notebook.
 
 ### Inject the Sample
@@ -91,7 +93,7 @@ Your runlist for this experiment is:
 
 ## Data Processing
 
-1. Open your notebook project for this lab and use it for data processing. Make sure your data files are also in this folder. Use the path: `lab-notebooks/lab2_gc-tcd`.
+1. Create a new R project for this lab and use it for all your data processing. Make sure your data files are also in this folder. Use the path: `lab-notebooks/Lab 2: GC-TCD`.  (You should have done this in Exercise 1.4.)
 1. Load the CSV files into R/RStudio.  You may also want to plot the data to inspect it.
 
     ```{R, eval = FALSE}
@@ -129,7 +131,7 @@ Your runlist for this experiment is:
     ### ... and so on
     ```
 
-1. Find the percent composition for each peak.  The percent composition for peak $n$ is:
+1. Find the percent composition for each *unknown* peak.  The percent composition for peak $n$ is:
 
     \[
     C_n(\%)=\frac{A_n}{A_1 + A_2 + ... A_n} \times 100\%
@@ -164,68 +166,98 @@ Your runlist for this experiment is:
 
 These questions also appear in the notebook template.
 
-Answer the following questions by saving the result as the specified R variable in an R code block at the end of your lab notebook.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.  Make sure you include the option `purl = TRUE` when creating your code block.
+Answer the following questions by saving the result as the specified R variable in an R code block at the end of your lab notebook.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.
 
 Each question is worth 1 point.  You must get the question *exactly* right to get credit.
 
 1. What is your sample ID?  Call it `ID`.
 
 ```{r question-gc-1, purl = TRUE}
-ID <- "Sample A"  # Delete sample A and insert your sample name.  Leave the quotes.
+ID <- "Sample Z"  # Delete sample A and insert your sample name.  Leave the quotes.
 ```
 
-2. Which instrument did you use, the 150 or 400?  Save your answer as the variable `instrument`.
+2. What is the *retention time* of the solvent for the blank on the GC-400, in minutes? Save your answer as `solventPeak.blank`
 
 ```{r question-gc-2, purl = TRUE}
-instrument <- 0     # put your answer between the '<-' and '#'
+solventPeak.blank <- 0    # put your answer between the '<-' and '#'
 ```
 
-3. How many compounds are in your sample?  Save your answer as the variable `noCompounds`.
+3. What is the retention time of the *solvent peak* in the sample for the GC-400?  Specify by it's retention time and save your answer as `solventPeak.sample`
 
 ```{r question-gc-3, purl = TRUE}
+solventPeak.sample <- 0    # put your answer between the '<-' and '#'
+```
+
+4. Does the retention time exactly agree for the blank and the sample?  Write "yes" or "no" and save the answer as `solventPeak.agree`.
+
+```{r question-gc-4, purl = TRUE}
+solventPeak.agree <- "no"    # put your answer inside the quotes, and make sure to leave the quotes
+```
+
+5. Assuming the peaks do not *exactly* agree, what is the dominant type of error causing the disagreement?  Save the answer as `solventPeak.error`.
+
+```{r question-gc-5, purl = TRUE}
+solventPeak.error <- "type"    # put your answer inside the quotes, and make sure to leave the quotes
+```
+
+6. How many compounds are in your sample, not including the solvent?  Save your answer as the variable `noCompounds`.
+
+```{r question-gc-6, purl = TRUE}
 noCompounds <- 0    # put your answer between the '<-' and '#'
 ```
 
-4. What is the percent composition for least polar compound, as a percentage (%)?  Provide your answer as the variable `leastPolarPercent`.
-
-```{r question-gc-4, purl = TRUE}
-leastPolarPercent <- 0    # put your answer between the '<-' and '#'
-```
-
-5. What is the percent composition for least polar compound, as a percentage (%)?  Provide your answer as the variable `mostPolarPercent`.
-
-```{r question-gc-5, purl = TRUE}
-leastPolarPercent <- 0    # put your answer between the '<-' and '#'
-```
-
-6. What is the standard deviation of the baseline, in millivolts (mV)?  Provide your answer as the variable `baselineSD`.
-
-```{r question-gc-6, purl = TRUE}
-baselineSD <- 0    # put your answer between the '<-' and '#'
-```
-
-7. What is the signal level for Peak 1, in millivolts (mV)?  Provide your answer as the variable `peak1`.
+7. What is the percent composition for least polar compound, as a percentage (%), for the GC-400?  Provide your answer as the variable `leastPolarPercent`.
 
 ```{r question-gc-7, purl = TRUE}
-peak1 <- 0    # put your answer between the '<-' and '#'
+leastPolarPercent <- 0    # put your answer between the '<-' and '#'
 ```
 
-8. What is the signal level for Peak 1, in millivolts (mV)?  Provide your answer as the variable `peak2`.
+8. What is the percent composition for most polar compound, as a percentage (%), for the GC-400?  Provide your answer as the variable `mostPolarPercent`.
 
 ```{r question-gc-8, purl = TRUE}
-peak2 <- 0    # put your answer between the '<-' and '#'
+mostPolarPercent <- 0    # put your answer between the '<-' and '#'
 ```
 
-9. What is the signal to noise ratio for Peak 1?  Provide your answer as the variable `peak1_sn`.
+9. What is the standard deviation of the baseline, in millivolts (mV), for the GC-400?  Provide your answer as the variable `baselineSD.400`.
 
 ```{r question-gc-9, purl = TRUE}
-peak1_sn <- 0    # put your answer between the '<-' and '#'
+baselineSD.400 <- 0    # put your answer between the '<-' and '#'
 ```
 
-10. What is the signal to noise ratio for Peak 1?  Provide your answer as the variable `peak2_sn`.
+10. What is the signal level for the tallest peak, in millivolts (mV), for the GC-400?  Provide your answer as the variable `signal.400`.
 
-```{r question-gc-10, purl = TRUE, eval=FALSE}
-peak2_sn <- 0    # put your answer between the '<-' and '#'
+```{r question-gc-10, purl = TRUE}
+signal.400 <- 0    # put your answer between the '<-' and '#'
+```
+
+11. What is the signal to noise ratio for the tallest peak in the GC-400?  Provide your answer as the variable `sn.400`.
+
+```{r question-gc-11, purl = TRUE}
+sn.400 <- 0    # put your answer between the '<-' and '#'
+```
+
+12. What is the standard deviation of the baseline, in millivolts (mV), for the GC-150?  Provide your answer as the variable `baselineSD.150`.
+
+```{r question-gc-12, purl = TRUE}
+baselineSD.150 <- 0    # put your answer between the '<-' and '#'
+```
+
+13. What is the signal level for the tallest peak, in millivolts (mV), for the GC-150?  Provide your answer as the variable `signal.150`.
+
+```{r question-gc-13, purl = TRUE}
+signal.150 <- 0    # put your answer between the '<-' and '#'
+```
+
+14. What is the signal to noise ratio for the tallest peak in the GC-150?  Provide your answer as the variable `sn.150`.
+
+```{r question-gc-14, purl = TRUE}
+sn.150 <- 0    # put your answer between the '<-' and '#'
+```
+
+15. Are the retention times the same or different on each instrument?  Are the peaks separated better on one instrument than another?  Propose some ideas as to why.  Provide your answer as the variable `differences`
+
+```{r question-gc-15, purl = TRUE}
+differences <- "The retention times are exactly the same."    # put your answer between the '<-' and '#'
 ```
 
 ## Notebook Rubric {#gctcd-rubric}
@@ -237,12 +269,15 @@ I will use this rubric to judge the *content* (not accuracy) of your notebook.  
 | Descriptive title present?                                                                                     |     |     |     |
 | Introduction present describing experimental goals?                                                            |     |     |     |
 | Materials and Methods: detailed enough to convey *exactly* what was done?                                      |     |     |     |
-| Materials and Methods: Instrument table complete?                                                              |     |     |     |
+| Materials and Methods: Instrument table(s) complete?                                                           |     |     |     |
 | Results and Data: Calibration curve (if needed) plotted with high quality, including R2, slope, and intercept  |     |     |     |
 | Results and Data: all spectra, chromatograms, etc., plotted with high quality                                  |     |     |     |
 | Results and Data: Notebook runs without errors                                                                 |     |     |     |
 | Conclusion present and clearly states outcome of experiment while discussing errors/future direction as needed |     |     |     |
 | References clearly cited and used in the notebooks                                                             |     |     |     |
+
+
+Include a discussion of (1) how many constituents are in your sample, (2) the percent composition for each, (3) the relative polarity of each component, and (4) any differences you observe between samples.
 
 ## Materials (for Instructors) {- #gctcd-materials}
 
@@ -255,4 +290,4 @@ I will use this rubric to judge the *content* (not accuracy) of your notebook.  
 ### Chemicals {-}
 
 - Acetone in wash bottle
-- Unknown mixtures 
+- Unknown mixtures
