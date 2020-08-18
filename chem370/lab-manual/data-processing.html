@@ -193,8 +193,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1.4" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#waste-disposal-and-cleanup"><i class="fa fa-check"></i><b>3.1.4</b> Waste Disposal and Cleanup</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
-<li class="chapter" data-level="3.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
-<li class="chapter" data-level="3.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.4</b> Assessment</a></li>
+<li class="chapter" data-level="3.3" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
+<li class="chapter" data-level="3.4" data-path="uvvis-rubric.html"><a href="uvvis-rubric.html"><i class="fa fa-check"></i><b>3.4</b> Notebook Rubric</a></li>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#materials-1"><i class="fa fa-check"></i>Materials</a></li>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#solutions"><i class="fa fa-check"></i>Solutions</a></li>
@@ -363,7 +363,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  \frac{S}{N} = \frac{2H}{h} = \frac{\text{Peak Height}}{\text{min-to-max baseline noise}}
  \]</span></p>
 <p>where <span class="math inline">\(H\)</span> is the peak height at maximum and <span class="math inline">\(h\)</span> is the min-to-max noise in the baseline. Use the maximum peak height as signal. The example below shows how to subset the data and find the min and max values. You will need to calculate <span class="math inline">\(S/N\)</span> from those values according to the formula above.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="data-processing.html#cb7-1"></a><span class="co">## find standard deviation of baseline, from 4 minutes to end where there are no peaks</span></span>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="data-processing.html#cb7-1"></a><span class="co">## find range of baseline, near end where there are no peaks</span></span>
 <span id="cb7-2"><a href="data-processing.html#cb7-2"></a>h &lt;-<span class="st"> </span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">max</span>(chromatogram[<span class="dv">481</span><span class="op">:</span>end, <span class="dv">2</span>]) <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(chromatogram[<span class="dv">81</span><span class="op">:</span>end, <span class="dv">2</span>]))</span>
 <span id="cb7-3"><a href="data-processing.html#cb7-3"></a></span>
 <span id="cb7-4"><a href="data-processing.html#cb7-4"></a>H1 &lt;-<span class="st"> </span><span class="kw">max</span>(chromatogram[chromatogram[<span class="op">:</span>, <span class="dv">1</span>] <span class="op">&lt;</span><span class="st"> </span>x, <span class="dv">2</span>]) <span class="co"># x represents dividing line between the two peaks in minutes.</span></span>

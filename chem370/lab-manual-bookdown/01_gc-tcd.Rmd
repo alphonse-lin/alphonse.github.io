@@ -148,7 +148,7 @@ Your run list for this experiment is, on each instrument:
     where $H$ is the peak height at maximum and $h$ is the min-to-max noise in the baseline.  Use the maximum peak height as signal.  The example below shows how to subset the data and find the min and max values.  You will need to calculate $S/N$ from those values according to the formula above.
 
     ```{R, eval = FALSE}
-    ## find standard deviation of baseline, from 4 minutes to end where there are no peaks
+    ## find range of baseline, near end where there are no peaks
     h <- 2 * (max(chromatogram[481:end, 2]) - min(chromatogram[81:end, 2]))
 
     H1 <- max(chromatogram[chromatogram[:, 1] < x, 2]) # x represents dividing line between the two peaks in minutes.
@@ -173,7 +173,7 @@ Each question is worth 1 point.  You must get the question *exactly* right to ge
 1. What is your sample ID?  Call it `ID`.
 
 ```{r question-gc-1, purl = TRUE}
-ID <- "Sample Z"  # Delete sample A and insert your sample name.  Leave the quotes.
+ID <- "Sample Z"  # Delete sample Z and insert your sample name.  Leave the quotes.
 ```
 
 2. What is the *retention time* of the solvent for the blank on the GC-400, in minutes? Save your answer as `solventPeak.blank`
@@ -218,10 +218,10 @@ leastPolarPercent <- 0    # put your answer between the '<-' and '#'
 mostPolarPercent <- 0    # put your answer between the '<-' and '#'
 ```
 
-9. What is the standard deviation of the baseline, in millivolts (mV), for the GC-400?  Provide your answer as the variable `baselineSD.400`.
+9. What is the range of the baseline values, in millivolts (mV), for the GC-400?  Provide your answer as the variable `baselineRange.400`.
 
 ```{r question-gc-9, purl = TRUE}
-baselineSD.400 <- 0    # put your answer between the '<-' and '#'
+baselineRange.400 <- 0    # put your answer between the '<-' and '#'
 ```
 
 10. What is the signal level for the tallest peak, in millivolts (mV), for the GC-400?  Provide your answer as the variable `signal.400`.
@@ -254,7 +254,7 @@ signal.150 <- 0    # put your answer between the '<-' and '#'
 sn.150 <- 0    # put your answer between the '<-' and '#'
 ```
 
-15. Are the retention times the same or different on each instrument?  Are the peaks separated better on one instrument than another?  Propose some ideas as to why.  Provide your answer as the variable `differences`
+15. Are the retention times the same or different on each instrument?  Are the peaks separated better on one instrument than another?  Propose some ideas as to why.  Provide your answer as the variable `differences`.
 
 ```{r question-gc-15, purl = TRUE}
 differences <- "The retention times are exactly the same."    # put your answer between the '<-' and '#'

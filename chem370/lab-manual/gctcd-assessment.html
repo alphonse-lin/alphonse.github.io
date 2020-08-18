@@ -193,8 +193,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1.4" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#waste-disposal-and-cleanup"><i class="fa fa-check"></i><b>3.1.4</b> Waste Disposal and Cleanup</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
-<li class="chapter" data-level="3.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
-<li class="chapter" data-level="3.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.4</b> Assessment</a></li>
+<li class="chapter" data-level="3.3" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
+<li class="chapter" data-level="3.4" data-path="uvvis-rubric.html"><a href="uvvis-rubric.html"><i class="fa fa-check"></i><b>3.4</b> Notebook Rubric</a></li>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#materials-1"><i class="fa fa-check"></i>Materials</a></li>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#solutions"><i class="fa fa-check"></i>Solutions</a></li>
@@ -336,7 +336,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li>What is your sample ID? Call it <code>ID</code>.</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="gctcd-assessment.html#cb8-1"></a>ID &lt;-<span class="st"> &quot;Sample Z&quot;</span>  <span class="co"># Delete sample A and insert your sample name.  Leave the quotes.</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="gctcd-assessment.html#cb8-1"></a>ID &lt;-<span class="st"> &quot;Sample Z&quot;</span>  <span class="co"># Delete sample Z and insert your sample name.  Leave the quotes.</span></span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>What is the <em>retention time</em> of the solvent for the blank on the GC-400, in minutes? Save your answer as <code>solventPeak.blank</code></li>
 </ol>
@@ -366,9 +366,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="gctcd-assessment.html#cb15-1"></a>mostPolarPercent &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="9" style="list-style-type: decimal">
-<li>What is the standard deviation of the baseline, in millivolts (mV), for the GC-400? Provide your answer as the variable <code>baselineSD.400</code>.</li>
+<li>What is the range of the baseline values, in millivolts (mV), for the GC-400? Provide your answer as the variable <code>baselineRange.400</code>.</li>
 </ol>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="gctcd-assessment.html#cb16-1"></a>baselineSD<span class="fl">.400</span> &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="gctcd-assessment.html#cb16-1"></a>baselineRange<span class="fl">.400</span> &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="10" style="list-style-type: decimal">
 <li>What is the signal level for the tallest peak, in millivolts (mV), for the GC-400? Provide your answer as the variable <code>signal.400</code>.</li>
 </ol>
@@ -390,7 +390,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="gctcd-assessment.html#cb21-1"></a>sn<span class="fl">.150</span> &lt;-<span class="st"> </span><span class="dv">0</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="15" style="list-style-type: decimal">
-<li>Are the retention times the same or different on each instrument? Are the peaks separated better on one instrument than another? Propose some ideas as to why. Provide your answer as the variable <code>differences</code></li>
+<li>Are the retention times the same or different on each instrument? Are the peaks separated better on one instrument than another? Propose some ideas as to why. Provide your answer as the variable <code>differences</code>.</li>
 </ol>
 <div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="gctcd-assessment.html#cb22-1"></a>differences &lt;-<span class="st"> &quot;The retention times are exactly the same.&quot;</span>    <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 </div>

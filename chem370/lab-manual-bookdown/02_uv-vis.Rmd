@@ -193,12 +193,6 @@ After the spectrometer calibration step you should run:
 7. Before turning in your notebook, go to **Kernel > Restart Kernel** and then **Run > Run All**.  Fix any errors before turning in your notebook.
 8. Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for [Monday](https://alphonse.github.io/chem370/assignments/submissions.html) or [Wednesday](https://alphonse.github.io/chem370/assignments/submissions-wednesday.html)).
 
-## Assessment
-
-Answer the following questions by saving the result as the specified R variable in an R code block.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.
-
-Each question is worth 1 point.  You must get the question *exactly* right to get credit.
-
 ## Assessment {#uv-vis-assessment}
 
 Answer the following questions by saving the result as the specified R variable in an R code block.  These questions are graded automatically.  If you do not name your variable correctly (including capitals) your questions will be marked incorrect.
@@ -264,6 +258,22 @@ lod <- 0     # put your answer between the '<-' and '#'
 ```{r question-uvvis-10, purl = TRUE}
 loq <- 0     # put your answer between the '<-' and '#'
 ```
+
+## Notebook Rubric {#uvvis-rubric}
+
+I will use this rubric to judge the *content* (not accuracy) of your notebook.  For all items: '2' = exceptional, '1' = satisfactory, and '0' = inadequate/not present.
+
+| Item                                                                                                           | 2   | 1   | 0   |
+| -------------------------------------------------------------------------------------------------------------- | --- | --- | --- |
+| Descriptive title present?                                                                                     |     |     |     |
+| Introduction present describing experimental goals?                                                            |     |     |     |
+| Materials and Methods: detailed enough to convey *exactly* what was done?                                      |     |     |     |
+| Materials and Methods: Instrument table(s) complete?                                                           |     |     |     |
+| Results and Data: Calibration curve (if needed) plotted with high quality, including R2, slope, and intercept  |     |     |     |
+| Results and Data: all spectra, chromatograms, etc., plotted with high quality                                  |     |     |     |
+| Results and Data: Notebook runs without errors                                                                 |     |     |     |
+| Conclusion present and clearly states outcome of experiment while discussing errors/future direction as needed |     |     |     |
+| References clearly cited and used in the notebooks                                                             |     |     |     |
 
 ## Materials (for Instructors) {- #uvvis-materials}
 
