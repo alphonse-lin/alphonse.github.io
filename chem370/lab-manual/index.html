@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>CHEM 370 Lab Manual</title>
   <meta name="description" content="Lab Manual for CHEM 370: Instrumental Analysis Laboratory" />
-  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
   <meta property="og:title" content="CHEM 370 Lab Manual" />
   <meta property="og:type" content="book" />
@@ -31,7 +31,7 @@
   
   
 
-<link rel="next" href="syllabus.html">
+<link rel="next" href="overview.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -54,7 +54,6 @@ code.sourceCode > span { color: inherit; text-decoration: inherit; }
 code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
@@ -130,8 +129,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="http://alphonse.github.io/chem370">CHEM 370 Main Page</a></li>
 <li class="divider"></li>
 <li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i>Overview</a><ul>
+<li class="chapter" data-level="" data-path="lab-activities.html"><a href="lab-activities.html"><i class="fa fa-check"></i>Lab Activities</a></li>
+<li class="chapter" data-level="" data-path="lab-notebooks.html"><a href="lab-notebooks.html"><i class="fa fa-check"></i>Lab Notebooks</a></li>
+<li class="chapter" data-level="" data-path="features-of-the-book.html"><a href="features-of-the-book.html"><i class="fa fa-check"></i>Features of the Book</a><ul>
+<li><a href="features-of-the-book.html#typographical-conventions"><strong>Typographical Conventions</strong></a></li>
+<li><a href="features-of-the-book.html#e-book-vs.-pdf"><strong>e-Book vs. PDF</strong></a></li>
+</ul></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html"><i class="fa fa-check"></i>Syllabus</a><ul>
-<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#overview"><i class="fa fa-check"></i>Overview</a></li>
+<li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#overview-1"><i class="fa fa-check"></i>Overview</a></li>
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#student-learning-outcomes"><i class="fa fa-check"></i>Student Learning Outcomes</a></li>
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#required-course-materials"><i class="fa fa-check"></i>Required Course Materials</a></li>
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#lab-notebooks-and-data-analysis"><i class="fa fa-check"></i>Lab Notebooks and Data Analysis</a></li>
@@ -141,15 +148,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#institutional-policies"><i class="fa fa-check"></i>Institutional Policies</a></li>
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#student-resources"><i class="fa fa-check"></i>Student Resources</a></li>
 <li class="chapter" data-level="" data-path="syllabus.html"><a href="syllabus.html#syllabus-updates"><i class="fa fa-check"></i>Syllabus Updates</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="appendix-5-schedule-of-labs.html"><a href="appendix-5-schedule-of-labs.html"><i class="fa fa-check"></i>Appendix 5: Schedule of Labs</a></li>
-<li class="chapter" data-level="" data-path="overview-1.html"><a href="overview-1.html"><i class="fa fa-check"></i>Overview</a><ul>
-<li class="chapter" data-level="" data-path="lab-activities.html"><a href="lab-activities.html"><i class="fa fa-check"></i>Lab Activities</a></li>
-<li class="chapter" data-level="" data-path="lab-notebooks.html"><a href="lab-notebooks.html"><i class="fa fa-check"></i>Lab Notebooks</a></li>
-<li class="chapter" data-level="" data-path="features-of-the-book.html"><a href="features-of-the-book.html"><i class="fa fa-check"></i>Features of the Book</a><ul>
-<li><a href="features-of-the-book.html#typographical-conventions"><strong>Typographical Conventions</strong></a></li>
-<li><a href="features-of-the-book.html#e-book-vs.-pdf"><strong>e-Book vs. PDF</strong></a></li>
-</ul></li>
 </ul></li>
 <li class="part"><span><b>I Introduction</b></span></li>
 <li class="chapter" data-level="1" data-path="getting-started-in-r.html"><a href="getting-started-in-r.html"><i class="fa fa-check"></i><b>1</b> Getting Started in R</a><ul>
@@ -166,40 +164,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.4.2" data-path="create-lab-notebook.html"><a href="create-lab-notebook.html#create-a-notebook-file"><i class="fa fa-check"></i><b>1.4.2</b> Create a Notebook File</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>2</b> UV-visible Spectroscopy</a><ul>
+<li class="chapter" data-level="2" data-path="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><a href="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><i class="fa fa-check"></i><b>2</b> Gas Chromatography with Thermal Conductivity Detection (GC-TCD)</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="2.1" data-path="lab-procedure.html"><a href="lab-procedure.html"><i class="fa fa-check"></i><b>2.1</b> Lab Procedure</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="lab-procedure.html"><a href="lab-procedure.html#prepare-samples"><i class="fa fa-check"></i><b>2.1.1</b> Prepare Samples</a></li>
+<li class="chapter" data-level="2.1.2" data-path="lab-procedure.html"><a href="lab-procedure.html#setup-the-instrument"><i class="fa fa-check"></i><b>2.1.2</b> Setup the Instrument</a></li>
+<li class="chapter" data-level="2.1.3" data-path="lab-procedure.html"><a href="lab-procedure.html#load-the-syringe"><i class="fa fa-check"></i><b>2.1.3</b> Load the Syringe</a></li>
+<li class="chapter" data-level="2.1.4" data-path="lab-procedure.html"><a href="lab-procedure.html#inject-the-sample"><i class="fa fa-check"></i><b>2.1.4</b> Inject the Sample</a></li>
+<li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
+<li class="chapter" data-level="2.4" data-path="gctcd-rubric.html"><a href="gctcd-rubric.html"><i class="fa fa-check"></i><b>2.4</b> Notebook Rubric</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#chemicals"><i class="fa fa-check"></i>Chemicals</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="uv-visible-spectroscopy.html"><a href="uv-visible-spectroscopy.html"><i class="fa fa-check"></i><b>3</b> UV-visible Spectroscopy</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#safety"><i class="fa fa-check"></i>Safety</a></li>
 <li class="chapter" data-level="" data-path="uv-vis-intro.html"><a href="uv-vis-intro.html#reference"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
-<li class="chapter" data-level="2.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>2.1</b> Lab Procedure</a><ul>
-<li class="chapter" data-level="2.1.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-standards"><i class="fa fa-check"></i><b>2.1.1</b> Prepare Your Standards</a></li>
-<li class="chapter" data-level="2.1.2" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-samples"><i class="fa fa-check"></i><b>2.1.2</b> Prepare Your Samples</a></li>
-<li class="chapter" data-level="2.1.3" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#acquire-data"><i class="fa fa-check"></i><b>2.1.3</b> Acquire Data</a></li>
-<li class="chapter" data-level="2.1.4" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#waste-disposal-and-cleanup"><i class="fa fa-check"></i><b>2.1.4</b> Waste Disposal and Cleanup</a></li>
+<li class="chapter" data-level="3.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html"><i class="fa fa-check"></i><b>3.1</b> Lab Procedure</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-standards"><i class="fa fa-check"></i><b>3.1.1</b> Prepare Your Standards</a></li>
+<li class="chapter" data-level="3.1.2" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#prepare-your-samples"><i class="fa fa-check"></i><b>3.1.2</b> Prepare Your Samples</a></li>
+<li class="chapter" data-level="3.1.3" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#acquire-data"><i class="fa fa-check"></i><b>3.1.3</b> Acquire Data</a></li>
+<li class="chapter" data-level="3.1.4" data-path="uv-vis-procedure.html"><a href="uv-vis-procedure.html#waste-disposal-and-cleanup"><i class="fa fa-check"></i><b>3.1.4</b> Waste Disposal and Cleanup</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
-<li class="chapter" data-level="2.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
-<li class="chapter" data-level="2.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>2.4</b> Assessment</a></li>
+<li class="chapter" data-level="3.2" data-path="uv-vis-data.html"><a href="uv-vis-data.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
+<li class="chapter" data-level="3.3" data-path="assessment.html"><a href="assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
+<li class="chapter" data-level="3.4" data-path="uv-vis-assessment.html"><a href="uv-vis-assessment.html"><i class="fa fa-check"></i><b>3.4</b> Assessment</a></li>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
-<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#materials"><i class="fa fa-check"></i>Materials</a></li>
+<li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#materials-1"><i class="fa fa-check"></i>Materials</a></li>
 <li class="chapter" data-level="" data-path="uvvis-materials.html"><a href="uvvis-materials.html#solutions"><i class="fa fa-check"></i>Solutions</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><a href="gas-chromatography-with-thermal-conductivity-detection-gc-tcd.html"><i class="fa fa-check"></i><b>3</b> Gas Chromatography with Thermal Conductivity Detection (GC-TCD)</a><ul>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="3.1" data-path="lab-procedure.html"><a href="lab-procedure.html"><i class="fa fa-check"></i><b>3.1</b> Lab Procedure</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="lab-procedure.html"><a href="lab-procedure.html#prepare-samples"><i class="fa fa-check"></i><b>3.1.1</b> Prepare Samples</a></li>
-<li class="chapter" data-level="3.1.2" data-path="lab-procedure.html"><a href="lab-procedure.html#setup-the-instrument"><i class="fa fa-check"></i><b>3.1.2</b> Setup the Instrument</a></li>
-<li class="chapter" data-level="3.1.3" data-path="lab-procedure.html"><a href="lab-procedure.html#load-the-syringe"><i class="fa fa-check"></i><b>3.1.3</b> Load the Syringe</a></li>
-<li class="chapter" data-level="3.1.4" data-path="lab-procedure.html"><a href="lab-procedure.html#inject-the-sample"><i class="fa fa-check"></i><b>3.1.4</b> Inject the Sample</a></li>
-<li class="chapter" data-level="3.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>3.1.5</b> Save the Data</a></li>
-</ul></li>
-<li class="chapter" data-level="3.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>3.2</b> Data Processing</a></li>
-<li class="chapter" data-level="3.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>3.3</b> Assessment</a></li>
-<li class="chapter" data-level="3.4" data-path="gctcd-rubric.html"><a href="gctcd-rubric.html"><i class="fa fa-check"></i><b>3.4</b> Notebook Rubric</a></li>
-<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
-<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#materials-1"><i class="fa fa-check"></i>Materials</a></li>
-<li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html#chemicals"><i class="fa fa-check"></i>Chemicals</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>II Rotations</b></span></li>
@@ -310,6 +308,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="appendix-4-lab-notebook-guidelines.html"><a href="appendix-4-lab-notebook-guidelines.html#creating-instrument-tables"><i class="fa fa-check"></i>Creating Instrument Tables</a></li>
 <li class="chapter" data-level="" data-path="appendix-4-lab-notebook-guidelines.html"><a href="appendix-4-lab-notebook-guidelines.html#the-block-diagram"><i class="fa fa-check"></i>The Block Diagram</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="appendix-5-schedule-of-labs.html"><a href="appendix-5-schedule-of-labs.html"><i class="fa fa-check"></i>Appendix 5: Schedule of Labs</a></li>
 <li class="divider"></li>
 <li><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>. <a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> <link href="https://fonts.googleapis.com/css?family=Barlow|IBM+Plex+Sans:200&display=swap" rel="stylesheet">
 </ul>
@@ -354,7 +353,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 
-<a href="syllabus.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="overview.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
