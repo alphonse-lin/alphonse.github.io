@@ -18,24 +18,24 @@ Please see the [lab schedule]({{ site.url }}/chem370/lab-manual/appendix-5-sched
 
 # Overview Schedule
 
-|  Week  | Begins | Theme                  | In Class            | Lecture 1              | Lecture 2             | Lab                 | HW                       |
-|:------:|:------:| ---------------------- | ------------------- | ---------------------- | --------------------- | ------------------- | ------------------------ |
-|   1    |  8/17  | Intro                  | No Meeting          | Analytical Perspective | Analyst's Toolbox     | Intro + Safety      |                          |
-|   2    |  8/24  | Signals and Noise      | Chemical Principles | Distributions          | Errors and CIs        | GC Lab 1            |                          |
-|   3    |  8/31  | Data Analysis          | Choosing a Method   | QA/QC + Standards      | Reproducible Research | GC Data @ Home      |                          |
-|   4    |  9/7   | Quantitative Analysis  | No Meeting          | Standardization        | Blanks                | UV-vis              |                          |
-|   5    |  9/14  | Instrumentation Survey | ***Exam 1***        | Survey 1 + 2           | Survey 3 + 4          | UV-vis Data @ Home  |                          |
-|   6    |  9/21  | Spectroscopy           |                     | Spectroscopy           | Optics                | Rotations           | ***Instrument Quizzes*** |
-|   7    |  9/28  | Spectroscopy           |                     | UV-vis: Theory         | UV-vis: Instruments   | Rotations           |                          |
-|   8    |  10/5  | Spectroscopy           |                     | Luminescence: Theory   | Atomic: Theory        | Rotations           |                          |
-|   9    | 10/12  | Spectroscopy           |                     | Atomic: Instruments    | FT-IR                 | Rotations           |                          |
-|   10   | 10/19  | Spectrometry           | ***Exam 2***        | MS                     | Structural Det.       | Rotations           |                          |
-|   11   | 10/26  | Spectrometry           |                     | Structural Det.        | Structural Det.       | Rotations           |                          |
-|   12   |  11/2  | Separations            | Structural Det.     | Chromatography         | LC                    | Rotations           |                          |
-|   13   |  11/9  | Separations            |                     | GC                     | TBA                   | Rotations           |                          |
-|   14   | 11/16  | Review                 | ***Exam 3***        | TBA                    | TBA                   | Rotations + Cleanup |                          |
-|   15   | 11/23  | Thanksgiving           | *Remote*            | -                      | -                     | -                   | ***Exam 4***             |
-| FINALS | 11/30  | Project                | *Remote*            | TBA                    | TBA                   | Final Paper         |                          |
+|  Week  | Begins | Theme                       | In Class            | Lecture 1              | Lecture 2             | Lab                 | HW                       |
+|:------:|:------:| --------------------------- | ------------------- | ---------------------- | --------------------- | ------------------- | ------------------------ |
+|   1    |  8/17  | Intro                       | No Meeting          | Analytical Perspective | Analyst's Toolbox     | Intro + Safety      |                          |
+|   2    |  8/24  | Characterizing Measurements | Chemical Principles | Distributions          | Errors and CIs        | GC Lab 1            |                          |
+|   3    |  8/31  | Data Analysis               | Choosing a Method   | QA/QC + Standards      | Reproducible Research | GC Data @ Home      |                          |
+|   4    |  9/7   | Quantitative Analysis       | No Meeting          | Standardization        | Blanks                | UV-vis              |                          |
+|   5    |  9/14  | Instrumentation Survey      | ***Exam 1***        | Survey 1 + 2           | Survey 3 + 4          | UV-vis Data @ Home  |                          |
+|   6    |  9/21  | Spectroscopy                |                     | Spectroscopy           | Optics                | Rotations           | ***Instrument Quizzes*** |
+|   7    |  9/28  | Spectroscopy                |                     | UV-vis: Theory         | UV-vis: Instruments   | Rotations           |                          |
+|   8    |  10/5  | Spectroscopy                |                     | Luminescence: Theory   | Atomic: Theory        | Rotations           |                          |
+|   9    | 10/12  | Spectroscopy                |                     | Atomic: Instruments    | FT-IR                 | Rotations           |                          |
+|   10   | 10/19  | Spectrometry                | ***Exam 2***        | MS                     | Structural Det.       | Rotations           |                          |
+|   11   | 10/26  | Spectrometry                |                     | Structural Det.        | Structural Det.       | Rotations           |                          |
+|   12   |  11/2  | Separations                 | Structural Det.     | Chromatography         | LC                    | Rotations           |                          |
+|   13   |  11/9  | Separations                 |                     | GC                     | TBA                   | Rotations           |                          |
+|   14   | 11/16  | Review                      | ***Exam 3***        | TBA                    | TBA                   | Rotations + Cleanup |                          |
+|   15   | 11/23  | Thanksgiving                | *Remote*            | -                      | -                     | -                   | ***Exam 4***             |
+| FINALS | 11/30  | Project                     | *Remote*            | TBA                    | TBA                   | Final Paper         |                          |
 
 # Lab Schedule
 
