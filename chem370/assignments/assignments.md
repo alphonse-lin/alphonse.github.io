@@ -1,4 +1,4 @@
-----
+---
 layout: chem370
 title:  CHEM 370 Assignment Checklist
 permalink: /chem370/assignments
@@ -9,7 +9,7 @@ You should expect to spend ~15 hours per week spent working on materials for Ins
 # Typical Weekly Schedule
 
 | Sunday                           | Monday                      | Tuesday | Wednesday                   | Thursday | Friday                     | Saturday |
-| -------------------------------- | --------------------------- | ------- | --------------------------- | -------- | -------------------------- | -------- |
+|:-------------------------------- |:--------------------------- |:------- |:--------------------------- |:-------- |:-------------------------- |:-------- |
 | **Lecture** materials due        | In-class meeting (cohort 1) |         | In-class meeting (cohort 2) | Lab      | Occasional Review Sessions |          |
 | New content posted by instructor |                             |         | **Lab** materials due       |          | (Zoom) Office Hours        |          |
 
@@ -23,7 +23,9 @@ This class uses a "flipped" format, so a significant portion of your homework co
 
 # Lab Assignments
 
-Lab assignments are due at 23:59:59 (midnight) the night before lab.  For example, for Thursday lab, all assignments will be due at 23:59:59 on Wednesday night (unless otherwise specified).  A check list of assignments is provided below to help you keep track of your assignments
+Lab assignments are due at 23:59:59 (midnight) the night before lab.  For example, for Thursday lab, all assignments will be due at 23:59:59 on Wednesday night (unless otherwise specified).  
+
+A check list of assignments is provided below to help you keep track of your assignments.  Due dates are listed on the [submissions page]({{site.url}}/chem370/submissions).
 
 | Assignment                     | Grade (pts) | Out of (pts) |
 | ------------------------------ | ----------- | ------------ |
