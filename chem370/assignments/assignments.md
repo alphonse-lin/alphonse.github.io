@@ -17,9 +17,9 @@ I estimate that you will spend ~15 hours per week working on materials for Instr
 
 ***All videos, readings, and weekly quizzes are due by 23:59:59 (midnight) on Sunday of each week.***  For example, the week 2 videos and quiz are due on Sunday at the end of week 2/beginning of week 3.
 
-Exams will occur during the in-person meeting for the date listed.
+Exams will occur during the in-person meeting for the week listed in the schedule.
 
-This class uses a "flipped" format, so a significant portion of your homework consists of watching the videos and completing the readings.  Plan for 1-2 hours of thorough reading (depending on your reading speed) and an hour of video each week (occasionally more) with additional time spent reviewing topics from previous weeks (aka studying!). Problem sets will usually be completed in class, but you are strongly encouraged to work through problems in the book on your own.  Additional readings and homework assignments may be assigned periodically throughout the semester based on class progress/need and the face-to-face activities for that week.
+This class uses a "flipped" format, so a significant portion of your homework consists of watching the videos and completing the readings.  Plan for 1-2 hours of thorough reading (depending on your reading speed) and ~1 hour of video each week (occasionally more), with additional time spent reviewing topics from previous weeks (aka studying!). Problem sets will usually be completed in class, but you are strongly encouraged to work through problems in the book on your own.  Additional readings and homework assignments may be assigned periodically throughout the semester based on class progress/need and the face-to-face activities for that week.
 
 A checklist of assignments is provided below to help you keep track of your assignments.  *This list is very likely to change over the course of the semester.  It is meant to provide a general idea of what to expect, but is not comprehensive.*
 
