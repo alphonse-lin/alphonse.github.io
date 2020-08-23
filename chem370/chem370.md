@@ -25,7 +25,7 @@ icon: fa-digital-tachograph
 
 <a class="homepage-button" href="{{site.baseurl}}/chem370/submissions.html">
   <i class="fa fa-paper-plane fa-lg"></i>
-  assignment submissions
+  submission links
 </a>
 
 <div class="column">
@@ -49,9 +49,10 @@ lecture syllabus
   <i class="fa fa-digital-tachograph fa-lg"></i>
   instrument tutorials
 </a> -->
-<a class="homepage-button" href="{{site.baseurl}}/chem370/class-activities">
-  <i class="fa fa-school fa-lg"></i>
-  class activities
+<a class="homepage-button" href="{{site.baseurl}}/chem370/assignments">
+  <!-- <i class="fa fa-school fa-lg"></i> -->
+  <i class="fa fa-calculator fa-lg"></i>
+  assignments
 </a>
 
 </div>

@@ -111,6 +111,9 @@ navigation-370:
   - title: Lectures
     url: /chem370/lectures
     icon: fa-chalkboard-teacher
+  - title: Assignments
+    url: /chem370/assignments
+    icon: fa-calculator
   - title: R
     url: /chem370/data-processing
     icon: fa-chart-line 

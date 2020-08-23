@@ -338,38 +338,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>Download the lab notebook <a href="../notebooks/">template</a> for this lab.<br />
 </p></li>
 <li><p>Calculate the concentration of each standard and the QC in your lab notebook. (Use the <a href="serial-dilution.html"><code>serialDilution()</code></a> function and example code in the template.)</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb29-1"><a href="uv-vis-data.html#cb29-1"></a><span class="co">## Calculate standard concentrations</span></span>
-<span id="cb29-2"><a href="uv-vis-data.html#cb29-2"></a>serialDilution(stock_concentration<span class="op">,</span> [pipette_vols]<span class="op">,</span> [flask_vols])</span></code></pre></div></li>
+<div class="sourceCode" id="cb23"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb23-1"><a href="uv-vis-data.html#cb23-1"></a><span class="co">## Calculate standard concentrations</span></span>
+<span id="cb23-2"><a href="uv-vis-data.html#cb23-2"></a>serialDilution(stock_concentration<span class="op">,</span> [pipette_vols]<span class="op">,</span> [flask_vols])</span></code></pre></div></li>
 <li><p>Import your spectra from your CSV file.</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb30-1"><a href="uv-vis-data.html#cb30-1"></a><span class="fu">csvread</span>(<span class="st">&#39;data/your_filename.csv&#39;</span>)<span class="op">;</span>  <span class="co">## replace with your actual folder/filename</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb24"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb24-1"><a href="uv-vis-data.html#cb24-1"></a><span class="fu">csvread</span>(<span class="st">&#39;data/your_filename.csv&#39;</span>)<span class="op">;</span>  <span class="co">## replace with your actual folder/filename</span></span></code></pre></div></li>
 <li><p>Plot the full UV-visible spectrum for your medium standard and for one sample replicate on the same plot. The spectra should show <em>Emission Intensity</em> as <span class="math inline">\(y\)</span> and <em>Wavelength</em> as <span class="math inline">\(x\)</span>.</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb31-1"><a href="uv-vis-data.html#cb31-1"></a><span class="fu">plot</span>(x<span class="op">,</span> y<span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Insert Name for Legend Here&#39;</span>)<span class="op">;</span></span>
-<span id="cb31-2"><a href="uv-vis-data.html#cb31-2"></a><span class="fu">xlabel</span>(<span class="st">&#39;Wavelength (nm)&#39;</span>)<span class="op">;</span></span>
-<span id="cb31-3"><a href="uv-vis-data.html#cb31-3"></a><span class="fu">ylabel</span>(<span class="st">&#39;Intensity (arbitrary)&#39;</span>)<span class="op">;</span></span>
-<span id="cb31-4"><a href="uv-vis-data.html#cb31-4"></a><span class="fu">xlim</span>([<span class="fl">380</span> <span class="fl">700</span>])<span class="op">;</span> <span class="fu">ylim</span>([<span class="fl">0</span> <span class="fl">0.25</span>])<span class="op">;</span></span>
-<span id="cb31-5"><a href="uv-vis-data.html#cb31-5"></a><span class="fu">hold</span> on</span>
-<span id="cb31-6"><a href="uv-vis-data.html#cb31-6"></a><span class="fu">plot</span>(x<span class="op">,</span> y<span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Insert Name for Legend Here&#39;</span>)<span class="op">;</span></span>
-<span id="cb31-7"><a href="uv-vis-data.html#cb31-7"></a><span class="fu">legend</span>()<span class="op">;</span></span>
-<span id="cb31-8"><a href="uv-vis-data.html#cb31-8"></a><span class="fu">hold</span> off</span></code></pre></div></li>
+<div class="sourceCode" id="cb25"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb25-1"><a href="uv-vis-data.html#cb25-1"></a><span class="fu">plot</span>(x<span class="op">,</span> y<span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Insert Name for Legend Here&#39;</span>)<span class="op">;</span></span>
+<span id="cb25-2"><a href="uv-vis-data.html#cb25-2"></a><span class="fu">xlabel</span>(<span class="st">&#39;Wavelength (nm)&#39;</span>)<span class="op">;</span></span>
+<span id="cb25-3"><a href="uv-vis-data.html#cb25-3"></a><span class="fu">ylabel</span>(<span class="st">&#39;Intensity (arbitrary)&#39;</span>)<span class="op">;</span></span>
+<span id="cb25-4"><a href="uv-vis-data.html#cb25-4"></a><span class="fu">xlim</span>([<span class="fl">380</span> <span class="fl">700</span>])<span class="op">;</span> <span class="fu">ylim</span>([<span class="fl">0</span> <span class="fl">0.25</span>])<span class="op">;</span></span>
+<span id="cb25-5"><a href="uv-vis-data.html#cb25-5"></a><span class="fu">hold</span> on</span>
+<span id="cb25-6"><a href="uv-vis-data.html#cb25-6"></a><span class="fu">plot</span>(x<span class="op">,</span> y<span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Insert Name for Legend Here&#39;</span>)<span class="op">;</span></span>
+<span id="cb25-7"><a href="uv-vis-data.html#cb25-7"></a><span class="fu">legend</span>()<span class="op">;</span></span>
+<span id="cb25-8"><a href="uv-vis-data.html#cb25-8"></a><span class="fu">hold</span> off</span></code></pre></div></li>
 <li><p>Determine the wavelength of maximum emission (<span class="math inline">\(\lambda_{e-max}\)</span>) for quinine. You may try the following code to find this programmatically:</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb32-1"><a href="uv-vis-data.html#cb32-1"></a>[max_values indices] <span class="op">=</span> <span class="fu">max</span>(X(<span class="op">:,</span> <span class="fl">3</span>))<span class="op">;</span></span>
-<span id="cb32-2"><a href="uv-vis-data.html#cb32-2"></a>lambda_max <span class="op">=</span> wavelengths(indices)<span class="op">;</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb26"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb26-1"><a href="uv-vis-data.html#cb26-1"></a>[max_values indices] <span class="op">=</span> <span class="fu">max</span>(X(<span class="op">:,</span> <span class="fl">3</span>))<span class="op">;</span></span>
+<span id="cb26-2"><a href="uv-vis-data.html#cb26-2"></a>lambda_max <span class="op">=</span> wavelengths(indices)<span class="op">;</span></span></code></pre></div></li>
 <li><p>Plot a calibration curve with your data, with the intensity at <span class="math inline">\(\lambda_{e-max}\)</span> as <span class="math inline">\(y\)</span> and <em>Concentration (ppm)</em> as <span class="math inline">\(x\)</span>.</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb33-1"><a href="uv-vis-data.html#cb33-1"></a><span class="co">##### Plot cal data</span></span>
-<span id="cb33-2"><a href="uv-vis-data.html#cb33-2"></a><span class="fu">plot</span>(x<span class="op">,</span> y<span class="op">,</span> <span class="st">&#39;*&#39;</span><span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Experimental Data&#39;</span>)<span class="op">;</span></span>
-<span id="cb33-3"><a href="uv-vis-data.html#cb33-3"></a><span class="fu">xlabel</span>(<span class="st">&#39;Concentration (ppm)&#39;</span>)<span class="op">;</span></span>
-<span id="cb33-4"><a href="uv-vis-data.html#cb33-4"></a><span class="fu">ylabel</span>(<span class="st">&#39;Intensity (arbitrary)&#39;</span>)<span class="op">;</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb27"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb27-1"><a href="uv-vis-data.html#cb27-1"></a><span class="co">##### Plot cal data</span></span>
+<span id="cb27-2"><a href="uv-vis-data.html#cb27-2"></a><span class="fu">plot</span>(x<span class="op">,</span> y<span class="op">,</span> <span class="st">&#39;*&#39;</span><span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Experimental Data&#39;</span>)<span class="op">;</span></span>
+<span id="cb27-3"><a href="uv-vis-data.html#cb27-3"></a><span class="fu">xlabel</span>(<span class="st">&#39;Concentration (ppm)&#39;</span>)<span class="op">;</span></span>
+<span id="cb27-4"><a href="uv-vis-data.html#cb27-4"></a><span class="fu">ylabel</span>(<span class="st">&#39;Intensity (arbitrary)&#39;</span>)<span class="op">;</span></span></code></pre></div></li>
 <li><p>Find the calibration coefficient using the function <a href="fit-linear-model-calibration.html"><code>fitlm()</code></a>.</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb34-1"><a href="uv-vis-data.html#cb34-1"></a><span class="co">##### Calculate linear model / cal curve</span></span>
-<span id="cb34-2"><a href="uv-vis-data.html#cb34-2"></a>[fit_params<span class="op">,</span> r2<span class="op">,</span> fitline] <span class="op">=</span> fitlm(conc_vector<span class="op">,</span> intensity_vector<span class="op">&#39;</span>)<span class="op">;</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb28"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb28-1"><a href="uv-vis-data.html#cb28-1"></a><span class="co">##### Calculate linear model / cal curve</span></span>
+<span id="cb28-2"><a href="uv-vis-data.html#cb28-2"></a>[fit_params<span class="op">,</span> r2<span class="op">,</span> fitline] <span class="op">=</span> fitlm(conc_vector<span class="op">,</span> intensity_vector<span class="op">&#39;</span>)<span class="op">;</span></span></code></pre></div></li>
 <li><p>Add the output of <code>fitlm()</code> to the calibration plot (see the example notebook).</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb35-1"><a href="uv-vis-data.html#cb35-1"></a><span class="co">##### Add cal line to previous plot</span></span>
-<span id="cb35-2"><a href="uv-vis-data.html#cb35-2"></a><span class="fu">hold</span> on<span class="op">;</span> <span class="co">% this keeps our previous plot of the training data visible</span></span>
-<span id="cb35-3"><a href="uv-vis-data.html#cb35-3"></a><span class="fu">plot</span>(fitline(<span class="op">:,</span> <span class="fl">1</span>)<span class="op">,</span> fitline(<span class="op">:,</span> <span class="fl">2</span>)<span class="op">,</span> <span class="st">&#39;b--&#39;</span><span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Linear regression&#39;</span>)</span>
-<span id="cb35-4"><a href="uv-vis-data.html#cb35-4"></a><span class="fu">legend</span>(<span class="st">&#39;location&#39;</span><span class="op">,</span> <span class="st">&#39;northwest&#39;</span>)</span>
-<span id="cb35-5"><a href="uv-vis-data.html#cb35-5"></a><span class="fu">hold</span> off <span class="co">% Don&#39;t put any more plots on this figure</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb29"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb29-1"><a href="uv-vis-data.html#cb29-1"></a><span class="co">##### Add cal line to previous plot</span></span>
+<span id="cb29-2"><a href="uv-vis-data.html#cb29-2"></a><span class="fu">hold</span> on<span class="op">;</span> <span class="co">% this keeps our previous plot of the training data visible</span></span>
+<span id="cb29-3"><a href="uv-vis-data.html#cb29-3"></a><span class="fu">plot</span>(fitline(<span class="op">:,</span> <span class="fl">1</span>)<span class="op">,</span> fitline(<span class="op">:,</span> <span class="fl">2</span>)<span class="op">,</span> <span class="st">&#39;b--&#39;</span><span class="op">,</span> <span class="st">&#39;DisplayName&#39;</span><span class="op">,</span> <span class="st">&#39;Linear regression&#39;</span>)</span>
+<span id="cb29-4"><a href="uv-vis-data.html#cb29-4"></a><span class="fu">legend</span>(<span class="st">&#39;location&#39;</span><span class="op">,</span> <span class="st">&#39;northwest&#39;</span>)</span>
+<span id="cb29-5"><a href="uv-vis-data.html#cb29-5"></a><span class="fu">hold</span> off <span class="co">% Don&#39;t put any more plots on this figure</span></span></code></pre></div></li>
 <li><p>Use your calibration curve to determine the concentration of quinine in the QC.</p>
-<pre class="marginfigure"><code>Your measured and known QC concentrations should be the same at the 95% confidence level.</code></pre></li>
+<div class="marginfigure">
+<p>
+Your measured and known QC concentrations should be the same at the 95% confidence level.
+</p>
+</div></li>
 <li><p>Use your calibration curve to determine the concentration of quinine in the samples.<br />
 </p></li>
 <li><p>Report your final answer as the average concentration <span class="math inline">\(\pm\)</span> one standard deviation, both in your lab notebook and on the analysis sheet. Make sure to round to the correct number of significant digits!</p>

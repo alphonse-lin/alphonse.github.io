@@ -375,18 +375,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="running-samples-1" class="section level3">
 <h3><span class="header-section-number">5.5.3</span> Running Samples</h3>
 <ol style="list-style-type: decimal">
-<li><p>Use the Flame AA SOP to prepare a flame AA <em>method</em> file containing your blanks and standards. Use the <code>CHEM370_Acetaminophen</code> method as a template.</p></li>
-<li><p>Prepare a <em>Sample Information File</em> containing your QC.</p></li>
-<li><p>Run the blanks, standards, and QC.</p>
-<pre class="marginfigure"><code>**Checkpoint:**
-
-- A passing blank will show no signs of contamination.  
-- A passing standard curve will have $R^2 \ge 0.9990$.  
-- A passing QC will be within $\pm$ 5% of the known concentration.  
-
-If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!</code></pre></li>
-<li><p>If everything passes, add your samples to your Sample Information File.</p></li>
-<li><p>Run your newly-added samples.</p></li>
+<li>Use the Flame AA SOP to prepare a flame AA <em>method</em> file containing your blanks and standards. Use the <code>CHEM370_Acetaminophen</code> method as a template.</li>
+<li>Prepare a <em>Sample Information File</em> containing your QC.</li>
+<li>Run the blanks, standards, and QC.
+<div class="marginfigure">
+<p>
+<strong>Checkpoint:</strong>
+</p>
+<ul>
+<li>
+A passing blank will show no signs of contamination.<br />
+</li>
+<li>
+A passing standard curve will have <span class="math inline"><span class="math inline">\(R^2 \ge 0.9990\)</span></span>.<br />
+</li>
+<li>
+A passing QC will be within <span class="math inline"><span class="math inline">\(\pm\)</span></span> 5% of the known concentration.
+</li>
+</ul>
+<p>
+If any of these is not passing you must repeat the analysis and/or remake your standards until they pass!
+</p>
+</div></li>
+<li>If everything passes, add your samples to your Sample Information File.</li>
+<li>Run your newly-added samples.</li>
 </ol>
 <p><em>If you have extra sample, try screening it for other metals! (Ask how.)</em></p>
 </div>
@@ -401,11 +413,22 @@ If any of these is not passing you must repeat the analysis and/or remake your s
 </div>
 <div id="data-processing-3" class="section level3">
 <h3><span class="header-section-number">5.5.5</span> Data Processing</h3>
-<pre class="marginfigure"><code>You should turn a ZIP folder containing:  
-
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
-- Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx).</code></pre>
+<div class="marginfigure">
+<p>
+You should turn a ZIP folder containing:
+</p>
+<ul>
+<li>
+Your complete lab notebook as an .ipynb file, functioning with no errors.<br />
+</li>
+<li>
+Your data files.<br />
+</li>
+<li>
+Your completed <a href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx">analysis sheet</a>.
+</li>
+</ul>
+</div>
 <ol style="list-style-type: decimal">
 <li>Export your data as a CSV using the CHEM 370 template in the Data Manager software.</li>
 <li>Use the absorbances of the standards to calculate your standard curve in R.</li>
@@ -425,47 +448,47 @@ If any of these is not passing you must repeat the analysis and/or remake your s
 <ol style="list-style-type: decimal">
 <li>What is <span class="math inline">\(R^2\)</span> value for your calibration curve? Call the variable <code>r2</code>.</li>
 </ol>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="am-faas.html#cb122-1"></a>r2 &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="am-faas.html#cb99-1"></a>r2 &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li>What is sensitivity factor? Call the variable <code>m</code>.</li>
 </ol>
-<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb123-1"><a href="am-faas.html#cb123-1"></a>m &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb100-1"><a href="am-faas.html#cb100-1"></a>m &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>What is mean measured analyte concentration for the QC in mg/L? Call the variable <code>qc_conc</code>.</li>
 </ol>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="am-faas.html#cb124-1"></a>qc_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="am-faas.html#cb101-1"></a>qc_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="4" style="list-style-type: decimal">
 <li>What is the expected analyte concentration for the QC in mg/L? Call the variable <code>qc_expected</code>.</li>
 </ol>
-<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb125-1"><a href="am-faas.html#cb125-1"></a>qc_expected &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb102-1"><a href="am-faas.html#cb102-1"></a>qc_expected &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="5" style="list-style-type: decimal">
 <li>TRUE or FALSE: My QC passes at the 95% confidence level. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>qc_passfail</code>.</li>
 </ol>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="am-faas.html#cb126-1"></a>passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="am-faas.html#cb103-1"></a>passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="6" style="list-style-type: decimal">
 <li>What is mean analyte concentration for sample 1 in mg/L? Call the variable <code>s1_conc</code>.</li>
 </ol>
-<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb127-1"><a href="am-faas.html#cb127-1"></a>s1_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb104-1"><a href="am-faas.html#cb104-1"></a>s1_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="7" style="list-style-type: decimal">
 <li>What is mean analyte concentration for sample 2 in mg/L? Call the variable <code>s2_conc</code>.</li>
 </ol>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="am-faas.html#cb128-1"></a>s2_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="am-faas.html#cb105-1"></a>s2_conc &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="8" style="list-style-type: decimal">
 <li>What is the 95% CI for sample 1 in mg/L? Call the variable <code>s1_ci</code>.</li>
 </ol>
-<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb129-1"><a href="am-faas.html#cb129-1"></a>s1_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb106-1"><a href="am-faas.html#cb106-1"></a>s1_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="9" style="list-style-type: decimal">
 <li>(Acetaminophen Only) What is the 95% CI for sample 2 in mg/L? Call the variable <code>s2_ci</code>.</li>
 </ol>
-<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="am-faas.html#cb130-1"></a>s2_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="am-faas.html#cb107-1"></a>s2_ci &lt;-<span class="st"> </span><span class="dv">0</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="10" style="list-style-type: decimal">
 <li>TRUE or FALSE: The concentration of Sample 1 is significantly different from the labeled value. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>s1_passfail</code>.</li>
 </ol>
-<div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb131-1"><a href="am-faas.html#cb131-1"></a>s1_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb108-1"><a href="am-faas.html#cb108-1"></a>s1_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 <ol start="11" style="list-style-type: decimal">
 <li>(Acetaminophen Only) TRUE or FALSE: The concentration of Sample 2 is significantly different from the labeled value. Save your <code>TRUE</code> or <code>FALSE</code> answer as <code>s2_passfail</code>.</li>
 </ol>
-<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="am-faas.html#cb132-1"></a>s2_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="am-faas.html#cb109-1"></a>s2_passfail &lt;-<span class="st"> </span><span class="ot">FALSE</span>     <span class="co"># put your answer between the &#39;&lt;-&#39; and &#39;#&#39;</span></span></code></pre></div>
 
 </div>
 </div>
