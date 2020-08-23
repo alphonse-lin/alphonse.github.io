@@ -1,6 +1,6 @@
 ---
 layout: chem370
-title:  CHEM 370 Assignment Checklist
+title:  CHEM 370 Typical Weekly Assignments
 permalink: /chem370/assignments/typical-week
 ---
 
