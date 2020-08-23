@@ -18,9 +18,9 @@ rmd_files: [
             "02_uv-vis.Rmd",
             "03_vape.Rmd",
             "04_acetaminophen.Rmd",
-            "06_R-cookbook.Rmd",
-            "07_statistical-data-analysis.Rmd",
-            "08_lab-notebooks.Rmd",
-            "00B_schedule.Rmd",
-            "09_assignment-checklist.Rmd"
+            "A1_R-cookbook.Rmd",
+            "A2_statistical-data-analysis.Rmd",
+            "A3_lab-notebooks.Rmd",
+            "A4_schedule.Rmd",
+            "A5_assignment-checklist.Rmd"
             ]

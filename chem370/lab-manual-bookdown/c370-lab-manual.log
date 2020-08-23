@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.7.2)  23 AUG 2020 14:47
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.7.2)  23 AUG 2020 14:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1816,7 +1816,7 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5311.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5311.
 
 Package rerunfilecheck Info: File `c370-lab-manual.out' has not changed.
-(rerunfilecheck)             Checksum: ECA9110317B63F48DFA0169DD24B3992;8386.
+(rerunfilecheck)             Checksum: CF5C71C1175B9DA8796D8517F2067966;8386.
 
 LaTeX Warning: There were multiply-defined labels.
 
