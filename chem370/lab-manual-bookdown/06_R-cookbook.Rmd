@@ -1,4 +1,4 @@
-# Appendix 2: R Cookbook {-}
+# Appendix 1: R Cookbook {-}
 
 This appendix contains snippets of code you can use to accomplish specific tasks in R.  For the most part, you can copy and past this code and change the variable names to perform the tasks listed.  Most of the programming tasks you'll need to accomplish in Chem 370 can be found here.
 

@@ -1,4 +1,4 @@
-# Appendix 3: Statistical Data Analysis {-}
+# Appendix 2: Statistical Data Analysis {-}
 
 Throughout this course, you should use statistical measures when analyzing your data and drawing conclusions.  You are expected to:
 

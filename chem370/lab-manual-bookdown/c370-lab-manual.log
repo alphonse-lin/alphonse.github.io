@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.7.2)  23 AUG 2020 14:40
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.7.2)  23 AUG 2020 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1800,32 +1800,35 @@ Overfull \hbox (1.67987pt too wide) in alignment at lines 5119--5274
  [] [] [] [] 
  []
 
+[103] [104
+
+]
 
 Package bibentry Warning: You have used \nobibliography* 
 (bibentry)                without a following \bibliography.
 (bibentry)                You may not be able to run BibTeX.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5280.
-[103]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5280.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5311.
+[105]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5311.
 (./c370-lab-manual.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5280.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5280.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5311.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5311.
 
 Package rerunfilecheck Info: File `c370-lab-manual.out' has not changed.
-(rerunfilecheck)             Checksum: 443DC22F4BEE5E72202B3EDA9489CEC1;8165.
+(rerunfilecheck)             Checksum: ECA9110317B63F48DFA0169DD24B3992;8386.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5280.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5311.
  ) 
 Here is how much of TeX's memory you used:
- 16389 strings out of 481804
- 292233 string characters out of 5937877
- 658272 words of memory out of 5000000
- 33028 multiletter control sequences out of 15000+600000
+ 16391 strings out of 481804
+ 292270 string characters out of 5937877
+ 657621 words of memory out of 5000000
+ 33030 multiletter control sequences out of 15000+600000
  538164 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,12n,71p,1211b,602s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on c370-lab-manual.pdf (103 pages).
+Output written on c370-lab-manual.pdf (105 pages).

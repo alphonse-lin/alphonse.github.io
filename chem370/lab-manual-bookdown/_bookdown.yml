@@ -21,5 +21,6 @@ rmd_files: [
             "06_R-cookbook.Rmd",
             "07_statistical-data-analysis.Rmd",
             "08_lab-notebooks.Rmd",
-            "00B_schedule.Rmd"
+            "00B_schedule.Rmd",
+            "09_assignment-checklist.Rmd"
             ]
