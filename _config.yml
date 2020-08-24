@@ -88,7 +88,7 @@ navigation:
     url: /about
   - title: contact
     url: /contact
-  - title: curriculum vitae
+  - title: cv
     url: /curriculum-vitae
   - title: projects
     url: /projects
