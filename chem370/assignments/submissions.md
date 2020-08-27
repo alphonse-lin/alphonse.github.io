@@ -10,7 +10,7 @@ Submissions links open 10 days before the due date and close on the due date.
 
 | Assignment | Due | ID | Status | URL |
 | ----- | ----- | ----- | ----- | ----- |
-|Example (nothing due!)|2020-08-21 11:59:59|Q5TGnFYASYYe5TtyMO9E|Open|[link](https://www.dropbox.com/request/Q5TGnFYASYYe5TtyMO9E)|
+|Example (nothing due!)|2020-08-21 11:59:59|Q5TGnFYASYYe5TtyMO9E|Closed|[link](https://www.dropbox.com/request/Q5TGnFYASYYe5TtyMO9E)|
 |GC-TCD Lab Pack|2020-09-09 11:59:59|nmUbYOF29oIx4GOJ5xMU|Closed|[link](https://www.dropbox.com/request/nmUbYOF29oIx4GOJ5xMU)|
 |UV-vis Lab Pack|2020-09-23 11:59:59|FzXL30enUUi7jy7N48L6|Closed|[link](https://www.dropbox.com/request/FzXL30enUUi7jy7N48L6)|
 |Lab Notebook 1 and 2 Pack|2020-10-21 11:59:59|jcw4uTdTunslXo3Rr7l5|Closed|[link](https://www.dropbox.com/request/jcw4uTdTunslXo3Rr7l5)|
