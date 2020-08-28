@@ -93,6 +93,11 @@ Your run list for this experiment is, on each instrument:
 
 ## Data Processing
 
+The following video walks you through the data processing portion of this lab.
+
+<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/8df1433b-8b90-4b1d-aaaa-c90165f93c50?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+
+
 1. Create a new R project for this lab and use it for all your data processing. Make sure your data files are also in this folder. Use the path: `lab-notebooks/Lab 2: GC-TCD`.  (You should have done this in Exercise 1.4.)
 1. Load the CSV files into R/RStudio.  You may also want to plot the data to inspect it.
 
