@@ -5,9 +5,12 @@ description: curriculum vitae
 permalink: /curriculum-vitae/
 ---
 
+<!-- Al Fischer, PhD
+========== -->
 <!-- ## Al Fischer, PhD -->
-*Instrumentation Specialist & Instructor*  
-[dfischer@wcu.edu](mailto:dfischer@wcu.edu)
+*Instrumentation Specialist*   
+Western Carolina University   
+[dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
 
 <!---
 ## Timeline
@@ -17,11 +20,12 @@ permalink: /curriculum-vitae/
 {:center}
 -->
 
+<!-- *I am the Instrumentation Specialist and an Instructor of Chemistry at Western Carolina University. My research lies at the intersection of environmental science and analytical chemistry. With expertise in chemical analysis, instrument design and automation, aerosol spectroscopy (including cavity ringdown and photoacoutic spectroscopy), atmospheric monitoring, and electron microscopy, I develop instruments and methods that help us better understand the natural world and our effects on it.  I also teach classes related to chemical instrumentation and atmospheric chemistry, assist students and faculty with chemical analysis related to their research, and serve on the Environmental Science Program Council at Western.* -->
+
 ## Employment
 
 **Western Carolina University**  
 Department of Chemistry and Physics  
-<!-- Environmental Science Program   -->
 Cullowhee, NC  
 *Instrumentation Specialist & Instructor (2018-Present)*  
 
@@ -46,9 +50,15 @@ Olympia, WA
 
 ## Publications
 
-**Fischer, D.A.**, Z. Cheng, R. Saleh, and G.D. Smith.  Comparison of 7-wavelength Aethalometer to a 4-wavelength Photoacoustic Spectrometer. *ACS Earth and Space Chemistry* (*in preparation*)
+Cheng, Z., K. Atwi, O. Hajj, I. Ijeli, **D.A. Fischer**, G.D. Smith, and R. Saleh (2020) Discrepancies Between Brown Carbon Light-absorption Properties Retrieved from Online and Offline Measurements. *Aerosol Science and Technology* (in review)
 
-**Fischer, D.A.** and G.D. Smith (2018) Can ozone be used to calibrate aerosol photoacoustic spectrometers? *Atmospheric Measurement Techniques*, [Volume 11, No. 12, 6419–6427](https://doi.org/10.5194/amt-11-6419-2018).
+<!-- , manuscript ID AST-MS-2020-086.R1 -->
+
+Fierce, L., T.B. Onasch, C.D. Cappa, C. Mazzoleni, S. China, J. Bhandari, P. Davidovits, **D.A. Fischer**, T. Helgestad, A.T. Lambe, A.J. Sedlacek III, G.D. Smith, and L. Wolff (2020) Radiative absorption enhancements by black carbon controlled by particle-to-particle heterogeneity in composition. *PNAS*, [Volume 117, No. 10, 5196-5203](https://doi.org/10.1073/pnas.1919723117).
+
+<!-- **Fischer, D.A.**, Z. Cheng, R. Saleh, and G.D. Smith.  Comparison of 7-wavelength Aethalometer to a 4-wavelength Photoacoustic Spectrometer. *ACS Earth and Space Chemistry* (*in preparation*) -->
+
+**Fischer, D.A.** and G.D. Smith (2018) Can ozone be used to calibrate aerosol photoacoustic spectrometers? *Atmospheric Measurement Techniques*, [Volume 11, No. 12, 6419-6427](https://doi.org/10.5194/amt-11-6419-2018).
 
 **Fischer, D.A.** and G.D. Smith (2017) A 4-wavelength, Single-cell Photoacoustic Instrument for Aerosol Absorption.  *Aerosol Science and Technology*, [Volume 52, No. 4, 393-406](https://www.tandfonline.com/doi/abs/10.1080/02786826.2017.1413231).
 
@@ -62,19 +72,17 @@ Mattingly, K, B.D. Johnson, and **D.A. Fischer**. (2015) Characterization of Atm
 
 **Fischer, D.A.** and G.D. Smith (2017) [UV-Visible Photoacoustic Spectroscopy for Aerosol Absorption](/pdf/poster_pas_aaar_2017.pdf). *American Association for Aerosol Research Annual Conference*, Raleigh, NC.
 
-L. Renbaum-Wolff, **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa, A.J. Sedlacek, P. Davidovits, ***T. ONASCH***, A. Freedman. (2016) Broadband Measurements of the Mass Absorption Coefficient of Soot.  *American Association for Aerosol Research Annual Conference*, Portland, OR. 7CA.1.
+Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa, A.J. Sedlacek, P. Davidovits, ***T. ONASCH***, A. Freedman. (2016) Broadband Measurements of the Mass Absorption Coefficient of Soot.  *American Association for Aerosol Research Annual Conference*, Portland, OR. 7CA.1.
 
-<div style="page-break-after: always;"></div>
-
-L. Renbaum-Wolff, **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa, A. Sedlacek, P. Davidovits, T. Onasch, and ***A. FREEDMAN***. (2016) Measurements of Soot Mass Absorption Coefficients from 300 to 660 nm.  *European Geophysical Union General Assembly 2016*, Vienna, Austria.  EGU2016-9236.
+Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa, A. Sedlacek, P. Davidovits, T. Onasch, and ***A. FREEDMAN***. (2016) Measurements of Soot Mass Absorption Coefficients from 300 to 660 nm.  *European Geophysical Union General Assembly 2016*, Vienna, Austria.  EGU2016-9236.
 <!--
 ***L. RENBAUM-WOLFF***, A. Lambe, T. Onasch, A. Freedman, L. Williams, T. Helgestad, C. Cappa, **D.A. Fischer**, G. Smith, S. China, C. Mazzoleni, A.J. Sedlacek, E. Browne, G. Isaacman-VanWertz, J. Kroll, J. Brogan, Y. Parmar, A. Lee, N. Sharma, J. Bhandari, J. Jayne, D. Worsnop, P. Davidovits. (2015) New Optical Experiments "Shed Light" on Role of Particle Morphology and Chemical Composition in the Absorption Enhancement of Coated Soot Particles.  *American Association for Aerosol Research Annual Conference*,  Minneapolis, MN. 12CC.3. -->
 
-**Fischer, D.A.** and G.D. Smith. (2015) A UV-Vis Broadband Cavity Enhanced Spectrometer for Ambient Aerosols. Eleventh International User Meeting and Summer School on Cavity Enhanced Spectroscopy, Boulder, CO.
+**Fischer, D.A.** and G.D. Smith. (2015) A UV-Vis Broadband Cavity Enhanced Spectrometer for Ambient Aerosols. *Eleventh International User Meeting and Summer School on Cavity Enhanced Spectroscopy*, Boulder, CO.
 
-**Fischer, D.A.** and G.D. Smith. A UV-Vis Broadband Cavity Enhanced Spectrometer. EPA Air Sensors 2014: A New Frontier, Raleigh, NC, 2014.
+**Fischer, D.A.** and G.D. Smith. A UV-Vis Broadband Cavity Enhanced Spectrometer. *EPA Air Sensors 2014: A New Frontier*, Raleigh, NC, 2014.
 
-**Fischer, D.A.** and G.D. Smith. (2013) Incoherent broadband cavity enhanced spectroscopy for measuring extinction coefficients of atmospheric species throughout the UV-visible spectrum.  Southeast Regional Meeting of the American Chemical Society.  Atlanta, GA.
+**Fischer, D.A.** and G.D. Smith. (2013) Incoherent broadband cavity enhanced spectroscopy for measuring extinction coefficients of atmospheric species throughout the UV-visible spectrum.  *Southeast Regional Meeting of the American Chemical Society*.  Atlanta, GA.
 
 ## Teaching
 
@@ -94,8 +102,8 @@ L. Renbaum-Wolff, **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa, 
 **WCU CHEM 132**  
 *Survey of Chemistry Laboratory*
 
-<!-- **Southwestern Community College STEAM Summer Camp**
-*Units on Air Quality and Water Quality* -->
+**Southwestern Community College STEAM Summer Camp**
+*Units on Air Quality and Water Quality*
 
 **Get Involved! Becoming a Citizen Scientist**   
 *University of Georgia First Year Odyssey*  
@@ -104,6 +112,8 @@ L. Renbaum-Wolff, **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa, 
 **Hands-On Scientific Instrumentation**
 
 ## Instruments I've Designed and Built
+
+*Click each item for more information.*
 
 * [Continuous Flow Liquid Stage for Scanning Electron Microscopy](http://hummingbirdscientific.com/products/sem-liquid/)
 * [Vapor Delivery System for SEM and TEM](http://hummingbirdscientific.com/products/liquid/liquid-system-vapor-delivery-system/)
