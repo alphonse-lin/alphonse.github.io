@@ -4,6 +4,8 @@ title:  Data Processing and Lab Notebook Info
 permalink: /chem370/data-processing
 ---
 
+If you experience trouble with R or RStudio, you can use it on VCAT (Virtual Apps link on my.wcu.edu).  You will need to download the notebook templates from [GitHub](https://github.com/dr-fischer/instRumental/tree/master/inst/rmarkdown/templates).
+
 We will focus heavily on analytical data processing throughout the semester.  You will be expected to process your data using the programming language R.  Although this may feel like computer science to some, programmatic data analysis is becoming an increasingly important part of analytical chemistry. (Remember, analytical chemistry is what analytical chemists do!)
 
 You will undoubtedly encounter many error messages while coding this semester.  You will have to find the cause of the error and fix it before moving on.  It's likely you will feel lost, underprepared, and frustrated.  To help with this, I encourage you to follow the tutorials below.  If you get stuck, take a look at the *How to Get Help* section below.
