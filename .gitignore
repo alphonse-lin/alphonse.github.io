@@ -1,6 +1,7 @@
 
 .jekyll-cache/
 .Rproj.user
+.Rhistory
 
 _site/
 chem370/pdf/.DS_Store
