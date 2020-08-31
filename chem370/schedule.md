@@ -22,8 +22,8 @@ Please see the [lab schedule]({{ site.url }}/chem370/lab-manual/appendix-5-sched
 |:------:|:------:| --------------------------- | ------------------- | ---------------------- | --------------------- | ------------------- | ------------------------ |
 |   1    |  8/17  | Intro                       | No Meeting          | Analytical Perspective | Analyst's Toolbox     | Intro + Safety      |                          |
 |   2    |  8/24  | Characterizing Measurements | Chemical Principles | Distributions          | Errors and CIs        | GC Lab 1            |                          |
-|   3    |  8/31  | Data Analysis               | Choosing a Method   | QA/QC + Standards      | Reproducible Research | GC Data @ Home      |                          |
-|   4    |  9/7   | Quantitative Analysis       | No Meeting          | Standardization        | Blanks                | UV-vis              |                          |
+|   3    |  8/31  | Data Analysis               | Choosing a Method   | Standardization        | Reproducible Research | GC Data @ Home      |                          |
+|   4    |  9/7   | Quantitative Analysis       | No Meeting          | QA/QC + Blanks         | Bits and Pieces       | UV-vis              | R Exercise @ Home        |
 |   5    |  9/14  | Instrumentation Survey      | ***Exam 1***        | Survey 1 + 2           | Survey 3 + 4          | UV-vis Data @ Home  |                          |
 |   6    |  9/21  | Spectroscopy                |                     | Spectroscopy           | Optics                | Rotations           | ***Instrument Quizzes*** |
 |   7    |  9/28  | Spectroscopy                |                     | UV-vis: Theory         | UV-vis: Instruments   | Rotations           |                          |

@@ -8,6 +8,5 @@ header-includes: |
     \let\endoldquote=\endquote
     \colorlet{shadecolor}{black!5}
     \renewenvironment{quote}{\begin{shaded*}\begin{oldquote}}{\end{oldquote}\end{shaded*}}
-output:
-  pdf-engine: xelatex
+# mainfont: texgyreschola-regular.otf
 ---
