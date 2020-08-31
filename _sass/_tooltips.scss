@@ -118,3 +118,38 @@ kbd {
   visibility: visible;
   opacity: 1;
 }
+
+.tooltip-r span {
+  visibility: hidden;
+  width: 100%;
+  background-color: $white;
+  border: 1px solid $wcuRidgeGreen;
+  color: black;
+  text-align: left;
+  border-radius: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  position: absolute;
+  bottom: 1em;
+  left: -2px;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 18px;
+}
+
+.tooltip-r:hover {
+  cursor: pointer;
+  color: $gold;
+}
+
+.tooltip-r input {
+  display:none;
+}
+
+.tooltip-r input:checked+span {
+  visibility: visible;
+  opacity: 1;
+  
+}

@@ -927,7 +927,7 @@ tr:last-child {
 }
 
 .check-understanding {
-	font-family: $transcript-text;
+	font-family: $chem370text;
 	border: 1px solid $gold;
 	border-radius: 5px;
 	border-top: 30px solid $gold;
@@ -949,6 +949,39 @@ tr:last-child {
 	color: $white;
 	position: absolute;
 	top: -25px;
+  font-family: $chem370text;
+}
+
+.r-understanding {
+  font-family: $chem370text !important;
+	font-family: $transcript-text;
+	border: 1px solid $gold;
+	border-radius: 5px;
+	border-top: 30px solid $gold;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 40px;
+	padding-right: 15px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 90%;
+	line-height: 16px;
+}
+
+.r-understanding:before {
+	content: "CODE";
+	color: $gold;
+	position: absolute;
+	top: -25px;
+  font-family: $chem370text !important;
+}
+
+pre, code {
+	font-family: $code;
+	overflow-x: auto;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
