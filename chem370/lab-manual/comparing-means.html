@@ -174,7 +174,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.4" data-path="lab-procedure.html"><a href="lab-procedure.html#inject-the-sample"><i class="fa fa-check"></i><b>2.1.4</b> Inject the Sample</a></li>
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="data-processing.html"><a href="data-processing.html#step-by-step-instructions"><i class="fa fa-check"></i><b>2.2.1</b> Step-by-Step Instructions</a></li>
+</ul></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 <li class="chapter" data-level="2.4" data-path="gctcd-rubric.html"><a href="gctcd-rubric.html"><i class="fa fa-check"></i><b>2.4</b> Notebook Rubric</a></li>
 <li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
@@ -333,9 +335,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="comparing-means" class="section level2 unnumbered">
 <h2>Comparing Means</h2>
 <p>If you are comparing two means or comparing a mean to an expected value (e.g. comparing the concentration of a compound to the concentration listed on the manufacturer’s label), you should use a <em>t</em>-test to draw you conclusions. A <em>t</em>-test can be performed in R using the <code>t.test()</code> function.</p>
-<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="comparing-means.html#cb147-1"></a>measurements &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>) <span class="co"># this is your sample vector</span></span>
-<span id="cb147-2"><a href="comparing-means.html#cb147-2"></a>expected_value &lt;-<span class="st"> </span><span class="fl">0.5</span></span>
-<span id="cb147-3"><a href="comparing-means.html#cb147-3"></a><span class="kw">t.test</span>(measurements, expected_value);</span></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="comparing-means.html#cb124-1"></a>measurements &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>) <span class="co"># this is your sample vector</span></span>
+<span id="cb124-2"><a href="comparing-means.html#cb124-2"></a>expected_value &lt;-<span class="st"> </span><span class="fl">0.5</span></span>
+<span id="cb124-3"><a href="comparing-means.html#cb124-3"></a><span class="kw">t.test</span>(measurements, expected_value);</span></code></pre></div>
 <p>If the output is 0, the sample mean is not significantly different from the provided mean at the 95% confidence interval. If the output is 1, the means are significantly different at the 95% confidence interval. Run <code>?t.test()</code> in R for more information.</p>
 </div>
             </section>

@@ -174,7 +174,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.4" data-path="lab-procedure.html"><a href="lab-procedure.html#inject-the-sample"><i class="fa fa-check"></i><b>2.1.4</b> Inject the Sample</a></li>
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="data-processing.html"><a href="data-processing.html#step-by-step-instructions"><i class="fa fa-check"></i><b>2.2.1</b> Step-by-Step Instructions</a></li>
+</ul></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 <li class="chapter" data-level="2.4" data-path="gctcd-rubric.html"><a href="gctcd-rubric.html"><i class="fa fa-check"></i><b>2.4</b> Notebook Rubric</a></li>
 <li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
@@ -333,31 +335,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="data-processing" class="section level2">
 <h2><span class="header-section-number">2.2</span> Data Processing</h2>
 <p>The following video walks you through the data processing portion of this lab.</p>
-<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=69790db3-01a1-4dc7-9f63-ac2900f490b5&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="360" width="640" allowfullscreen allow="autoplay">
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=69790db3-01a1-4dc7-9f63-ac2900f490b5&amp;autoplay=false&amp;offerviewer=true&amp;showtitle=true&amp;showbrand=false&amp;start=0&amp;interactivity=all" height="405" width="720" frameBorder="0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay">
 </iframe>
+<div id="step-by-step-instructions" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Step-by-Step Instructions</h3>
 <ol style="list-style-type: decimal">
 <li><p>Create a new R project for this lab and use it for all your data processing. Make sure your data files are also in this folder. Use the path: <code>lab-notebooks/Lab 2: GC-TCD</code>. (You should have done this in Exercise 1.4.)</p></li>
 <li><p>Load the CSV files into R/RStudio. You may also want to plot the data to inspect it.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="data-processing.html#cb5-1"></a>chromatogram &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;filename.csv&#39;</span>);  <span class="co"># replace &#39;filename&#39; with your filename</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="data-processing.html#cb3-1"></a>chromatogram &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&#39;filename.csv&#39;</span>);  <span class="co"># replace &#39;filename&#39; with your filename</span></span></code></pre></div></li>
 <li><p>Remove the baseline offset (DC offset) from the data.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="data-processing.html#cb6-1"></a><span class="co">## Define the &quot;baseline&quot; as 4 minutes to end of chromatogram where there are no peaks</span></span>
-<span id="cb6-2"><a href="data-processing.html#cb6-2"></a>baseline =<span class="st"> </span><span class="kw">mean</span>(chromatogram[<span class="dv">481</span><span class="op">:</span>end, <span class="dv">2</span>]);</span>
-<span id="cb6-3"><a href="data-processing.html#cb6-3"></a></span>
-<span id="cb6-4"><a href="data-processing.html#cb6-4"></a><span class="co">## subtract the mean baseline value and store in second column of data set</span></span>
-<span id="cb6-5"><a href="data-processing.html#cb6-5"></a>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] &lt;-<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span>baseline;  </span></code></pre></div></li>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="data-processing.html#cb4-1"></a><span class="co">## Define the &quot;baseline&quot; as 4 minutes to end of chromatogram where there are no peaks</span></span>
+<span id="cb4-2"><a href="data-processing.html#cb4-2"></a>baseline =<span class="st"> </span><span class="kw">mean</span>(chromatogram[<span class="dv">481</span><span class="op">:</span>end, <span class="dv">2</span>]);</span>
+<span id="cb4-3"><a href="data-processing.html#cb4-3"></a></span>
+<span id="cb4-4"><a href="data-processing.html#cb4-4"></a><span class="co">## subtract the mean baseline value and store in second column of data set</span></span>
+<span id="cb4-5"><a href="data-processing.html#cb4-5"></a>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] &lt;-<span class="st"> </span>chromatogram[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span>baseline;  </span></code></pre></div></li>
 <li><p>Plot the chromatogram with Time on the <span class="math inline">\(x\)</span> axis and signal level on the <span class="math inline">\(y\)</span> axis.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="data-processing.html#cb7-1"></a><span class="kw">plot</span>(time, signal, <span class="dt">xlab =</span> <span class="st">&#39;Time (min)&#39;</span>, <span class="dt">ylab =</span> <span class="st">&#39;Signal (arbitrary)&#39;</span>);</span></code></pre></div></li>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="data-processing.html#cb5-1"></a><span class="kw">plot</span>(time, signal, <span class="dt">xlab =</span> <span class="st">&#39;Time (min)&#39;</span>, <span class="dt">ylab =</span> <span class="st">&#39;Signal (arbitrary)&#39;</span>);</span></code></pre></div></li>
 <li><p>Use the function <code>peakArea()</code> to calculate the area of each peak in your chromatograms.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb8-1"><a href="data-processing.html#cb8-1"></a><span class="co">### You must first run the code shown in the peak area function for this to work!</span></span>
-<span id="cb8-2"><a href="data-processing.html#cb8-2"></a><span class="co">### Copy and paste it into your notebook and run the cell.</span></span>
-<span id="cb8-3"><a href="data-processing.html#cb8-3"></a></span>
-<span id="cb8-4"><a href="data-processing.html#cb8-4"></a>peak1_area <span class="op">=</span> peakArea([chromatogram(<span class="op">:,</span> <span class="fl">1</span>)<span class="op">,</span> chromatogram(<span class="op">:,</span> <span class="fl">2</span>)]<span class="op">,</span> x1<span class="op">,</span> x2<span class="op">,</span> <span class="fu">true</span>)<span class="op">;</span></span>
-<span id="cb8-5"><a href="data-processing.html#cb8-5"></a><span class="co">### substitute the lower limit of integration for x1 and the upper limit for x2 (in minutes)</span></span>
-<span id="cb8-6"><a href="data-processing.html#cb8-6"></a><span class="co">### if the last argument is true, a plot will be created</span></span>
-<span id="cb8-7"><a href="data-processing.html#cb8-7"></a></span>
-<span id="cb8-8"><a href="data-processing.html#cb8-8"></a><span class="co">### Repeat the function as many times as necessary to integrate each peak.  You will need to change the time for each peak.</span></span>
-<span id="cb8-9"><a href="data-processing.html#cb8-9"></a></span>
-<span id="cb8-10"><a href="data-processing.html#cb8-10"></a><span class="co">### ... and so on</span></span></code></pre></div></li>
+<div class="sourceCode" id="cb6"><pre class="sourceCode octave"><code class="sourceCode octave"><span id="cb6-1"><a href="data-processing.html#cb6-1"></a><span class="co">### You must first run the code shown in the peak area function for this to work!</span></span>
+<span id="cb6-2"><a href="data-processing.html#cb6-2"></a><span class="co">### Copy and paste it into your notebook and run the cell.</span></span>
+<span id="cb6-3"><a href="data-processing.html#cb6-3"></a></span>
+<span id="cb6-4"><a href="data-processing.html#cb6-4"></a>peak1_area <span class="op">=</span> peakArea([chromatogram(<span class="op">:,</span> <span class="fl">1</span>)<span class="op">,</span> chromatogram(<span class="op">:,</span> <span class="fl">2</span>)]<span class="op">,</span> x1<span class="op">,</span> x2<span class="op">,</span> <span class="fu">true</span>)<span class="op">;</span></span>
+<span id="cb6-5"><a href="data-processing.html#cb6-5"></a><span class="co">### substitute the lower limit of integration for x1 and the upper limit for x2 (in minutes)</span></span>
+<span id="cb6-6"><a href="data-processing.html#cb6-6"></a><span class="co">### if the last argument is true, a plot will be created</span></span>
+<span id="cb6-7"><a href="data-processing.html#cb6-7"></a></span>
+<span id="cb6-8"><a href="data-processing.html#cb6-8"></a><span class="co">### Repeat the function as many times as necessary to integrate each peak.  You will need to change the time for each peak.</span></span>
+<span id="cb6-9"><a href="data-processing.html#cb6-9"></a></span>
+<span id="cb6-10"><a href="data-processing.html#cb6-10"></a><span class="co">### ... and so on</span></span></code></pre></div></li>
 <li><p>Find the percent composition for each <em>unknown</em> peak. The percent composition for peak <span class="math inline">\(n\)</span> is:</p>
 <p><span class="math display">\[
  C_n(\%)=\frac{A_n}{A_1 + A_2 + ... A_n} \times 100\%
@@ -368,17 +372,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  \frac{S}{N} = \frac{2H}{h} = \frac{\text{Peak Height}}{\text{min-to-max baseline noise}}
  \]</span></p>
 <p>where <span class="math inline">\(H\)</span> is the peak height at maximum and <span class="math inline">\(h\)</span> is the min-to-max noise in the baseline. Use the maximum peak height as signal. The example below shows how to subset the data and find the min and max values. You will need to calculate <span class="math inline">\(S/N\)</span> from those values according to the formula above.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="data-processing.html#cb9-1"></a><span class="co">## find range of baseline, near end where there are no peaks</span></span>
-<span id="cb9-2"><a href="data-processing.html#cb9-2"></a>h &lt;-<span class="st"> </span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">max</span>(chromatogram[<span class="dv">481</span><span class="op">:</span>end, <span class="dv">2</span>]) <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(chromatogram[<span class="dv">81</span><span class="op">:</span>end, <span class="dv">2</span>]))</span>
-<span id="cb9-3"><a href="data-processing.html#cb9-3"></a></span>
-<span id="cb9-4"><a href="data-processing.html#cb9-4"></a>H1 &lt;-<span class="st"> </span><span class="kw">max</span>(chromatogram[chromatogram[<span class="op">:</span>, <span class="dv">1</span>] <span class="op">&lt;</span><span class="st"> </span>x, <span class="dv">2</span>]) <span class="co"># x represents dividing line between the two peaks in minutes.</span></span>
-<span id="cb9-5"><a href="data-processing.html#cb9-5"></a>H2 &lt;-<span class="st"> </span><span class="kw">max</span>(chromatogram[chromatogram[<span class="op">:</span>, <span class="dv">1</span>] <span class="op">&gt;</span><span class="st"> </span>x, <span class="dv">2</span>]) <span class="co"># x represents dividing line between the two peaks in minutes.</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="data-processing.html#cb7-1"></a><span class="co">## find range of baseline, near end where there are no peaks</span></span>
+<span id="cb7-2"><a href="data-processing.html#cb7-2"></a>h &lt;-<span class="st"> </span><span class="dv">2</span> <span class="op">*</span><span class="st"> </span>(<span class="kw">max</span>(chromatogram[<span class="dv">481</span><span class="op">:</span>end, <span class="dv">2</span>]) <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(chromatogram[<span class="dv">81</span><span class="op">:</span>end, <span class="dv">2</span>]))</span>
+<span id="cb7-3"><a href="data-processing.html#cb7-3"></a></span>
+<span id="cb7-4"><a href="data-processing.html#cb7-4"></a>H1 &lt;-<span class="st"> </span><span class="kw">max</span>(chromatogram[chromatogram[<span class="op">:</span>, <span class="dv">1</span>] <span class="op">&lt;</span><span class="st"> </span>x, <span class="dv">2</span>]) <span class="co"># x represents dividing line between the two peaks in minutes.</span></span>
+<span id="cb7-5"><a href="data-processing.html#cb7-5"></a>H2 &lt;-<span class="st"> </span><span class="kw">max</span>(chromatogram[chromatogram[<span class="op">:</span>, <span class="dv">1</span>] <span class="op">&gt;</span><span class="st"> </span>x, <span class="dv">2</span>]) <span class="co"># x represents dividing line between the two peaks in minutes.</span></span></code></pre></div>
 <p><!-- See Section 5.3/Example 5.4 in your textbook for more information. --></p></li>
 <li><p>Include a discussion of (1) how many constituents are in your sample, (2) the percent composition for each, and (3) the relative polarity of each component.</p></li>
 <li><p>Before turning in your notebook, run <code>rm(list = ls())</code> to clear your workspace and then run your entire notebook again. Fix any errors before turning in your notebook.</p></li>
 <li><p>After completing the assessment questions at the end of the template, knit your notebook to an HTML.</p></li>
 <li><p>Compress your notebook (Rmd and HTML files) and data file(s) into ZIP folder and upload it to <a href="https://alphonse.github.io/chem370/assignments/submissions.html">Dropbox</a>.</p></li>
 </ol>
+</div>
 </div>
             </section>
 

@@ -95,8 +95,10 @@ Your run list for this experiment is, on each instrument:
 
 The following video walks you through the data processing portion of this lab.
 
-<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=69790db3-01a1-4dc7-9f63-ac2900f490b5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="360" width="640" allowfullscreen allow="autoplay"></iframe>
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=69790db3-01a1-4dc7-9f63-ac2900f490b5&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
 
+
+### Step-by-Step Instructions
 
 1. Create a new R project for this lab and use it for all your data processing. Make sure your data files are also in this folder. Use the path: `lab-notebooks/Lab 2: GC-TCD`.  (You should have done this in Exercise 1.4.)
 1. Load the CSV files into R/RStudio.  You may also want to plot the data to inspect it.

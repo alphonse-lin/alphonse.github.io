@@ -174,7 +174,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1.4" data-path="lab-procedure.html"><a href="lab-procedure.html#inject-the-sample"><i class="fa fa-check"></i><b>2.1.4</b> Inject the Sample</a></li>
 <li class="chapter" data-level="2.1.5" data-path="lab-procedure.html"><a href="lab-procedure.html#save-the-data"><i class="fa fa-check"></i><b>2.1.5</b> Save the Data</a></li>
 </ul></li>
-<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a></li>
+<li class="chapter" data-level="2.2" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>2.2</b> Data Processing</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="data-processing.html"><a href="data-processing.html#step-by-step-instructions"><i class="fa fa-check"></i><b>2.2.1</b> Step-by-Step Instructions</a></li>
+</ul></li>
 <li class="chapter" data-level="2.3" data-path="gctcd-assessment.html"><a href="gctcd-assessment.html"><i class="fa fa-check"></i><b>2.3</b> Assessment</a></li>
 <li class="chapter" data-level="2.4" data-path="gctcd-rubric.html"><a href="gctcd-rubric.html"><i class="fa fa-check"></i><b>2.4</b> Notebook Rubric</a></li>
 <li class="chapter" data-level="" data-path="gctcd-materials.html"><a href="gctcd-materials.html"><i class="fa fa-check"></i>Materials (for Instructors)</a><ul>
@@ -339,19 +341,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Often, IR spectra are normalized for comparison to each other. This is done by baseline correcting the spectra so that the minimum value is zero (i.e. subtracting the minimum value in the spectrum) and setting the maximum value of each spectrum to 1 (i.e. dividing by the maximum value). This approach is shown below. An alternative approach is <em>mean centering</em>, which is not shown here.</p>
 <p>You should show your normalized data when comparing spectra in your lab notebooks or reports (at least for Chem 370 lab).</p>
 <p><strong>Baseline the data:</strong></p>
-<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="ir-spectrum-processing.html#cb138-1"></a>X[<span class="op">:</span>, <span class="dv">3</span>] &lt;-<span class="st"> </span>X[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(X[<span class="op">:</span>, <span class="dv">2</span>])  <span class="co"># subtract minimum abs. from all abs. values a new column</span></span>
-<span id="cb138-2"><a href="ir-spectrum-processing.html#cb138-2"></a><span class="co">### Do this for all 3 of your spectra</span></span></code></pre></div>
+<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb115-1"><a href="ir-spectrum-processing.html#cb115-1"></a>X[<span class="op">:</span>, <span class="dv">3</span>] &lt;-<span class="st"> </span>X[<span class="op">:</span>, <span class="dv">2</span>] <span class="op">-</span><span class="st"> </span><span class="kw">min</span>(X[<span class="op">:</span>, <span class="dv">2</span>])  <span class="co"># subtract minimum abs. from all abs. values a new column</span></span>
+<span id="cb115-2"><a href="ir-spectrum-processing.html#cb115-2"></a><span class="co">### Do this for all 3 of your spectra</span></span></code></pre></div>
 <p><strong>Normalize the data to 1:</strong></p>
-<div class="sourceCode" id="cb139"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb139-1"><a href="ir-spectrum-processing.html#cb139-1"></a>X[<span class="op">:</span>, <span class="dv">3</span>] &lt;-<span class="st"> </span>X[<span class="op">:</span>, <span class="dv">3</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(X[<span class="op">:</span>, <span class="dv">3</span>])  <span class="co"># divide all baselined abs. values by max abs. value</span></span>
-<span id="cb139-2"><a href="ir-spectrum-processing.html#cb139-2"></a><span class="co">### Do this for all 3 of your spectra</span></span></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="ir-spectrum-processing.html#cb116-1"></a>X[<span class="op">:</span>, <span class="dv">3</span>] &lt;-<span class="st"> </span>X[<span class="op">:</span>, <span class="dv">3</span>] <span class="op">/</span><span class="st"> </span><span class="kw">max</span>(X[<span class="op">:</span>, <span class="dv">3</span>])  <span class="co"># divide all baselined abs. values by max abs. value</span></span>
+<span id="cb116-2"><a href="ir-spectrum-processing.html#cb116-2"></a><span class="co">### Do this for all 3 of your spectra</span></span></code></pre></div>
 <p><strong>Take the mean of 3 spectra:</strong></p>
-<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="ir-spectrum-processing.html#cb140-1"></a><span class="co">### Put your three spectra in a 3-column matrix</span></span>
-<span id="cb140-2"><a href="ir-spectrum-processing.html#cb140-2"></a>sample_A &lt;-<span class="st"> </span><span class="kw">data.frame</span>(X[<span class="op">:</span>, <span class="dv">2</span>], <span class="kw">X_2</span>(<span class="op">:</span>,<span class="dv">2</span>), X_<span class="dv">3</span>[<span class="op">:</span>, <span class="dv">2</span>])</span>
-<span id="cb140-3"><a href="ir-spectrum-processing.html#cb140-3"></a></span>
-<span id="cb140-4"><a href="ir-spectrum-processing.html#cb140-4"></a><span class="co">### Then, take the mean across rows</span></span>
-<span id="cb140-5"><a href="ir-spectrum-processing.html#cb140-5"></a>sample_A &lt;-<span class="st"> </span><span class="kw">rowMeans</span>(sample_A) </span>
-<span id="cb140-6"><a href="ir-spectrum-processing.html#cb140-6"></a></span>
-<span id="cb140-7"><a href="ir-spectrum-processing.html#cb140-7"></a><span class="co">### Do this for both samples and the reference</span></span></code></pre></div>
+<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb117-1"><a href="ir-spectrum-processing.html#cb117-1"></a><span class="co">### Put your three spectra in a 3-column matrix</span></span>
+<span id="cb117-2"><a href="ir-spectrum-processing.html#cb117-2"></a>sample_A &lt;-<span class="st"> </span><span class="kw">data.frame</span>(X[<span class="op">:</span>, <span class="dv">2</span>], <span class="kw">X_2</span>(<span class="op">:</span>,<span class="dv">2</span>), X_<span class="dv">3</span>[<span class="op">:</span>, <span class="dv">2</span>])</span>
+<span id="cb117-3"><a href="ir-spectrum-processing.html#cb117-3"></a></span>
+<span id="cb117-4"><a href="ir-spectrum-processing.html#cb117-4"></a><span class="co">### Then, take the mean across rows</span></span>
+<span id="cb117-5"><a href="ir-spectrum-processing.html#cb117-5"></a>sample_A &lt;-<span class="st"> </span><span class="kw">rowMeans</span>(sample_A) </span>
+<span id="cb117-6"><a href="ir-spectrum-processing.html#cb117-6"></a></span>
+<span id="cb117-7"><a href="ir-spectrum-processing.html#cb117-7"></a><span class="co">### Do this for both samples and the reference</span></span></code></pre></div>
 </div>
 <div id="hit-quality-index-calculation" class="section level3 unnumbered">
 <h3>Hit-quality Index Calculation</h3>
@@ -360,23 +362,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 HQI = \frac{(\text{Reference} \cdot \text{Sample})^2}{(\text{Reference} \cdot \text{Reference}) \times (\text{Sample} \cdot \text{Sample})}
 \]</span></p>
 <p>Note that the dot is the <em>dot product</em>, NOT multiplication! The dot product is easily calculated in Octave with the <code>dot()</code> function. The example below assumes you have created a matrix with the normalize absorbance in column 3 as per the examples above.</p>
-<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="ir-spectrum-processing.html#cb141-1"></a><span class="kw">dot</span>(Ref[<span class="op">:</span>, <span class="dv">3</span>], X[<span class="op">:</span>, <span class="dv">3</span>])<span class="op">^</span><span class="dv">2</span> <span class="op">/</span><span class="st"> </span>(<span class="kw">dot</span>(Ref[<span class="op">:</span>, <span class="dv">3</span>], Ref[<span class="op">:</span>, <span class="dv">3</span>]) <span class="op">*</span><span class="st"> </span><span class="kw">dot</span>(X[<span class="op">:</span>, <span class="dv">3</span>], X[<span class="op">:</span>, <span class="dv">3</span>]))</span>
-<span id="cb141-2"><a href="ir-spectrum-processing.html#cb141-2"></a><span class="co">### do this for both samples</span></span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ir-spectrum-processing.html#cb118-1"></a><span class="kw">dot</span>(Ref[<span class="op">:</span>, <span class="dv">3</span>], X[<span class="op">:</span>, <span class="dv">3</span>])<span class="op">^</span><span class="dv">2</span> <span class="op">/</span><span class="st"> </span>(<span class="kw">dot</span>(Ref[<span class="op">:</span>, <span class="dv">3</span>], Ref[<span class="op">:</span>, <span class="dv">3</span>]) <span class="op">*</span><span class="st"> </span><span class="kw">dot</span>(X[<span class="op">:</span>, <span class="dv">3</span>], X[<span class="op">:</span>, <span class="dv">3</span>]))</span>
+<span id="cb118-2"><a href="ir-spectrum-processing.html#cb118-2"></a><span class="co">### do this for both samples</span></span></code></pre></div>
 <p>This produces a single value that should be less than 1. If your answer does not meet these criteria try the calculation again.</p>
 </div>
 <div id="plotting-ir-spectra" class="section level3 unnumbered">
 <h3>Plotting IR Spectra</h3>
 <p>You should always plot your normalized data when comparing spectra in your lab notebooks or reports (at least for Chem 370 lab).</p>
 <p>Note that (according to IUPAC convention) spectra are always plotted with higher energy on the left and lower energy on the right side of the <span class="math inline">\(x\)</span>-axis. For IR spectra displayed with frequency as <span class="math inline">\(x\)</span>, this means you have to reverse the axis to be in reverse order, such that it go from higher frequency (higher energy, smaller wavelength) to lower frequency (lower energy, longer wavelength).</p>
-<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="ir-spectrum-processing.html#cb142-1"></a><span class="kw">plot</span>(</span>
-<span id="cb142-2"><a href="ir-spectrum-processing.html#cb142-2"></a>  X[<span class="op">:</span>, <span class="dv">1</span>], sample_A, </span>
-<span id="cb142-3"><a href="ir-spectrum-processing.html#cb142-3"></a>  <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">4000</span>, <span class="dv">600</span>), <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb142-4"><a href="ir-spectrum-processing.html#cb142-4"></a>  <span class="dt">xlab =</span> <span class="st">&quot;Frequency (cm^-1)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Normalized Absorbance&quot;</span></span>
-<span id="cb142-5"><a href="ir-spectrum-processing.html#cb142-5"></a>)</span>
-<span id="cb142-6"><a href="ir-spectrum-processing.html#cb142-6"></a><span class="kw">lines</span>(X_<span class="dv">2</span>[<span class="op">:</span>, <span class="dv">1</span>], sample_B)</span>
-<span id="cb142-7"><a href="ir-spectrum-processing.html#cb142-7"></a><span class="kw">lines</span>(Ref[<span class="op">:</span>, <span class="dv">1</span>], Ref[<span class="op">:</span>, <span class="dv">3</span>])</span>
-<span id="cb142-8"><a href="ir-spectrum-processing.html#cb142-8"></a></span>
-<span id="cb142-9"><a href="ir-spectrum-processing.html#cb142-9"></a><span class="co">### Make sure you include a legend too!</span></span></code></pre></div>
+<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb119-1"><a href="ir-spectrum-processing.html#cb119-1"></a><span class="kw">plot</span>(</span>
+<span id="cb119-2"><a href="ir-spectrum-processing.html#cb119-2"></a>  X[<span class="op">:</span>, <span class="dv">1</span>], sample_A, </span>
+<span id="cb119-3"><a href="ir-spectrum-processing.html#cb119-3"></a>  <span class="dt">xlim =</span> <span class="kw">c</span>(<span class="dv">4000</span>, <span class="dv">600</span>), <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb119-4"><a href="ir-spectrum-processing.html#cb119-4"></a>  <span class="dt">xlab =</span> <span class="st">&quot;Frequency (cm^-1)&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Normalized Absorbance&quot;</span></span>
+<span id="cb119-5"><a href="ir-spectrum-processing.html#cb119-5"></a>)</span>
+<span id="cb119-6"><a href="ir-spectrum-processing.html#cb119-6"></a><span class="kw">lines</span>(X_<span class="dv">2</span>[<span class="op">:</span>, <span class="dv">1</span>], sample_B)</span>
+<span id="cb119-7"><a href="ir-spectrum-processing.html#cb119-7"></a><span class="kw">lines</span>(Ref[<span class="op">:</span>, <span class="dv">1</span>], Ref[<span class="op">:</span>, <span class="dv">3</span>])</span>
+<span id="cb119-8"><a href="ir-spectrum-processing.html#cb119-8"></a></span>
+<span id="cb119-9"><a href="ir-spectrum-processing.html#cb119-9"></a><span class="co">### Make sure you include a legend too!</span></span></code></pre></div>
 <div class="figure">
 <img src="images/ir-spectrum-example.png" alt="" />
 <p class="caption">Example of IR spectra that have been baselined, normalized, and plotted with a reversed (correct) x-axis.</p>
