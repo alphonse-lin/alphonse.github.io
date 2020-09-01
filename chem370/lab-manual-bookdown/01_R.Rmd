@@ -40,7 +40,7 @@ Your goals for this lab are to become familiar with the Markdown syntax, install
 
 The following video shows you how to complete the steps listed below:
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/5ca6c767-a7ea-42bd-845b-e4643f748222?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=ed1aed5a-b9ce-4d6b-8be1-ac2900f491ee&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
 
 ### Install R (Must be done first)
 
@@ -80,17 +80,15 @@ The `instRumental` package should now be installed on your system.
 
 1. Complete the *Lab 1A: What is R?* tutorial under the **Tutorial** tab in the top left pane of RStudio.
 
-The following video shows you how to complete the steps listed below, assuming you have installed the `instRumental` package (Exercise 1.2).
+The following video shows you how to start the tutorial, assuming you have installed the `instRumental` package (Exercise 1.2).
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/e0cd59b3-2492-47f7-88da-8d017b5dc720?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7a007287-4992-403c-8200-ac2900f6b9c8&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
 
 ## Creating a Lab Notebook Project {#create-lab-notebook}
 
 The following video shows you how to complete the steps listed below, assuming you have installed the `instRumental` package (Exercise 1.2).
 
-<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/8ae9ce1a-d931-4b9a-a1d5-6f47cd55d4fe?autoplay=false&amp;showinfo=false" allowfullscreen style="border:none;"></iframe>
-
-
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=6eb34eb7-dc9e-4a3b-8f4b-ac2900f6ccb0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
 
 ### Create a Project
 
