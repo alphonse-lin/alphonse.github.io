@@ -131,12 +131,13 @@ kbd {
   padding-right: 8px;
   padding-bottom: 16px;
   padding-top: 16px;
-  position: absolute;
   bottom: 1em;
-  left: -2px;
+  left: 20px;
   opacity: 0;
   transition: opacity 1s;
-  font-size: 18px;
+  font-size: 12px;
+  font-family: $chem370text, sans-serif;
+  display: inline;
 }
 
 .tooltip-r:hover {
@@ -151,5 +152,6 @@ kbd {
 .tooltip-r input:checked+span {
   visibility: visible;
   opacity: 1;
-  
+  overflow-x: scroll;
+  display: block;
 }
