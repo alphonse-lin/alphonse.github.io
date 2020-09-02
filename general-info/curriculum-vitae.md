@@ -102,9 +102,6 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 **WCU CHEM 132**  
 *Survey of Chemistry Laboratory*
 
-**Southwestern Community College STEAM Summer Camp**
-*Units on Air Quality and Water Quality*
-
 **Get Involved! Becoming a Citizen Scientist**   
 *University of Georgia First Year Odyssey*  
 <!-- Fall 2014, Fall 2015 -->
