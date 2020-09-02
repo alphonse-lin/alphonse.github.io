@@ -13,6 +13,10 @@ html {
   margin: 0px;
   padding: 0px;
 }
+.remark-slide-content.dark {
+  background-color: black;
+  color: #C1A875;
+}
 @media print {
   .remark-slide-scaler {
     width: 100% !important;
