@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:wght@400;700&family=IBM+Plex+Sans:ital,wght@0,200;0,400;0,700;1,700&display=swap');
 @import "tooltips.css";
-@import "variables";
 
 /* @import 'remark.less'; */
 
@@ -360,10 +359,10 @@ html {
   position: absolute;
   bottom: 15px;
   height: 30px;
-  margin: 0px;
   padding: 2px 5px;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0);
+  margin-left: 200px;
 }
 .remark-slide-content .footer a {
   color: #232323;
@@ -385,7 +384,6 @@ html {
 } */
 .remark-slide-content .footer,
 .remark-slide-content .footer ul {
-  position: absolute;
   bottom: 0px;
   right: 0px;
   left: 0px;
@@ -393,8 +391,8 @@ html {
   margin: 0px;
   padding: 0px;
 }
-.remark-slide-content .footer li:nth-child(1) {
-  left: 10px;
+.remark-slide-content .footer :nth-child(1) {
+  left: 200px;
 }
 .remark-slide-content .footer li:nth-child(2) {
   left: 30px;
@@ -417,6 +415,10 @@ html {
 .remark-slide-content.no-footer .remark-slide-number,
 .remark-slide-content.no-footer .footer {
   display: none;
+}
+
+.remark-slide-content li {
+    margin-left: 200px;
 }
 
 body { font-family: 'Barlow', sans-serif; background-color: black;}
@@ -446,13 +448,16 @@ a:hover{color: #C1A875;}
     box-shadow: none;
 }
 blockquote{
-    font-weight: 200;
-    border-left:6px solid #C1A875;
-    background-color: #F8F8F8;
+    border-left: 6px solid #C1A875;
+    border-bottom: 2px solid #C1A875;
+    background-color: black;
     padding-left:20px;
     padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 15px;
+    padding-right: 2px;
+    color: #C1A875;
+    width: 70%;
+    margin-left: 200px;
+    font-size: 0.85em;
 }
 
 .image-credit {
