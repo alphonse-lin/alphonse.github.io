@@ -25,6 +25,10 @@ This lab will use Vernier SpectroVis UV-visible/fluorescence spectrometers to qu
 
 Students should work in pairs for the lab activity and turn in independent data analysis sheets and lab notebooks.
 
+Watch Dr. Fischer teardown a SpectroVis and find out what's inside!
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=50136d4d-483b-4065-9fa2-ac2a00df6b01&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
+
 ### Safety {-}
 
 - This lab uses 0.05 M sulfuric acid ([SDS](https://beta-static.fishersci.com/content/dam/fishersci/en_US/documents/programs/education/regulatory-documents/sds/chemicals/chemicals-s/S25895.pdf)).  Wear goggles and gloves.
