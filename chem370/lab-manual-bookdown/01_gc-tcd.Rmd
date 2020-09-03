@@ -243,7 +243,7 @@ signal.400 <- 0    # put your answer between the '<-' and '#'
 sn.400 <- 0    # put your answer between the '<-' and '#'
 ```
 
-12. What is the standard deviation of the baseline, in millivolts (mV), for the GC-150?  Provide your answer as the variable `baselineSD.150`.
+12. What is the range of the baseline, in millivolts (mV), for the GC-150?  Provide your answer as the variable `baselineSD.150`.
 
 ```{r question-gc-12, purl = TRUE}
 baselineSD.150 <- 0    # put your answer between the '<-' and '#'
