@@ -17,7 +17,7 @@ layout: true
 
 <div style="margin-top: 100px;"></div>
 <h1 style = "text-align: left; font-weight: bold; margin-left: 175px;">Week 4: Making Sure You're Right</h1>
-<h5 style = "text-align: left; font-weight: bold; margin-left: 175px;">Harvey Chs 3, 4, 5</h5>
+<h5 style = "text-align: left; font-weight: bold; margin-left: 175px;">Harvey Chs 2, 3, 4, 5</h5>
 
 
 <!-- ========================= Accuracy vs. Precision ============================= -->
@@ -82,6 +82,13 @@ class: center
 
 ---
 
+<div style="margin-top: 100px;"></div>
+<h1 style = "text-align: left; font-weight: bold; margin-left: 175px;">Propogation of Error</h1>
+<h5 style = "text-align: left; font-weight: bold; margin-left: 175px;">Harvey Ch 2</h5>
+
+
+---
+
 class: center
 
 <div style="margin-top: 200px;"></div>
@@ -98,7 +105,7 @@ class: center
 
 $$ R = \frac{A \times B}{C} $$
 
-$$ u\_R = \sqrt{ \frac{u\_A^2}{A} + \frac{u\_B^2}{B} + \frac{u\_B^2}{B} } $$
+$$ u\_R = \sqrt{ \left(\frac{u\_A}{A}\right)^2 + \left(\frac{u\_B}{B}\right)^2  + \left(\frac{u\_C}{C}\right)^2  } $$
 
 ---
 
@@ -118,11 +125,13 @@ class: center
 
 ---
 
-class: center
+<!-- class: center
 
 <img src="plots/no2_cal_curve.png" style = "height:500px; margin-left: auto; margin-right: auto; display: block;">
 
 ---
+
+-->
 
 class: center
 
@@ -232,8 +241,15 @@ class: center
 
 <iframe width="635" height="400" src="https://www.youtube.com/embed/7cBITRn8mNE?controls=0&Sautoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+---
+class: center
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Dobson_Spectrometer.jpg" style = "height:450px; margin-left: auto; margin-right: auto; display: block;">
 
+---
+class: center
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Aura_spacecraft_model.png" style = "height:350px; margin-left: auto; margin-right: auto; display: block;">
 
 
 <!-- ========================= Detection Limits ============================= -->
@@ -324,6 +340,7 @@ class: center
 
 > **Calibration Blank:** Used to obtain 0 point on calibration curve.
 
+
 ---
 
 <div style="margin-top: 100px;"></div>
@@ -335,6 +352,18 @@ class: center
 <div style="margin-top: 100px;"></div>
 
 > **Field Blank:** Goes through sample collection method (usually in field).
+
+---
+
+<div style="margin-top: 100px;"></div>
+
+> **Reagent (Subtraction) Blank:** Used to correct each point (improperly).
+
+---
+
+<div style="margin-top: 100px;"></div>
+
+> **Total Youden Blank:** Used to correct each point (properly).
 
 
 <!-- ========================= Tying it Together ============================= -->
