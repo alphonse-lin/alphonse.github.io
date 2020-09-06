@@ -4,6 +4,7 @@ header-includes: |
     \usepackage{cancel}
     \usepackage{framed}
     \usepackage{xcolor}
+    \usepackage{mhchem}
     \let\oldquote=\quote
     \let\endoldquote=\endquote
     \colorlet{shadecolor}{black!5}
