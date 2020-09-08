@@ -55,7 +55,7 @@ in Tonic Water Using Fluorescence Spectroscopy,” (Application Note: Fluorescen
 1. Create a quality control sample from a separate stock solution.  Make it roughly 20 ppm.  Use a 50 mL volumetric flask.
 
     ```{marginfigure}
-    When creating your QC, make sure you use stock solution from a different lot and preferrably a different manufacturer.  This helps check for contamination in the chemicals received from the supplier.  You should also do your QC calculations entirely from scratch so that you check your math with the QC.
+    When creating your QC, make sure you use stock solution from a different lot and preferably a different manufacturer.  This helps check for contamination in the chemicals received from the supplier.  You should also do your QC calculations entirely from scratch so that you check your math with the QC.
     ```
 
 ### Prepare Your Samples
@@ -74,22 +74,23 @@ in Tonic Water Using Fluorescence Spectroscopy,” (Application Note: Fluorescen
     ```{marginfigure}
     Your blank should be a cuvette filled with solvent and nothing else.
     ```
-1. Press **Collect (play button)** and load your sample.  When you're happy with the spectrum press **Stop**.  Press **Store** and then double click the stored column header to name your run.
-1. Discard the sample, rinse the cuvette with DI water, and repeat the previous step as necessary for each standard/sample.
+1. Press **Collect (play button)** and load an aliquot of your high standard.  You should see a spectrum of Intensity vs. Wavelength (nm). Use this spectrum to determine $\lambda_{max}$, the wavelength of maximum emission.
+1. Discard the sample and rinse the cuvette with DI water.
+1. Configure the spectrometer to measure at $\lambda_{max}$ (determined in the previous step).
+    1. Click the **Wave** or **Configure Spectrometer** button in the menu bar.  
+    1. Set the spectrometer to collect **Fluorescence vs. Concentration**.
+    1. Choose **Individual Wavelengths**.
+    1. Select the check box next to the wavelength corresponding to $\lambda_{max}$.
+1. Run your blank, standards (low to high), QC, and sample.  Rinse the cuvette with DI between each sample.
+    1. Click **Collect**.
+    1. Click **Keep** and enter the concentration or a unique ID for each sample.
 
     ```{marginfigure}
     You should measure each standard once, the QC in triplicate, and the sample in triplicate.
 
     When running your standards, always work from low concentration to high concentration to avoid carryover.
     ```
-1. When you are done, go to **File > Export As > CSV...** and save your spectra into a CSV (comma-separated values) file.  This file type can be easily read by Octave.
-
-After the spectrometer calibration step you should run:
-
-- A blank (in triplicate)
-- Your standards (from low to high)
-- A QC (in triplicate)
-- Your sample (in triplicate)
+1. When you are done, go to **File > Export As > CSV...** and save your spectra into a CSV (comma-separated values) file.
 
 <!-- **Absorption**
 
@@ -120,8 +121,62 @@ After the spectrometer calibration step you should run:
 
 ## Data Processing {#uv-vis-data}
 
-1. Download the lab notebook [template](../notebooks/) for this lab.  
-1. Calculate the concentration of each standard and the QC in your lab notebook. (Use the [`serialDilution()`](serial-dilution.html) function and example code in the template.)   
+1. Create a new R project for this lab and open the UV-vis lab notebook template. 
+1. Load the data in R.
+
+    ```{R eval = FALSE}
+    fluordat <- read.csv('your-data-file.csv', check.names = FALSE)
+    ```
+1. Plot the standard curve.
+
+    ```{R eval = FALSE}
+    chemplot(fluordat[std_rows, ], xlab = "Your Label", ylab = "Your Label")
+    ```
+
+1. Fit a linear model to the calibration data and inspect it.
+
+    ```{R eval = FALSE}
+    calcurve <- lm(x, y, data = fluordat[std_rows, ])
+    summary(calcurve)
+    ```
+    
+1. Add the line of best fit onto the plot of your calibration data.
+
+    ```{R eval = FALSE}
+    chemplot(fluordat[std_rows, ], xlab = "Your Label", ylab = "Your Label")
+    abline(calcurve, col = 'Your Color', lwd = 2) # lwd sets the line width
+    ```
+
+1. Determine the mean concentration of the QC using the coefficients from the calibration curve.  Remember you can do this manually or use the `inverse.predict()` function from the `chemCal` package.
+
+    To get the coefficients manually:
+    
+    ```{R eval=FALSE}
+    coef(calcurve)[1] # this is the y-intercept
+    coef(calcurve)[2] # this is the slope
+    ```
+    
+    To use `inverse.predict()`:
+    
+    ```{R eval = FALSE}
+    library(chemCal)
+    inverse.predict(calcurve, fluordat[qc_rows, abs_column], alpha = 0.05)
+    ```
+
+1. Determine the mean concentration of your sample using the coefficients from the calibration curve.  Include the 95% CI.  You can do this using the same process you used to calculate the QC concentration.
+
+1. Determine the limit of detection from the blank data.
+
+    ```{R eval = FALSE}
+    blank.mean <- mean(fluordat[blank_rows, abs_col])
+    blank.sd   <- sd(fluordat[blank_rows, abs_col])
+    LOD <- # insert your LOD code here
+    ```
+
+1. Calculate the lower limit of quantitation from the blank data.
+
+
+<!-- 1. Calculate the concentration of each standard and the QC in your lab notebook. (Use the [`serialDilution()`](serial-dilution.html) function and example code in the template.)   
 
     ```{octave eval = FALSE}
     ## Calculate standard concentrations
@@ -195,7 +250,7 @@ After the spectrometer calibration step you should run:
 
 6. Include a conclusion discussion the measured concentration of your sample (and how it compares to other studies), the validity of your results, and your limits of detection/quantitation (i.e. are your results meaningful?).
 7. Before turning in your notebook, go to **Kernel > Restart Kernel** and then **Run > Run All**.  Fix any errors before turning in your notebook.
-8. Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for [Monday](https://alphonse.github.io/chem370/assignments/submissions.html) or [Wednesday](https://alphonse.github.io/chem370/assignments/submissions-wednesday.html)).
+8. Compress your notebook, data file(s), and worksheet into a ZIP folder and upload it to Dropbox (Links for [Monday](https://alphonse.github.io/chem370/assignments/submissions.html) or [Wednesday](https://alphonse.github.io/chem370/assignments/submissions-wednesday.html)). -->
 
 ## Assessment {#uv-vis-assessment}
 

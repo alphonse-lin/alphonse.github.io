@@ -346,7 +346,7 @@ It doesn’t matter if you make these concentrations <em>exactly</em>, what matt
 <li><p>Create a quality control sample from a separate stock solution. Make it roughly 20 ppm. Use a 50 mL volumetric flask.</p>
 <div class="marginfigure">
 <p>
-When creating your QC, make sure you use stock solution from a different lot and preferrably a different manufacturer. This helps check for contamination in the chemicals received from the supplier. You should also do your QC calculations entirely from scratch so that you check your math with the QC.
+When creating your QC, make sure you use stock solution from a different lot and preferably a different manufacturer. This helps check for contamination in the chemicals received from the supplier. You should also do your QC calculations entirely from scratch so that you check your math with the QC.
 </p>
 </div></li>
 </ol>
@@ -373,8 +373,21 @@ When creating your QC, make sure you use stock solution from a different lot and
 Your blank should be a cuvette filled with solvent and nothing else.
 </p>
 </div></li>
-<li><p>Press <strong>Collect (play button)</strong> and load your sample. When you’re happy with the spectrum press <strong>Stop</strong>. Press <strong>Store</strong> and then double click the stored column header to name your run.</p></li>
-<li><p>Discard the sample, rinse the cuvette with DI water, and repeat the previous step as necessary for each standard/sample.</p>
+<li><p>Press <strong>Collect (play button)</strong> and load an aliquot of your high standard. You should see a spectrum of Intensity vs. Wavelength (nm). Use this spectrum to determine <span class="math inline">\(\lambda_{max}\)</span>, the wavelength of maximum emission.</p></li>
+<li><p>Discard the sample and rinse the cuvette with DI water.</p></li>
+<li><p>Configure the spectrometer to measure at <span class="math inline">\(\lambda_{max}\)</span> (determined in the previous step).</p>
+<ol style="list-style-type: decimal">
+<li>Click the <strong>Wave</strong> or <strong>Configure Spectrometer</strong> button in the menu bar.<br />
+</li>
+<li>Set the spectrometer to collect <strong>Fluorescence vs. Concentration</strong>.</li>
+<li>Choose <strong>Individual Wavelengths</strong>.</li>
+<li>Select the check box next to the wavelength corresponding to <span class="math inline">\(\lambda_{max}\)</span>.</li>
+</ol></li>
+<li><p>Run your blank, standards (low to high), QC, and sample. Rinse the cuvette with DI between each sample.</p>
+<ol style="list-style-type: decimal">
+<li>Click <strong>Collect</strong>.</li>
+<li>Click <strong>Keep</strong> and enter the concentration or a unique ID for each sample.</li>
+</ol>
 <div class="marginfigure">
 <p>
 You should measure each standard once, the QC in triplicate, and the sample in triplicate.
@@ -383,15 +396,8 @@ You should measure each standard once, the QC in triplicate, and the sample in t
 When running your standards, always work from low concentration to high concentration to avoid carryover.
 </p>
 </div></li>
-<li><p>When you are done, go to <strong>File &gt; Export As &gt; CSV…</strong> and save your spectra into a CSV (comma-separated values) file. This file type can be easily read by Octave.</p></li>
+<li><p>When you are done, go to <strong>File &gt; Export As &gt; CSV…</strong> and save your spectra into a CSV (comma-separated values) file.</p></li>
 </ol>
-<p>After the spectrometer calibration step you should run:</p>
-<ul>
-<li>A blank (in triplicate)</li>
-<li>Your standards (from low to high)</li>
-<li>A QC (in triplicate)</li>
-<li>Your sample (in triplicate)</li>
-</ul>
 <!-- **Absorption**
 
 1. Connect the spectrophotometer via USB and open LoggerLite.  
