@@ -4,8 +4,8 @@ title:  CHEM 370 Week 4 Activity
 permalink: /chem370/assignments/week04
 ---
 
-<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/assignments/week03.pdf" target="blank">Download PDF of Assignment</a>
-<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/assignments/week03_key.pdf" target="blank">Download PDF of Answer Key</a>
+<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/assignments/week40.pdf" target="blank">Download PDF of Assignment</a>
+
 
 <!-- Name: ___________________________________ -->
 
