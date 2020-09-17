@@ -5,8 +5,8 @@ description: curriculum vitae
 permalink: /curriculum-vitae/
 ---
 
-<!-- Al Fischer, PhD
-========== -->
+Al Fischer, PhD
+==========
 <!-- ## Al Fischer, PhD -->
 *Instrumentation Specialist*   
 Western Carolina University   
@@ -20,7 +20,7 @@ Western Carolina University
 {:center}
 -->
 
-<!-- *I am the Instrumentation Specialist and an Instructor of Chemistry at Western Carolina University. My research lies at the intersection of environmental science and analytical chemistry. With expertise in chemical analysis, instrument design and automation, aerosol spectroscopy (including cavity ringdown and photoacoutic spectroscopy), atmospheric monitoring, and electron microscopy, I develop instruments and methods that help us better understand the natural world and our effects on it.  I also teach classes related to chemical instrumentation and atmospheric chemistry, assist students and faculty with chemical analysis related to their research, and serve on the Environmental Science Program Council at Western.* -->
+*I am the Instrumentation Specialist and an Instructor of Chemistry at Western Carolina University. My research lies at the intersection of environmental science and analytical chemistry. With expertise in chemical analysis, instrument design and automation, aerosol spectroscopy (including cavity ringdown and photoacoutic spectroscopy), atmospheric monitoring, and electron microscopy, I develop instruments and methods that help us better understand the natural world and our effects on it.  I also teach classes related to chemical instrumentation and atmospheric chemistry, assist students and faculty with chemical analysis related to their research, and serve on the Environmental Science Program Council at Western.*
 
 ## Employment
 
@@ -50,7 +50,7 @@ Olympia, WA
 
 ## Publications
 
-Cheng, Z., K. Atwi, O. Hajj, I. Ijeli, **D.A. Fischer**, G.D. Smith, and R. Saleh (2020) Discrepancies Between Brown Carbon Light-absorption Properties Retrieved from Online and Offline Measurements. *Aerosol Science and Technology* (in review)
+Cheng, Z., K. Atwi, O. Hajj, I. Ijeli, **D.A. Fischer**, G.D. Smith, and R. Saleh (2020) Discrepancies Between Brown Carbon Light-absorption Properties Retrieved from Online and Offline Measurements. *Aerosol Science and Technology* [DOI: 10.1080/02786826.2020.1820940](https://doi.org/10.1080/02786826.2020.1820940) (in press)
 
 <!-- , manuscript ID AST-MS-2020-086.R1 -->
 
