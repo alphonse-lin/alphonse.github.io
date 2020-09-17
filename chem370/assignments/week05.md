@@ -4,8 +4,8 @@ title:  CHEM 370 Week 5 Activity
 permalink: /chem370/assignments/week05
 ---
 
-<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/assignments/week04.pdf" target="blank">Download PDF of Assignment</a>
-
+<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/assignments/week05.pdf" target="blank">Download PDF of Assignment</a>
+<a class="quicklink" href="https://github.com/alphonse/alphonse.github.io/raw/master/chem370/pdf/assignments/week05_key.pdf" target="blank">Download PDF of Answer Key</a>
 
 <!-- Name: ___________________________________ -->
 

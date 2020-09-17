@@ -121,6 +121,10 @@ in Tonic Water Using Fluorescence Spectroscopy,” (Application Note: Fluorescen
 
 ## Data Processing {#uv-vis-data}
 
+The following video walks you through the data processing portion of this lab.
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=993fb4bb-535d-409c-96ce-ac3600df98a1&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
+
 1. Create a new R project for this lab and open the UV-vis lab notebook template. 
 1. Load the data in R.
 
