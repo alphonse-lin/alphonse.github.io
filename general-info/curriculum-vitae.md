@@ -20,7 +20,7 @@ Western Carolina University
 {:center}
 -->
 
-*I am the Instrumentation Specialist and an Instructor of Chemistry at Western Carolina University. My research lies at the intersection of environmental science and analytical chemistry. With expertise in chemical analysis, instrument design and automation, aerosol spectroscopy (including cavity ringdown and photoacoutic spectroscopy), atmospheric monitoring, and electron microscopy, I develop instruments and methods that help us better understand the natural world and our effects on it.  I also teach classes related to chemical instrumentation and atmospheric chemistry, assist students and faculty with chemical analysis related to their research, and serve on the Environmental Science Program Council at Western.*
+<!-- *I am the Instrumentation Specialist and an Instructor of Chemistry at Western Carolina University. My research lies at the intersection of environmental science and analytical chemistry. With expertise in chemical analysis, instrument design and automation, aerosol spectroscopy (including cavity ringdown and photoacoutic spectroscopy), atmospheric monitoring, and electron microscopy, I develop instruments and methods that help us better understand the natural world and our effects on it.  I also teach classes related to chemical instrumentation and atmospheric chemistry, assist students and faculty with chemical analysis related to their research, and serve on the Environmental Science Program Council at Western.* -->
 
 ## Employment
 
