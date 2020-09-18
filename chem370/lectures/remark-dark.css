@@ -32,6 +32,7 @@ html {
   padding: 20px 80px 0 80px;
   font-size: 3rem;
   background-color: black;
+  margin-left: 200px;
 }
 .remark-slide-content * {
   box-sizing: border-box;
@@ -63,9 +64,11 @@ html {
   color: #C1A875; 
 }
 .remark-slide-content h2 {
-  font-size: 3.75rem;
+  font-size: 6rem;
   text-align: left;
-  color: #f2f2f2;
+  color: #F2F2F2;
+  margin-left: 150px;
+  font-weight: bold;
 }
 .remark-slide-content h3 {
   font-size: 3.5rem;
@@ -362,7 +365,7 @@ html {
   padding: 2px 5px;
   border-radius: 3px;
   border: 1px solid rgba(0, 0, 0, 0);
-  margin-left: 200px;
+  margin-left: 20px; 
 }
 .remark-slide-content .footer a {
   color: #232323;
@@ -392,10 +395,10 @@ html {
   padding: 0px;
 }
 .remark-slide-content .footer :nth-child(1) {
-  left: 200px;
+  left: 15px;
 }
 .remark-slide-content .footer li:nth-child(2) {
-  left: 30px;
+  left: 25px;
   /* margin-left: -50px; */
 }
 .remark-slide-content .footer li:nth-child(3) {
@@ -418,7 +421,7 @@ html {
 }
 
 .remark-slide-content li {
-    margin-left: 200px;
+    margin-left: 15px;
 }
 
 body { font-family: 'Barlow', sans-serif; background-color: black;}
@@ -455,8 +458,8 @@ blockquote{
     padding-top: 2px;
     padding-right: 2px;
     color: #C1A875;
-    width: 70%;
-    margin-left: 150px;
+    width: 90%;
+    /* margin-left: 150px; */
     font-size: 0.85em;
 }
 
