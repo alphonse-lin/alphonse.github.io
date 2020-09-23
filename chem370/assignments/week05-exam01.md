@@ -1,7 +1,7 @@
 ---
 layout: transcript
 title:  Exam 1 Short Answer Key
-permalink: /chem370/assignments/exam01
+permalink: /chem370/assignments/week05-exam01
 ---
 
 
