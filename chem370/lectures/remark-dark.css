@@ -32,7 +32,7 @@ html {
   padding: 20px 80px 0 80px;
   font-size: 3rem;
   background-color: black;
-  margin-left: 200px;
+  margin-left: 50px;
 }
 .remark-slide-content * {
   box-sizing: border-box;
@@ -59,7 +59,7 @@ html {
   background: white url(data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7 ) repeat top left;
 }
 .remark-slide-content h1 {
-  font-size: 6rem;
+  font-size: 8rem;
   text-align: right;
   color: #C1A875; 
 }
@@ -67,7 +67,7 @@ html {
   font-size: 6rem;
   text-align: left;
   color: #F2F2F2;
-  margin-left: 150px;
+  margin-left: 50px;
   font-weight: bold;
 }
 .remark-slide-content h3 {
