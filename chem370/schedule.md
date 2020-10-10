@@ -43,7 +43,7 @@ Lab assignments are due at 23:59:59 on the Wednesday before lab unless otherwise
 
 *This schedule is subject to change as needed.*
 
-| Week | Week Beginning | Lab Activity                        | Due                                          |
+| Week | Week Beginning |            Lab Activity             |                     Due                      |
 | ---- | -------------- | ----------------------------------- | -------------------------------------------- |
 | 1    | 8/17           | Safety Lecture, Intro to R/Markdown | Markdown Tutorial, R Tutorial (honor system) |
 | 2    | 8/24           | GC Lab                              |                                              |
@@ -54,7 +54,7 @@ Lab assignments are due at 23:59:59 on the Wednesday before lab unless otherwise
 | 7    | 9/28           | Rotations                           |                                              |
 |      |                | *Writing Workshop*                  |                                              |
 | 8    | 10/5           | Rotations                           |                                              |
-| 9    | 10/12          | Rotations                           | Notebook 1 + 2                               |
+| 9    | 10/12          | Rotations                           | ~~Notebook 1 + 2~~                           | 
 | 10   | 10/19          | Rotations                           | Intro + Methods                              |
 | 11   | 10/26          | Rotations                           |                                              |
 | 12   | 11/2           | Rotations                           | All 4 Notebooks, All 4 Analysis Worksheets   |
