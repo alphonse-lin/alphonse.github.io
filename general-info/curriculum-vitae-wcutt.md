@@ -5,12 +5,17 @@ description: curriculum vitae
 permalink: /curriculum-vitae/
 --- -->
 
-Al Fischer, PhD
-==========
-<!-- ## Al Fischer, PhD -->
-*Instrumentation Specialist*   
-Western Carolina University   
-[dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
+<h1 style="text-align: center;">Al Fischer, PhD</h1>
+
+<p style = "text-align: center;">
+<b>Curriculum Vitae</b>
+</p>
+
+
+<p style="font-style: italic; line-height: 0px; text-align: center;">Instrumentation Specialist</p>  
+<p style="line-height: 5px; text-align: center;>Chemistry and Physics</p>
+<p style="line-height: 5px; text-align: center;>Western Carolina University</p>
+<p style="line-height: 5px; text-align: center;><a href = "mailto:dfischer@wcu.edu">dfischer@wcu.edu</a></p>
 
 <!---
 ## Timeline
@@ -90,7 +95,7 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 
 **Fischer, D.A.** and G.D. Smith. (2013) Incoherent broadband cavity enhanced spectroscopy for measuring extinction coefficients of atmospheric species throughout the UV-visible spectrum.  *Southeast Regional Meeting of the American Chemical Society*.  Atlanta, GA.
 
-<P style="page-break-before: always">
+**Fischer, D.A.** (2011) Development of a GC-MS/EAD Method for the Study of Allomone Olfaction in Insects *American Chemical Society Puget Sound Section Research Symposium* Seattle, WA.
 
 ## Teaching
 
@@ -147,14 +152,13 @@ I am fluent in the following languages and software packages:
 <img src="/images/languages/qgis.jpg" class = "language">
 {:center} -->
 
-
-
-
 ## Committees, Service, & Grant Support
 
 - Chemistry Representative for WCU Environmental Science Program Committee (and faculty advisor to ES students)
 
-- Duncan, S. (PI), L. Lefler (co-PI),  **D.A. Fischer (co-PI)**, F. Forcino (co-PI), and A. Bobilya (co-PI) *Assessing air pollution exposures for Cherokee youth with Traditional Ecological Knowledge and Western Science Methods* Provost's Internal Funding Support Grant (2020 / *in review*).
+- Chemistry ga
+
+- Duncan, S. (PI), L. Lefler (co-PI),  **D.A. Fischer (co-PI)**, F. Forcino (co-PI), and A. Bobilya (co-PI) *Assessing air pollution exposures for Cherokee youth with Traditional Ecological Knowledge and Western Science Methods* Provost's Internal Funding Support Grant (submitted / *in review*).
 
 - Duncan, S. and **D.A. Fischer**.  *The Air Whee Breathe: Air Quality at WCU and Across the Region.*  Campus theme sponsored event: Sustainability and Environment (2019-2020).
 
@@ -163,9 +167,6 @@ I am fluent in the following languages and software packages:
 - Wallen, J. R. (PI), Youker, R. T. (co-PI), Gainey, M. D. (co-PI), Byrd, B. D. (co-PI), Coan, H. A. B. (co-PI), Storm, A. (co-PI), Koralege, R. (co-PI), **Fischer, A. (Other)**, *Acquisition of a Molecular Devices SpectraMax iD5 Multi-Mode Plate Reader to Enhance High-Throughput Life Sciences Research at Western Carolina University,* Sponsored by Institutional Development Grant, North Carolina Biotechnology Center, State, Funded. (May 1, 2019 - April 30, 2020).
 
 - Reviewer, Department of Energy SBIR Program 
-
-
-
 
 <!--
 **Northeast Georgia Orchid Society**
