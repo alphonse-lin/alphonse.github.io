@@ -102,7 +102,7 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 - **WCU CHEM 689**  
   *Cooperative Education in Chemistry*
 - **WCU CHEM 370**  
-  *Instrumental Analysis I Laboratory*
+  *Instrumental Analysis I Lecture & Laboratory*
 - **WCU CHEM 241**  
   *Organic Chemistry I Laboratory*  
 - **WCU CHEM 191**  
