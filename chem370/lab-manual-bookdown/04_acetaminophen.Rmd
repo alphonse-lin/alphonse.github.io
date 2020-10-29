@@ -159,9 +159,9 @@ This is a quantitative analysis.
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd file functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_hplc_data-analysis.xlsx).
+- Your completed assessment.
 ```
 ##### **Standard Curve and Concentrations** {-}
 
@@ -295,9 +295,9 @@ The general order for FT-IR sampling is: (1) collect a background (no sample pre
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd file functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_ftir_data-analysis.xlsx).
+- Your completed assessment.
 ```
 
 - You will need to export you data as a CSV file.  The Spectrum One does this automatically.  Just copy the exported data from the "Spectrum One Data Folder" (there is a shortcut on the desktop) to your folder on NEON.
@@ -400,21 +400,18 @@ This is a qualitative analysis.
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd file functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx).
+- Your completed assessment.
 ```
 
-1. Use the GC-MS library to get an initial idea of what compounds are present.
-1. Export your data as a CSV file and save the file to NEON.
+*An example notebook is available [here](https://alphonse.github.io/chem370/notebooks/good-example/)*.
 
-    *You will need to export:*  
-    - A CSV of your chromatogram ("TIC in R0")  
-    - A CSV of the mass spectrum for each compound you are analyzing.  
-
-1. Transfer the data to your lab notebook folder and complete your analysis.
-1. Plot your chromatogram as *Relative Abundance (%)* vs. *Time (minutes)*. (See Appendix 2 for R examples)
-1. Plot your mass spectra as *Relative Abundance (%)* vs. *m/z*. (See Appendix 2 for R examples)
+1. Use the GC-MS library (in ChemStation or OpenChrom) to get an initial idea of what compounds are present.
+1. Move the data folder for each sample (ending in .D) to NEON. 
+1. Transfer the data to your lab notebook folder and complete your analysis of the *2 most abundant compounds* in each sample.
+1. Plot your chromatogram as *Relative Abundance (%)* vs. *Time (minutes)*.
+1. Plot your mass spectra as *Relative Abundance (%)* vs. *m/z*.
 1. Clearly identify the base peak, the molecular ion, and any important isotope peaks.  Also state how many rings and double bonds your molecule has, and whether it has an odd or even number of nitrogen atoms.  Provide a formula, common name, and molecular weight for each compound.  You must show your calculations for all of these items.  See the [mass spec guide](/chem370/guides/mass-spec) for help with interpretation.  Does your interpretation match the library?
 
 ## Assessment {#am-gc-assessment}
@@ -507,7 +504,7 @@ This is a quantitative analysis.
 
 ### Running Samples
 
-1. Use the Flame AA SOP to prepare a flame AA *method* file containing your blanks and standards.  Use the `CHEM370_Acetaminophen` method as a template.
+1. Use the Flame AA SOP to prepare a flame AA *method* file containing your blanks and standards.  Use the `C370_template` method as a template.
 1. Prepare a *Sample Information File* containing your QC.
 1. Run the blanks, standards, and QC.
     ```{marginfigure}
@@ -536,9 +533,9 @@ This is a quantitative analysis.
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd file, functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx).
+- Your completed assessment.
 ```
 
 1. Export your data as a CSV using the CHEM 370 template in the Data Manager software.

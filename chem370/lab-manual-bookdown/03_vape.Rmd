@@ -132,22 +132,15 @@ This is a qualitative analysis.
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd file functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_gcms_data-analysis.xlsx).
+- Your completed assessment.
 ```
 
 *An example notebook is available [here](https://alphonse.github.io/chem370/notebooks/good-example/)*.
 
-1. Use the GC-MS library to get an initial idea of what compounds are present.
-1. Export your data as a CSV file and save the file to NEON.
-
-    *You will need to export:*  
-
-    - CSV files of your chromatograms ("TIC in R0")  
-
-    - A CSV of the mass spectrum for each compound you are analyzing (at minimum the most abundant compound in each sample).   
-
+1. Use the GC-MS library (in ChemStation or OpenChrom) to get an initial idea of what compounds are present.
+1. Move the data folder for each sample (ending in .D) to NEON. 
 1. Transfer the data to your lab notebook folder and complete your analysis of the *2 most abundant compounds* in each sample.
 1. Plot your chromatogram as *Relative Abundance (%)* vs. *Time (minutes)*.
 1. Plot your mass spectra as *Relative Abundance (%)* vs. *m/z*.
@@ -289,16 +282,16 @@ This is a quantitative analysis.
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd file functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_faas_data-analysis.xlsx).
+- Your completed assessment.
 ```
 
 
-1. Export your data to a CSV file using the **Data Manager** software package (shortcut on Desktop).  Use the `CHEM370_template` design when prompted.
+1. Export your data to a CSV file using the **Data Manager** software package (shortcut on Desktop).  Use the `C370_template` design when prompted.
 1. Use R to create and plot a calibration curve.
 1. Determine the concentration of your samples and QCs.  Remember to factor in all dilutions.
-1. Perform a *t*-test to determine whether the metal concentration is *significantly* different before and after vaping. (See Appendix 3, Comparing Means for more information on *t*-tests.)
+1. Use the confidence intervals or a *t*-test (whichever you prefer) to determine whether the metal concentration is *significantly* different before and after vaping. (See Appendix 3, Comparing Means for more information on *t*-tests.)
 
 ### Assessment {#vape-faas-assessment}
 
@@ -413,9 +406,9 @@ The general order for FT-IR sampling is: (1) collect a background (no sample pre
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd file functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_ftir_data-analysis.xlsx).
+- Your completed assessment.
 ```
 
 
@@ -566,19 +559,15 @@ Repeat the following for each sample:
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
-- Your complete lab notebook as an .ipynb file, functioning with no errors.  
+- Your complete lab notebook as an .html and .Rmd files functioning with no errors.  
 - Your data files.  
-- Your completed [analysis sheet](https://github.com/alphonse/alphonse.github.io/raw/master/chem370/assignments/excel-templates/rotation_hplc_data-analysis.xlsx).
+- Your completed assessment.
 ```
 
 ##### **Exporting & Plotting Representative Chromatograms** {-}
 
-You do not need to export every single chromatogram (you standards should all be very similar, just different in magnitude).  Instead, export the following:
-
-1. The chromatogram for your medium standard.
-1. The chromatogram for each sample.
-
-Include these in your lab notebook and in a single figure in your final report.
+1. Move all your .D data folders onto NEON and then into your lab notebooks folder. 
+1. Use ChemStation or OpenChrom to export CSVs of your chromatograms.
 
 ##### **Standard Curve and Concentrations** {-}
 
