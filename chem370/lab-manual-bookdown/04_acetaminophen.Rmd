@@ -154,7 +154,12 @@ This is a quantitative analysis.
 
     > No chemicals should go in broken glass!
 
-### Data Processing
+### Data Processing {#hplc-data-processing-am}
+
+The following video walks you through the data processing portion of this lab.
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=bb4bb7a4-7260-4f97-9ec6-ac6300e32d3d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
+
 
 ```{marginfigure}
 You should turn a ZIP folder containing:  
@@ -292,6 +297,10 @@ The general order for FT-IR sampling is: (1) collect a background (no sample pre
 
 ### Data Processing
 
+The following video walks you through the data processing portion of this lab.
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=683a0991-3eb6-4e62-8bda-ac4600e1a364&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
+
 ```{marginfigure}
 You should turn a ZIP folder containing:  
 
@@ -396,6 +405,13 @@ This is a qualitative analysis.
 1. Inject the sample into the GC immediately.
 
 ### Data Processing
+
+The following videos walk you through the data processing portion of this lab.
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=7d2b5841-5888-453d-9173-ac6300e32d05&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
+
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=d8e961a2-7075-437e-815e-ac6300e32d6d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
 
 ```{marginfigure}
 You should turn a ZIP folder containing:  
@@ -529,6 +545,11 @@ This is a quantitative analysis.
 1. Remove the vaping machine tubing and rinse it out with ultrapure water.
 
 ### Data Processing
+
+
+The following video walks you through the data processing portion of this lab.
+
+<iframe src="https://wcu.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=733fb481-8a20-4369-bf3c-ac67011c358e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" height="405" width="720" frameBorder = "0" style="border: 0px solid #464646; display: block; margin: auto;" allowfullscreen allow="autoplay"></iframe>
 
 ```{marginfigure}
 You should turn a ZIP folder containing:  

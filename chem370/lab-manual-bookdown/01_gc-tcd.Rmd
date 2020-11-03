@@ -91,7 +91,7 @@ Your run list for this experiment is, on each instrument:
 1. When your run is finished, click the **Store** button and then give the run a name in the data viewer on the left side of the screen.
 1. When all of your runs have finished go to **File > Export As > CSV** to save your data as a CSV file for processing.
 
-## Data Processing
+## Data Processing 
 
 The following video walks you through the data processing portion of this lab.
 
