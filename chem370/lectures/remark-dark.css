@@ -619,7 +619,7 @@ table {
 	margin-left: auto;
   margin-right: auto;
 	border-collapse: collapse;
-	width: 50%;
+	width: 100%;
 	font-family: $chem370text;
 	font-size: 14px;
   margin-top: 50px;
@@ -633,7 +633,8 @@ th {
 }
 
 table, th, td {
-	padding: 5px;
+	padding: 2px;
+  font-size: 20px;
 }
 
 tr {
