@@ -25,7 +25,7 @@ Is M$^{.+}$ odd or even? For small, organic molecules an even M$^{.+}$ strongly 
 
 ### 4. Calculate rings and double bonds (degree of unsaturation).
 
-C$_{x}$H$_{y}$N$_{z}$O$_{n}$ will have *x* - 0.5*y* + 0.5*z* + 1 rings and/or double bonds.  Integers represent odd-electron ions; results ending in 0.5 represent even-electron ions.
+C$\_{x}$H$\_{y}$N$\_{z}$O$\_{n}$ will have *x* - 0.5*y* + 0.5*z* + 1 rings and/or double bonds.  Integers represent odd-electron ions; results ending in 0.5 represent even-electron ions.
 
 ### 5. Look for the base peak.
 
@@ -33,7 +33,7 @@ The base peak is the largest peak in the spectrum (relative abundance = 100%).  
 
 ### 6. Calculate the identity of each peak using steps 2-4.
 
-Attempt to identify any peaks possible.  Look for logical losses (e.g. -OH or -CH$_{3}$) and series of logical losses (e.g. -CH$_{3}$, -CH$_{2}$).  Look for isotopic abundances of fragments and assign compositions.  The nitrogen rule still applies to fragments, but keep in mind any odd-mass element could cause the same result.  When you've identified as many peaks as you can, attempt to deduce a structure.
+Attempt to identify any peaks possible.  Look for logical losses (e.g. -OH or -CH$\_{3}$) and series of logical losses (e.g. -CH$\_{3}$, -CH$\_{2}$).  Look for isotopic abundances of fragments and assign compositions.  The nitrogen rule still applies to fragments, but keep in mind any odd-mass element could cause the same result.  When you've identified as many peaks as you can, attempt to deduce a structure.
 
 # Additional Resources
 

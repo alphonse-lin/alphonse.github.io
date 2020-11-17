@@ -10,3 +10,5 @@ permalink: /chem370/chemistry
 - "[Scientific Tools](https://github.com/alphonse/alphonse.github.io/raw/master/CHEM191/pdf/scientific-tools-stull.pdf)" from *Practical Meteorology* by Roland Stull. A useful guide to the SI system, unit conversions, graphs, and errors.
 
 - [Interpreting an EI Mass Spectrum]({{site.url}}/chem370/guides/mass-spec)
+
+- [IR Correlation Table](https://www.compoundchem.com/2015/02/05/irspectroscopy/)
