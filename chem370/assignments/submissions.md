@@ -18,4 +18,4 @@ Submissions links open 10 days before the due date and close on the due date.
 |Peer Review|2020-11-19 11:59:59|9IOa4t9FdU4pQk3gMUI9|Closed|[link](https://www.dropbox.com/request/9IOa4t9FdU4pQk3gMUI9)|
 |Lab Notebook 1, 2, 3, 4 Pack|2020-11-22 11:59:59|k8khvRBiKscNAaYAFtBg|Closed|[link](https://www.dropbox.com/request/k8khvRBiKscNAaYAFtBg)|
 |Group Evaluation|2020-11-22 11:59:59|divGcke9E9995Ak7ZQrc|Closed|[link](https://www.dropbox.com/request/divGcke9E9995Ak7ZQrc)|
-|Final Report|2020-11-29 11:59:59|E1c6cyZx0O1W0R78iMws|Open|[link](https://www.dropbox.com/request/E1c6cyZx0O1W0R78iMws)|
+|Final Report|2020-11-29 11:59:59|E1c6cyZx0O1W0R78iMws|Closed|[link](https://www.dropbox.com/request/E1c6cyZx0O1W0R78iMws)|
