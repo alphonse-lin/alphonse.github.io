@@ -58,7 +58,7 @@ lecture syllabus
 </div>
 <!-- <hr class="hr-line"> -->
 <div class="column">
-<a class="homepage-button" href="{{site.baseurl}}/chem370/lab-manual">
+<a class="homepage-button" href="{{site.baseurl}}/chem370/lab-manual/">
     <i class="fa fa-vial fa-lg"></i>
     lab manual
 </a>
