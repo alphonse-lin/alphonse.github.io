@@ -99,6 +99,8 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 
 ## Teaching
 
+*In addition to the courses below, I teach one-on-one workshops for undergradaute and graduate students detailing how to use the ~20 pieces of chemical instrumentation owned by WCU.  This is makes up one third of my teaching load at WCU and has allowed me to support dozens of students in their research endeavors and class projects.*
+
 - **WCU CHEM 689**  
   *Cooperative Education in Chemistry*
 - **WCU CHEM 370**  
@@ -152,11 +154,11 @@ I am fluent in the following languages and software packages:
 <img src="/images/languages/qgis.jpg" class = "language">
 {:center} -->
 
-## Committees, Service, & Grant Support
+## Committees, Service, & Grant Support 
 
-- Chemistry Representative for WCU Environmental Science Program Committee (and faculty advisor to ES students)
+- Chemistry Representative for WCU Environmental Science Program Committee
 
-- Chemistry ga
+- Graduate committee membership: Alexander Lillie (PI: Dr. Scott Huffman), Sarah Ryder (PI: Dr. Brian Dinkelmeyer)
 
 - Duncan, S. (PI), L. Lefler (co-PI),  **D.A. Fischer (co-PI)**, F. Forcino (co-PI), and A. Bobilya (co-PI) *Assessing air pollution exposures for Cherokee youth with Traditional Ecological Knowledge and Western Science Methods* Provost's Internal Funding Support Grant (submitted / *in review*).
 
@@ -166,7 +168,7 @@ I am fluent in the following languages and software packages:
 
 - Wallen, J. R. (PI), Youker, R. T. (co-PI), Gainey, M. D. (co-PI), Byrd, B. D. (co-PI), Coan, H. A. B. (co-PI), Storm, A. (co-PI), Koralege, R. (co-PI), **Fischer, A. (Other)**, *Acquisition of a Molecular Devices SpectraMax iD5 Multi-Mode Plate Reader to Enhance High-Throughput Life Sciences Research at Western Carolina University,* Sponsored by Institutional Development Grant, North Carolina Biotechnology Center, State, Funded. (May 1, 2019 - April 30, 2020).
 
-- Reviewer, Department of Energy SBIR Program 
+- Reviewer, Department of Energy Grants
 
 <!--
 **Northeast Georgia Orchid Society**

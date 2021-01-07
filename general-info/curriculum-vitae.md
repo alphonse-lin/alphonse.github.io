@@ -50,7 +50,7 @@ Olympia, WA
 
 ## Publications
 
-Cheng, Z., K. Atwi, O. Hajj, I. Ijeli, **D.A. Fischer**, G.D. Smith, and R. Saleh (2020) Discrepancies Between Brown Carbon Light-absorption Properties Retrieved from Online and Offline Measurements. *Aerosol Science and Technology* [DOI: 10.1080/02786826.2020.1820940](https://doi.org/10.1080/02786826.2020.1820940) (in press)
+Cheng, Z., K. Atwi, O. Hajj, I. Ijeli, **D.A. Fischer**, G.D. Smith, and R. Saleh (2021) Discrepancies Between Brown Carbon Light-absorption Properties Retrieved from Online and Offline Measurements. *Aerosol Science and Technology* Volume 55, No. 1, 92-103. [10.1080/02786826.2020.1820940](https://doi.org/10.1080/02786826.2020.1820940)
 
 <!-- , manuscript ID AST-MS-2020-086.R1 -->
 
@@ -70,7 +70,7 @@ Mattingly, K, B.D. Johnson, and **D.A. Fischer**. (2015) Characterization of Atm
 
 ## Selected Proceedings
 
-**Fischer, D.A.** and G.D. Smith (2017) [UV-Visible Photoacoustic Spectroscopy for Aerosol Absorption](/pdf/poster_pas_aaar_2017.pdf). *American Association for Aerosol Research Annual Conference*, Raleigh, NC.
+**Fischer, D.A.** and G.D. Smith (2017) [UV-Visible Photoacoustic Spectroscopy for Aerosol Absorption](/assets/pdf/poster_pas_aaar_2017_al-fischer.pdf). *American Association for Aerosol Research Annual Conference*, Raleigh, NC.
 
 Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa, A.J. Sedlacek, P. Davidovits, ***T. ONASCH***, A. Freedman. (2016) Broadband Measurements of the Mass Absorption Coefficient of Soot.  *American Association for Aerosol Research Annual Conference*, Portland, OR. 7CA.1.
 
@@ -78,7 +78,7 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 <!--
 ***L. RENBAUM-WOLFF***, A. Lambe, T. Onasch, A. Freedman, L. Williams, T. Helgestad, C. Cappa, **D.A. Fischer**, G. Smith, S. China, C. Mazzoleni, A.J. Sedlacek, E. Browne, G. Isaacman-VanWertz, J. Kroll, J. Brogan, Y. Parmar, A. Lee, N. Sharma, J. Bhandari, J. Jayne, D. Worsnop, P. Davidovits. (2015) New Optical Experiments "Shed Light" on Role of Particle Morphology and Chemical Composition in the Absorption Enhancement of Coated Soot Particles.  *American Association for Aerosol Research Annual Conference*,  Minneapolis, MN. 12CC.3. -->
 
-**Fischer, D.A.** and G.D. Smith. (2015) A UV-Vis Broadband Cavity Enhanced Spectrometer for Ambient Aerosols. *Eleventh International User Meeting and Summer School on Cavity Enhanced Spectroscopy*, Boulder, CO.
+**Fischer, D.A.** and G.D. Smith. (2015) [A UV-Vis Broadband Cavity Enhanced Spectrometer for Ambient Aerosols](/assets/pdf/poster_bbces_ces_2015_al-fischer.pdf). *Eleventh International User Meeting and Summer School on Cavity Enhanced Spectroscopy*, Boulder, CO.
 
 **Fischer, D.A.** and G.D. Smith. A UV-Vis Broadband Cavity Enhanced Spectrometer. *EPA Air Sensors 2014: A New Frontier*, Raleigh, NC, 2014.
 
@@ -86,13 +86,16 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 
 ## Teaching
 
-**WCU CHEM 370**  
+**WCU CHEM 689**
+*Cooperative Internship in Natural Products Chemistry*
+
+**[WCU CHEM 370](https://chem370.github.io)**  
 *Instrumental Analysis I Laboratory*
 
 **WCU CHEM 241**  
 *Organic Chemistry I Laboratory*  
 
-**[WCU CHEM 191](https://alphonse.github.io/chem191)**  
+**[WCU CHEM 191](https://alphonse.github.io/archive/chem191)**  
 *Issues in Environmental Chemistry: Is clean air a right?*
 
 **WCU ES 150**  

@@ -11,15 +11,14 @@ permalink: /projects/
 
 * Instrumentation and Electronics
      <!-- - Cavity Enhanced Spectroscopy -->
-     - [Photoacoustic Spectroscopy](/pdf/poster_pas_aaar_2017.pdf)
-     - Low-cost PM<sub>2.5</sub> Sensors
+     - [Photoacoustic Spectroscopy](/assets/pdf/poster_pas_aaar_2017_al-fischer.pdf)
+     - [Cavity Enhanced Spectroscopy](/assets/pdf/poster_bbces_ces_2015_al-fischer.pdf)
+     - [Low-cost Aerosol Sensors](https://dr-fischer.github.io/wheeCAIR/grsm_purchase-2019.html)
      - DOBSUN: An Arduino-based Dobson meter and sun photometer
 
-* Plants, lichens, and Ecology
-     - [Lichen info](/lichens/)
-     <!-- - [Essential oil distillation](/essential-oils/) -->
-     <!-- - [Hemlock Woolly Adelgid & Electroantennography](/hemlock-woolly-adelgid/) -->
-     <!-- - [Geographic Information Systems](/GIS/) -->
+
+
+
 
 <!-- <center>
 	  <span class="fa-stack fa-4x">
@@ -27,3 +26,10 @@ permalink: /projects/
 	    <strong class="fa-stack-1x fa-text"></strong></a>
 	  </span>
 </center> -->
+
+
+<!-- * Plants, lichens, and Ecology
+     - [Lichen info](/lichens/)
+     - [Essential oil distillation](/essential-oils/)
+     - [Hemlock Woolly Adelgid & Electroantennography](/hemlock-woolly-adelgid/)
+     - [Geographic Information Systems](/GIS/) -->
