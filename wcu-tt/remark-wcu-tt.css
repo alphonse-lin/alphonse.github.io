@@ -15,7 +15,7 @@ html {
   background-color: black;
   margin-bottom: 0px;
   margin-top: auto;
-  cursor: crosshair;
+  /* cursor: crosshair; */
 }
 @media print {
   .remark-slide-scaler {
