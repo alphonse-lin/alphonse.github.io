@@ -246,7 +246,7 @@ class: center
 Modulated light is converted to a sound wave with  
 amplitude $\propto$ absorption.
 
-<img src="./img/wcu-tt_pas-schematic.png", style="height: 350px;">
+<img src="./img/wcu-tt_pas-overview.png", style="height: 350px;">
 
 .image-credit[Lower image: Hk kng, [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)]
 
@@ -264,16 +264,20 @@ MP-IV (vis/NIR).
 .image-credit[Fischer and Smith (2018) *AS&T*]
 
 ---
-
+exclude: true
 class: center
 
 # instrumentation | <b>MultiPAS</b>
 
-The 'MultiPAS' PAS is portable.
+Wavelengths are deconvolved using fast Fourier transform.
 
-<!-- <img src="./img/wcu-tt_mp-case-montage.png", style="height: 425px;"> -->
-<!-- <img src="./img/wcu-tt_mp-case-open-no-lid.png", style="height: 425px;"> -->
-<img src="./img/wcu-tt_mp-case-nobg.jpg", style="height: 425px;">
+<img src="./img/wcu-tt_pas-res-f.png">
+
+.image-credit[Fischer and Smith (2018) *AS&T*]
+
+
+???
+Q = 30
 
 
 ---
@@ -293,7 +297,7 @@ Wavelengths are deconvolved using fast Fourier transform.
 Q = 30
 
 ---
-
+exclude: true
 class: center
 
 # instrumentation | <b>MultiPAS</b>
@@ -333,11 +337,16 @@ MP-UV (UV/blue).
 <img src="./img/wcu-tt_mp-uv.png", style="height: 425px;">
 
 ---
+
 class: center
 
 # instrumentation | <b>MultiPAS</b>
 
-BC5
+The 'MultiPAS' PAS is portable.
+
+<!-- <img src="./img/wcu-tt_mp-case-montage.png", style="height: 425px;"> -->
+<!-- <img src="./img/wcu-tt_mp-case-open-no-lid.png", style="height: 425px;"> -->
+<img src="./img/wcu-tt_mp-case-nobg.jpg", style="height: 425px;">
 
 ---
 
@@ -352,6 +361,35 @@ $$\alpha (\lambda) = \beta\_{BC} \lambda^{-1.0} + \beta\_{BrC} \lambda^{-AAE\_{B
 <img src="./img/wcu-tt_ambient-bc-brc.png", style="height: 375px;">
 
 .image-credit[Fischer (2018) Portable Instrumentation for UV-visible Spectroscopy of Ambient and Laboratory-generated Aerosols]
+
+---
+exclude: true
+class: center
+
+# instrumentation | <b>MultiPAS</b>
+
+The MultiPAS instruments took part in BC4 and BC5 to study effects of coatings on black carbon.
+
+<img src="./img/wcu-tt_bc5-block-diagram.png">
+
+---
+class: center
+
+# instrumentation | <b>MultiPAS</b>
+
+The measured soot spectrum agrees well with literature values.
+
+<img src="./img/wcu-tt_bc5-spectrum.png" style="height: 400px;">
+
+---
+exclude: true
+class: center
+
+# instrumentation | <b>MultiPAS</b>
+
+Some differences are seen when compared to other instruments.
+
+<img src="./img/wcu-tt_bc5_intercomparison.png" style="height: 515px;">
 
 
 ---
@@ -374,7 +412,7 @@ exclude: true
 
 ---
 
-# Applcations
+# Applications
 
 ---
 
@@ -382,11 +420,24 @@ class: center
 
 # applications | <b>PAS Calibration</b>
 
-There is no agreed-upon calibration standard for PAS, resulting in measurements discrepancies.
+There is no agreed-upon calibration standard for PAS, resulting in measurement discrepancies.
 
-<img src="./img/wcu-tt_nist-montage.png">
+<img src="./img/wcu-tt_nist.png" style="height: 400px;">
 
-.image-credit[Left Figure: NIST Technical Note 1989]
+.image-credit[NIST Technical Note 1989]
+
+
+---
+class: center
+
+# applications | <b>PAS Calibration</b>
+
+Experimental setup for calibrating with gases (A) and aerosols (B).
+
+<img src="./img/wcu-tt_o3-exp-setup.png", style = "height: 350px;">
+
+.image-credit[Fischer and Smith (2018) *Atmos. Meas. Tech.*]
+
 
 ---
 
@@ -396,9 +447,10 @@ class: center
 
 The MultiPAS is calibrated with NO$_2$ using the built-in CRD.
 
-<img src="./img/wcu-tt_no2-nigrosin-cal.png">
+<img src="./img/wcu-tt_no2-nigrosin-mie.png">
 
 .image-credit[Fischer and Smith (2018) AS&T]
+
 
 
 ---
@@ -409,17 +461,20 @@ class: center
 
 Many labs use ozone to calibrate, but...
 
-$$\ce{O_3} + h\nu \text{ (>1.1 eV}) \ce{->} \ce{O_2} (^3\Sigma_g^-) + \ce{O(^3P)}$$
+ozone photodissociates below 1100 nm.
 
+<!-- $$\ce{O_3} + h\nu \text{ (>1.1 eV}) \ce{->} \ce{O_2} (^3\Sigma_g^-) + \ce{O(^3P)}$$
+ -->
 
 <img src="./img/wcu-tt_no2-cal.png", style = "height: 350px;">
 
 .image-credit[Fischer and Smith (2018) *Atmos. Meas. Tech.*]
 
 ???
-NIGROSIN FIGURE!
 
 (1.1 eV = 1127 nm)
+
+
 
 ---
 class: center
@@ -451,7 +506,6 @@ $R_{BC} = \frac{\text{Diameter of Coated Particle}}{\text{Diameter of Soot Core}
 
 ---
 exclude: true
-
 class: center
 
 # applications | <b>Coated Soot</b>
@@ -488,7 +542,7 @@ A laboratory experiment was designed to compare filter-based and PAS measurement
 
 <img src="./img/wcu-tt_rawad-combustion-setup-dark.png", style = "height: 400px;">
 
-.image-credit[Adapted from Cheng et al (2020) AS&T]
+.image-credit[Adapted from Cheng et al (2021) AS&T]
 ---
 class: center
 
@@ -497,7 +551,7 @@ class: center
 Measurements of filter extracts disagree with PAS measurements.
 
 <img src="./img/wcu-tt_rawad-extract-efficiency.png", style = "height: 400px;">
-.image-credit[Cheng et al (2020) AS&T]
+.image-credit[Cheng et al (2021) AS&T]
 
 ---
 exclude: true
@@ -509,7 +563,53 @@ These same data suggest BC and BrC are extremes of the same, not distinct catego
 
 <img src="./img/wcu-tt_rawad-continuum.png", style = "height: 400px;">
 
-.image-credit[Cheng et al (2020) AS&T]
+.image-credit[Cheng et al (2021) AS&T]
+
+---
+class: center
+
+# applications | <b>Aethalometer</b>
+
+The aethalometer provides real-time measurements of aerosol absorption by measuring filter transmission.
+
+<img src="./img/wcu-tt_aeth-principal.png" style = "height: 400px;">
+
+---
+class: center
+
+# applications | <b>Aethalometer</b>
+
+The aethalometer and PAS report vastly different absorpbances.
+
+<img src="./img/wcu-tt_aeth-raw.png" style = "height: 400px;">
+
+---
+class: center
+
+# applications | <b>Aethalometer</b>
+
+The aethalometer and PAS report vastly different absorpbances.
+
+<img src="./img/wcu-tt_mp-ambient-ts.png" style = "height: 400px;">
+
+---
+class: center
+
+# applications | <b>Aethalometer</b>
+
+The aethalometer and PAS measure the same AAE.
+
+<img src="./img/wcu-tt_aeth-aae.png" style = "height: 400px;">
+
+---
+class: center
+
+# applications | <b>Aethalometer</b>
+
+And the AAE can be used to determine a correction factor!
+
+<img src="./img/wcu-tt_aeth-correction.png" style = "height: 400px;">
+
 
 ---
 
@@ -518,7 +618,20 @@ These same data suggest BC and BrC are extremes of the same, not distinct catego
 ---
 class: center
 
-# low-cost | <b>wheeCAIR</b>
+# low-cost sensors | <b>wheeCAIR</b>
+
+Numerous low-cost sensors have come to market over the past 5-10 years.
+
+<img src="./img/wcu-tt_wheeCAIR-sensors-overview.png", style="height: 175px;">
+
+<img src="./img/wcu-tt_wheeCAIR-instrument-diagram.png", style="height: 200px;">
+
+.image-credit[Top images (L to R): Shinyei, AirBeam, PurpleAir, Dylos, TSI]
+
+---
+class: center
+
+# low-cost sensors | <b>wheeCAIR</b>
 
 The Cullowhee Clean Air sensor is a low-cost aerosol sensor built by students.  (~$100 / sensor)
 
@@ -527,7 +640,7 @@ The Cullowhee Clean Air sensor is a low-cost aerosol sensor built by students.  
 ---
 class: center
 
-# low-cost | <b>wheeCAIR</b>
+# low-cost sensors | <b>wheeCAIR</b>
 
 Students in CHEM 191 assembled and programmed the sensors and deployed them at Purchase Knob, NC.
 
@@ -536,40 +649,56 @@ Students in CHEM 191 assembled and programmed the sensors and deployed them at P
 ---
 class: center
 
-# low-cost | <b>wheeCAIR</b>
+# low-cost sensors | <b>wheeCAIR</b>
 
 The sensors agree well with each other but are very sensitive to high humidity and fog.
 
 <img src="./img/wcu-tt_wheeCAIR-time-series.png", style = "height: 400px;">
 
 ---
+exclude: true
 class: center
 
-# low-cost | <b>wheeCAIR</b>
+# low-cost sensors | <b>wheeCAIR</b>
 
 These sensors allow for personal exposure monitoring.
 
 <img src="./img/wcu-tt_wheeCAIR-snowday.png">
 
 ---
+exclude: true
 class: center
 
-# low-cost | <b>wheeCAIR</b>
+# low-cost sensors | <b>wheeCAIR</b>
 
-Bryson City Comparison
+These sensors allow for personal exposure monitoring.
 
----
-class: center
-
-# low-cost | <b>wheeCAIR</b>
-
-How they work and what knobs to turn
+<img src="./img/wcu-tt_wheeCAIR-snowday-smoke-picture.png">
 
 ---
 exclude: true
 class: center
 
-# @WCU | <b>wheeCAIR</b>
+# low-cost sensors | <b>wheeCAIR</b>
+
+These sensors allow for personal exposure monitoring.
+
+<img src="./img/wcu-tt_wheeCAIR-snowday-distance.png">
+
+---
+exclude: true
+class: center
+
+# low-cost sensors | <b>wheeCAIR</b>
+
+How can low-cost sensors be improved?
+
+<img src="./img/wcu-tt_wheeCAIR-instrument-diagram.png">
+---
+exclude: true
+class: center
+
+# low-cost sensors | <b>wheeCAIR</b> | <b>wheeCAIR</b>
 
 The sensors agree well with each other but are very sensitive to high humidity and fog.
 
@@ -579,7 +708,7 @@ The sensors agree well with each other but are very sensitive to high humidity a
 exclude: true
 class: center
 
-# low-cost | <b>LED PAS</b>
+# low-cost instrument | <b>LED PAS</b>
 
 <div class="mermaid", style = "margin-top: 150px;">
 graph TD
@@ -590,7 +719,7 @@ graph TD
 ---
 class: center
 
-# low-cost | <b>LED PAS</b>
+# low-cost instrument | <b>LED PAS</b>
 
 Is it possible to build a low-cost PAS?
 
@@ -612,6 +741,8 @@ Cavity enhanced spectroscopy uses an optical cavity to achieve sensitive measure
 .image-credit[Brown et al (2017) [Faraday Discussions](https://pubs.rsc.org/is/content/articlelanding/2017/fd/c7fd00001d#!divAbstract)]
 
 ---
+exclude: true
+
 class: center
 
 # ces | <b>BBCES</b>
@@ -624,6 +755,8 @@ $\alpha_{ext}(\lambda) = \left(\frac{I_0(\lambda)}{I(\lambda)} - 1\right) \left(
 <!-- <img src="./img/wcu-tt_bbces-block-diagram.png", style = "width: 650px;"> -->
 
 ---
+exclude: true
+
 class: center
 
 # ces | <b>BBCES</b>
@@ -635,6 +768,7 @@ $\alpha\_{ext} = \alpha\_{scatter} + \alpha\_{abs}$
 <img src="./img/wcu-tt_bbces-ambient.png", style = "height: 425px;">
 
 ---
+exclude: true
 class: center
 
 # ces | <b>BBCES</b>
@@ -654,44 +788,19 @@ Field-deployable NIR-BBCES for plant volatile emissions
 
 <img src="./img/wcu-tt_ir-bbces-diagram.png", style = "height: 400px;">
 
-
----
-class: center
-# ces | <b>Conclusions</b>
-
-Conclusions.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 # acknowledgements | <b>Thank you!</b>
 
-- UGA Chemistry: Dr. Geoff Smith and Smith Lab
-- UGA COE: Dr. Rawad Saleh and Zezhen (Jay) Cheng (and Saleh lab)
-- UGA Instrument Shop: Lewis Fortner and Staff
+- Dr. Geoff Smith and Smith Lab (UGA Chemistry)
+- Dr. Rawad Saleh and Saleh lab (UGA COE)
+- WCU CHPH and CAS
+- Dr. Cynthia Atterholt (WCU CHPH) 
 - Boston College: Paul Davidovitz, Lindsay Renbaumm-Wolff and others
 - Aerodyne Research: Tim Onasch and Andy Freedman
-- Brookhaven National Lab: Laura Fierce, Arthur Sedlacek, Ernie Lewis
-- NOAA
-- MTU & PNNL: Swarup China and Mazzolini
-- NIST: Dr. Chris Zangmeister & Dr. Jimmy Radney
-- WCU Department of Chemistry and Physics, especially Dr. David Evanoff and Dr. Cynthia Atterholt
+- Dr. Chris Zangmeister & Dr. Jimmy Radney (NIST)
+- Dr. Chris Cappa and Cappa Lab (UC Davis)
+<!-- - Brookhaven National Lab: Laura Fierce, Arthur Sedlacek, Ernie Lewis -->
+- Lewis Fortner and Staff (UGA Instrument Shop)
 
 
 
@@ -699,7 +808,7 @@ Conclusions.
 
 class: img-full
 
-# instrumentation | <b>MultiPAS</b>
+# questions?
 
 <!-- <img src="./img/wcu-tt_mp-case-montage.png", style="height: 425px;"> -->
 <!-- <img src="./img/wcu-tt_mp-case-open-no-lid.png", style="height: 425px;"> -->
