@@ -42,4 +42,4 @@ If there are slides available for a lecture they will be listed here.
 
 <!-- Some lectures draw heavily on *Analytical Chemistry 2.1* by David Harvey, available via [LibreTexts](https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Book%3A_Analytical_Chemistry_2.1_%28Harvey%29/01%3A_Introduction_to_Analytical_Chemistry/1.01%3A_What_is_Analytical_Chemistry). -->
 
-These slides were created using [remark](https://remarkjs.com/) by [Ole Petter Bang](https://github.com/gnab).
+These slides were created using [remark](https://remarkjs.com/).
