@@ -11,6 +11,7 @@ Al Fischer, PhD
 *Instrumentation Specialist*   
 Western Carolina University   
 [dfischer@wcu.edu](mailto:dfischer@wcu.edu)  
+[al@tsugascientific.com](mailto:al@tsugascientific.com)
 
 <!---
 ## Timeline
@@ -36,7 +37,7 @@ Athens, GA
 
 **[Hummingbird Scientific](http://www.hummingbirdscientific.com)**  
 Lacey, WA  
-*Engineering Technician (2011-2012)*    
+*Engineer (2011-2012)*    
 
 ## Education
 
@@ -86,8 +87,11 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 
 ## Teaching
 
-**WCU CHEM 689**
+**WCU CHEM 689**  
 *Cooperative Internship in Natural Products Chemistry*
+
+**WCU CHEM 380**  
+*Undergraduate Research in Chemistry*
 
 **[WCU CHEM 370](https://chem370.github.io)**  
 *Instrumental Analysis I Laboratory*

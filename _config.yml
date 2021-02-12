@@ -84,14 +84,15 @@ exclude:
 navigation:
   - title: Homepage
     url: /#
-  - title: about
-    url: /about
-  - title: contact
-    url: /contact
   - title: cv
     url: /curriculum-vitae
   - title: projects
     url: /projects
+  - title: about
+    url: /about
+  - title: contact
+    url: /contact
+
 navigation-370:
   - title:  
     url: /#

@@ -6,10 +6,13 @@ permalink: /about/
 ---
 
 <!-- <img src="/images/portrait_lab_2018.jpg" alt="al-fischer" style="width:200px;height:200px;padding:1em"/> -->
-<img src="/assets/img/portrait_lab_2018_round.png" alt="al fischer portrait" style="display: block; margin-left: auto; margin-right: auto; width: 20%;"/>
+<!-- <img src="/assets/img/portrait_lab_2018_round.png" alt="al fischer portrait" style="display: block; margin-left: auto; margin-right: auto; width: 20%;"/> -->
+
+<img src="/assets/img/portrait_lab_2018.png" alt="al fischer portrait" style="float: left; margin-left: 0; margin-right: auto; padding-right: 25px; padding-bottom: 15px; width: 40%;"/>  
 
 I am the Instrumentation Specialist and an Instructor of Chemistry at Western Carolina University.  My interests lie at the intersection of environmental science and analytical chemistry.  I develop instruments and methods that help us better understand the natural world and our effects on it.  To learn more, please see my [CV](http://alphonse.github.io/curriculum-vitae/) or feel free to [get in touch](mailto:dfischer@wcu.edu)!
 
+<div style="clear: both"></div>
 
 ## Expertise
 

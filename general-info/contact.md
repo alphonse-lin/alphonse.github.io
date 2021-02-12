@@ -7,9 +7,21 @@ permalink: /contact/
 
 <!-- ## Get in touch -->
 
-I usually respond quickly to [email](mailto:dfischer@wcu.edu), and I always welcome anyone to drop by my office (NS 209) with questions [COVID update: Please schedule a remote meeting with the link below!].  If you prefer to make an appointment, you may do so via [Microsoft Bookings](https://outlook.office365.com/owa/calendar/DrFischer@catamountwcu.onmicrosoft.com/bookings/).  
+# Students
+
+I usually respond quickly to [email](mailto:dfischer@wcu.edu), and I always welcome anyone to drop by my office (NS 209) with questions.  If you prefer to make an appointment, you may do so via [Microsoft Bookings](https://outlook.office365.com/owa/calendar/DrFischer@catamountwcu.onmicrosoft.com/bookings/).  
+
+***[COVID update: Office hours are remote ONLY.  Please schedule a remote meeting with the Bookings link above!].***
 
 Additional contact information can be found on my [Western faculty page](https://www.wcu.edu/learn/departments-schools-colleges/cas/science-and-math/chemphys/faculty-and-staff/al-fischer.aspx).
+
+# Consulting
+
+<div style="clear: both"></div>
+
+<img src="/assets/img/tsugasci-logo.png" alt="al fischer portrait" style="float: left; margin-left: 0; margin-right: auto; padding-right: 25px; padding-bottom: 15px; width: 13%;"/> 
+
+I am also available to consult on instrument design and development, provide scientific design and communication guidance, and for routine analytical services as Tsuga Scientific.  If you'd like to discuss these services please email [al@tsugascientific.com](mailto:al@tsugascientific.com).
 
 <!-- ## My calendar
 
