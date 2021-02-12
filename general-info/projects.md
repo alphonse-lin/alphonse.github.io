@@ -27,7 +27,7 @@ The primary focus of my lab is the development of new instrumentation.  Some cur
 
 - **A low-cost photoacoustic spectrometer (current)**
 
-- [Low-cost Aerosol Sensors](https://dr-fischer.github.io/wheeCAIR/grsm_purchase-2019.html) (current): We build low cost (~$100), battery-powered, portable nephelometeric for hyper-local monitoring of particulate matter concentration and personal exposure in Western North Carolina.  And example of the of the device's response to woodsmoke is shown in the figure below.  
+- [Low-cost Aerosol Sensors](https://dr-fischer.github.io/wheeCAIR/grsm_purchase-2019.html) (current): We build low cost (~$100), battery-powered, portable nephelometeric sensors for hyper-local monitoring of particulate matter concentration and personal exposure in Western North Carolina.  An example of the of the device's response to woodsmoke is shown in the figure below.  
 
 ![Data from the WheeCAIR sensor with an image of woodsmoke shown](/assets/img/projects/wheeCAIR-snowday.png)
 

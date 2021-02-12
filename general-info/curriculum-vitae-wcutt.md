@@ -16,6 +16,7 @@ permalink: /curriculum-vitae/
 <p style="line-height: 5px; text-align: center;>Chemistry and Physics</p>
 <p style="line-height: 5px; text-align: center;>Western Carolina University</p>
 <p style="line-height: 5px; text-align: center;><a href = "mailto:dfischer@wcu.edu">dfischer@wcu.edu</a></p>
+<p style="line-height: 5px; text-align: center;><a href = "mailto:al@tsugascientific.com">al@tsugascientific.com</a></p>
 
 <!---
 ## Timeline
@@ -41,7 +42,7 @@ Athens, GA
 
 **[Hummingbird Scientific](http://www.hummingbirdscientific.com)**  
 Lacey, WA  
-*Engineering Technician (2011-2012)*    
+*Engineer (2011-2012)*    
 
 ## Education
 
@@ -99,7 +100,7 @@ Renbaum-Wolff, L., **D.A. Fischer**, T. Helgestad, A. Lambe, G. Smith, C. Cappa,
 
 ## Teaching
 
-*In addition to the courses below, I teach one-on-one workshops for undergradaute and graduate students detailing how to use the ~20 pieces of chemical instrumentation owned by WCU.  This is makes up one third of my teaching load at WCU and has allowed me to support dozens of students in their research endeavors and class projects.*
+*In addition to the courses below, I teach one-on-one workshops for undergradaute and graduate students detailing how to use the ~20 pieces of chemical instrumentation owned by WCU.*
 
 - **WCU CHEM 689**  
   *Cooperative Education in Chemistry*
@@ -154,7 +155,7 @@ I am fluent in the following languages and software packages:
 <img src="/images/languages/qgis.jpg" class = "language">
 {:center} -->
 
-## Committees, Service, & Grant Support 
+<!-- ## Committees, Service, & Grant Support 
 
 - Chemistry Representative for WCU Environmental Science Program Committee
 
@@ -168,7 +169,7 @@ I am fluent in the following languages and software packages:
 
 - Wallen, J. R. (PI), Youker, R. T. (co-PI), Gainey, M. D. (co-PI), Byrd, B. D. (co-PI), Coan, H. A. B. (co-PI), Storm, A. (co-PI), Koralege, R. (co-PI), **Fischer, A. (Other)**, *Acquisition of a Molecular Devices SpectraMax iD5 Multi-Mode Plate Reader to Enhance High-Throughput Life Sciences Research at Western Carolina University,* Sponsored by Institutional Development Grant, North Carolina Biotechnology Center, State, Funded. (May 1, 2019 - April 30, 2020).
 
-- Reviewer, Department of Energy Grants
+- Reviewer, Department of Energy Grants -->
 
 <!--
 **Northeast Georgia Orchid Society**

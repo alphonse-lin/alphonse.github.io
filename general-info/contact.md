@@ -19,7 +19,7 @@ Additional contact information can be found on my [Western faculty page](https:/
 
 <div style="clear: both"></div>
 
-<img src="/assets/img/tsugasci-logo.png" alt="al fischer portrait" style="float: left; margin-left: 0; margin-right: auto; padding-right: 25px; padding-bottom: 15px; width: 13%;"/> 
+<img src="/assets/img/tsugasci-logo.png" alt="al fischer portrait" style="float: left; margin-left: 0; margin-right: auto; padding-right: 25px; padding-bottom: 15px; width: 85px;"/> 
 
 I am also available to consult on instrument design and development, provide scientific design and communication guidance, and for routine analytical services as Tsuga Scientific.  If you'd like to discuss these services please email [al@tsugascientific.com](mailto:al@tsugascientific.com).
 
